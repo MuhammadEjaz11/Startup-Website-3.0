@@ -6,7 +6,7 @@ import DesignDevelop from "../../Components/DesignDevelop";
 import SectionBox from "../../Components/SectionBox";
 import ideaImage from "../../image/idea-01.png";
 import aboutImage from "../../image/aboutImage.webp";
-import groupOne from "../../image/groupOne.png";
+import groupOne from "../../assets/about/cotton.svg";
 import groupTwo from "../../image/groupTwo.png";
 import awardOne from "../../image/award_one.png";
 import awardTwo from "../../image/award_two.png";
@@ -223,7 +223,7 @@ const SecondFaq = [
               marginTop: "40px !Important",
             }}
           >
-          That one-stop solution for the unlimited experiences of excellence within the digital services. Since the very beginning this software hub came to life in 2013, and from about that time, it has grown to a tremendous team of over 55 experts committed to their respective fields and providing their contribution in weaving the enhancement within business Our agency offers a full range of solutions, from innovative web design to advanced mobile app development. It is all made sure that the digital presence is second to none. 
+          For years, Patch Makers has been the trusted name in custom patches, digitizing, and vector art services. Our legacy of quality craftsmanship and personalized designs has set us apart as industry leaders. With a dedicated team and a commitment to exceeding expectations, we bring your ideas to life with precision and passion. Join our long-standing tradition of excellence and discover the art of customization with Us
           </Typography>
           <Box
             className="ourMission"
@@ -283,67 +283,9 @@ const SecondFaq = [
           }}
         >
           <Box>
-            <img src={aboutImage} alt="About Us" style={{ width: "100%" }} />
+            <img src={groupOne} alt="About Us" style={{ width: "100%" }} />
           </Box>
-          <Box
-            sx={{
-              boxShadow: "0px 1px 62px 0px #00000014",
-              borderRadius: "20px",
-              padding: "21px 37px 22px 26px",
-              backgroundColor: "#FFFFFF",
-              position: "relative",
-              display: "flex",
-              justifyContent: "space-between",
-              textAlign: "center",
-              maxWidth: "60%",
-              minWidth:{xs:"70%", sm:"380px"},
-              margin: "0 auto",
-              zIndex: "2",
-              marginTop: "-60px",
-              flexDirection: { xs: "column", sm: "row" },
-              border: "none",
-              // border:"2px solid red"
-            }}
-          >
-            <Box
-              sx={{ display: "flex", marginBottom: { xs: "20px", sm: "0" },  }}
-            >
-              <img src={groupOne} alt="Group One" />
-              <Typography
-                sx={{
-                  paddingRight: {xl:"50px", md:"14px", xs:"0px"},
-                  borderRight: { lg: "1px solid #DBDBDB", sm: "none" },
-                  fontSize: "16px",
-                  fontFamily: "satoshi",
-                  width: {sm:"99px", xs:"100%"},
-                  textAlign:"start",
-                  
-                  marginLeft: "15px !Important",
-                  display:"flex",
-                  alignItems:"center"
-                  
-                }}
-              >
-                Web Clean Design
-              </Typography>
-            </Box>
-            <Box sx={{ display: "flex", margin: { md: "0 auto" } }}>
-              <img src={groupTwo} alt="Group Two" />
-              <Typography
-                sx={{
-                  fontSize: "16px",
-                  fontFamily: "satoshi",
-                  width: {sm:"99px", xs:"100%"},
-
-                  marginLeft: "15px",
-                   display:"flex",
-                  alignItems:"center"
-                }}
-              >
-                App Development
-              </Typography>
-            </Box>
-          </Box>
+       
         </Box>
       </Box>
 
@@ -420,11 +362,11 @@ const SecondFaq = [
         </Card>
       </Box> */}
 
-      <AwardsSlider />
+      {/* <AwardsSlider /> */}
 
       <DesignDevelop
-      content={`At Mozack, we design and develop superior digital products and digital-first brands that stand out in the marketplace. Our commitment to innovation and quality drives us to create solutions that not only meet but exceed the expectations of our clients. Whether you're looking to launch a new brand or revolutionise your existing digital assets, we have the expertise to make it happen`}
-      title={`Our Services`}
+      content={`Patch Makers specializes in creating custom patches with expert digitizing and vector art services. Whether for style or branding, our personalized designs and skilled craftsmanship bring your ideas to life. Discover the power of customization with us today!`}
+      title={`We design and manufacture premium custom patches — from Embroidered to PVC, Sublimation, Leather & Chenille`}
       />
 
       {/* our services */}
@@ -722,7 +664,7 @@ const SecondFaq = [
       }}
     />
             </Box>
-            <SectionHeading ourworkTitle="Research"></SectionHeading>
+            <SectionHeading ourworkTitle="Concept"></SectionHeading>
             <Typography
               sx={{
                 fontFamily: "Inter",
@@ -732,7 +674,7 @@ const SecondFaq = [
                 fontWeight: 400,
               }}
             >
-             We start by getting to know your business and market, gathering insights that will drive the strategic direction.
+            We start by understanding your vision and ideas to create a unique patch that perfectly fits your brand or style.
             </Typography>
           </Box>
 
@@ -766,7 +708,7 @@ const SecondFaq = [
       }}
     />
             </Box>
-            <SectionHeading ourworkTitle="Making Strategy"></SectionHeading>
+            <SectionHeading ourworkTitle="Design"></SectionHeading>
             <Typography
               sx={{
                 fontFamily: "Inter",
@@ -776,7 +718,7 @@ const SecondFaq = [
                 fontWeight: 400,
               }}
             >
-              With thorough research in hand, we craft a tailored strategy that aligns with your business goals and sets the stage for effective implementation.
+              Our expert designers turn your concept into a detailed digital mockup using professional digitizing and vector art techniques.
             </Typography>
           </Box>
           <Box
@@ -809,7 +751,7 @@ const SecondFaq = [
       }}
     />
             </Box>
-            <SectionHeading ourworkTitle="Watch Business Grow"></SectionHeading>
+            <SectionHeading ourworkTitle="Manufacture"></SectionHeading>
             <Typography
               sx={{
                 fontFamily: "Inter",
@@ -819,13 +761,13 @@ const SecondFaq = [
                 fontWeight: 400,
               }}
             >
-              As we implement our plans, you can watch your business grow. We track progress and adjust tactics to ensure maximum impact.
+             With precision and care, we craft your custom patches using high-quality materials — embroidered, PVC, sublimation, chenille, or leather.
             </Typography>
           </Box>
           <Box
             sx={{
               marginBottom: { md: "0px", xs: "40px" },
-              borderRight: { md: "1px solid #F1F1F1", xs: "none" },
+            
               flexBasis: { md: "24%", xs: "100%" },
 
               marginRight: "36px",
@@ -852,7 +794,7 @@ const SecondFaq = [
       }}
     />
             </Box>
-            <SectionHeading ourworkTitle="Make Successful"></SectionHeading>
+            <SectionHeading ourworkTitle="Delivery"></SectionHeading>
             <Typography
               sx={{
                 fontFamily: "Inter",
@@ -862,7 +804,7 @@ const SecondFaq = [
                 fontWeight: 400,
               }}
             >
-              Our goal is to make every project a success. We continue to refine and optimise our approaches to keep your business at the forefront of its industry.
+              Once ready, your patches are carefully packed and shipped quickly to your doorstep — quality guaranteed, always on time.
             </Typography>
           </Box>
         </Box>
@@ -1075,105 +1017,9 @@ const SecondFaq = [
       <NewPortfolioCard />
       <PortfolioSlider />
 
-      {/* <KeenSliderPortfolio showTabs={true} />  */}
-      {/* 
-      <Box
-        sx={{
-          display: "flex",
-          gap: "1rem",
-          position: "relative",
-          left: "50%", // Move the box to the left by 50% of the layout
-          right: "50%", // Move the box to the right by 50% of the layout
-          marginLeft: "-50vw", // Negative margin to offset left movement
-          marginRight: "-50vw", // Negative margin to offset right movement
-          width: "100vw", // Full viewport width
-          maxWidth: "none",
-        }}
-      >
-        <Carousel useArrowKeys={true} show={4} slide={4} swiping={true}>
-          {filteredPortfolioList.map((x, i) => (
-            <PortfolioCard
-              key={i}
-              imageURL={x?.imageURL}
-              title={x?.title}
-              desc={x?.desc}
-            />
-          ))}
-        </Carousel>
-      </Box> */}
-
-      {/* slider for skills */}
-      {/* <Box
-        sx={{
-          backgroundColor: "#1E1E1E",
-          paddingTop: "74px",
-          paddingBottom: "74px",
-          padding:{md:'74px 20px !important', xs:'74px 0px'},
-          // border:"2px solid yellow",
-          position: "relative",
-          left: "50%",                 // Move the box to the left by 50% of the layout
-          right: "50%",                // Move the box to the right by 50% of the layout
-          marginLeft: "-50vw",         // Negative margin to offset left movement
-          marginRight: "-50vw",        // Negative margin to offset right movement
-          width: "100vw",              // Full viewport width
-          maxWidth: "none",             
-
-        }}
-      >
-        <Box
-          sx={{
-            padding:{md:'0px 20px', xs:'0px 20px'},
-            maxWidth: "1526px",
-            margin: "0 auto",
-          }}
-        >
-<StyledHeading 
-  title1="Technologies" 
-  sx1={{
-    fontFamily: 'satoshi !important', 
-    color: 'white', 
-    gap: '20px', 
-    textAlign: { xs: 'left', md: 'center' } // Align left on small screens, center on medium and larger screens
-  }} 
-  title2="We Use" 
-  sx2={{
-    fontFamily: 'satoshi-light !important', 
-    color: 'white', 
-    textAlign: { xs: 'left', md: 'center' } // Align left on small screens, center on medium and larger screens
-  }} 
-/>
-
-          <Typography
-            sx={{
-              maxWidth: "865px",
-              lineHeight: "36px",
-              color: "#939393",
-              fontFamily: "Inter",
-              fontSize: { xs: "14px", md: "16px" },
-              marginTop: "20px",
-              
-            }}
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s dummy text ever since the 1500s dummy text ever
-          </Typography>
-        </Box>
-        <Technologies />
-        <Box
-        
-        >
-
-        <TechnologyCarousel
-        
-        data={technologiesCard}
-        />
-        </Box>
-
-      </Box> */}
 
       <TecgnologiesComponent
-      content={`At Mozack, we leverage cutting-edge front-end, back-end, and database technologies to build efficient, scalable, and engaging web applications. Our expert team combines industry-standard tools and frameworks to deliver exceptional user experiences and powerful functionalities across all devices.`}
+      content={`At Patch Makers, we use industry-leading software like Wilcom, Adobe Illustrator, and CorelDRAW to ensure flawless digitizing, vector art, and design accuracy. These powerful tools help us deliver clean, detailed, and high-quality results every time.`}
       />
 
       {/* testimonial section */}
@@ -1254,6 +1100,7 @@ const SecondFaq = [
 
           margin: "0 auto",
           paddingBottom: "73px",
+          display:"none"
         }}
         id="blogs"
       >
@@ -1274,6 +1121,8 @@ const SecondFaq = [
           margin: "0 auto",
           paddingTop: { md: "70px", xs: "80px" },
           paddingBottom: { md: "0px", xs: "0px" },
+          display:"none"
+
         }}
       >
         <StyledHeading
@@ -1290,6 +1139,8 @@ const SecondFaq = [
         sx={{
           marginTop: "69px",
           overflow: { xs: "hidden", xl: "visible" },
+          display:"none"
+
         }}
       >
         <SecondFAQSlider

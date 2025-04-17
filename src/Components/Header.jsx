@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, Button, Card, Drawer, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import layer1 from "../image/Layer_1.png";
+import layer1 from "../image/pm_logo.svg";
 import hamberg from "../assets/font/hamberg.png";
 
 import CustomButton from "./Button";
@@ -72,7 +72,7 @@ function Header() {
             <img
               src={layer1}
               alt="Logo"
-              style={{ objectFit: "contain", width: "100%" }}
+              style={{ objectFit: "cover", width: "90px", marginTop:'15px' }}
             />
           </div>
           <nav

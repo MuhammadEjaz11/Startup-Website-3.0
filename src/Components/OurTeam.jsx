@@ -1,13 +1,36 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import memberOne from "../image/memberOne-min.webp";
-import memberTwo from "../image/memberTwo-min.webp";
+import memberOne from "../image/adam.png";
+import memberTwo from "../image/chloe.png";
 import memberThree from "../image/memberThree-min.webp";
-import memberFour from "../image/memberFour-min.webp";
+import memberFour from "../image/david.png";
 
 import instaIcon from '../image/InstagramIcon.png';
 import fbIcon from "../image/facebookIcon.png";
 import linkdinIcon from "../image/LinkedinIcon.png";
+
+const teamArra = [
+  {
+    image: memberOne,
+    name: 'Adam Zaid',
+    designation: 'CEO - Founder',
+  },
+  {
+    image: memberTwo,
+    name: 'Chloe Andreson',
+    designation: 'Sales Manager',
+  },
+  {
+    image: memberThree,
+    name: 'Kinsey Tyler',
+    designation: 'Designer',
+  },
+  {
+    image: memberFour,
+    name: 'David Jason',
+    designation: 'Production Manager',
+  }
+]
 
 const OurTeam = () => {
   return (
@@ -20,7 +43,7 @@ const OurTeam = () => {
         gap: "1rem",
       }}
     >
-      {[memberOne, memberTwo, memberThree, memberFour].map((member, index) => (
+      {teamArra.map((member, index) => (
         <Box
           key={index}
           sx={{
@@ -49,10 +72,11 @@ const OurTeam = () => {
         >
           <Box
             component="img"
-            src={member}
+            src={member?.image}
             sx={{
               width: "100%",
               height: "100%",
+              objectFit: 'cover',
               transition: "transform 0.3s ease-in-out",
             }}
           />
@@ -82,7 +106,7 @@ const OurTeam = () => {
                 fontWeight: 700,
               }}
             >
-              Azhar Ibrahim
+              {member?.name}
             </Typography>
 
             <Typography
@@ -93,7 +117,7 @@ const OurTeam = () => {
                 fontSize: "10px",
               }}
             >
-              CEO - Founder
+              {member?.designation}
             </Typography>
           </Box>
 
@@ -104,18 +128,18 @@ const OurTeam = () => {
               position: "absolute",
               bottom: "8%",
               left: "40%",
-              right:"50%",
+              right: "50%",
               transform: "translateX(-0%) translateY(20px)", // Initially hidden
               display: "flex",
-              m:"auto",
+              m: "auto",
               gap: "15px",
               opacity: 0, // Initially invisible
               transition: "all 0.3s ease-in-out", // Smooth transition for showing icons
             }}
           >
-            <Box component="img" src={fbIcon} sx={{ width: "9px" , objectFit:"contain", ":hover":{cursor:"pointer",}}} />
-            <Box component="img" src={instaIcon} sx={{ width: "18px", objectFit:"contain", ":hover":{cursor:"pointer"} }} />
-            <Box component="img" src={linkdinIcon} sx={{ width: "18px" , objectFit:"contain", ":hover":{cursor:"pointer"} }} />
+            <Box component="img" src={fbIcon} sx={{ width: "9px", objectFit: "contain", ":hover": { cursor: "pointer", } }} />
+            <Box component="img" src={instaIcon} sx={{ width: "18px", objectFit: "contain", ":hover": { cursor: "pointer" } }} />
+            <Box component="img" src={linkdinIcon} sx={{ width: "18px", objectFit: "contain", ":hover": { cursor: "pointer" } }} />
           </Box>
         </Box>
       ))}

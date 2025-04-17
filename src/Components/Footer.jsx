@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Box, Button, Typography } from "@mui/material";
 import CustomButton from "./Button";
 import FooterHeading from "./FooterHeading";
-import layer1 from "../image/Layer_2.png";
+import layer1 from "../image/pm_logo.svg";
 import FooterMenu from "./FooterMenu";
 import FooterBottomMenu from "./FooterBottomMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -59,7 +59,7 @@ function Footer() {
                 },
               }}
             >
-              Looking for an opportunity to implement
+             Your Brand. Your Patch.
             </Typography>
 
             <Typography
@@ -73,17 +73,18 @@ function Footer() {
                 },
               }}
             >
-              your strategic business solutions?
+              Let’s Make it Happen.
             </Typography>
             <Box
             sx={{
               textAlign: "center",
               maxWidth: "90%",
               margin: "0 auto",
-              display: "flex",
+              display: "none",
               flexDirection: "column",
 
-              width:"1299px"
+              width:"1299px",
+              
             }}
             >
             <Typography
@@ -215,7 +216,7 @@ function Footer() {
                   fontFamily:"Inter"
                 }}
               >
-               Mozack offers professional digital services like app development, graphic design and video animations depending on your business requirements. At the core of our solutions are informative and captivating concepts that will capture the audience’s attention and generate value for your business.{" "}
+              We create high-quality custom patches and offer expert digitizing and vector art services. From embroidery to PVC and more — fast, precise, and made to match your vision.{" "}
               </Typography>
             </Box>
             <FooterMenu
@@ -239,17 +240,18 @@ function Footer() {
                 fontFamily:"Outfit"
 
               }}
-              links={["services/graphic-design", "services/video-animation", "services/android-&-ios-app-development", "services/web-development"]}
+              links={["services/graphic-design", "services/video-animation", "services/android-&-ios-app-development", "services/web-development", '#']}
               heading={"Our Services"}
               data={[
-                "Graphic Designing",
-                "Video Animations",
-                "Mobile App Development",
-                "Web Design",
+                "Digitiizng",
+                "Vector Art",
+                "Customize Patches",
+                "Promotional Products",
+                "Graphic Designing"
               
               ]}
               // showSeeMore={true}
-              hideSeeMore={false}
+              hideSeeMore={true}
             />
 
             <FooterMenu
@@ -264,9 +266,10 @@ function Footer() {
               }}
               heading={"Contact Infomation"}
               data={[
-                "Phone: +923128206331",
-                "Email: info@mozack.co",
-                "Address: B 115, Block H North",
+                "Phone:  +1 (307) 400 8653",
+                "Phone: +44 (792) 806 2002 (Whatspp)", 
+                "Email: sales@patchmakers.us",
+                "Address: 1133 WOLCOTT ST SPC 4,",
                 "Nazimabad Town, Karachi, Sindh 74700",
               ]}
             />
@@ -305,7 +308,7 @@ function Footer() {
               }}
               textAlign={{ md: "left", sm: "center", xs: "center" }}
             >
-              <img src={layer1}></img>
+              <img src={layer1} style={{width:'140px'}}></img>
             </Box>
             <Box
               className="FooterIcon"

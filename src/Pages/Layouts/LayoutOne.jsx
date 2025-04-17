@@ -6,10 +6,10 @@ import Footer from "../../Components/Footer";
 import { Outlet } from "react-router-dom";
 import VideoIcon from "../../image/Group_1.png";
 import bannerImage from "../../image/bannerImage.webp";
-import HeroImage from '../../assets/heroSection.webp'
-import BannerReview1 from "../../image/banner_review1.png";
-import BannerReview2 from "../../image/banner_review2.png";
-import BannerReview3 from "../../image/banner_review3.png";
+import HeroImage from '../../assets/bannerIcons/banner_img2.svg'
+import BannerReview1 from "../../assets/bannerIcons/facebook_icon.svg";
+import BannerReview2 from "../../assets/bannerIcons/google_icon.svg";
+import BannerReview3 from "../../assets/bannerIcons/instagram_icon.svg";
 import CustomButton from "../../Components/Button";
 import { useLocation } from "react-router-dom";
 import ContactFormModal from "../../Components/ContactModal";
@@ -73,7 +73,7 @@ function LayoutOne() {
                     lineHeight: "1.3",
                   }}
                 >
-               Your One-Stop Hub Spot To Every Digital Solution !
+               Welcome to
                 </Typography>
                 {/* <Typography
                   sx={{
@@ -89,11 +89,23 @@ function LayoutOne() {
                   fontSize: { xs: "50px", md: "40px", xl: "90px" },
                   fontWeight: 700,
                   fontFamily: "satoshi",
-                  color: "#FFC800",
+                  color: "black",
                   lineHeight: "1.3",
                 }}
               >
-               Currently For Your Digital Business.
+              Patch Makers 
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "Inter",
+                  color: "#70D0D9",
+                  fontSize: { xs: "14px", md: "12px", xl: "43px" },
+                  lineHeight: { xs: "24px", xl: "56px" },
+                  fontWeight:'700'
+                }}
+              >
+          Bringing Your Designs to Life –
+          Digitizing, Vector Art & Customized Patches!
               </Typography>
               <Typography
                 sx={{
@@ -103,7 +115,7 @@ function LayoutOne() {
                   lineHeight: { xs: "24px", xl: "36px" },
                 }}
               >
-              Now become hassle free by handing over Brand Awareness of your company to our team as it will make sure to offer you, nonchalant assistance. Because our associates working at Mozack acknowledge the worth of your brand and are tread on the heels of “Working Smart Instead of Working Hard” 
+             We crafts bespoke patches and offers digitizing and vector art services. Elevate your style and brand with our personalized designs and expert craftsmanship. Let us bring your creative ideas to life. Discover the art of customization with Patch Makers today!
               </Typography>
               <Box
                 className="bannerButton"
@@ -129,39 +141,10 @@ function LayoutOne() {
                     textTransform: "capitalize",
                     width: "178px",
                   }}
-                  title="Get Started"
+                  title="Get Quote"
                   onClick={handleOpen}
                 />
-                <Box
-                  sx={{
-                    fontSize: "16px",
-                    fontFamily: "santoshi",
-                    display: "flex",
-                    justifyContent: {
-                      md: "center !important",
-                      sm: "center !important",
-                      xs: "center",
-                    },
-                    marginTop: { xs: "20px", md: "0px", sm: "20px" },
-                    alignItems: "center",
-                    marginLeft: { xs: "0", md: "10px" },
-                    padding: { xs: "10px 10px", xl: "20px 20px" },
-
-                    gap: "0.4rem",
-                  
-                    borderRadius:"8px",
-                    cursor:"pointer",
-                    ":hover":{
-                        color:"green",
-                        
-                        backgroundColor:"#e6e6e6"
-                    }
-                  }}
-                  onClick={()=> navigate('our-portfolio')}
-                >
-                  <img src={VideoIcon} alt="See Our Work" />
-                  See Our Work
-                </Box>
+               
               </Box>
               <Box
                 sx={{
@@ -219,7 +202,7 @@ function LayoutOne() {
                   />
                   <img
                     src={BannerReview3}
-                    style={{ width: "81.23px", height: "70.08px" }}
+                    style={{ width: "222.23px", height: "80.08px" }}
                   />
                   <img
                     src={BannerReview2}

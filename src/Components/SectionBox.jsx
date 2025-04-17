@@ -42,10 +42,24 @@ const SectionBox = ({
           // border:"2px solid red"
           
         }}
+        
         title="
-        Designers Pro Hub is synonymous with excellence and innovation. We combine creativity with technology to deliver digital solutions that are not only efficient but also scalable and sustainable. Our commitment to your growth makes us the global IT partner you can trust."
+       At Patch Makers, we don’t just create patches — we bring your vision to life with unmatched quality, creativity, and precision. Whether it's embroidered, PVC, sublimation, leather, or chenille, our custom patches are crafted to impress."
       />
-
+ <SectionPeragraph
+        sx={{
+          marginTop: {xl:'20px',md:"10px", xs:"20px"},
+          fontFamily:'Inter', 
+          fontSize: { xs: '14px',md:"12px", xl: '16px' }, 
+          lineHeight: {xs:"28px", md: '28px', xl: '28px' },
+          // border:"2px solid red"
+          
+        }}
+        
+        title="
+       With fast turnaround times, competitive pricing, and a dedicated team of expert digitizers and designers, we make the process easy and reliable. From concept to delivery, we’re committed to delivering top-notch service and exceptional results that elevate your brand or style.
+Choose Patch Makers — where quality meets creativity."
+      />
       {/* Custom Button */}
       <CustomButton
         title="Request A Quote"

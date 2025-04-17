@@ -201,7 +201,7 @@ const ContactForm = () => {
         padding: { xs: '20px', sm: '40px', md: '93px 0px 91px 0px !important' },
         borderRadius: { xs: '20px', md: '0px 20px 20px 0px' },
         flexBasis: { xs: '100%', md: '528px' }, // Adjust width for small screens
-        backgroundColor: '#FFC800',
+        backgroundColor: '#70D0D9',
         position: 'relative',
         marginBottom: { xs: '20px', md: '0' } // Space for mobile screens
       }}>

@@ -3,7 +3,7 @@ import { Box, Button, Typography } from '@mui/material'
 import CustomButton from './Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ImageWeb from "../image/ImageWeb.png"
-import SectionImage from "../image/SectionImage-min.webp"
+import SectionImage from "../image/design_develop.png"
 import ContactFormModal from './ContactModal'
 
 function DesignDevelop({title, content}) {
@@ -75,6 +75,11 @@ function DesignDevelop({title, content}) {
             color: "white",
             lineHeight: { xs: "40px", xl: "78.12px", md: "55px" },
             marginTop: { xs: "20px", md: "0" },
+            width:{
+              xl:'80%',
+              lg:'100%',
+              xs:'100%'
+            }
           }}
         >
          {title || `We design and develop outstanding Digital Products & digital-first
@@ -126,7 +131,7 @@ function DesignDevelop({title, content}) {
             }}
             onClick={() => handleOpen()}
             buttonIconBlack={true}
-            title="Get Started Now"
+            title="Get Quote Now"
           />
         </Box>
       </Box>

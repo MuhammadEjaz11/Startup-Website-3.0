@@ -267,16 +267,16 @@ export const technologiesCard = [
 export const services1 = [
     {
         iconURL: Frame1,
-        title: "Mobile App Development",
-        desc: "Transform your ideas into reality with our mobile app development service. Our expert developers create apps that offer seamless user experiences, are optimised for performance, and cater to your business needs.",
+        title: "Digitizing",
+        desc: "Digitizing is the essential process of converting any artwork, or design into a digital embroidery file that can be read and executed by an embroidery machine.",
         btnText: "Read More",
         btnURL:arrowHead,
         link: "/services/android-&-ios-app-development"
     },
     {
         iconURL: Frame2,
-        title: "Web Design",
-        desc: "Create a striking online presence with our web design services. We build websites that are visually appealing, user-friendly, and optimised for conversion, helping you to attract and retain customers.",
+        title: "Vector",
+        desc: "We convert your designs into clean, scalable vector files perfect for printing, embroidery, and more—maintaining sharpness at any size.",
         btnText: "Read More",
         btnURL:arrowHead,
         link: "/services/web-development"
@@ -285,8 +285,8 @@ export const services1 = [
     },
     {
         iconURL: Frame3,
-        title: "Logo Design",
-        desc: "Make your brand unforgettable with our logo design services. Our designers craft logos that capture the essence of your brand, creating a strong and lasting impression.",
+        title: "Customize Patches",
+        desc: "From embroidered to PVC, we craft patches tailored to your design, shape, and style—perfect for brands, teams, and personal expression.",
         btnText: "Read More",
         btnURL:arrowHead,
         link: "/services/graphic-design",
@@ -296,8 +296,8 @@ export const services1 = [
     },
     {
         iconURL: Frame4,
-        title: "Video Animation",
-        desc: "Engage your audience with compelling video animations. Our creative team produces animations that tell your brand’s story in an innovative and effective way.",
+        title: "Graphic Designing",
+        desc: "Creative visuals that communicate your message clearly—from logos and branding to marketing materials.",
         btnText: "Read More",
         btnURL:arrowHead,
         link: "/services/video-animation",
@@ -306,8 +306,8 @@ export const services1 = [
     },
     {
         iconURL: Frame5,
-        title: "SEO",
-        desc: "Increase your visibility and drive more traffic to your site with our SEO services. We use the latest strategies and techniques to improve your rankings and boost your online presence.",
+        title: "Web Design",
+        desc: "Modern, responsive websites designed to reflect your brand and provide a seamless user experience.",
         btnText: "Read More",
         btnURL:arrowHead,
         link: "/services/search-engine-optimization-(SEO)",
@@ -316,8 +316,8 @@ export const services1 = [
     },
     {
         iconURL: Frame6,
-        title: "Digital Marketing",
-        desc: "Amplify your reach and enhance your digital engagement with our comprehensive digital marketing services. From social media campaigns to email marketing, we cover all aspects to ensure your brand stands out.",
+        title: "Promotional Product",
+        desc: "Custom-branded items like mugs, t-shirts, pens, and more to help you market your business in style.",
         btnText: "Read More",
         btnURL:arrowHead,
         link: "/services/digital-marketing",

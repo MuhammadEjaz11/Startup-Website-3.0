@@ -3,26 +3,26 @@ import { Box, Typography, Tabs, Tab } from "@mui/material";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
-import tech1 from "../image/css.svg.png"
-import tech2 from "../image/javascript.svg.png"
-import tech3 from "../image/vue.svg.png"
-import tech4 from "../image/react.svg.png"
-import tech5 from "../image/d3.svg.png"
-import tech6 from "../image/typescript.svg.png"
-import tech7 from "../image/angular.svg.png"
-import tech8 from "../image/jquery.svg.png"
+import tech1 from "../image/AI.svg"
+import tech2 from "../image/corel.svg"
+import tech3 from "../image/dg pulse.svg"
+import tech4 from "../image/figma.svg"
+import tech5 from "../image/Pr.svg"
+import tech6 from "../image/Ps.svg"
+import tech7 from "../image/tajima.svg"
+import tech8 from "../image/wilcone.svg"
 import StyledHeading from "./StyledHeading";
 
 // Arrays for skills within the same component
 const frontend = [
-  { image: tech1, type: "CSS" },
-  { image: tech2, type: "JavaScript" },
-  { image: tech3, type: "Vue Js" },
-  { image: tech4, type: "React Js" },
-  { image: tech5, type: "Angular Js" },
-  { image: tech6, type: "D3 Js" },
-  { image: tech7, type: "JQuery" },
-  { image: tech8, type: "TypeScript" },
+  { image: tech1, type: "Ai" },
+  { image: tech2, type: "Corel" },
+  { image: tech3, type: "DG Pulse" },
+  { image: tech4, type: "Figma" },
+  { image: tech5, type: "Pr" },
+  { image: tech6, type: "Ps" },
+  { image: tech7, type: "Tajima" },
+  { image: tech8, type: "Wilcone" },
 ];
 
 const backend = [
@@ -186,7 +186,7 @@ const TecgnologiesComponent = ({ title, heading1, heading2, content, content2 })
       </Box>
 
       {/* Tabs for selecting different skill categories */}
-      <Box
+      {/* <Box
         sx={{
           margin: "0 auto",
           paddingX: { lg: "20px", md: "20px", xs: "20px" },
@@ -219,10 +219,10 @@ const TecgnologiesComponent = ({ title, heading1, heading2, content, content2 })
             sx={tabStyles(tab === "Database")}
           />
         </Tabs>
-      </Box>
+      </Box> */}
 
       {/* Carousel for the selected tab */}
-      <Box ref={sliderRef} className="keen-slider" swiping={false}>
+      <Box sx={{mt:'40px'}} ref={sliderRef} className="keen-slider" swiping={false}>
         {data.map((item, index) => (
           <Box
             key={index}
