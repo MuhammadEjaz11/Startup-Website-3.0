@@ -146,32 +146,74 @@ const SecondFaq = [
 const serviceApp = [
   {
     image: image1,
-    title: "Native App Development",
-    desc: "Boost your business with high-performance native mobile apps for iOS and Android, offering superior speed, scalability, platform-specific design, and offline functionality.",
+    title: "3D Puff Digitizing",
+    desc: "The process of converting artwork or logos into a digital embroidery file that can be read by embroidery machines, ensuring accurate stitching and high-quality results.",
   },
   {
     image: image2,
-    title: "Hybrid App Development",
-    desc: "Combine the best of both worlds with hybrid app development for seamless cross-platform performance. Our solutions offer cost-efficiency, faster time-to-market, and consistent user experience using React Native, Flutter, and Ionic.",
+    title: "Chenille Digitizing",
+    desc: "A specialized form of digitizing that creates bold, looped textures using chenille stitches—perfect for varsity jackets, fashionwear, and statement patches.",
   },
   {
     image: image3,
-    title: "Cross Platform App",
-    desc: "Mozack’s expert developers use the latest technologies to create apps with a single codebase, faster development, and wider reach—ideal for startups, SMEs, and businesses seeking cost-effective solutions.",
+    title: "Applique Digitizing",
+    desc: "This involves mapping out fabric areas within the embroidery design, allowing different fabrics to be stitched onto the base material—ideal for bold, layered looks and reduced stitch density.",
   },
   {
     image: image4,
-    title: "Progressive Web App",
-    desc: "Offer a seamless app-like experience on the web with Progressive Web Apps. PWAs combine the best features of web and mobile apps, delivering fast loading times, offline functionality, and cross-browser compatibility. With the aid of these compatible services complied by our developers you can receive the Key Benefits such as Improved SEO, inactive usability, high-speed performance, and low priced development. Above stated advantages sets perfect conditions for your Businesses, looking forward to increasing the experiences of the user interface and reach.",
+    title: "PXF Digitizing",
+    desc: "PXF is a file format used by Pulse embroidery software. PXF digitizing ensures designs are created or saved in this format for seamless use in compatible machines and advanced editing.",
   },
-  // {
-  //   image: image4,
-  //   title: "Custom Mobile App",
-  //   desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text",
-  // },
+
 ];
 
+const serviceApp2 = [
+  {
+    image: image1,
+    title: "Caps/Hats Digitizing",
+    desc: "Small-sized logo digitizing optimized for the left chest area of shirts, polos, and uniforms—focused on clarity and precision in limited space.",
+  },
+  {
+    image: image2,
+    title: "Left Chest Digitizing",
+    desc: "Digitizing made for curved surfaces like caps and hats, using special stitch techniques to maintain design quality and alignment during embroidery",
+  },
+  {
+    image: image3,
+    title: "Jackets Back Digitizing",
+    desc: "Large, bold designs specially digitized for the back of jackets, ensuring clean stitching, proper scaling, and eye-catching detail on thicker fabrics.",
+  },
+  {
+    image: image4,
+    title: "Animal Digitizing",
+    desc: "High-detail digitizing that captures the textures, expressions, and features of animals, perfect for custom wildlife logos, mascots, or pet portraits.",
+  },
 
+];
+
+const serviceApp3 = [
+  {
+    image: image1,
+    title: "Portrait Digitizing",
+    desc: "Small-sized logo digitizing optimized for the left chest area of shirts, polos, and uniforms—focused on clarity and precision in limited space.",
+  },
+  {
+    image: image2,
+    title: "Pet & Animal Digitizing",
+    desc: "Digitizing made for curved surfaces like caps and hats, using special stitch techniques to maintain design quality and alignment during embroidery",
+  },
+  {
+    image: image3,
+    title: "Small Text",
+    desc: "Large, bold designs specially digitized for the back of jackets, ensuring clean stitching, proper scaling, and eye-catching detail on thicker fabrics.",
+  },
+  {
+    image: image4,
+    title: "Embroidery Digitizing",
+    desc: "High-detail digitizing that captures the textures, expressions, and features of animals, perfect for custom wildlife logos, mascots, or pet portraits.",
+  },
+
+];
 
 
 
@@ -187,12 +229,12 @@ const appDevList = [
 const AppDevelopment = () => {
   const [visibleItems, setVisibleItems] = useState(appDevList.slice(0, 4)); // Initial items to show
 
-  useEffect(()=>{
-    const scrollTo = () => {
-      scroll.scrollTo(0);
-    };
-    scrollTo()
-  },[])
+  // useEffect(()=>{
+  //   const scrollTo = () => {
+  //     scroll.scrollTo(0);
+  //   };
+  //   scrollTo()
+  // },[])
 
   const loadMoreItems = () => {
     const newItems = [
@@ -209,16 +251,22 @@ const AppDevelopment = () => {
   };
 
   const faqData = [
-    { id: 1, 
-      question: " How long does it take to develop a mobile app?", 
-      answer: "App development timelines vary, but typically range from 3 to 12 months based on complexity and features." },
-    { id: 2, 
-      question: "Do you offer post-launch app maintenance?", 
-      answer: "Yes! Mozack provides ongoing support, updates, and performance optimization." },
-    { id: 3, 
-      question: "Can you develop apps for both Android and iOS?", 
-      answer: " Absolutely. We build native apps (Android & iOS) and cross-platform solutions for broader reach." },
-     
+    {
+      id: 1,
+      question: " How long does it take to develop a mobile app?",
+      answer: "App development timelines vary, but typically range from 3 to 12 months based on complexity and features."
+    },
+    {
+      id: 2,
+      question: "Do you offer post-launch app maintenance?",
+      answer: "Yes! Mozack provides ongoing support, updates, and performance optimization."
+    },
+    {
+      id: 3,
+      question: "Can you develop apps for both Android and iOS?",
+      answer: " Absolutely. We build native apps (Android & iOS) and cross-platform solutions for broader reach."
+    },
+
   ];
   const handleClick = () => {
     loadMoreItems();
@@ -330,6 +378,177 @@ const AppDevelopment = () => {
 
         <Box
           sx={{
+            mt: "140px",
+            display: "flex",
+            justifyContent: {
+              md: "space-between",
+              xs: "center",
+            },
+            gap: "15px",
+            flexDirection: {
+              md: "row",
+              xs: "column",
+            },
+            alignItems: "center",
+          }}
+        >
+          <ServicesCard
+            style={{
+              boxShadow: "0px 31px 62.2px -12px rgba(0, 0, 0, 0.08)",
+              maxWidth: "330px !important",
+              borderRadius: "15px",
+              flexBasis: "25%",
+              flexShrink: "1",
+              marginTop: {
+                md: "-50px",
+                xs: "0px",
+              },
+              p: { xs: "10px", md: "30px" },
+
+            }}
+            iconURL={serviceApp[0].image}
+            title={serviceApp[0].title}
+            desc={serviceApp[0].desc}
+            image={true}
+          />
+          <ServicesCard
+            style={{
+              boxShadow: "0px 31px 62.2px -12px rgba(0, 0, 0, 0.08)",
+              maxWidth: "330px !important",
+              borderRadius: "15px",
+              flexBasis: "25%",
+              flexShrink: "1",
+              width: "85%",
+
+            }}
+            iconURL={serviceApp[1].image}
+            title={serviceApp[1].title}
+            desc={serviceApp[0].desc}
+            image={true}
+          />
+          <ServicesCard
+            style={{
+              boxShadow: "0px 31px 62.2px -12px rgba(0, 0, 0, 0.08)",
+              maxWidth: "330px !important",
+              borderRadius: "15px",
+              flexBasis: "25%",
+              flexShrink: "1",
+              width: "85%",
+              marginTop: {
+                md: "-50px",
+                xs: "0px",
+              },
+            }}
+            iconURL={serviceApp[2].image}
+            title={serviceApp[2].title}
+            desc={serviceApp[0].desc}
+            image={true}
+          />
+          <ServicesCard
+            style={{
+              boxShadow: "0px 31px 62.2px -12px rgba(0, 0, 0, 0.08)",
+              maxWidth: "330px !important",
+              borderRadius: "15px",
+              flexBasis: "25%",
+              flexShrink: "1",
+              width: "85%",
+
+            }}
+            iconURL={serviceApp[3].image}
+            title={serviceApp[3].title}
+            desc={serviceApp[0].desc}
+            image={true}
+          />
+        </Box>
+
+
+        <Box
+          sx={{
+            mt: "140px",
+            display: "flex",
+            justifyContent: {
+              md: "space-between",
+              xs: "center",
+            },
+            gap: "15px",
+            flexDirection: {
+              md: "row",
+              xs: "column",
+            },
+            alignItems: "center",
+          }}
+        >
+          <ServicesCard
+            style={{
+              boxShadow: "0px 31px 62.2px -12px rgba(0, 0, 0, 0.08)",
+              maxWidth: "330px !important",
+              borderRadius: "15px",
+              flexBasis: "25%",
+              flexShrink: "1",
+              marginTop: {
+                md: "-50px",
+                xs: "0px",
+              },
+              p: { xs: "10px", md: "30px" },
+
+            }}
+            iconURL={serviceApp[0].image}
+            title={serviceApp[0].title}
+            desc={serviceApp[0].desc}
+            image={true}
+          />
+          <ServicesCard
+            style={{
+              boxShadow: "0px 31px 62.2px -12px rgba(0, 0, 0, 0.08)",
+              maxWidth: "330px !important",
+              borderRadius: "15px",
+              flexBasis: "25%",
+              flexShrink: "1",
+              width: "85%",
+
+            }}
+            iconURL={serviceApp[1].image}
+            title={serviceApp[1].title}
+            desc={serviceApp[0].desc}
+            image={true}
+          />
+          <ServicesCard
+            style={{
+              boxShadow: "0px 31px 62.2px -12px rgba(0, 0, 0, 0.08)",
+              maxWidth: "330px !important",
+              borderRadius: "15px",
+              flexBasis: "25%",
+              flexShrink: "1",
+              width: "85%",
+              marginTop: {
+                md: "-50px",
+                xs: "0px",
+              },
+            }}
+            iconURL={serviceApp[2].image}
+            title={serviceApp[2].title}
+            desc={serviceApp[0].desc}
+            image={true}
+          />
+          <ServicesCard
+            style={{
+              boxShadow: "0px 31px 62.2px -12px rgba(0, 0, 0, 0.08)",
+              maxWidth: "330px !important",
+              borderRadius: "15px",
+              flexBasis: "25%",
+              flexShrink: "1",
+              width: "85%",
+
+            }}
+            iconURL={serviceApp[3].image}
+            title={serviceApp[3].title}
+            desc={serviceApp[0].desc}
+            image={true}
+          />
+        </Box>
+
+        {/* <Box
+          sx={{
             mt: "140px"
           }}
         >
@@ -339,7 +558,7 @@ const AppDevelopment = () => {
             heading2={"Development Technologies "}
           />
 
-        </Box>
+        </Box> */}
 
 
 
@@ -392,7 +611,7 @@ const AppDevelopment = () => {
                 }}
               >
                 <ServicesCard
-                  desc="At Mozack, our solution process is meticulously designed to provide our clients with seamless, efficient, and scalable solutions. From idea generation to implementation, every step is tailored to ensure your business objectives are met with precision and innovation. Here’s how we transform your vision into a powerful reality."
+                  desc="We begin by receiving your artwork or logo and reviewing the design details. Our expert digitizers then convert it into a precise embroidery file using professional software. Every stitch, shape, and color is carefully programmed for the best quality. Once completed, the file is tested for accuracy and emailed to you in your desired format—usually within 2 to 4 hours!"
                   iconURL=""
                   image={false}
                   style={{
@@ -405,10 +624,10 @@ const AppDevelopment = () => {
                 />
 
                 <ServicesCard
-                  desc="We begin with a comprehensive discovery and consultation phase, where we delve deep into understanding your business goals, challenges, and expectations. By identifying key requirements, market trends, and user needs, we lay the foundation for a well-defined strategy. Our experts work closely with you to craft a roadmap that aligns with your objectives in order to achieve the In-depth analysis of business requirements, Identification of pain points and opportunities and the strategic recommendations for your businesses."
+                  desc="Send us your artwork or logo in any format—JPG, PNG, PDF, or even a sketch!"
                   iconURL={sol1}
                   image={true}
-                  title="Discovery and Consultation"
+                  title="Submit Your Design"
                   style={{
                     borderRight: "none",
                     borderTop: "1px solid #F1F1F1",
@@ -421,10 +640,10 @@ const AppDevelopment = () => {
                   }}
                 />
                 <ServicesCard
-                  desc="The design and architecture phase focuses on creating intuitive, visually appealing, and functional solutions. From wireframes to prototypes, our UI/UX experts ensure that your platform offers a seamless user experience. Our architectural design emphasizes scalability, security, and performance by the acquaintance of user-centric designs for an enhanced experience. Our developers make sure to provide the clients with the Scalable and secure architecture planning along with the Wireframes, prototypes, and user flow diagrams"
+                  desc="We’ll digitize your design and share a preview with you for approval. Revisions? No problem!"
                   iconURL={sol2}
                   image={true}
-                  title="Design and Architecture"
+                  title="Get Approval"
                   style={{
                     borderRight: "none",
                     borderTop: "1px solid #F1F1F1",
@@ -437,10 +656,10 @@ const AppDevelopment = () => {
                   }}
                 />
                 <ServicesCard
-                  desc="In the development stage, our skilled team of developers brings your vision to life. Leveraging cutting-edge technologies and agile development practices, we ensure that your solution is robust, efficient, and future-ready. Throughout the process, we provide regular updates to keep you informed of progress so that your custom designed developmental needs are tailored accordingly. Feature-driven development (FDD)  is also accompanied by our tech scientists for faster delivery and adaptability."
+                  desc="Once approved, we deliver the final embroidery file in your preferred format—fast, ready, and stitch-perfect"
                   iconURL={sol3}
                   image={true}
-                  title="Development"
+                  title="Delivery"
                   style={{
                     borderRight: "none",
                     borderTop: "1px solid #F1F1F1",
@@ -452,26 +671,12 @@ const AppDevelopment = () => {
                     // borderBottom:"1px solid #F1F1F1" ,
                   }}
                 />
-                <ServicesCard
-                  desc="The final phase is also the documentation and launching of the apps, where we ensure everything is set for a smooth rollout. Our team provides detailed technical documentation and user guides to simplify maintenance and scalability of teh applications. Post-launch, we offer continuous support and optimization to keep your solution performing at its peak."
-                  iconURL={sol4}
-                  image={true}
-                  title="Documentation & Launch"
-                  style={{
-                    borderRight: "none",
-                    borderTop: "1px solid #F1F1F1",
-                    m: { md: "0px 40px", xs: '0px 10px' },
-                    p: "30px 0px",
 
-
-
-                    // borderBottom:"1px solid #F1F1F1" ,
-                  }}
-                />
               </Box>
             </Box>
           </Box>
         </Box>
+        <br />
 
         {/* Our Portfolio section at app development */}
 
@@ -523,7 +728,7 @@ const AppDevelopment = () => {
         </Carousel>
       </Box> */}
 
-        <Box
+        {/* <Box
           sx={{
             mt: "80px",
             mb: "120px",
@@ -569,7 +774,7 @@ const AppDevelopment = () => {
 
             />
           </Box>
-        </Box>
+        </Box> */}
 
 
         {/* image with background and text full width
@@ -675,12 +880,12 @@ const AppDevelopment = () => {
         </Box>
       </Box> */}
 
-        <DesignDevelop 
+        {/* <DesignDevelop 
         title={`Pioneering Digital Product Design and Development for Modern Brands
 `}
 content={`At Mozack, we transform visionary ideas into remarkable digital products that inspire and engage. Our holistic approach to design and development ensures that every solution we deliver is not only visually stunning but also highly functional, user-friendly, and tailored to meet your business goals.`}
-        />
-        <Box sx={{
+        /> */}
+        {/* <Box sx={{
           mt: { md: "130px", xs: "60px", sm: "60px" },
           mb: { md: "130px", xs: "60px", sm: "60px" },
         }}
@@ -711,11 +916,11 @@ content={`At Mozack, we transform visionary ideas into remarkable digital produc
             ]}
             content3={`Start your journey with Mozack today and redefine how your audience interacts with your digital products. Contact us now to discuss your project and unlock unparalleled possibilities.`}
           />
-        </Box>
+        </Box> */}
 
         {/* key aspects of mobile app dev */}
 
-        <Box sx={{
+        {/* <Box sx={{
           mt: "90px",
         }}
         >
@@ -727,19 +932,19 @@ content={`At Mozack, we transform visionary ideas into remarkable digital produc
             title2="Mobile App Development"
             title3="You Should Know"
           />
-        </Box>
-        <Box
+        </Box> */}
+        {/* <Box
 
           sx={{
             mt: "30px"
           }}
         >
           <Typography sx={{ color: "#939393", fontSize: { xl: "16px", md: "14px", xs: "16px" }, lineHeight: "36px" }} >
-          In today's fast-paced digital world, mobile app development has become a cornerstone for businesses looking to thrive. From creating seamless user experiences to adopting the latest technological trends, mobile apps are transforming industries across the globe. Below are the key aspects of mobile app development you should be aware of:
+            In today's fast-paced digital world, mobile app development has become a cornerstone for businesses looking to thrive. From creating seamless user experiences to adopting the latest technological trends, mobile apps are transforming industries across the globe. Below are the key aspects of mobile app development you should be aware of:
           </Typography>
 
-        </Box>
-        <Box
+        </Box> */}
+        {/* <Box
           sx={{
             mt: "60px"
             ,
@@ -747,12 +952,12 @@ content={`At Mozack, we transform visionary ideas into remarkable digital produc
           }}
         >
           <Questions questions={appDevQuestions} />
-        </Box>
+        </Box> */}
 
 
         {/* {Cost Of Mobile App Development} */}
 
-        <MobileAppDevelopmentCost />
+        {/* <MobileAppDevelopmentCost /> */}
 
         {/* here two sections will be made */}
 
@@ -760,7 +965,7 @@ content={`At Mozack, we transform visionary ideas into remarkable digital produc
           paddingTop: { md: '130px', sm: '40px', xs: '40px' },
           padding: { sm: '40px 0px', xs: '40px 0px' },
         }}>
-          <StyledHeading title1="Industries" title2="We Serve" styledSx={{
+          <StyledHeading title1="Service a Multitude of" title2=" Industries, Exceptionally" styledSx={{
             justifyContent: "start",
             paddingBottom: { md: "60px", sm: "40px", xs: "40px" },
           }}
@@ -829,41 +1034,7 @@ content={`At Mozack, we transform visionary ideas into remarkable digital produc
             ))}
 
           </Box>
-          <Box
-            sx={{
-              display: { md: "flex", sm: "block" },
-
-              // m: "0 auto",
-              // paddingTop: {md:"60px", sm:"40px"},
-
-            }}
-          >
-            {ServiceIcon3.map((item, index) => (
-              <ServiceIconBox
-                btnText={false}
-                btnURL={false}
-                key={index}
-                style={{
-                  flexBasis: "20%",
-                  borderRight: { md: index < 4 && "1px solid #F1F1F1", xs: "none" },
-                  // paddingBottom:{ sm:"40px", xs:"40px"},
-                  borderBottom: "1px solid #F1F1F1",
-                  flexShrink: "1",
-                  flexGrow: "1",
-                  borderBottom: "none !important"
-
-
-                }}
-                index={index}
-                iconURL={item?.iconURL}
-                title={item?.title}
-                sx1={{
-
-                }}
-              />
-            ))}
-
-          </Box>
+          
         </Box>
 
 
@@ -876,14 +1047,14 @@ content={`At Mozack, we transform visionary ideas into remarkable digital produc
           id="faqs"
         >
           < StyledHeading title1='frequently' title2=' asked questions' />
-          <FAQ 
-          faqData={faqData}
+          <FAQ
+            faqData={faqData}
           />
         </Box>
 
 
         {/* now our latest articles and blogs */}
-        <Box sx={{
+        {/* <Box sx={{
           mt: "70px",
           padding: { md: "0px 0px", xs: "0px 0px" },
           // m:"auto"
@@ -893,9 +1064,9 @@ content={`At Mozack, we transform visionary ideas into remarkable digital produc
           < StyledHeading title1='Our latest news &' title2='articles from the blog' sx={{
             display: 'block'
           }} />
-          
+
           <BlogSlider blogData={blogData} />
-        </Box>
+        </Box> */}
 
 
 
@@ -905,13 +1076,8 @@ content={`At Mozack, we transform visionary ideas into remarkable digital produc
           padding: { md: "0px 0px", xs: "0px 0px" },
         }} >
 
-          < StyledHeading title1='Frequently ' title2='Asked Questions' sx={{
-            display: 'flex',
-            marginBottom: '69px',
-
-
-          }} />
-          <Box
+        
+          {/* <Box
             sx={{
               overflow: { xs: "hidden", xl: "visible" },
 
@@ -919,7 +1085,7 @@ content={`At Mozack, we transform visionary ideas into remarkable digital produc
           >
             <SecondFAQSlider data={SecondFaq} />
 
-          </Box>
+          </Box> */}
 
         </Box>
         <Box>

@@ -4,7 +4,7 @@ import { Carousel } from "@trendyol-js/react-carousel";
 import SectionHeading from "../../Components/SectionHeading";
 import DesignDevelop from "../../Components/DesignDevelop";
 import SectionBox from "../../Components/SectionBox";
-import ideaImage from "../../image/idea-01.png";
+import ideaImage from "../../image/idea-01.svg";
 import aboutImage from "../../image/aboutImage.webp";
 import groupOne from "../../assets/about/cotton.svg";
 import groupTwo from "../../image/groupTwo.png";
@@ -41,7 +41,7 @@ import workingTwo from "../../image/workingTwo.png";
 import workingThree from "../../image/workingThree.png";
 import workingFour from "../../image/workingFour.png";
 import workingArrow from "../../image/workingArrow.png";
-import bestChoice from "../../image/bestChoice.png";
+import bestChoice from "../../image/best-choice.svg";
 import { Tabs } from "@mui/material";
 import { Tab } from "@mui/material";
 import "keen-slider/keen-slider.min.css";
@@ -81,7 +81,7 @@ import BlogThree from '../../image/blog3.webp';
 import { Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 
-const blogData= [
+const blogData = [
   {
     id: 1,
     title: "How Agencies Puts Your Audience First",
@@ -129,7 +129,7 @@ const Home = () => {
   //   scrollTo()
   // },[])
 
-const SecondFaq = [
+  const SecondFaq = [
     {
       id: 1,
       title: 'Experience & Excellence',
@@ -157,18 +157,26 @@ const SecondFaq = [
   ]
 
   const faqData = [
-    { id: 1, 
-      question: "Why does Mozack occupy one of the leading ranks among the American companies that offer app development?", 
-      answer: "About Mozack Being the best USA app development company, Mozack is distinguished by vast experience, creativity, and the ability to design and implement applications that help businesses evolve." },
-    { id: 2, 
-      question: "What strategies did Mozack use to guarantee the success of its app development projects?", 
-      answer: " Regarded as the best IT solutions provider since we adopt a client approach, at Mozack, we harness and apply the updated technologies and flowing momentum in project handling in delivering successful projects on time with positive returns that are inline with your business principles." },
-    { id: 3, 
-      question: " Mozack is a startup app development company, so it specialises in certain industries only?", 
-      answer: "Healthcare Mozack has developed healthcare customs applications cutting across the health sector, finance Mozack has offered customised financial applications for the finance sector, retail Mozack has offered apps for the retail sector, and e-commerce Mozack has also given e-commerce apps in line with the sector." },
-      { id: 4, 
-        question: "After an app has been successfully launched, does Mozack help with application support and development?", 
-        answer: "Yes, Mozack gives detailed after-launch support and upkeep to ensure that your app remains functional, safe, and optimised with the new advances in technology and user requirement." },
+    {
+      id: 1,
+      question: "Why does Mozack occupy one of the leading ranks among the American companies that offer app development?",
+      answer: "About Mozack Being the best USA app development company, Mozack is distinguished by vast experience, creativity, and the ability to design and implement applications that help businesses evolve."
+    },
+    {
+      id: 2,
+      question: "What strategies did Mozack use to guarantee the success of its app development projects?",
+      answer: " Regarded as the best IT solutions provider since we adopt a client approach, at Mozack, we harness and apply the updated technologies and flowing momentum in project handling in delivering successful projects on time with positive returns that are inline with your business principles."
+    },
+    {
+      id: 3,
+      question: " Mozack is a startup app development company, so it specialises in certain industries only?",
+      answer: "Healthcare Mozack has developed healthcare customs applications cutting across the health sector, finance Mozack has offered customised financial applications for the finance sector, retail Mozack has offered apps for the retail sector, and e-commerce Mozack has also given e-commerce apps in line with the sector."
+    },
+    {
+      id: 4,
+      question: "After an app has been successfully launched, does Mozack help with application support and development?",
+      answer: "Yes, Mozack gives detailed after-launch support and upkeep to ensure that your app remains functional, safe, and optimised with the new advances in technology and user requirement."
+    },
   ];
 
   const [sliderRef] = useKeenSlider({
@@ -208,14 +216,14 @@ const SecondFaq = [
           <StyledHeading title1="About" title2="Us" />
           <Typography
             sx={{
-              color: "#939393", 
+              color: "#939393",
               fontFamily: "Inter",
-              lineHeight: {xl:"36px", md:"25px", xs:"22px"},
+              lineHeight: { xl: "36px", md: "25px", xs: "22px" },
 
               fontSize: {
                 md: "13px",
                 xl: "16px",
-               
+
                 sm: "14px",
                 xs: "14px",
               },
@@ -223,15 +231,15 @@ const SecondFaq = [
               marginTop: "40px !Important",
             }}
           >
-          For years, Patch Makers has been the trusted name in custom patches, digitizing, and vector art services. Our legacy of quality craftsmanship and personalized designs has set us apart as industry leaders. With a dedicated team and a commitment to exceeding expectations, we bring your ideas to life with precision and passion. Join our long-standing tradition of excellence and discover the art of customization with Us
+            For years, Patch Makers has been the trusted name in custom patches, digitizing, and vector art services. Our legacy of quality craftsmanship and personalized designs has set us apart as industry leaders. With a dedicated team and a commitment to exceeding expectations, we bring your ideas to life with precision and passion. Join our long-standing tradition of excellence and discover the art of customization with Us
           </Typography>
           <Box
             className="ourMission"
             sx={{
               display: "flex",
-              justifyContent: "space-between",
+              justifyContent: "start",
               marginTop: "40px",
-              flexDirection: { xs: "column", sm: "row" },
+              flexDirection: { xs: "column", sm: "row" }, gap: '1rem'
             }}
           >
             <Box className="missionImage">
@@ -250,26 +258,66 @@ const SecondFaq = [
                   fontFamily: "satoshi",
                 }}
               >
-                Our Mission
+                Why Choose us?
               </Typography>
-              <Typography
+              <Box
                 sx={{
                   fontFamily: "Inter",
                   color: "#939393",
                   fontWeight: 400,
-                  lineHeight: {xl:"36px", md:"25px", xs:"22px"},
+                  lineHeight: { xl: "36px", md: "25px", xs: "22px" },
                   fontSize: {
                     md: "13px",
                     xl: "16px",
-                   
+
                     sm: "14px",
                     xs: "14px",
                   },
-                  textAlign: { sm: "left", xs: "left" },
+                  display: "flex",
+                  gap: "42px"
                 }}
               >
-               A comprehensible mission is to carry through the top-notch marketing and design services digitally which is adjusted to fulfil the needs of the business accordingly. The focus lies within the boosted online presence, the increased user engagement, and driven up revenue. 
-              </Typography>
+                <Box>
+                  <ul  >
+                    <li style={{
+                      fontWeight: "400 !important", fontSize: '16px', fontFamily: "Inter",
+
+                    }} >Free Quote & Mockups</li>
+                    <li style={{
+                      fontWeight: "400 !important", fontSize: '16px', fontFamily: "Inter",
+
+                    }}>Customizable Options</li>
+                    <li style={{
+                      fontWeight: "400 !important", fontSize: '16px', fontFamily: "Inter",
+
+                    }} >Fast and Reliable Shipping</li>
+                    <li style={{
+                      fontWeight: "400 !important", fontSize: '16px', fontFamily: "Inter",
+
+                    }}>Durable backing options</li>
+                  </ul>
+                </Box>
+                <Box>
+                  <ul  >
+                    <li style={{
+                      fontWeight: "400 !important", fontSize: '16px', fontFamily: "Inter",
+
+                    }} >Free Quote & Mockups</li>
+                    <li style={{
+                      fontWeight: "400 !important", fontSize: '16px', fontFamily: "Inter",
+
+                    }}>Customizable Options</li>
+                    <li style={{
+                      fontWeight: "400 !important", fontSize: '16px', fontFamily: "Inter",
+
+                    }} >Fast and Reliable Shipping</li>
+                    <li style={{
+                      fontWeight: "400 !important", fontSize: '16px', fontFamily: "Inter",
+
+                    }}>Durable backing options</li>
+                  </ul>
+                </Box>
+              </Box>
             </Box>
           </Box>
         </Box>
@@ -285,7 +333,7 @@ const SecondFaq = [
           <Box>
             <img src={groupOne} alt="About Us" style={{ width: "100%" }} />
           </Box>
-       
+
         </Box>
       </Box>
 
@@ -365,8 +413,8 @@ const SecondFaq = [
       {/* <AwardsSlider /> */}
 
       <DesignDevelop
-      content={`Patch Makers specializes in creating custom patches with expert digitizing and vector art services. Whether for style or branding, our personalized designs and skilled craftsmanship bring your ideas to life. Discover the power of customization with us today!`}
-      title={`We design and manufacture premium custom patches — from Embroidered to PVC, Sublimation, Leather & Chenille`}
+        content={`Patch Makers specializes in creating custom patches with expert digitizing and vector art services. Whether for style or branding, our personalized designs and skilled craftsmanship bring your ideas to life. Discover the power of customization with us today!`}
+        title={`We design and manufacture premium custom patches — from Embroidered to PVC, Sublimation, Leather & Chenille`}
       />
 
       {/* our services */}
@@ -412,7 +460,7 @@ const SecondFaq = [
               flexShrink: "1",
               flexGrow: "1",
             }}
-            index={index}png
+            index={index} png
             title={item?.title}
             desc={item?.desc}
             btnText={item?.btnText}
@@ -653,16 +701,16 @@ const SecondFaq = [
             >
               <img src={work2} />
               <Box
-      component="img"
-      src={workingArrow}  
-      sx={{
-        width: "42.29px",
-        height: "26.43px",
-        display: "flex",
-        alignItems: "center",
-        transform: {md: 'rotate(0deg)', xs:'rotate(90deg)'},
-      }}
-    />
+                component="img"
+                src={workingArrow}
+                sx={{
+                  width: "42.29px",
+                  height: "26.43px",
+                  display: "flex",
+                  alignItems: "center",
+                  transform: { md: 'rotate(0deg)', xs: 'rotate(90deg)' },
+                }}
+              />
             </Box>
             <SectionHeading ourworkTitle="Concept"></SectionHeading>
             <Typography
@@ -674,7 +722,7 @@ const SecondFaq = [
                 fontWeight: 400,
               }}
             >
-            We start by understanding your vision and ideas to create a unique patch that perfectly fits your brand or style.
+              We start by understanding your vision and ideas to create a unique patch that perfectly fits your brand or style.
             </Typography>
           </Box>
 
@@ -697,16 +745,16 @@ const SecondFaq = [
             >
               <img src={work1} />
               <Box
-      component="img"
-      src={workingArrow}  
-      sx={{
-        width: "42.29px",
-        height: "26.43px",
-        display: "flex",
-        alignItems: "center",
-        transform: {md: 'rotate(0deg)', xs:'rotate(90deg)'},
-      }}
-    />
+                component="img"
+                src={workingArrow}
+                sx={{
+                  width: "42.29px",
+                  height: "26.43px",
+                  display: "flex",
+                  alignItems: "center",
+                  transform: { md: 'rotate(0deg)', xs: 'rotate(90deg)' },
+                }}
+              />
             </Box>
             <SectionHeading ourworkTitle="Design"></SectionHeading>
             <Typography
@@ -740,16 +788,16 @@ const SecondFaq = [
             >
               <img src={work3} />
               <Box
-      component="img"
-      src={workingArrow}  
-      sx={{
-        width: "42.29px",
-        height: "26.43px",
-        display: "flex",
-        alignItems: "center",
-        transform: {md: 'rotate(0deg)', xs:'rotate(90deg)'},
-      }}
-    />
+                component="img"
+                src={workingArrow}
+                sx={{
+                  width: "42.29px",
+                  height: "26.43px",
+                  display: "flex",
+                  alignItems: "center",
+                  transform: { md: 'rotate(0deg)', xs: 'rotate(90deg)' },
+                }}
+              />
             </Box>
             <SectionHeading ourworkTitle="Manufacture"></SectionHeading>
             <Typography
@@ -761,13 +809,13 @@ const SecondFaq = [
                 fontWeight: 400,
               }}
             >
-             With precision and care, we craft your custom patches using high-quality materials — embroidered, PVC, sublimation, chenille, or leather.
+              With precision and care, we craft your custom patches using high-quality materials — embroidered, PVC, sublimation, chenille, or leather.
             </Typography>
           </Box>
           <Box
             sx={{
               marginBottom: { md: "0px", xs: "40px" },
-            
+
               flexBasis: { md: "24%", xs: "100%" },
 
               marginRight: "36px",
@@ -783,16 +831,16 @@ const SecondFaq = [
             >
               <img src={work4} />
               <Box
-      component="img"
-      src={workingArrow}  
-      sx={{
-        width: "42.29px",
-        height: "26.43px",
-        display: "flex",
-        alignItems: "center",
-        transform: {md: 'rotate(0deg)', xs:'rotate(90deg)'},
-      }}
-    />
+                component="img"
+                src={workingArrow}
+                sx={{
+                  width: "42.29px",
+                  height: "26.43px",
+                  display: "flex",
+                  alignItems: "center",
+                  transform: { md: 'rotate(0deg)', xs: 'rotate(90deg)' },
+                }}
+              />
             </Box>
             <SectionHeading ourworkTitle="Delivery"></SectionHeading>
             <Typography
@@ -819,22 +867,22 @@ const SecondFaq = [
           flexDirection: { md: "row", xs: "column" },
           display: "flex",
           margin: "0 auto",
-          gap:"1.2rem"
+          gap: "1.2rem"
         }}
       >
         <Box
           sx={{
             flexBasis: { md: "614px", xs: "400px" },
             maxWidth: { md: "100%", xs: "100%" },
-        
-            
+
+
           }}
         >
           <img src={bestChoice} width={"100%"} height={"auto"} />
         </Box>
         <Box
           sx={{
-            paddingTop: { md: "65px", xs: "0px", xl:"80px" },
+            paddingTop: { md: "65px", xs: "0px", xl: "80px" },
           }}
         >
           <SectionBox></SectionBox>
@@ -1019,7 +1067,7 @@ const SecondFaq = [
 
 
       <TecgnologiesComponent
-      content={`At Patch Makers, we use industry-leading software like Wilcom, Adobe Illustrator, and CorelDRAW to ensure flawless digitizing, vector art, and design accuracy. These powerful tools help us deliver clean, detailed, and high-quality results every time.`}
+        content={`At Patch Makers, we use industry-leading software like Wilcom, Adobe Illustrator, and CorelDRAW to ensure flawless digitizing, vector art, and design accuracy. These powerful tools help us deliver clean, detailed, and high-quality results every time.`}
       />
 
       {/* testimonial section */}
@@ -1030,39 +1078,42 @@ const SecondFaq = [
           paddingTop: { md: "130px", xs: "40px" },
           paddingBottom: { md: "130px", xs: "50px" },
           textAlign: { md: "left", sm: "center", xs: "center" },
-          
+
 
         }}
       >
         <StyledHeading
           title1="Our Expert Team Would Like"
-          sx1={{ fontFamily: "satoshi !important",
-            textAlign: { md: "left", sm: "center", xs: "center",  },
-          
-           }}
-           sx2={{ fontFamily: "satoshi !important",
-            textAlign: { md: "left", sm: "center", xs: "center",  },
-          
-           }}
-           styledSx={{
+          sx1={{
+            fontFamily: "satoshi !important",
             textAlign: { md: "left", sm: "center", xs: "center", },
 
-           }}
+          }}
+          sx2={{
+            fontFamily: "satoshi !important",
+            textAlign: { md: "left", sm: "center", xs: "center", },
+
+          }}
+          styledSx={{
+            textAlign: { md: "left", sm: "center", xs: "center", },
+
+          }}
         />
         <StyledHeading
           title1="To Hear From You!"
-          sx1={{ fontFamily: "satoshi-light !important",
+          sx1={{
+            fontFamily: "satoshi-light !important",
             textAlign: { md: "left", sm: "center", xs: "center" },
-           }}
+          }}
         />
 
         <OurTeam />
       </Box>
 
       <Box
-      id="testimonial"
+        id="testimonial"
         sx={{
-          overflow: { xs: "hidden", xl: "visible", m:{md:"0px", xs:"auto"} },
+          overflow: { xs: "hidden", xl: "visible", m: { md: "0px", xs: "auto" } },
         }}
       >
         <Testimonial
@@ -1090,7 +1141,7 @@ const SecondFaq = [
         />
 
         <FAQ
-        faqData={faqData}
+          faqData={faqData}
         />
       </Box>
       <Box
@@ -1100,7 +1151,7 @@ const SecondFaq = [
 
           margin: "0 auto",
           paddingBottom: "73px",
-          display:"none"
+          display: "none"
         }}
         id="blogs"
       >
@@ -1121,7 +1172,7 @@ const SecondFaq = [
           margin: "0 auto",
           paddingTop: { md: "70px", xs: "80px" },
           paddingBottom: { md: "0px", xs: "0px" },
-          display:"none"
+          display: "none"
 
         }}
       >
@@ -1139,12 +1190,12 @@ const SecondFaq = [
         sx={{
           marginTop: "69px",
           overflow: { xs: "hidden", xl: "visible" },
-          display:"none"
+          display: "none"
 
         }}
       >
         <SecondFAQSlider
-        data={SecondFaq}
+          data={SecondFaq}
         ></SecondFAQSlider>
       </Box>
       <Box

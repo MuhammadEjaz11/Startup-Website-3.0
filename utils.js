@@ -26,6 +26,9 @@ import tech7 from "./src/image/angular.svg.png"
 import tech8 from "./src/image/jquery.svg.png"
 import starRating from "./src/image/ratingstar.png"
 import Avatar from "./src/image/clientavatar.png"
+import melody from "./src/image/melody-allen.jpg"
+import Bryan from "./src/image/Bryan.jpg"
+import chloe from "./src/image/chloe-anderson.jpg"
 import Svg1 from "./src/assets/font/WebDevelopment/SVG1.png"
 import Svg2 from "./src/assets/font/WebDevelopment/SVG2.png"
 import Svg3 from "./src/assets/font/WebDevelopment/SVG3.png"
@@ -356,27 +359,27 @@ export const services2 = [
 export const ServiceIcon1 = [
     {
         iconURL: Svg1,
-        title: "eCommerce",
+        title: "Edit / Revision Free",
 
     },
     {
         iconURL: Svg2,
-        title: "Fintech",
+        title: "Quick Turnaround",
 
     },
     {
         iconURL: Svg3,
-        title: "Healthcare",
+        title: "Personalized Attention",
 
     },
     {
         iconURL: Svg4,
-        title: "Education",
+        title: "Customizable Options",
 
     },
     {
         iconURL: Svg5,
-        title: "Social Networking",
+        title: "Discount on Bulk Orders",
 
     }
 
@@ -384,27 +387,27 @@ export const ServiceIcon1 = [
 export const ServiceIcon2 = [
     {
         iconURL: Svg6,
-        title: "Hospitality",
+        title: "Affordable Pricing",
 
     },
     {
         iconURL: Svg7,
-        title: "Entertainment",
+        title: "Lifetime Database",
 
     },
     {
         iconURL: Svg8,
-        title: "Government",
+        title: "Free Mockups",
 
     },
     {
         iconURL: Svg9,
-        title: "Real Estate",
+        title: "All formats available",
 
     },
     {
         iconURL: Svg10,
-        title: "Business",
+        title: "24/7 Customer Support",
 
     }
 
@@ -610,39 +613,34 @@ export const MobileAppCard = [
 export const TestimoialCard = [
     {
         starURL: starRating,
-        testimonialText: "“Working with Mozack has been a transformative experience. Their team really understands what we needed and delivered a fantastic end product. While the project took a bit longer than expected, the final quality made it worth the wait.”",
-        userAvatar: Avatar,
-        memberName: "Daniel Joseph",
+        testimonialText: "“Great work and always so helpful. Definitely my go to for everything”",
+        userAvatar: Bryan,
+        memberName: "Bryan Rodriguez ",
         memberRoll: "Head of Product Development",
     },
     {
         starURL: starRating,
-        testimonialText: "“We chose Mozack for their innovative approach, and they didn’t disappoint! The design and functionality of our app exceeded our expectations, and we saw an increase in user engagement within the first few weeks.”",
+        testimonialText: "“Great workmanship , they definitely get what you want created , you think it they make it !! 5 STAR ”",
         userAvatar: Avatar,
-        memberName: "Sarah Lewis",
+        memberName: "Rentas Pablito ",
         memberRoll: "Digital Marketing Manager",
     },
+  
     {
         starURL: starRating,
-        testimonialText: "“Mozack’s team is very well knowledgeable and creative according to our business line. There was a slight delay in the initial stages for obvious reasons, and I wish there had been a bit more transparency about the timeline.”",
-        userAvatar: Avatar,
-        memberName: "Mike Patterson",
-        memberRoll: "CEO, Tech Innovators Inc",
-    },
-    {
-        starURL: starRating,
-        testimonialText: "“Choosing Mozack was one of the best decisions for our business. While I would have appreciated a bit more guidance during the early planning stages, the end result speaks for itself. Their dedication to quality is evident.”",
-        userAvatar: Avatar,
-        memberName: "Emily Chen",
+        testimonialText: "“Super friendly and helpful! She helped me with a svg file from scratch and it worked perfectly! I definitely recommend.”",
+        userAvatar: melody ,
+        memberName: "Chloe Anderson",
         memberRoll: "Founder & CEO, GreenStart",
     },
-    {
-        starURL: starRating,
-        testimonialText: "“The Mozack team was really good and very responsive to feedback. We did have a few issues with some minor misconducting operations, but they quickly provided solutions. I appreciate their commitment to resolving issue and ensuring we were happy with the final product.”",
-        userAvatar: Avatar,
-        memberName: "James Robertson,",
-        memberRoll: "Operations Manager, FitLife Apps",
-    },
+    // {
+    //     starURL: starRating,
+    //     testimonialText: "“great quality work and fast turnaround time.”",
+    //     userAvatar: chloe,
+    //     memberName: "Chloe Anderson ,",
+    //     memberRoll: "Operations Manager, FitLife Apps",
+    // },
+    
     // {
     //     starURL: starRating,
     //     testimonialText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -707,7 +705,7 @@ export const bannerData = {
     "android-&-ios-app-development":{
         title:"IOS & Android app",
         titleSpan:'Development',
-        text:"Looking to develop an application for your new venture? We've got you covered!",
+        text:"Digitizing is the essential process of converting any artwork, logo, or design into a digital embroidery file that can be read and executed by an embroidery machine. Unlike simply uploading a graphic file, digitizing requires a skilled technician—called a digitizer—to recreate the design using a specialized embroidery software. The process involves assigning stitch types, directions, lengths, and densities to different parts of the design. Each element—whether it's a small detail in a logo or the background fill—must be manually programmed to ensure the machine sews it correctly. This process transforms your flat image into a stitch-ready file, typically in formats like DST, PES, EXP, or JEF depending on the machine being used.",
         images:[smartPhone, smartPhone, smartPhone]
     },
     "web-development":{

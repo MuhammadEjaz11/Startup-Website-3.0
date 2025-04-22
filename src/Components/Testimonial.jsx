@@ -6,7 +6,7 @@ import StyledHeading from './StyledHeading';
 
 const Testimonial = ({
   loop = false,
-  data , 
+  data,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -63,7 +63,7 @@ const Testimonial = ({
           className="keen-slider"
           sx={{
             marginTop: '20px',
-            overflow: {lg: 'visible !Important', md:'visible !important', sm:'hidden !important', xs:'hidden !important'},
+            overflow: { lg: 'visible !Important', md: 'visible !important', sm: 'hidden !important', xs: 'hidden !important' },
             display: 'flex',
             gap: '20px',
           }}
@@ -75,11 +75,11 @@ const Testimonial = ({
               sx={{
                 borderRadius: '15px',
                 boxShadow: '0px 6px 62px -12px #00000014',
-                padding: '35px 40px 40px',
+                padding: '35px 40px 70px',
                 backgroundColor: '#fff',
                 margin: { md: '100px 0px 50px 0px', xs: '40px 0px 40px 0px' },
                 maxWidth: { xs: '90%', md: '545px' },
-                position:"relative"
+                position: "relative"
               }}
             >
               <img src={item?.starURL} alt="Rating Star" />
@@ -98,17 +98,22 @@ const Testimonial = ({
                 sx={{
                   display: 'flex',
                   marginTop: '19px',
-                    //  border:"2px solid red",
-                     position:"absolute",
-                     bottom:"20px"
+                  //  border:"2px solid red",
+                  position: "absolute",
+                  bottom: "20px",
+                  alignItems:"center",
+                  
 
                 }}
               >
-                <img src={item.userAvatar} width={'50px'} height={'50px'} alt="Client Avatar" />
+                <img src={item.userAvatar} style={{
+                  borderRadius:'50%',
+                  
+                }} width={'50px'} height={'50px'} alt="Client Avatar" />
                 <Box
                   sx={{
                     marginLeft: '16px',
-                 
+
                   }}
                 >
                   <Typography
@@ -119,15 +124,7 @@ const Testimonial = ({
                   >
                     {item.memberName}
                   </Typography>
-                  <Typography
-                    sx={{
-                      color: '#939393',
-                      fontFamily: 'Inter',
-                      fontSize: { xs: '14px', md: '16px' },
-                    }}
-                  >
-                    {item.memberRoll}
-                  </Typography>
+
                 </Box>
               </Box>
             </Box>
@@ -135,7 +132,7 @@ const Testimonial = ({
         </Box>
       </Box>
 
-      {loaded && instanceRef.current && (
+      {/* {loaded && instanceRef.current && (
         <Box
           sx={{
             display: 'flex',
@@ -166,7 +163,7 @@ const Testimonial = ({
             />
           ))}
         </Box>
-      )}
+      )} */}
     </>
   );
 };
