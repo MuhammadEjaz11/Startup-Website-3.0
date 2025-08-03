@@ -269,7 +269,7 @@ export const technologiesCard = [
 ];
 export const services1 = [
     {
-        iconURL: Frame1,
+        iconURL: "/images/home_services_icon/digitizing.png",
         title: "Digitizing",
         desc: "Digitizing is the essential process of converting any artwork, or design into a digital embroidery file that can be read and executed by an embroidery machine.",
         btnText: "Read More",
@@ -277,7 +277,7 @@ export const services1 = [
         link: "/services/android-&-ios-app-development"
     },
     {
-        iconURL: Frame2,
+            iconURL: "/images/home_services_icon/vector.png",
         title: "Vector",
         desc: "We convert your designs into clean, scalable vector files perfect for printing, embroidery, and more—maintaining sharpness at any size.",
         btnText: "Read More",
@@ -287,7 +287,7 @@ export const services1 = [
 
     },
     {
-        iconURL: Frame3,
+        iconURL: "/images/home_services_icon/costumize-patch.png",
         title: "Customize Patches",
         desc: "From embroidered to PVC, we craft patches tailored to your design, shape, and style—perfect for brands, teams, and personal expression.",
         btnText: "Read More",
@@ -298,9 +298,9 @@ export const services1 = [
 
     },
     {
-        iconURL: Frame4,
+        iconURL: "/images/home_services_icon/graphic.png",
         title: "Graphic Designing",
-        desc: "Creative visuals that communicate your message clearly—from logos and branding to marketing materials.",
+        desc: "Creative visuals that communicate your message clearly from logos and branding to marketing materials.",
         btnText: "Read More",
         btnURL:arrowHead,
         link: "/services/video-animation",
@@ -308,7 +308,7 @@ export const services1 = [
 
     },
     {
-        iconURL: Frame5,
+        iconURL: "/images/home_services_icon/web.png",
         title: "Web Design",
         desc: "Modern, responsive websites designed to reflect your brand and provide a seamless user experience.",
         btnText: "Read More",
@@ -318,7 +318,7 @@ export const services1 = [
 
     },
     {
-        iconURL: Frame6,
+        iconURL: "/images/home_services_icon/promotional-product.png",
         title: "Promotional Product",
         desc: "Custom-branded items like mugs, t-shirts, pens, and more to help you market your business in style.",
         btnText: "Read More",

@@ -4,7 +4,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
 import tech1 from "../image/AI.svg"
-import tech2 from "../image/corel.svg"
+import tech2 from "../image/Corel.svg"
 import tech3 from "../image/dg pulse.svg"
 import tech4 from "../image/figma.svg"
 import tech5 from "../image/Pr.svg"

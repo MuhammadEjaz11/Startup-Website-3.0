@@ -39,7 +39,7 @@ const StyledMenu = styled((props ) => (
   "& .MuiPaper-root": {
     borderRadius: "20px", // border radius of 20px as requested
     marginTop: theme.spacing(1-0),
-    minWidth: 400,
+    minWidth: 300,
     // maxWidth: ,
     color:
       theme.palette.mode === "light"
@@ -50,8 +50,8 @@ const StyledMenu = styled((props ) => (
     fontFamily: "Inter, sans-serif", // Set font to Inter
     "& .MuiMenu-list": {
       padding: "8px 0",
-      display: "grid", // Make grid layout for two columns
-      gridTemplateColumns: "1fr 1fr",
+      display: "flex", // Single column layout
+      flexDirection: "column",
       
       ...serviceStyling
      
@@ -130,46 +130,31 @@ export default function CustomizedMenus({buttonStyle, serviceStyling, dropDownTe
         serviceStyling={serviceStyling} 
         
       >
+ 
         <MenuItem
-          onClick={() => handleClose("/services/android-&-ios-app-development")}
-          disableRipple
+          onClick={() => handleClose("/services/digitizing")}
           sx={{ fontSize: "14px" }}
+          disableRipple
         >
           <img src={icon1} alt="" style={{objectFit:"contain",  width:"20px"}} />
-          &nbsp; &nbsp; Android & IOS App Development
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleClose("/services/video-animation")}
-          sx={{ fontSize: "14px" }}
-          disableRipple
-        >
-          <img src={icon7} alt="" style={{objectFit:"contain",  width:"20px"}} />
-          &nbsp; &nbsp; Video Animation
+          &nbsp; &nbsp; Digitizing
         </MenuItem>
 
         <MenuItem
-          onClick={() => handleClose("/services/web-development")}
+          onClick={() => handleClose("/services/vector-art")}
           sx={{ fontSize: "14px" }}
           disableRipple
         >
           <img src={icon2} alt="" style={{objectFit:"contain",  width:"20px"}} />
-          &nbsp; &nbsp; Web Development
+          &nbsp; &nbsp; Vector Art
         </MenuItem>
         <MenuItem
-          onClick={() => handleClose("/services/video-editing")}
-          sx={{ fontSize: "14px" }}
-          disableRipple
-        >
-          <img src={icon8} alt="" style={{objectFit:"contain",  width:"20px"}} />
-          &nbsp; &nbsp; Video Editing
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleClose("/services/custom-software-development")}
+          onClick={() => handleClose("/services/customize-patches")}
           sx={{ fontSize: "14px" }}
           disableRipple
         >
           <img src={icon3} alt="" style={{objectFit:"contain",  width:"20px"}} />
-          &nbsp; &nbsp; Custom Software Development
+          &nbsp; &nbsp; Customize Patches
         </MenuItem>
         <MenuItem
           onClick={() => handleClose("/services/graphic-design")}
@@ -180,36 +165,12 @@ export default function CustomizedMenus({buttonStyle, serviceStyling, dropDownTe
           &nbsp; &nbsp;Graphic Design
         </MenuItem>
         <MenuItem
-          onClick={() => handleClose("/services/digital-marketing")}
+          onClick={() => handleClose("/services/video-editing")}
           sx={{ fontSize: "14px" }}
           disableRipple
         >
-          <img src={icon4} alt="" style={{objectFit:"contain",  width:"20px"}} />
-          &nbsp; &nbsp;Digital Marketing
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleClose("/services/search-engine-optimization-(SEO)")}
-          sx={{ fontSize: "14px" }}
-          disableRipple
-        >
-          <img src={icon6} alt="" style={{objectFit:"contain",  width:"20px"}} />
-          &nbsp; &nbsp;Search Engine Optimization
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleClose("/services/support-&-maintenance")}
-          sx={{ fontSize: "14px" }}
-          disableRipple
-        >
-          <img src={icon10} alt="" style={{objectFit:"contain",  width:"20px"}} />
-          &nbsp; &nbsp;Support & Maintenance
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleClose("/services/cms-solution")}
-          sx={{ fontSize: "14px" }}
-          disableRipple
-        >
-          <img src={icon10} alt="" style={{objectFit:"contain",  width:"20px"}} />
-          &nbsp; &nbsp;CMS Solution
+          <img src={icon8} alt="" style={{objectFit:"contain",  width:"20px"}} />
+          &nbsp; &nbsp; Video Editing
         </MenuItem>
       </StyledMenu>
     </div>

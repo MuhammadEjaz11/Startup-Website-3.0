@@ -85,19 +85,19 @@ const ServiceCard = ({
     width: { xs: '30%', md: '100px' },
     margin: { xs: '0 auto' },
     marginTop: '20px',
-    color: '#FFC800',
+    color: '#70D0D9',
     fontFamily: 'Outfit',
     fontSize: { xs: '14px', md: '16px' },
     fontWeight: '600',
     textTransform: 'capitalize',
     '&:hover': {
       backgroundColor: 'transparent', // Transparent on hover
-      color: '#FFC800', // Maintain or change text color on hover if needed
+      color: '#70D0D9', // Maintain or change text color on hover if needed
     },
   }}
 >
   {btnText}
-  <img src={btnURL} alt="Button Icon" style={{ marginLeft: '8px' }} />
+  <img src={btnURL} alt="Button Icon" style={{ marginLeft: '8px' , width:"9px"}} />
 </Button>
       </Box>
 

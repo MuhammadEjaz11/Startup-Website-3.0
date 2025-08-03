@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { Box } from "@mui/material";
 
 // Importing icons
@@ -19,9 +20,10 @@ import icon9 from "../assets/font/servicesIcons/service9-min.webp";
 import icon10 from "../assets/font/servicesIcons/service10-min.webp";
 
 // Styled components
-const DropdownContainer = styled("div")(({ theme }) => ({
+const div = styled("div")(({ theme }) => ({
   position: "relative",
   display: "inline-block",
+  zIndex: 1000,
 }));
 
 const DropdownContent = styled("div")(({ theme, serviceStyling }) => ({
@@ -29,11 +31,14 @@ const DropdownContent = styled("div")(({ theme, serviceStyling }) => ({
   backgroundColor: "#f9f9f9",
   minWidth: "250px",
   boxShadow: "0px 8px 16px 0px rgba(0,0,0,0.1)",
-  zIndex: 1,
+  zIndex: 1001,
   borderRadius: "20px",
-  overflow: "hidden",
+  overflow: "visible",
   padding: "20px",
   marginTop: "-5px",
+  maxHeight: "none",
+  height: "auto",
+  minHeight: "fit-content",
   ...serviceStyling,
 }));
 
@@ -41,10 +46,13 @@ export default function CustomizedMenus2({
   buttonStyle,
   serviceStyling,
   dropDownText = false,
+  menuItems = [],
+  buttonText = "Services",
 }) {
   const [isButtonHovered, setIsButtonHovered] = useState(false);
   const [isMenuHovered, setIsMenuHovered] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -52,16 +60,92 @@ export default function CustomizedMenus2({
       setIsMenuOpen(true);
     } else {
       setIsMenuOpen(false);
+      setIsSubmenuOpen(false);
     }
   }, [isButtonHovered, isMenuHovered]);
 
   const handleMenuItemClick = (route) => {
     navigate(route);
-    setIsMenuOpen(false); // Close the menu when a menu item is clicked
+    setIsMenuOpen(false);
+    setIsSubmenuOpen(false);
   };
 
+  const handleSubmenuToggle = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsSubmenuOpen(!isSubmenuOpen);
+  };
+
+  // Default menu items if none provided
+  const defaultMenuItems = [
+    {
+      id: "digitizing",
+      label: "Digitizing",
+      route: "/services/digitizing",
+      icon: icon1,
+      hasSubmenu: false,
+    },
+    {
+      id: "vector-art",
+      label: "Vector Art",
+      route: "/services/vector-art",
+      icon: icon2,
+      hasSubmenu: false,
+    },
+    {
+      id: "customize-patches",
+      label: "Customize Patches",
+      route: "/services/customize-patches",
+      icon: icon3,
+      hasSubmenu: true,
+      submenuItems: [
+        {
+          id: "embroidered",
+          label: "Embroidered Patches",
+          route: "/services/customize-patches/embroidered",
+        },
+        {
+          id: "chenille",
+          label: "Chenille Patches",
+          route: "/services/customize-patches/chenille",
+        },
+        {
+          id: "wsublimationoven",
+          label: "Sublimation Patches",
+          route: "/services/customize-patches/sublimation",
+        },
+        {
+          id: "pvc",
+          label: "PVC Patches",
+          route: "/services/customize-patches/pvc",
+        },
+        {
+          id: "leather",
+          label: "Leather Patches",
+          route: "/services/customize-patches/leather",
+        },
+      ],
+    },
+    {
+      id: "graphic-design",
+      label: "Graphic Design",
+      route: "/services/graphic-design",
+      icon: icon9,
+      hasSubmenu: false,
+    },
+    {
+      id: "video-editing",
+      label: "Video Editing",
+      route: "/services/video-editing",
+      icon: icon8,
+      hasSubmenu: false,
+    },
+  ];
+
+  const itemsToRender = menuItems.length > 0 ? menuItems : defaultMenuItems;
+
   return (
-    <DropdownContainer>
+    <>
       <Button
         variant="text"
         disableElevation
@@ -72,22 +156,19 @@ export default function CustomizedMenus2({
           textDecoration: "none",
           color: "#1E1E1E",
           fontSize: { md: "14px", xl: "16px" },
-          fontWeight: "700 !important",
-
+          fontWeight: "500 !important",
           fontFamily: "Inter, sans-serif",
           textTransform: "capitalize",
           margin: "0px !important",
-          ...buttonStyle,
           cursor: "pointer",
-          // border:"2px solid red",
           p: "25px 0px",
-          ":hover" : {
-            backgroundColor:"transparent",
-
-          }
+          ":hover": {
+            backgroundColor: "transparent",
+          },
+          ...buttonStyle,
         }}
       >
-        {dropDownText ? "See More" : "Services"}
+        {dropDownText ? "See More" : buttonText}
       </Button>
 
       {isMenuOpen && (
@@ -99,169 +180,115 @@ export default function CustomizedMenus2({
           <Box
             sx={{
               display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: "10px",
-              
+              gridTemplateColumns: "1fr",
+              // gap: "10px",
+              height: "auto",
+              maxHeight: "none",
+              overflow: "visible",
+              minHeight: "fit-content",
+              gridAutoRows: "min-content",
             }}
           >
-            <MenuItem
-              onClick={() =>
-                handleMenuItemClick("/services/android-&-ios-app-development")
-              }
-              disableRipple
-              sx={{
-                fontSize: "14px",
-                fontFamily: "Inter",
-                borderRadius: "8px",
-              }}
-            >
-              <img
-                src={icon1}
-                alt=""
-                style={{ objectFit: "contain", width: "20px" }}
-              />
-              &nbsp; Android & IOS App Development
-            </MenuItem>
-            <MenuItem
-              onClick={() => handleMenuItemClick("/services/video-animation")}
-              sx={{
-                fontSize: "14px",
-                fontFamily: "Inter",
-                borderRadius: "8px",
-              }}
-              disableRipple
-            >
-              <img
-                src={icon7}
-                alt=""
-                style={{ objectFit: "contain", width: "20px" }}
-              />
-              &nbsp; Video Animation
-            </MenuItem>
-            <MenuItem
-              onClick={() => handleMenuItemClick("/services/web-development")}
-              sx={{
-                fontSize: "14px",
-                fontFamily: "Inter",
-                borderRadius: "8px",
-              }}
-              disableRipple
-            >
-              <img
-                src={icon2}
-                alt=""
-                style={{ objectFit: "contain", width: "20px" }}
-              />
-              &nbsp; Web Development
-            </MenuItem>
-            <MenuItem
-              onClick={() => handleMenuItemClick("/services/video-editing")}
-              sx={{
-                fontSize: "14px",
-                fontFamily: "Inter",
-                borderRadius: "8px",
-              }}
-              disableRipple
-            >
-              <img
-                src={icon8}
-                alt=""
-                style={{ objectFit: "contain", width: "20px" }}
-              />
-              &nbsp; Video Editing
-            </MenuItem>
-            <MenuItem
-              onClick={() =>
-                handleMenuItemClick("/services/custom-software-development")
-              }
-              sx={{
-                fontSize: "14px",
-                fontFamily: "Inter",
-                borderRadius: "8px",
-              }}
-              disableRipple
-            >
-              <img
-                src={icon3}
-                alt=""
-                style={{ objectFit: "contain", width: "20px" }}
-              />
-              &nbsp; Custom Software Development
-            </MenuItem>
-            <MenuItem
-              onClick={() => handleMenuItemClick("/services/graphic-design")}
-              sx={{
-                fontSize: "14px",
-                fontFamily: "Inter",
-                borderRadius: "8px",
-              }}
-              disableRipple
-            >
-              <img
-                src={icon9}
-                alt=""
-                style={{ objectFit: "contain", width: "20px" }}
-              />
-              &nbsp; Graphic Design
-            </MenuItem>
-            <MenuItem
-              onClick={() => handleMenuItemClick("/services/digital-marketing")}
-              sx={{
-                fontSize: "14px",
-                fontFamily: "Inter",
-                borderRadius: "8px",
-              }}
-              disableRipple
-            >
-              <img
-                src={icon4}
-                alt=""
-                style={{ objectFit: "contain", width: "20px" }}
-              />
-              &nbsp; Digital Marketing
-            </MenuItem>
-            <MenuItem
-              onClick={() =>
-                handleMenuItemClick(
-                  "/services/search-engine-optimization-(SEO)"
-                )
-              }
-              sx={{
-                fontSize: "14px",
-                fontFamily: "Inter",
-                borderRadius: "8px",
-              }}
-              disableRipple
-            >
-              <img
-                src={icon6}
-                alt=""
-                style={{ objectFit: "contain", width: "20px" }}
-              />
-              &nbsp; Search Engine Optimization
-            </MenuItem>
-            <MenuItem
-              onClick={() =>
-                handleMenuItemClick("/services/support-&-maintenance")
-              }
-              sx={{
-                fontSize: "14px",
-                fontFamily: "Inter",
-                borderRadius: "8px",
-              }}
-              disableRipple
-            >
-              <img
-                src={icon10}
-                alt=""
-                style={{ objectFit: "contain", width: "20px" }}
-              />
-              &nbsp; Support & Maintenance
-            </MenuItem>
-            
+            {itemsToRender.map((item) => (
+              <React.Fragment key={item.id}>
+                {item.hasSubmenu ? (
+                  <Box sx={{ position: "relative" }}>
+                    <MenuItem
+                      onClick={handleSubmenuToggle}
+                      onMouseEnter={() => setIsSubmenuOpen(true)}
+                      sx={{
+                        fontSize: "14px",
+                        fontFamily: "Inter",
+                        borderRadius: "8px",
+                        display: "flex",
+    
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                      }}
+                      disableRipple
+                    >
+                      <Box sx={{ height:"20px", display: "flex", alignItems: "center" }}>
+                        <img
+                          src={item.icon}
+                          alt=""
+                          style={{ objectFit: "contain", width: "20px" }}
+                        />
+                        &nbsp;{" "}
+                        <Box
+                          sx={{
+                            fontSize: "14px",
+                            
+                            fontFamily: "Inter",
+                            borderRadius: "8px",
+                          }}
+                        >
+                          {" "}
+                          {item.label}{" "}
+                        </Box>
+                      </Box>
+                      <KeyboardArrowRightIcon sx={{ fontSize: "16px" }} />
+                    </MenuItem>
+
+                    {/* Submenu */}
+                    {isSubmenuOpen && (
+                      <Box
+                        sx={{
+                          position: "absolute",
+                          left: "100%",
+                          top: 0,
+                          backgroundColor: "#f9f9f9",
+                          minWidth: "200px",
+                          boxShadow: "0px 8px 16px 0px rgba(0,0,0,0.1)",
+                          borderRadius: "8px",
+                          padding: "8px",
+                          zIndex: 2,
+                          marginLeft: "5px",
+                        }}
+                        onMouseEnter={() => setIsSubmenuOpen(true)}
+                        onMouseLeave={() => setIsSubmenuOpen(false)}
+                      >
+                        {item.submenuItems.map((subItem) => (
+                          <MenuItem
+                            key={subItem.id}
+                            onClick={() => handleMenuItemClick(subItem.route)}
+                            sx={{
+                              fontSize: "13px",
+                              fontFamily: "Inter",
+                              borderRadius: "6px",
+                              padding: "8px 12px",
+                            }}
+                            disableRipple
+                          >
+                            {subItem.label}
+                          </MenuItem>
+                        ))}
+                      </Box>
+                    )}
+                  </Box>
+                ) : (
+                  <MenuItem
+                    onClick={() => handleMenuItemClick(item.route)}
+                    sx={{
+                      fontSize: "14px",
+                      fontFamily: "Inter",
+                      borderRadius: "8px",
+                      // py:"0px",
+                    }}
+                    disableRipple
+                  >
+                    <img
+                      src={item.icon}
+                      alt=""
+                      style={{ objectFit: "contain", width: "20px" }}
+                    />
+                    &nbsp; {item.label}
+                  </MenuItem>
+                )}
+              </React.Fragment>
+            ))}
           </Box>
         </DropdownContent>
       )}
-    </DropdownContainer>
+    </>
   );
 }

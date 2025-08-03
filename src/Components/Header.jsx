@@ -72,7 +72,7 @@ function Header() {
             <img
               src={layer1}
               alt="Logo"
-              style={{ objectFit: "cover", width: "90px", marginTop:'15px' }}
+              style={{ objectFit: "cover", width: "90px", marginTop: "15px" }}
             />
           </div>
           <nav
@@ -101,9 +101,6 @@ function Header() {
             <Box sx={{ display: "inline-block", position: "relative" }}>
               <CustomizedMenus2 buttonStyle={{ cursor: "pointer" }} />
             </Box>
-            <Box sx={{ display: "inline-block", position: "relative" }}>
-              <SolutionMenu buttonStyle={{ cursor: "pointer" }} />
-            </Box>
 
             <Typography
               onClick={() => handleNavigate("/our-portfolio")}
@@ -119,24 +116,9 @@ function Header() {
                 },
               }}
             >
-              Portfolio
+              Our Portfolio
             </Typography>
-            <Typography
-              onClick={() => handleNavigate("/services/our-blogs")}
-              sx={{
-                textDecoration: "none",
-                color: "#1E1E1E",
-                fontSize: { md: "14px", xl: "16px" },
-                fontWeight: "400",
-                fontFamily: "Inter",
-                cursor: "pointer",
-                ":hover": {
-                  color: "green",
-                },
-              }}
-            >
-              Blogs
-            </Typography>
+
             <Typography
               onClick={() => handleNavigate("/contact-us")}
               sx={{
@@ -192,11 +174,11 @@ function Header() {
             onClose={() => dispatch(toggleMobileMenu())}
             sx={{
               "& .MuiDrawer-paper": {
-                width: { xs: "100%", md: "400px" },
+                width: { xs: "90%", md: "300px" },
                 backgroundColor: "white",
                 color: "black",
                 boxShadow: "2px 0px 15px rgba(0,0,0,0.3)",
-                padding: "20px 20px 20px 40px",
+                padding: "20px 0px 20px 20px",
                 transition: "all 0.3s ease-in-out",
               },
             }}
@@ -208,17 +190,17 @@ function Header() {
                 alignItems: "center",
               }}
             >
-              <img src={layer1} alt="Logo" style={{ width: "170px" }} />
+              <img src={layer1} alt="Logo" style={{ width: "100px" }} />
               <Button onClick={() => dispatch(toggleMobileMenu())}>
-                <CloseIcon style={{ color: "black", marginRight: "50px" }} />
+                <CloseIcon style={{ fontSize: "22px", color: "black" }} />
               </Button>
             </Box>
             <nav
               style={{
                 display: "flex",
                 flexDirection: "column",
-                gap: "1rem",
-                marginTop: "20px",
+                // gap: "1rem",
+                marginTop: "50px",
               }}
             >
               <Link
@@ -228,27 +210,26 @@ function Header() {
                   textDecoration: "none",
                   color: "black",
                   fontSize: "16px",
-                 
                 }}
               >
                 Home
               </Link>
-              <CustomizedMenus
-                buttonStyle={{ color: "black", p: "0px" }}
-                serviceStyling={{
-                  gridTemplateColumns: "1fr",
-                  p: "0px !important",
-                }}
-              />
+              <Box component={"span"}>
+                <CustomizedMenus2
+                  buttonStyle={{
+                    cursor: "pointer",
 
-              <Solution2
-                buttonStyle={{ color: "black", p: "0px" }}
-                serviceStyling={{
-                  gridTemplateColumns: "1fr",
-                  p: "0px !important",
-                }}
-              />
-
+                    justifyContent: "flex-start",
+                    py: "0px",
+                    color: "black",
+                    fontSize: "16px",
+                    fontFamily: "Inter",
+                    // height:"10px",
+                    fontWeight: "600",
+                    textDecoration: "none",
+                  }}
+                />
+              </Box>
               <Link
                 to="/our-portfolio"
                 onClick={() => dispatch(toggleMobileMenu())}
@@ -256,21 +237,12 @@ function Header() {
                   textDecoration: "none",
                   color: "black",
                   fontSize: "16px",
+                  margin: "11px 0px",
                 }}
               >
                 Our Portfolio
               </Link>
-              <Link
-                to="/services/our-blogs"
-                onClick={() => dispatch(toggleMobileMenu())}
-                style={{
-                  textDecoration: "none",
-                  color: "black",
-                  fontSize: "16px",
-                }}
-              >
-                Our Blogs
-              </Link>
+
               <Link
                 to="/contact-us"
                 onClick={() => dispatch(toggleMobileMenu())}

@@ -269,8 +269,7 @@ function Footer() {
                 "Phone:  +1 (307) 400 8653",
                 "Phone: +44 (792) 806 2002 (Whatspp)", 
                 "Email: sales@patchmakers.us",
-                "Address: 1133 WOLCOTT ST SPC 4,",
-                "Nazimabad Town, Karachi, Sindh 74700",
+                "Address:1133 WOLCOTT ST SPC 4, CASPER, WY, 82601",
               ]}
             />
           </Box>
@@ -431,7 +430,7 @@ function Footer() {
                 },
               }}
             >
-              Copyright © 2024 - All Rights Reserved.
+              Copyright © {new Date().getFullYear()} - All Rights Reserved.
             </Typography>
             <FooterBottomMenu
               style={{

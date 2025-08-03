@@ -157,25 +157,25 @@ const Home = () => {
   ]
 
   const faqData = [
-    {
+    { 
       id: 1,
-      question: "Why does Mozack occupy one of the leading ranks among the American companies that offer app development?",
-      answer: "About Mozack Being the best USA app development company, Mozack is distinguished by vast experience, creativity, and the ability to design and implement applications that help businesses evolve."
+      question: "What do you guys do?",
+      answer: "We bring your designs to life with professional digitizing, vector art, and custom patch services. Whether you're a brand, business, or individual, we deliver top-quality results tailored to your needs. Digitizing Services: We convert your artwork into precise, embroidery-ready files. Vector Art Services: We turn low-res images into clean, scalable vector files. Custom Patches: Choose from embroidered, PVC, sublimation, leather, or chenille patches—fully customizable in style, size, and color. With years of experience and a passion for detail, Patch Makers is your trusted partner for creative, high-quality work."
     },
     {
       id: 2,
-      question: "What strategies did Mozack use to guarantee the success of its app development projects?",
-      answer: " Regarded as the best IT solutions provider since we adopt a client approach, at Mozack, we harness and apply the updated technologies and flowing momentum in project handling in delivering successful projects on time with positive returns that are inline with your business principles."
+      question: "Where are you guys based of?",
+      answer: "We have multiple locations to serve our customers efficiently: Office: Wyoming, USA 🇺🇸 Production Houses: Pakistan 🇵🇰 & China 🇨🇳 This allows us to provide high-quality custom patches at competitive prices while ensuring fast production and delivery. Let us know how we can assist you!"
     },
     {
       id: 3,
-      question: " Mozack is a startup app development company, so it specialises in certain industries only?",
-      answer: "Healthcare Mozack has developed healthcare customs applications cutting across the health sector, finance Mozack has offered customised financial applications for the finance sector, retail Mozack has offered apps for the retail sector, and e-commerce Mozack has also given e-commerce apps in line with the sector."
+      question: "How do you accept payments?",
+      answer: "We accept payments through PayPal and all major credit/debit cards, making it easy and secure for our customers worldwide."
     },
     {
       id: 4,
-      question: "After an app has been successfully launched, does Mozack help with application support and development?",
-      answer: "Yes, Mozack gives detailed after-launch support and upkeep to ensure that your app remains functional, safe, and optimised with the new advances in technology and user requirement."
+      question: "How do I contact you for support or questions?",
+      answer: "You can reach out to us through email, social media, or our website's contact form—we're always here to help!"
     },
   ];
 
@@ -302,19 +302,19 @@ const Home = () => {
                     <li style={{
                       fontWeight: "400 !important", fontSize: '16px', fontFamily: "Inter",
 
-                    }} >Free Quote & Mockups</li>
+                    }} >Satisfaction Guaranteed</li>
                     <li style={{
                       fontWeight: "400 !important", fontSize: '16px', fontFamily: "Inter",
 
-                    }}>Customizable Options</li>
+                    }}>Quick Turnaround</li>
                     <li style={{
                       fontWeight: "400 !important", fontSize: '16px', fontFamily: "Inter",
 
-                    }} >Fast and Reliable Shipping</li>
+                    }} >24/7 Customer Service</li>
                     <li style={{
                       fontWeight: "400 !important", fontSize: '16px', fontFamily: "Inter",
 
-                    }}>Durable backing options</li>
+                    }}>Variety of thread colors</li>
                   </ul>
                 </Box>
               </Box>
@@ -495,6 +495,9 @@ const Home = () => {
           textAlign: { md: "left", sm: "center" },
           // border:"12px solid red",
           mt: "60px",
+          img: {
+            objectFit: "contain",
+          }
         }}
       >
         <Box>
@@ -513,7 +516,7 @@ const Home = () => {
               textAlign: { md: "left", xs: "center" },
             }}
           >
-            <img src={gridView} />
+            <img src={gridView}  />
             <Typography
               sx={{
                 paddingLeft: { md: "23px", sm: "0px" },
@@ -522,7 +525,7 @@ const Home = () => {
                 fontSize: "50px",
               }}
             >
-              2013
+              2015
               <br />
               <Typography
                 style={{
@@ -638,7 +641,7 @@ const Home = () => {
                 fontSize: "50px",
               }}
             >
-              600+
+              1000+
               <br />
               <Typography
                 style={{
@@ -690,6 +693,7 @@ const Home = () => {
               flexBasis: { md: "24%", xs: "100%" },
               marginRight: "36px",
               paddingRight: "36px",
+            
             }}
           >
             <Box
@@ -697,9 +701,10 @@ const Home = () => {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
+        
               }}
             >
-              <img src={work2} />
+              <img width={"100px"} src={"/images/home_working_process/concept.png"} />
               <Box
                 component="img"
                 src={workingArrow}
@@ -743,7 +748,7 @@ const Home = () => {
                 alignItems: "center",
               }}
             >
-              <img src={work1} />
+              <img width={"100px"} src={"/images/home_working_process/Design.png"} />
               <Box
                 component="img"
                 src={workingArrow}
@@ -786,7 +791,7 @@ const Home = () => {
                 alignItems: "center",
               }}
             >
-              <img src={work3} />
+              <img width={"100px"} src={"/images/home_working_process/manufacture.png"} />
               <Box
                 component="img"
                 src={workingArrow}
@@ -829,7 +834,7 @@ const Home = () => {
                 alignItems: "center",
               }}
             >
-              <img src={work4} />
+              <img width={"100px"} src={"/images/home_working_process/delivery.png"} />
               <Box
                 component="img"
                 src={workingArrow}
@@ -953,8 +958,8 @@ const Home = () => {
             }}
           />
           <Tab
-            value="Website"
-            label="Website"
+            value="Vector"
+            label="Vector"
             sx={{
               textTransform: "capitalize",
               color: "#939393",
@@ -1067,7 +1072,7 @@ const Home = () => {
 
 
       <TecgnologiesComponent
-        content={`At Patch Makers, we use industry-leading software like Wilcom, Adobe Illustrator, and CorelDRAW to ensure flawless digitizing, vector art, and design accuracy. These powerful tools help us deliver clean, detailed, and high-quality results every time.`}
+        content={`At Patch Makers, we use industry leading software like Wilcom, Adobe Illustrator, and CorelDRAW to ensure flawless digitizing, vector art, and design accuracy. These powerful tools help us deliver clean, detailed, and high quality results every time.`}
       />
 
       {/* testimonial section */}
