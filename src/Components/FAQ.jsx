@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Typography, Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
-import arrowRight from '../image/arrowRight.png'; // Right arrow
-import arrowDown from '../image/arrowDown.png'; // Down arrow (when opened)
+import arrowRight from '../image/arrowRight.svg'; // Right arrow
+import arrowDown from '../image/arrowDown.svg'; // Down arrow (when opened)
 
 
 
@@ -70,7 +70,7 @@ const FAQ = ({ sxFAQ = '', faqData }) => {
                     fontWeight: 'bold', 
                     color: '#161616', 
                     fontSize: { xs: '14px', md: '18px' }, // Responsive font size
-                    fontFamily: 'satoshi',
+                    fontFamily: '"Bakbak One", sans-serif',
                   }}
                 >
                   {item.question}

@@ -9,7 +9,7 @@ import service1 from "../../../assets/font/WebDevelopment/service1.png";
 import service2 from "../../../assets/font/WebDevelopment/service2.png";
 import service3 from "../../../assets/font/WebDevelopment/service3.png";
 import service4 from "../../../assets/font/WebDevelopment/service4.png";
-import { Carousel } from '@trendyol-js/react-carousel';
+import { Carousel } from "@trendyol-js/react-carousel";
 import PortfolioCard from "../../../Components/PortfolioCard";
 import { technologiesCard } from "../../../../utils";
 import StyledHeading from "../../../Components/StyledHeading";
@@ -30,18 +30,21 @@ import Questions from "../../../Components/Questions";
 import SecondFAQSlider from "../../../Components/SecondFAQ";
 import BlogSlider from "../../../Components/OurBlog";
 import { PortfoliosList } from "../../../../utils";
-import { ServiceIcon1, ServiceIcon2, ServiceIcon3, ServiceIcon } from "../../../../utils";
+import {
+  ServiceIcon1,
+  ServiceIcon2,
+  ServiceIcon3,
+  ServiceIcon,
+} from "../../../../utils";
 import ServiceCard from "../../../Components/ServiceCard";
 import ServiceIconBox from "../../../Components/ServiceIconsBox";
 import KeenSliderPortfolio from "../../../Components/KeenSliderPortfolio";
 import TecgnologiesComponent from "../../../Components/TecgnologiesComponent";
 
-
-
-import BlogOne from '../../../image/blog12.webp';
-import BlogTwo from '../../../image/blog22.webp';
-import BlogThree from '../../../image/blog33.webp';
-import starRating from '../../../image/starRating.png';
+import BlogOne from "../../../image/blog12.webp";
+import BlogTwo from "../../../image/blog22.webp";
+import BlogThree from "../../../image/blog33.webp";
+import starRating from "../../../image/starRating.png";
 
 import web1 from "../../../assets/font/WebDevelopment/1.jpg";
 import web2 from "../../../assets/font/WebDevelopment/2.jpg";
@@ -53,8 +56,13 @@ import web7 from "../../../assets/font/WebDevelopment/7.jpg";
 import web8 from "../../../assets/font/WebDevelopment/8.jpg";
 import web9 from "../../../assets/font/WebDevelopment/9.jpg";
 
-import {Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
-
+import {
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+} from "react-scroll";
 
 import DesignDevelop from "../../../Components/DesignDevelop";
 
@@ -108,21 +116,62 @@ const serviceApp = [
   },
 ];
 
-
-
-
 const webDevList = [
-  { imageURL: web1, title: "Website Project 1", desc: "Web Development", category: "Website" },
-    { imageURL: web2, title: "Website Project 2", desc: "Web Development", category: "Website" },
-    { imageURL: web3, title: "Website Project 3", desc: "Web Development", category: "Website" },
-    { imageURL: web4, title: "Website Project 4", desc: "Web Development", category: "Website" },
-    { imageURL: web5, title: "Website Project 5", desc: "Web Development", category: "Website" },
-    { imageURL: web6, title: "Website Project 6", desc: "Web Development", category: "Website" },
-    { imageURL: web7, title: "Website Project 7", desc: "Web Development", category: "Website" },
-    { imageURL: web8, title: "Website Project 8", desc: "Web Development", category: "Website" },
-    { imageURL: web9, title: "Website Project 9", desc: "Web Development", category: "Website" },
-
-]
+  {
+    imageURL: web1,
+    title: "Website Project 1",
+    desc: "Web Development",
+    category: "Website",
+  },
+  {
+    imageURL: web2,
+    title: "Website Project 2",
+    desc: "Web Development",
+    category: "Website",
+  },
+  {
+    imageURL: web3,
+    title: "Website Project 3",
+    desc: "Web Development",
+    category: "Website",
+  },
+  {
+    imageURL: web4,
+    title: "Website Project 4",
+    desc: "Web Development",
+    category: "Website",
+  },
+  {
+    imageURL: web5,
+    title: "Website Project 5",
+    desc: "Web Development",
+    category: "Website",
+  },
+  {
+    imageURL: web6,
+    title: "Website Project 6",
+    desc: "Web Development",
+    category: "Website",
+  },
+  {
+    imageURL: web7,
+    title: "Website Project 7",
+    desc: "Web Development",
+    category: "Website",
+  },
+  {
+    imageURL: web8,
+    title: "Website Project 8",
+    desc: "Web Development",
+    category: "Website",
+  },
+  {
+    imageURL: web9,
+    title: "Website Project 9",
+    desc: "Web Development",
+    category: "Website",
+  },
+];
 
 // const blogData = [
 //   {
@@ -163,7 +212,8 @@ const blogData = [
   {
     id: 1,
     title: "How Apps Put Your Audience First",
-    description: "Learn how modern apps enhance user experience and meet audience expectations with innovative features and seamless functionality.",
+    description:
+      "Learn how modern apps enhance user experience and meet audience expectations with innovative features and seamless functionality.",
     image: BlogOne,
     author: "By Admin",
     date: "April 20, 2024",
@@ -171,7 +221,8 @@ const blogData = [
   {
     id: 2,
     title: "How Apps Put Your Audience First",
-    description: "Discover how investing in mobile applications can drive engagement, boost retention, and accelerate your business growth.",
+    description:
+      "Discover how investing in mobile applications can drive engagement, boost retention, and accelerate your business growth.",
     image: BlogTwo,
     author: "By  Admin",
     date: "April 20, 2024",
@@ -179,7 +230,8 @@ const blogData = [
   {
     id: 3,
     title: "How Apps Put Your Audience First",
-    description: "Explore the importance of user-focused design and how apps ensure that your customers stay connected and satisfied .",
+    description:
+      "Explore the importance of user-focused design and how apps ensure that your customers stay connected and satisfied .",
     image: BlogThree,
     author: "By  Admin",
     date: "April 20, 2024",
@@ -192,49 +244,60 @@ const blogData = [
   //   author: "Admin",
   //   date: "April 20, 2024",
   // },
-]
+];
 
 const SecondFaq = [
   {
     id: 1,
-    title: 'Experience & Excellence',
+    title: "Experience & Excellence",
     testimonialText:
       "Mozack combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
     starRating: starRating,
-    videoId: 'mZ5hnNRBFsc', // A valid video ID
+    videoId: "mZ5hnNRBFsc", // A valid video ID
   },
   {
     id: 2,
-    title: 'Quality & Dedication',
+    title: "Quality & Dedication",
     testimonialText:
       "Our team follows a rigorous testing process, uses industry-leading standards, and prioritizes client feedback to deliver high-quality, scalable solutions.",
     starRating: starRating,
-    videoId: 'mZ5hnNRBFsc', // Corrected video ID from the URL
+    videoId: "mZ5hnNRBFsc", // Corrected video ID from the URL
   },
   {
     id: 3,
-    title: 'Innovation & Creativity',
+    title: "Innovation & Creativity",
     testimonialText:
       " Mozack provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
     starRating: starRating,
-    videoId: 'mZ5hnNRBFsc', // Same video ID as example
+    videoId: "mZ5hnNRBFsc", // Same video ID as example
   },
-]
+];
 
 const faqData = [
-  { id: 1, 
-    question: "Why should I choose Mozack for web development?", 
-    answer: "Mozack combines expertise, cutting-edge technologies, and a customer-focused approach to deliver high-quality, scalable solutions." },
-  { id: 2, 
-    question: "Will my website be mobile-friendly?", 
-    answer: "Yes, we specialize in building responsive websites that perform seamlessly across all devices." },
-  { id: 3, 
-    question: "What technologies do you use for web development?", 
-    answer: "We use modern frameworks like React.js, Angular, Next.js, and backend tools like Node.js to ensure performance and scalability." },
-    { id: 4, 
-      question: "Do you offer post-launch support?", 
-      answer: "Absolutely. We provide ongoing maintenance and performance optimizations to keep your website running smoothly" },
-   
+  {
+    id: 1,
+    question: "Why should I choose Mozack for web development?",
+    answer:
+      "Mozack combines expertise, cutting-edge technologies, and a customer-focused approach to deliver high-quality, scalable solutions.",
+  },
+  {
+    id: 2,
+    question: "Will my website be mobile-friendly?",
+    answer:
+      "Yes, we specialize in building responsive websites that perform seamlessly across all devices.",
+  },
+  {
+    id: 3,
+    question: "What technologies do you use for web development?",
+    answer:
+      "We use modern frameworks like React.js, Angular, Next.js, and backend tools like Node.js to ensure performance and scalability.",
+  },
+  {
+    id: 4,
+    question: "Do you offer post-launch support?",
+    answer:
+      "Absolutely. We provide ongoing maintenance and performance optimizations to keep your website running smoothly",
+  },
 ];
 
 const WebDevelopment = () => {
@@ -247,12 +310,20 @@ const WebDevelopment = () => {
   return (
     <Box>
       {/* LEft Right Component working */}
-      <Box sx={{ marginTop: "120px",
-        padding: {lg:"0px 20px 0px 20px", md:"0px 20px 0px 20px", sm:"0px", xs:"0px"},
-       }}>
+      <Box
+        sx={{
+          marginTop: "120px",
+          padding: {
+            lg: "0px 20px 0px 20px",
+            md: "0px 20px 0px 20px",
+            sm: "0px",
+            xs: "0px",
+          },
+        }}
+      >
         <LeftRightComponent
           styledSx={{
-            fontSize: {xl:"40px",md:"30px", sm:"20px", xs:"20px"},
+            fontSize: { xl: "40px", md: "30px", sm: "20px", xs: "20px" },
             flexDirection: "column",
             justifyContent: "start",
             textAlign: "start",
@@ -268,14 +339,19 @@ const WebDevelopment = () => {
       </Box>
 
       {/*  Services Section of Web Development*/}
-      <Box sx={{
-        marginTop: '120px',
-      }}>
-      <StyledHeading title1="Services " title2="We Offer"   styledSx={{
-         display:'flex',
-         justifyContent: {md:"left", sm:"center", xs:"center"},
-       }}
-       />   
+      <Box
+        sx={{
+          marginTop: "120px",
+        }}
+      >
+        <StyledHeading
+          title1="Services "
+          title2="We Offer"
+          styledSx={{
+            display: "flex",
+            justifyContent: { md: "left", sm: "center", xs: "center" },
+          }}
+        />
       </Box>
       <Box
         sx={{
@@ -286,7 +362,7 @@ const WebDevelopment = () => {
             xs: "center",
           },
           gap: "15px",
-          paddingX:{md:'20px', sm:'0px', xs:'0px'},
+          paddingX: { md: "20px", sm: "0px", xs: "0px" },
           flexDirection: {
             md: "row",
             xs: "column",
@@ -311,8 +387,7 @@ const WebDevelopment = () => {
           }}
           descsx={{
             fontSize: { xs: "13px", xl: "14px" },
-  
-            }}
+          }}
           image={true}
           iconURL={serviceApp[0].image}
           title={serviceApp[0].title}
@@ -326,15 +401,13 @@ const WebDevelopment = () => {
             flexBasis: "25%",
             flexShrink: "1",
             width: "85%",
-          
           }}
           titlesx={{
             fontSize: { xs: "18px", xl: "22px" },
           }}
           descsx={{
             fontSize: { xs: "13px", xl: "14px" },
-  
-            }}
+          }}
           image={true}
           iconURL={serviceApp[1].image}
           title={serviceApp[1].title}
@@ -358,8 +431,7 @@ const WebDevelopment = () => {
           }}
           descsx={{
             fontSize: { xs: "13px", xl: "14px" },
-  
-            }}
+          }}
           image={true}
           iconURL={serviceApp[2].image}
           title={serviceApp[2].title}
@@ -373,16 +445,13 @@ const WebDevelopment = () => {
             flexBasis: "25%",
             flexShrink: "1",
             width: "85%",
-        p: { xs: "10px", md: "20px 20px 90px 20px" },
-
-          
+            p: { xs: "10px", md: "20px 20px 90px 20px" },
           }}
           titlesx={{
             fontSize: { xs: "18px", xl: "22px" },
           }}
           descsx={{
-          fontSize: { xs: "13px", xl: "14px" },
-
+            fontSize: { xs: "13px", xl: "14px" },
           }}
           image={true}
           iconURL={serviceApp[3].image}
@@ -393,38 +462,43 @@ const WebDevelopment = () => {
 
       {/* technologies we use */}
 
-<Box
-sx={{
-  mt:"140px"
-}}
->
-      <TecgnologiesComponent 
-      heading1={`Technologies That Drive`}
-      heading2={`Exceptional Web Development`}
-
-      content={`Mozack uses state-of-the-art technologies and frameworks to ensure your website performs seamlessly:`}
-      title={[
-        "*Frontend Frameworks*: React.js, Angular, Vue.js, Svelte",
-        "*Backend Frameworks*: Node.js, PHP (Laravel), Python (Django/Flask)",
-        "*CMS Platforms*: WordPress, Drupal, Joomla",
-        "*Full-Stack Tools*: Next.js, Nuxt.js, MERN, MEAN",
-        "*Databases*: MySQL, MongoDB, Firebase, PostgreSQL"
-      ]}
-      content2={`Our expertise ensures that your website is fast, secure, and built to perform.`}
-      />
-
-</Box>
-
+      <Box
+        sx={{
+          mt: "140px",
+        }}
+      >
+        <TecgnologiesComponent
+          heading1={`Technologies That Drive`}
+          heading2={`Exceptional Web Development`}
+          content={`Mozack uses state-of-the-art technologies and frameworks to ensure your website performs seamlessly:`}
+          title={[
+            "*Frontend Frameworks*: React.js, Angular, Vue.js, Svelte",
+            "*Backend Frameworks*: Node.js, PHP (Laravel), Python (Django/Flask)",
+            "*CMS Platforms*: WordPress, Drupal, Joomla",
+            "*Full-Stack Tools*: Next.js, Nuxt.js, MERN, MEAN",
+            "*Databases*: MySQL, MongoDB, Firebase, PostgreSQL",
+          ]}
+          content2={`Our expertise ensures that your website is fast, secure, and built to perform.`}
+        />
+      </Box>
 
       <Box>
         <Box
           sx={{
-            paddingX: {lg: "20px", md: "20px !important",sm:'0px !important', xs: "0px !important" },
+            paddingX: {
+              lg: "20px",
+              md: "20px !important",
+              sm: "0px !important",
+              xs: "0px !important",
+            },
             mt: "90px",
             padding: { md: "0px 0px", xs: "0px 20px" },
           }}
         >
-          <StyledHeading title1="A Step-by-Step " title2="Process for Building Success" />
+          <StyledHeading
+            title1="A Step-by-Step "
+            title2="Process for Building Success"
+          />
 
           <Box
             sx={{
@@ -434,7 +508,7 @@ sx={{
                 xs: "column",
               },
               gap: "3rem",
-              mt:"10px"
+              mt: "10px",
             }}
           >
             <Box
@@ -454,7 +528,7 @@ sx={{
             <Box
               sx={{
                 borderLeft: "3px solid #F1F1F1",
-                pl:{sm:"40px", xs:"0px"}
+                pl: { sm: "40px", xs: "0px" },
               }}
             >
               <ServicesCard
@@ -534,73 +608,83 @@ sx={{
       {/* our portfolio section will be there */}
 
       <Box
-      sx={{
-        mt:"80px",
-        mb:"120px"
-      }}
+        sx={{
+          mt: "80px",
+          mb: "120px",
+        }}
       >
-          <StyledHeading title1="Our" sx1={{fontFamily:'satoshi !important'}} title2="Portfolio" sx2={{fontFamily:'satoshi-light !important'}} 
-     styledSx={{
-      display: "flex",
-      justifyContent: {md: "left",sm: "center", xs: "center"},
-      alignItems: "center",
-      mb: "40px",
-      // padding:{sm: "0px 20px", xs: "0px 20px"},
-    }}
-     />
+        <StyledHeading
+          title1="Our"
+          sx1={{ fontFamily: "satoshi !important" }}
+          title2="Portfolio"
+          sx2={{ fontFamily: "satoshi-light !important" }}
+          styledSx={{
+            display: "flex",
+            justifyContent: { md: "left", sm: "center", xs: "center" },
+            alignItems: "center",
+            mb: "40px",
+            // padding:{sm: "0px 20px", xs: "0px 20px"},
+          }}
+        />
 
         <KeenSliderPortfolio arrayToList={webDevList} />
         <Box
-        sx={{
-          mt:"30px",
-          // paddingBottom: "130px",
-          maxWidth: "1500px",
-          display: "flex",
-          justifyContent: "flex-end",
-        }}
-      >
-        <CustomButton
-          svgColor={"black"}
-          buttonStyle={{
-            fontWeight: 600,
-            textTransform: "capitalize",
-            color: "white",
-            padding: { xs: "15px", md: "20px" },
-            marginTop: "20px",
-            fontFamily: "Outfit",
-            fontSize: { xs: "14px", md: "16px" },
-            lineHeight: "20.16px",
-            backgroundColor: "black",
-            borderRadius: "10px",
+          sx={{
+            mt: "30px",
+            // paddingBottom: "130px",
+            maxWidth: "1500px",
+            display: "flex",
+            justifyContent: "flex-end",
           }}
-          title="Load More"
-        />
+        >
+          <CustomButton
+            svgColor={"black"}
+            buttonStyle={{
+              fontWeight: 600,
+              textTransform: "capitalize",
+              color: "white",
+              padding: { xs: "15px", md: "20px" },
+              marginTop: "20px",
+              fontFamily: "Outfit",
+              fontSize: { xs: "14px", md: "16px" },
+              lineHeight: "20.16px",
+              backgroundColor: "black",
+              borderRadius: "10px",
+            }}
+            title="Load More"
+          />
+        </Box>
       </Box>
-      </Box>
-    
 
       {/* image with background and text full width */}
-    <DesignDevelop
-    title={"Let’s Build Your Next Project Together"}
-    content={"Ready to transform your online presence? Partner with Mozack and create a website that delivers results."}
-    />
+      <DesignDevelop
+        title={"Let’s Build Your Next Project Together"}
+        content={
+          "Ready to transform your online presence? Partner with Mozack and create a website that delivers results."
+        }
+      />
 
       {/* Heading here component */}
 
-      <Box sx={{ mt: "90px",
-        padding: {lg:"0px 20px 0px 20px", md:"0px 20px 0px 20px", sm:"0px 0px 0px 0px", xs:"0px 0px 0px 0px"},
-       }}
-      
+      <Box
+        sx={{
+          mt: "90px",
+          padding: {
+            lg: "0px 20px 0px 20px",
+            md: "0px 20px 0px 20px",
+            sm: "0px 0px 0px 0px",
+            xs: "0px 0px 0px 0px",
+          },
+        }}
       >
-         <LeftRightComponent
+        <LeftRightComponent
           styledSx={{
-            fontSize: {xl:"40px",md:"30px", sm:"20px", xs:"20px"},
+            fontSize: { xl: "40px", md: "30px", sm: "20px", xs: "20px" },
             // flexDirection: "column",
             // justifyContent: "start",
-            display:"flex",
+            display: "flex",
             textAlign: "start",
           }}
-          
           isRow={true}
           title1={"Leading the Way with Modern"}
           title2={"Web Development Frameworks"}
@@ -608,19 +692,24 @@ sx={{
           content2={[
             "*Next.js and Nuxt.js*: Improve SEO with server-side rendering and faster page loading.",
             "*Angular*: Build robust and dynamic enterprise-grade applications.",
-            "*React.js*: For interactive, fast, and scalable web applications."
+            "*React.js*: For interactive, fast, and scalable web applications.",
           ]}
           content3={`The right framework guarantees optimized performance, responsiveness, and scalability.`}
           buttonShow={false}
           image={personsImage1}
-          sx1={{order:2, }}
+          sx1={{ order: 2 }}
         />
       </Box>
 
       {/* Faqs*/}
       <Box
         sx={{
-          padding: {lg:"0px 20px 0px 20px", md:"0px 20px 0px 20px", sm:"0px 0px 0px 0px", xs:"0px 0px 0px 0px"},
+          padding: {
+            lg: "0px 20px 0px 20px",
+            md: "0px 20px 0px 20px",
+            sm: "0px 0px 0px 0px",
+            xs: "0px 0px 0px 0px",
+          },
           display: "flex",
           flexDirection: "column",
           gap: "0rem",
@@ -635,7 +724,12 @@ sx={{
 
       <Box
         sx={{
-          padding: {lg:"0px 20px 0px 20px", md:"0px 20px 0px 20px", sm:"0px 0px 0px 0px", xs:"0px 0px 0px 0px"},
+          padding: {
+            lg: "0px 20px 0px 20px",
+            md: "0px 20px 0px 20px",
+            sm: "0px 0px 0px 0px",
+            xs: "0px 0px 0px 0px",
+          },
           display: "flex",
           flexDirection: "column",
           gap: "0rem",
@@ -650,7 +744,8 @@ sx={{
           <Typography
             sx={{ color: "#939393", fontSize: "16px", lineHeight: "36px" }}
           >
-           From frontend design to backend programming, Mozack covers every aspect of web development. Our offerings include:
+            From frontend design to backend programming, Mozack covers every
+            aspect of web development. Our offerings include:
           </Typography>
         </Box>
 
@@ -665,182 +760,197 @@ sx={{
         {/* slider faq 1 about blog */}
       </Box>
 
-      <Box sx={{
-        padding: {lg:"60px 20px 60px 20px", md:"60px 20px 60px 20px", sm:"0px 0px 0px 0px", xs:"0px 0px 0px 0px"},
-        mt:"70px"
-      }}>
-    <StyledHeading title1="Service a Multitude of" title2="Industries, Exceptionally" />
-
-
-    <Box
-  sx={{
-    display: { md: "flex", sm: "block" },
-    width: { md: "100%", sm: '100%' },
-    m: "0 auto",
-    flexWrap: "wrap",
-    mt:"60px"
-  }}
->
-  {ServiceIcon.map((item, index) => (
-    <ServiceIconBox
-      btnText={false}
-      btnURL={false}
-      key={index}
-      style={{
-        flexBasis: "15%",
-        flexGrow: "1",
-        flexShrink: "1",
-        paddingBottom: { sm: "40px", xs: "40px" },
-
-        // Border conditions for screens greater than 1200px (custom rule)
-        borderRight: {
-          xs: "none", // default no border right for small screens
-          md: (index % 5 !== 4 && index <= 14) ? "1px solid #F1F1F1" : "none", // applies when width > 1200px
-        },
-        borderBottom: {
-          xs: "none", // default no border bottom for small screens
-          md: (index < 10) ? "1px solid #F1F1F1" : "none", // applies when width > 1200px
-        },
-
-        // Border conditions for screens greater than 900px (md size)
-        [`@media (min-width: 900px)`]: {
-          borderRight: (index % 4 !== 3 && index <= 14) ? "1px solid #F1F1F1" : "none", // exclude boxes 4, 8, 12, 15
-          borderBottom: (index < 12) ? "1px solid #F1F1F1" : "none", // exclude boxes 13, 14, 15 from border bottom
-        },
-      }}
-      index={index}
-      iconURL={item?.iconURL}
-      title={item?.title}
-    />
-  ))}
-</Box>
-
-
-    <Box
-        sx={{
-      display: {md:"none", sm:"block"},
-        width: {md:"1509px", sm:'100%'},
-          m: "0 auto",
-          paddingTop: {md:"60px", sm:"40px !important", xs:"60px"},
-          
-        }}
-      >
-        {ServiceIcon1.map((item, index) => (
-          <ServiceIconBox
-          btnText={false}
-          btnURL={false}
-            key={index}
-            style={{
-              flexBasis: "503px",
-              borderRight: {md:index < 4 && "1px solid #F1F1F1", xs:"none"},
-              paddingBottom:{ sm:"40px", xs:"40px"},
-              borderBottom: "1px solid #F1F1F1",
-            }}
-            index={index}
-            iconURL={item?.iconURL}
-            title={item?.title}
-          />
-        ))}
-       
-      </Box>
       <Box
         sx={{
-      display: {md:"none", sm:"block"},
-        width: {md:"1509px", sm:'100%'},
-          m: "0 auto",
-          
+          padding: {
+            lg: "60px 20px 60px 20px",
+            md: "60px 20px 60px 20px",
+            sm: "0px 0px 0px 0px",
+            xs: "0px 0px 0px 0px",
+          },
+          mt: "70px",
         }}
       >
-        {ServiceIcon2.map((item, index) => (
-          <ServiceIconBox
-          btnText={false}
-          btnURL={false}
-            key={index}
-            style={{
-              flexBasis: "503px",
-              paddingBottom:{ sm:"40px", xs:"40px"},
-              borderRight: {md:index < 4 && "1px solid #F1F1F1", xs:"none"},
-              borderBottom: "1px solid #F1F1F1",
-            }}
-            index={index}
-            iconURL={item?.iconURL}
-            title={item?.title}
-          />
-        ))}
-       
-      </Box>
-      <Box
-        sx={{
-      display: {md:"none", sm:"block"},
-        width: {md:"1509px", sm:'100%'},
-          m: "0 auto",
-          
-        }}
-      >
-      
-        {ServiceIcon3.map((item, index) => (
-          <ServiceIconBox
-          btnText={false}
-          btnURL={false}
-            key={index}
-            style={{
-              flexBasis: "503px",
-              paddingBottom:{ sm:"40px", xs:"40px"},
-              borderRight: {md:index < 4 && "1px solid #F1F1F1", xs:"none"},
+        <StyledHeading
+          title1="Service a Multitude of"
+          title2="Industries, Exceptionally"
+        />
 
-              borderBottom:"none !important"
-            }}
-            index={index}
-            iconURL={item?.iconURL}
-            title={item?.title}
-          />
-        ))}
-       
-      </Box>
-      </Box>
+        <Box
+          sx={{
+            display: { md: "flex", sm: "block" },
+            width: { md: "100%", sm: "100%" },
+            m: "0 auto",
+            flexWrap: "wrap",
+            mt: "60px",
+          }}
+        >
+          {ServiceIcon.map((item, index) => (
+            <ServiceIconBox
+              btnText={false}
+              btnURL={false}
+              key={index}
+              style={{
+                flexBasis: "15%",
+                flexGrow: "1",
+                flexShrink: "1",
+                paddingBottom: { sm: "40px", xs: "40px" },
 
-{/* now our latest articles and blogs */}
-<Box sx={{mt:"70px",
-}}
-id="blogs"
->
-        < StyledHeading title1='Our latest news &' title2='articles from the blog' sx={{
-      display:'block'
-    }} />
-    <BlogSlider blogData={blogData}  />
+                // Border conditions for screens greater than 1200px (custom rule)
+                borderRight: {
+                  xs: "none", // default no border right for small screens
+                  md:
+                    index % 5 !== 4 && index <= 14
+                      ? "1px solid #F1F1F1"
+                      : "none", // applies when width > 1200px
+                },
+                borderBottom: {
+                  xs: "none", // default no border bottom for small screens
+                  md: index < 10 ? "1px solid #F1F1F1" : "none", // applies when width > 1200px
+                },
+
+                // Border conditions for screens greater than 900px (md size)
+                [`@media (min-width: 900px)`]: {
+                  borderRight:
+                    index % 4 !== 3 && index <= 14
+                      ? "1px solid #F1F1F1"
+                      : "none", // exclude boxes 4, 8, 12, 15
+                  borderBottom: index < 12 ? "1px solid #F1F1F1" : "none", // exclude boxes 13, 14, 15 from border bottom
+                },
+              }}
+              index={index}
+              iconURL={item?.iconURL}
+              title={item?.title}
+            />
+          ))}
         </Box>
 
-        <Box sx={{
+        <Box
+          sx={{
+            display: { md: "none", sm: "block" },
+            width: { md: "1509px", sm: "100%" },
+            m: "0 auto",
+            paddingTop: { md: "60px", sm: "40px !important", xs: "60px" },
+          }}
+        >
+          {ServiceIcon1.map((item, index) => (
+            <ServiceIconBox
+              btnText={false}
+              btnURL={false}
+              key={index}
+              style={{
+                flexBasis: "503px",
+                borderRight: {
+                  md: index < 4 && "1px solid #F1F1F1",
+                  xs: "none",
+                },
+                paddingBottom: { sm: "40px", xs: "40px" },
+                borderBottom: "1px solid #F1F1F1",
+              }}
+              index={index}
+              iconURL={item?.iconURL}
+              title={item?.title}
+            />
+          ))}
+        </Box>
+        <Box
+          sx={{
+            display: { md: "none", sm: "block" },
+            width: { md: "1509px", sm: "100%" },
+            m: "0 auto",
+          }}
+        >
+          {ServiceIcon2.map((item, index) => (
+            <ServiceIconBox
+              btnText={false}
+              btnURL={false}
+              key={index}
+              style={{
+                flexBasis: "503px",
+                paddingBottom: { sm: "40px", xs: "40px" },
+                borderRight: {
+                  md: index < 4 && "1px solid #F1F1F1",
+                  xs: "none",
+                },
+                borderBottom: "1px solid #F1F1F1",
+              }}
+              index={index}
+              iconURL={item?.iconURL}
+              title={item?.title}
+            />
+          ))}
+        </Box>
+        <Box
+          sx={{
+            display: { md: "none", sm: "block" },
+            width: { md: "1509px", sm: "100%" },
+            m: "0 auto",
+          }}
+        >
+          {ServiceIcon3.map((item, index) => (
+            <ServiceIconBox
+              btnText={false}
+              btnURL={false}
+              key={index}
+              style={{
+                flexBasis: "503px",
+                paddingBottom: { sm: "40px", xs: "40px" },
+                borderRight: {
+                  md: index < 4 && "1px solid #F1F1F1",
+                  xs: "none",
+                },
+
+                borderBottom: "none !important",
+              }}
+              index={index}
+              iconURL={item?.iconURL}
+              title={item?.title}
+            />
+          ))}
+        </Box>
+      </Box>
+
+      {/* now our latest articles and blogs */}
+      <Box sx={{ mt: "70px" }} id="blogs">
+        <StyledHeading
+          title1="Our latest news &"
+          title2="articles from the blog"
+          sx={{
+            display: "block",
+          }}
+        />
+        <BlogSlider blogData={blogData} />
+      </Box>
+
+      <Box
+        sx={{
           padding: { md: "60px 0px", xs: "10px 0px" },
-          display:"flex",
-          flexDirection:"column",
-          
-          width:"100%"
-        }} >
-          < StyledHeading title1='Frequently ' title2='Asked Questions' sx={{
-      display:'flex',
-      padding: { md: "60px 0px", xs: "60px 0px" },
-    }} />
-    <Box
-    sx={{
-      overflow:{xs:"hidden", xl:"visible"},
-      paddingBottom:{xs:"50px"}
-      
-      // width:"100%"
-    }}
-    >
+          display: "flex",
+          flexDirection: "column",
+
+          width: "100%",
+        }}
+      >
+        <StyledHeading
+          title1="Frequently "
+          title2="Asked Questions"
+          sx={{
+            display: "flex",
+            padding: { md: "60px 0px", xs: "60px 0px" },
+          }}
+        />
+        <Box
+          sx={{
+            overflow: { xs: "hidden", xl: "visible" },
+            paddingBottom: { xs: "50px" },
+
+            // width:"100%"
+          }}
+        >
           <SecondFAQSlider data={SecondFaq} />
-
-    </Box>
-
-
         </Box>
-        
-
-
-
+      </Box>
     </Box>
-    
   );
 };
 

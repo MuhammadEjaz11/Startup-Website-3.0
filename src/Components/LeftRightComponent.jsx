@@ -20,14 +20,16 @@ const LeftRightComponent = ({
   buttonStyle,
   content,
   content2,
-  content3
-
+  content3,
+  titleSpan2,
 }) => {
   const renderBoldText = (text) => {
     const parts = text.split(/(\*.*?\*)/g); // Split the text on `*...*`
     return parts.map((part, index) =>
       part.startsWith("*") && part.endsWith("*") ? (
-        <strong className="li-tag-rendering" key={index}>{part.slice(1, -1)}</strong>
+        <strong className="li-tag-rendering" key={index}>
+          {part.slice(1, -1)}
+        </strong>
       ) : (
         part
       )
@@ -42,8 +44,6 @@ const LeftRightComponent = ({
         width: "100%",
         flexDirection: { md: "row", xs: "column" },
         ...sx,
-        
-
       }}
     >
       <Box
@@ -57,10 +57,7 @@ const LeftRightComponent = ({
           ...sx1,
           alignItems: "start",
           mt: "14px",
-          // border:"2px solid red" 
-
-
-
+          // border:"2px solid red"
         }}
       >
         <StyledHeading
@@ -78,6 +75,7 @@ const LeftRightComponent = ({
           }}
           title1={title1}
           title2={title2}
+          titleSpan2={titleSpan2}
         />
         <Typography
           sx={{
@@ -92,8 +90,7 @@ const LeftRightComponent = ({
             lineHeight: { xl: "36px", md: "30px", xs: "22px" },
           }}
         >
-
-{content ? renderBoldText(content) : ""}
+          {content ? renderBoldText(content) : ""}
         </Typography>
 
         <Typography
@@ -109,29 +106,30 @@ const LeftRightComponent = ({
             lineHeight: { xl: "36px", md: "30px", xs: "22px" },
           }}
         >
-
           {Array.isArray(content2) ? (
-            <ul className="unordered-list" >
+            <ul className="unordered-list">
               {content2.map((item, index) => (
                 <li className="li-tag-rendering" key={index}>
-                {renderBoldText(item)}
-              </li>
+                  {renderBoldText(item)}
+                </li>
               ))}
             </ul>
           ) : (
             <Typography
-            sx={{
-              color: "#939393",
-              fontSize: {
-                md: "13px",
-                xl: "16px",
-  
-                sm: "14px",
-                xs: "14px",
-              },
-              lineHeight: { xl: "36px", md: "30px", xs: "22px" },
-            }}
-          >{ content2 && renderBoldText(content2)} </Typography>
+              sx={{
+                color: "#939393",
+                fontSize: {
+                  md: "13px",
+                  xl: "16px",
+
+                  sm: "14px",
+                  xs: "14px",
+                },
+                lineHeight: { xl: "36px", md: "30px", xs: "22px" },
+              }}
+            >
+              {content2 && renderBoldText(content2)}{" "}
+            </Typography>
           )}
         </Typography>
         <Typography
@@ -147,39 +145,33 @@ const LeftRightComponent = ({
             lineHeight: { xl: "36px", md: "30px", xs: "22px" },
           }}
         >
-        {
-          content3 ? content3 : ""
-        }
-</Typography>
+          {content3 ? content3 : ""}
+        </Typography>
 
+        {buttonShow ? (
+          <CustomButton
+            title="Order Now"
+            svgColor={"black"}
+            buttonStyle={{
+              maxWidth: "235px",
+              fontWeight: 600,
+              textTransform: "capitalize",
+              color: "white",
+              padding: { xs: "15px", md: "20px" },
+              marginTop: "20px",
+              fontFamily: "Outfit",
+              fontSize: { xs: "14px", md: "16px" },
+              lineHeight: "20.16px",
+              backgroundColor: "black",
+              borderRadius: "15px",
+              display: "none",
 
-
-        {
-          buttonShow ? (
-            <CustomButton
-              title="Order Now"
-              svgColor={"black"}
-              buttonStyle={{
-                maxWidth: "235px",
-                fontWeight: 600,
-                textTransform: "capitalize",
-                color: "white",
-                padding: { xs: "15px", md: "20px" },
-                marginTop: "20px",
-                fontFamily: "Outfit",
-                fontSize: { xs: "14px", md: "16px" },
-                lineHeight: "20.16px",
-                backgroundColor: "black",
-                borderRadius: "15px",
-                display: "none",
-
-                ...buttonStyle,
-              }}
-            />
-
-          ) : ""
-        }
-
+              ...buttonStyle,
+            }}
+          />
+        ) : (
+          ""
+        )}
       </Box>
       <Box
         sx={{
@@ -196,15 +188,14 @@ const LeftRightComponent = ({
             justifyContent: "start",
             alignItems: "start",
 
-            height: "100%"
-
+            height: "100%",
           }}
         >
           <img
             src={image}
             style={{
               width: "100%",
-              height: "auto"
+              height: "auto",
             }}
           />
         </Box>

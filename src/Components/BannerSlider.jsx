@@ -1,13 +1,13 @@
-import { Box, Typography, Link, IconButton } from '@mui/material';
-import { NavLink, useLocation } from 'react-router-dom';
+import { Box, Typography, Link, IconButton } from "@mui/material";
+import { NavLink, useLocation } from "react-router-dom";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import React from 'react';
-import { bannerData } from '../../utils';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import ArrowButtom from '../image/ArrowBottom.png'
-import ArrowTop from '../image/ArrowTop.png'
+import React from "react";
+import { bannerData } from "../../utils";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import ArrowButtom from "../image/ArrowButtom.svg";
+import ArrowTop from "../image/ArrowTop.svg";
 
 function BannerSlider() {
   const location = useLocation();
@@ -76,7 +76,7 @@ function BannerSlider() {
     [WheelControls]
   );
 
-  const value = location.pathname.replace('/services/', "");
+  const value = location.pathname.replace("/services/", "");
 
   return (
     <>
@@ -85,72 +85,70 @@ function BannerSlider() {
           maxWidth: "100%",
           margin: "auto",
           display: "flex",
-          position: 'relative',  // Important for positioning arrows
-          justifyContent:{
-            md:"space-between ",
+          position: "relative", // Important for positioning arrows
+          zIndex: 10,
+          justifyContent: {
+            md: "space-between ",
             // xs:""
           },
-          gap:"1rem",  
-          flexDirection:{
-            md:"row",
-            xs:"column"
+          gap: "1rem",
+          flexDirection: {
+            md: "row",
+            xs: "column",
           },
-          alignItems:"center",
+          alignItems: "center",
         }}
       >
         {/* Left side (Text) */}
         <Box
           sx={{
             maxWidth: "605px",
-            flexBasis:"40%", 
+            flexBasis: "40%",
             display: "flex",
             flexDirection: "column",
             alignItems: "middle",
-            paddingBottom: '33px  ',
-           
+            paddingBottom: "33px  ",
           }}
         >
           {/* Breadcrumb navigation */}
-          <Box sx={{ display: "flex" , alignItems:"center", mb:"10px"}}>
+          <Box sx={{ display: "flex", alignItems: "center", mb: "10px" }}>
             <NavLink
-              to={'/'}
+              to={"/"}
               style={{
                 textDecoration: "none",
-                color: '#1E1E1E',
-                fontSize: {xl:'16px', xs:"13px"},
+                color: "#1E1E1E",
+                fontSize: { xl: "16px", xs: "13px" },
                 fontWeight: "400",
-                
               }}
             >
-             <Typography
-             sx={{
-              textDecoration: "none",
-              color: '#1E1E1E',
-              fontSize: '16px',
-              fontWeight: "400",
-              fontFamily: "Lato",
-              lineHeight:{xl:"1.5", md:"1"}
-
-             }}
-             >  Home
+              <Typography
+                sx={{
+                  textDecoration: "none",
+                  color: "#1E1E1E",
+                  fontSize: "16px",
+                  fontWeight: "400",
+                  fontFamily: "Lato",
+                  lineHeight: { xl: "1.5", md: "1" },
+                }}
+              >
+                {" "}
+                Home
               </Typography>
-            </NavLink >
+            </NavLink>
             <Typography
               sx={{
-                textTransform: 'capitalize',
-                color: '#1E1E1E',
+                textTransform: "capitalize",
+                color: "#1E1E1E",
 
-                fontSize: '16px',
-                paddingLeft:'10px',
+                fontSize: "16px",
+                paddingLeft: "10px",
                 fontWeight: "400 !important",
-              fontFamily: "Lato",
-              lineHeight:{xl:"1.5", md:"1"}
-
-
-
+                fontFamily: "Lato",
+                lineHeight: { xl: "1.5", md: "1" },
               }}
             >
-            / &nbsp;  {` ${location?.pathname.split('-').join(' ').slice(1).slice(9)}`}
+              / &nbsp;{" "}
+              {` ${location?.pathname.split("-").join(" ").slice(1).slice(9)}`}
             </Typography>
           </Box>
 
@@ -158,49 +156,68 @@ function BannerSlider() {
           <Box
             sx={{
               // maxWidth: '416px',
-              fontFamily: 'satoshi',
-              fontSize: '50px',
-              
+              fontFamily: "satoshi",
+              fontSize: "50px",
             }}
           >
             <Typography
               sx={{
-                fontFamily: 'satoshi-light',
-                fontSize: {xl:"50px", md:"35px"},
+                fontFamily: "satoshi-light",
+                fontSize: { xl: "50px", md: "35px" },
                 fontWeight: 700,
                 // lineHeight: ,
-                color: '#1E1E1E',
-                textTransform: 'capitalize',  
-                lineHeight:{xl:"67.5px", md:"45px"}
+                color: "#1E1E1E",
+                textTransform: "capitalize",
+                lineHeight: { xl: "67.5px", md: "45px" },
               }}
             >
               {bannerData[value]?.title ? bannerData[value]?.title : " "}
+              <Box
+                component={"span"}
+                sx={{
+                  fontFamily: "'Bakbak One', sans-serif",
+                  fontSize: { xl: "50px", md: "35px" },
+                  ml: "10px",
+                  fontWeight: 700,
+                  lineHeight: { xl: "67.5px", md: "45px" },
+                  color: "#1E1E1E",
+                  textTransform: "capitalize",
+                }}
+              >
+                {bannerData[value]?.titleSpan2
+                  ? bannerData[value]?.titleSpan2
+                  : bannerData[value]?.titleSpan2}
+              </Box>
             </Typography>
             <Typography
               sx={{
-                fontFamily: 'satoshi',
-                fontSize: {xl:"50px", md:"35px"},
+                fontFamily: "satoshi",
+                fontSize: { xl: "50px", md: "35px" },
 
                 fontWeight: 700,
-                lineHeight:{xl:"67.5px", md:"45px"},
-                color: '#1E1E1E',
-                textTransform: 'capitalize',
+                lineHeight: { xl: "67.5px", md: "45px" },
+                color: "#1E1E1E",
+                textTransform: "capitalize",
               }}
             >
-              {bannerData[value]?.titleSpan ? bannerData[value]?.titleSpan : bannerData[value]?.titleSpan}
+              {bannerData[value]?.titleSpan
+                ? bannerData[value]?.titleSpan
+                : bannerData[value]?.titleSpan}
             </Typography>
             <Typography
               sx={{
-                marginTop: '25px',
+                marginTop: "25px",
                 // maxWidth: '565px',
-                fontFamily: 'Inter',
-                fontSize: '16px',
+                fontFamily: "Inter",
+                fontSize: "16px",
                 fontWeight: 400,
-                lineHeight: '36px',
-                color: '#939393',
+                lineHeight: "36px",
+                color: "#939393",
               }}
             >
-              {bannerData[value]?.text ? bannerData[value]?.text : bannerData[value].text}
+              {bannerData[value]?.text
+                ? bannerData[value]?.text
+                : bannerData[value].text}
             </Typography>
           </Box>
         </Box>
@@ -210,63 +227,73 @@ function BannerSlider() {
           sx={{
             maxWidth: { xs: "100%", md: "453px" },
             // marginLeft: 'auto',
-            position: 'relative',
-            flexBasis:"50%", 
-           
-          
+            position: "relative",
+            flexBasis: "50%",
           }}
         >
           {/* Up arrow */}
           <IconButton
             sx={{
-              position: 'absolute',
-              top: '45%',  // Center vertically
-              right: {sm:'103%', xs:"88%"},  // Place arrows on the left of the slider
-              transform: 'translateY(-100%)',  // Offset the arrow upwards
+              position: "absolute",
+              top: "45%", // Center vertically
+              right: { sm: "103%", xs: "88%" }, // Place arrows on the left of the slider
+              transform: "translateY(-100%)", // Offset the arrow upwards
               zIndex: 10,
-              backgroundColor: '#fff',
-              borderRadius: '19px',
-              boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
-              width: {sm:'50px', xs:"35px"},
-              height: {sm:'50px', xs:"35px"},
-              '&:hover': { backgroundColor: '#f0f0f0' },
+              backgroundColor: "#fff",
+              borderRadius: "19px",
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+              width: { sm: "50px", xs: "35px" },
+              height: { sm: "50px", xs: "35px" },
+              "&:hover": { backgroundColor: "#f0f0f0" },
             }}
             onClick={() => slider.current?.prev()}
           >
-            <img src={ ArrowTop } alt="arrow"  />
+            <img src={ArrowTop} alt="arrow" />
           </IconButton>
 
           {/* Slider */}
-          <Box ref={sliderRef} className="keen-slider" style={{ maxHeight: 486, maxWidth: 453, }}>
-            {bannerData[value]?.images?.length > 0 && bannerData[value]?.images.map((image, index) => (
-              <img
-                key={index}
-                className={`keen-slider__slide number-slide${index + 1}`}
-                src={image}
-                alt={`banner-${index}`}
-                style={{ width: '90%', objectFit: 'contain', minHeight:'300px', maxHeight:'400px', marginLeft:"50px", }}
-              />
-            ))}
+          <Box
+            ref={sliderRef}
+            className="keen-slider"
+            style={{ maxHeight: 486, maxWidth: 453 }}
+          >
+            {bannerData[value]?.images?.length > 0 &&
+              bannerData[value]?.images.map((image, index) => (
+                <img
+                  key={index}
+                  className={`keen-slider__slide number-slide${index + 1}`}
+                  src={image}
+                  alt={`banner-${index}`}
+                  style={{
+                    width: "90%",
+                    objectFit: "contain",
+                    borderRadius:"50px",
+                    minHeight: "300px",
+                    maxHeight: "400px",
+                    marginLeft: "50px",
+                  }}
+                />
+              ))}
           </Box>
 
           {/* Down arrow */}
           <IconButton
             sx={{
-              position: 'absolute',
-              top: '50%',  // Center vertically
-              right: {sm:'103%', xs:"88%"},  // Place arrows on the left of the slider
-              transform: 'translateY(0)',  // Offset the arrow downwards
+              position: "absolute",
+              top: "50%", // Center vertically
+              right: { sm: "103%", xs: "88%" }, // Place arrows on the left of the slider
+              transform: "translateY(0)", // Offset the arrow downwards
               zIndex: 10,
-              backgroundColor: '#fff',
-              borderRadius: '19px',
-              boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
-              width:{sm:'50px', xs:"35px"},
-              height: {sm:'50px', xs:"35px"},
-              '&:hover': { backgroundColor: '#f0f0f0' },
+              backgroundColor: "#fff",
+              borderRadius: "19px",
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+              width: { sm: "50px", xs: "35px" },
+              height: { sm: "50px", xs: "35px" },
+              "&:hover": { backgroundColor: "#f0f0f0" },
             }}
             onClick={() => slider.current?.next()}
           >
-            <img src={ArrowButtom}  alt="arrow" />
+            <img src={ArrowButtom} alt="arrow" />
           </IconButton>
         </Box>
       </Box>

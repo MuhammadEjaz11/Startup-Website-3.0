@@ -39,6 +39,8 @@ function Header() {
         justifyContent: "center",
         paddingTop: "30px",
         zIndex: "100",
+        position: "relative",
+        
       }}
     >
       <Box sx={{ display: "flex", width: "100%" }}>

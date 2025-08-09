@@ -9,7 +9,7 @@ const RoundCircle = () => {
         height: {xl:'450px', md:'300px', sm:"340px", xs:"200px"},
         borderRadius: '50%',
         backgroundColor: '#F5F5F5', // Light background color
-        border: '7px solid #E0E0E0', // Grey outer border
+        border: '7px solid #E8E8E8', // Grey outer border
         position: 'relative',
         display: 'flex',
         justifyContent: 'center',
@@ -26,9 +26,9 @@ const RoundCircle = () => {
           height: '100%',
           borderRadius: '50%',
           border: '7px solid transparent',
-          borderTopColor: '#FFC800', // Yellow border for progress
-          borderRightColor: '#FFC800',
-          borderLeftColor: '#FFC800',
+          borderTopColor: '#B6DFE3', // Yellow border for progress
+          borderRightColor: '#B6DFE3',
+          borderLeftColor: '#B6DFE3',
           transform: 'rotate(130deg)', // Slight rotation to mimic partial progress
         }}
       />
@@ -56,7 +56,7 @@ const RoundCircle = () => {
             fontSize: '50px',
           }}
         >
-          0/4
+          0/3
         </Typography>
       </Box>
     </Box>

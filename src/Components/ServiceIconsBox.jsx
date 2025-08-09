@@ -14,14 +14,15 @@ const ServiceIconBox = ({
         <Box
         key={index}
         sx={{
+          width:"100%"  ,
           // flexBasis: { xs: '100%', sm: '48%', md: '31%' },
           borderRight: { md: index < 4 && "1px solid #F1F1F1 !Important" },
           borderBottom: { md:'none', xs: "1px solid #F1F1F1"},
-          p:{md:"57px 30px", xs:"20px 20px"},
+          p:{md:"30px 30px", xs:"20px 20px"},
           marginBottom: { xs: '20px', md: '0' },
           textAlign: { xs: 'center', md: 'center' },
           ...style,
-          ...sx1,
+          
         }}
       >
         <Box
@@ -36,7 +37,7 @@ const ServiceIconBox = ({
           }} >
           {
               image ? 
-              <img src={iconURL} alt="Icon"  style={{ width: '50px', height: '50px', ...sx1 ,objectFit:"contain"}} />
+              <img src={iconURL} alt="Icon"  style={{ width: '100px', height: '100px', ...sx1 ,objectFit:"contain"}} />
               : ""
           }
           </Box>
