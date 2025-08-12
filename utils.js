@@ -344,7 +344,7 @@ export const ServiceIcon1 = [
     title: "Quick Turnaround",
   },
   {
-    iconURL:"/images/all-services/Personalized Attention.png",
+    iconURL: "/images/all-services/Personalized Attention.png",
     title: "Personalized Attention",
   },
   {
@@ -399,6 +399,43 @@ export const ServiceIcon3 = [
   {
     iconURL: Svg15,
     title: "Travel & Tourism",
+  },
+];
+
+export const cutomePatchServiceIcon = [
+  {
+    iconURL: "/images/custom-patches-service-icon/six.svg",
+    title: "No Minim Order",
+  },
+  {
+    iconURL: "/images/custom-patches-service-icon/seven.svg",
+    title: "Quick Turnaround",
+  },
+  {
+    iconURL: "/images/custom-patches-service-icon/five.svg",
+    title: "Personalized Attention",
+  },
+  {
+    iconURL: "/images/custom-patches-service-icon/eight.svg",
+    title: "Customizable Options",
+  },
+  {
+    iconURL: "/images/custom-patches-service-icon/three.svg",
+    title: "Discount on Bulk Orders",
+  },
+];
+export const cutomePatchServiceIcon2 = [
+  {
+    iconURL: "/images/custom-patches-service-icon/two.svg",
+    title: "Affordable Pricing",
+  },
+  {
+    iconURL: "/images/custom-patches-service-icon/nine.svg",
+    title: "Free Samples",
+  },
+  {
+    iconURL: "/images/custom-patches-service-icon/one.svg",
+    title: "24/7 Customer Support",
   },
 ];
 
@@ -639,8 +676,6 @@ export const CustomPackageDetail = [
     ],
     btnText: "Choose Plan",
   },
-
-
 ];
 export const CustomPackageDigitizing = [
   {
@@ -685,15 +720,60 @@ export const CustomPackageDigitizing = [
     ],
     btnText: "Choose Plan",
   },
-
-
 ];
-
+export const CustomPackageVideo = [
+  {
+    PriceTag: "$25",
+    month: "",
+    title: "Basic",
+    desc: "PLEASE CONTACT US BEFORE PLACING AN ORDER",
+    listItem: [
+      "2-day delivery",
+      "2 Revisions",
+      "Up to 2 minutes",
+      "Color grading",
+      "24/7 Chat Support",
+    ],
+    btnText: "Choose Plan",
+  },
+  {
+    PriceTag: "$50",
+    month: "",
+    title: "Standard",
+    desc: "PLEASE CONTACT ME BEFORE PLACING AN ORDER",
+    listItem: [
+      "3-day delivery",
+      "5 Revisions",
+      "Up to 10 minutes running time",
+      "Color grading",
+      "Sound Design & Mixing",
+      "24/7 Chat Support",
+    ],
+    btnText: "Choose Plan",
+    popular: true,
+  },
+  {
+    PriceTag: "$100",
+    month: "",
+    title: "Premium",
+    desc: "PLEASE CONTACT US BEFORE PLACING AN ORDER",
+    listItem: [
+      "7-day delivery",
+      "9 Revisions",
+      "Up to 15 minutes running time",
+      "Color grading",
+      "Motion graphics",
+      "Subtitles",
+      "24/7 Chat Support",
+    ],
+    btnText: "Choose Plan",
+  },
+];
 export const bannerData = {
   digitizing: {
     title: "Digitizing",
-    titleSpan: "",
     titleSpan2: "Services",
+    titleSpan: "",
 
     text: "Digitizing is the essential process of converting any artwork, logo, or design into a digital embroidery file that can be read and executed by an embroidery machine. Unlike simply uploading a graphic file, digitizing requires a skilled technician called a digitizer to recreate the design using a specialized embroidery software. The process involves assigning stitch types, directions, lengths, and densities to different parts of the design. Each element whether it's a small detail in a logo or the background fill—must be manually programmed to ensure the machine sews it correctly. This process transforms your flat image into a stitch-ready file, typically in formats like DST, PES, EXP, or JEF depending on the machine being used.",
     images: [
@@ -703,16 +783,16 @@ export const bannerData = {
     ],
   },
   "web-development": {
-    title: "Web",
-    titleSpan: "Development",
-    text: "Build high-performing, responsive, and user-friendly websites that elevate your online presence. At Mozack, we craft tailor-made solutions to meet your business goals, ensuring your website stands out and drives results.",
-    images: [webDevelop, webDevelop, webDevelop],
+    title: "Website",
+    titleSpan2: "design",
+    text: "Website Design is the art of creating visually appealing and user-friendly websites that provide an engaging online experience. At Patch Makers, our website design services focus on building responsive, intuitive, and aesthetically pleasing websites that reflect your brand identity, drive user engagement, and help your business succeed online.",
+    images: ["/images/banner/web.png"],
   },
   "graphic-design": {
-    title: "Creative Graphic Design",
-    titleSpan: "Services That Inspire",
-    text: "Elevate your brand with professional graphic design solutions tailored to captivate your audience. At Mozack, we create visually appealing designs that leave a lasting impression and help your business thrive in a competitive landscape.",
-    images: [Graphic, Graphic, Graphic],
+    title: "Graphic",
+    titleSpan2: "Design",
+    text: "Graphic Design is the art of visual communication that combines creativity, typography, imagery, and layout to convey ideas and messages. At Patch Makers, our graphic design services help brands express their identity, promote products, and engage their audience through impactful visuals.",
+    images: ["/images/banner/graphic-design.png"],
   },
   "vector-art": {
     title: "Vector Art ",
@@ -726,13 +806,22 @@ export const bannerData = {
     title: "Custom Patches",
     titleSpan: "Designed Your Way",
     text: "Custom patches are a creative and stylish way to represent your brand, team, event, or personal style. Patch Makers specialize in crafting high-quality patches tailored exactly to your vision. Whether you need embroidered, PVC, leather, chenille, or sublimation patches, our team transforms your ideas into wearable art.  From logos to detailed artwork, every patch is designed with precision, using premium materials and expert craftsmanship. We offer endless customization options including size, shape, colors, and backing types to suit any purpose—uniforms, jackets, bags, caps, or promotional items. Your design, your style, your patch—made to stand out.",
-    images: [Digital, Digital, Digital],
+    images: [
+      "/images/our-portfolio/vector/one.jpg",
+      "/images/our-portfolio/embroidery/two.jpg",
+      "/images/our-portfolio/embroidery/three.jpg",
+    ],
   },
-  "support-&-maintenance": {
-    title: "Reliable Support &",
-    titleSpan: " Maintenance Services",
-    text: "Ensure seamless performance and minimal downtime with our expert support and maintenance solutions tailored to your business needs.",
-    images: [Support, Support, Support],
+  "embroidered-patches": {
+    title: "Embroidered ",
+    titleSpan2: "Patches",
+
+    text: "ECustom embroidered patches offer a classic and professional way to showcase your logo, message, or design. At Patch Makers, we specialize in creating premium embroidered patches that combine durability with rich, textured stitching. Whether for uniforms, apparel branding, clubs, or events, our patches are designed to leave a lasting impression. Each patch is carefully digitized and stitched using high-quality threads and fabrics, ensuring crisp detail and vibrant colors. We offer full customization—from shape and size to border styles and backing options—giving you total creative freedom. Your vision, expertly stitched—Patch Makers brings it to life with craftsmanship that stands the test of time.",
+    images: [
+      "/images/our-portfolio/embroidery/one.jpg",
+      "/images/our-portfolio/embroidery/two.jpg",
+      "/images/our-portfolio/embroidery/three.jpg",
+    ],
   },
   "video-animation": {
     title: "Engaging Video",
@@ -741,10 +830,10 @@ export const bannerData = {
     images: [Video, Video, Video],
   },
   "video-editing": {
-    title: "Professional Video",
-    titleSpan: "Editing Services",
-    text: "Transform raw footage into high-quality, engaging videos that captivate your audience and drive results.",
-    images: [smartPhone, smartPhone, smartPhone],
+    title: "Video ",
+    titleSpan2: "Editing",
+    text: "At Patch Makers, we turn raw footage into polished, professional videos that captivate and inspire. From smooth transitions to sound syncing and color correction, our editing team ensures every frame reflects your vision—clear, engaging, and visually stunning. Whether it’s for social media, branding, or promos, we help you tell your story with impact.",
+    images: ["/images/banner/video.png"],
   },
   "custom-software-development": {
     title: "Custom Software Development",
@@ -764,29 +853,46 @@ export const bannerData = {
     text: " ",
     // images:[CustomDevelop, CustomDevelop, CustomDevelop]
   },
-  "cms-solution": {
-    title: "CMS Solutions for",
-    titleSpan: "Seamless Content Management",
-    text: "Streamline your business operations with our robust CMS solutions tailored to simplify content creation, management, and optimization. At Mozack, we deliver intuitive platforms that ensure your team stays in control of your digital presence.",
-    images: [cmsDevelop, cmsDevelop, cmsDevelop],
+  "chenille-patches": {
+    title: "Chenille ",
+    titleSpan2: "Patches",
+    text: "Custom chenille patches are a bold and textured way to showcase your identity—whether it's for a varsity jacket, fashion brand, sports team, or a standout accessory. At Patch Makers, we craft high-quality chenille patches with a plush, fuzzy finish that delivers a vintage yet fashionable appeal. Our team combines vibrant chenille yarns with felt or twill backgrounds, offering a soft and eye-catching look that pops with personality. Whether you're going for a classic letterman style or a fully custom design, we bring your vision to life with expert stitching and premium materials. Choose from a variety of colors, sizes, fonts, and borders to create a patch that truly reflects your brand or story. Durable, detailed, and made to impress—our chenille patches make a statement you can feel.",
+    images: [
+      "/images/our-portfolio/chenille/one.jpg",
+      "/images/our-portfolio/chenille/two.jpg",
+      "/images/our-portfolio/chenille/three.jpg",
+    ],
   },
-  "hrm-solution": {
-    title: "Transform Workforce Management",
-    titleSpan: "with Advanced HRM Solutions",
-    text: "Streamline HR processes and improve workforce productivity with Mozack’s intuitive HRM solutions. Designed to address your organization’s unique challenges, our tools simplify recruitment, payroll, employee management, and more.",
-    images: [cmsDevelop, cmsDevelop, cmsDevelop],
+  "sublimation-patches": {
+    title: "Sublimation ",
+    titleSpan2: "Patches",
+    text: "Custom sublimation patches offer a vivid and modern way to showcase your logo, artwork, or message with photo-quality detail. At Patch Makers, we specialize in creating high-resolution sublimation patches that bring even the most intricate designs to life—ideal for vibrant graphics, gradients, and fine text. Using advanced heat transfer technology, we infuse your design directly into the fabric, ensuring long-lasting color, sharp detail, and a smooth, lightweight finish. Whether it's for uniforms, promotional items, fashion pieces, or creative branding, sublimation patches provide a sleek and polished alternative to traditional embroidery. With flexible sizing, unique shapes, and multiple backing options, we tailor each patch to your exact needs. When it comes to capturing every detail of your vision—sublimation is the perfect solution. Your design. Your color. Your patch—vividly expressed.",
+    images: [
+
+      "/images/our-portfolio/sublimation/one.jpg",
+      "/images/our-portfolio/sublimation/two.jpg",
+      "/images/our-portfolio/sublimation/three.jpg"
+    ],
   },
-  "crm-solution": {
-    title: "Revolutionize Customer",
-    titleSpan: " Relationships with Advanced CRM Solutions",
-    text: "Mozack’s advanced CRM solutions empower businesses to build stronger relationships, improve customer satisfaction, and drive sales growth. By streamlining customer management processes, our CRM systems enable you to track interactions, analyze data, and optimize workflows. Whether you’re a small business or an enterprise, we provide tools tailored to meet your unique needs.",
-    images: [cmsDevelop, cmsDevelop, cmsDevelop],
+  "leather-patches": {
+    title: "Leather ",
+    titleSpan2: "Patches",
+    text: "Custom leather patches are a timeless and rugged way to showcase your brand, elevate your apparel, or add a premium touch to your products. At Patch Makers, we specialize in crafting high-quality leather patches that combine classic aesthetics with durability and detail. Whether you need embossed logos, laser-engraved designs, or full-color prints, we bring your vision to life with artisan precision. Each leather patch is made using top-grade materials and expert techniques to ensure a refined finish that's built to last. Perfect for hats, jackets, jeans, bags, and lifestyle products, leather patches offer a sophisticated and professional edge. With customizable shapes, finishes, and backings like sew-on, iron-on, or hook & loop, your patch is made to match your exact purpose and style. Bold. Durable. Distinct—your design, redefined in leather.",
+    images: [
+      "/images/our-portfolio/leather/one.jpg",
+      "/images/our-portfolio/leather/two.jpg",
+      "/images/our-portfolio/leather/three.jpg"
+    ],
   },
-  "erp-solution": {
-    title: "Empower Your Business with Mozack’s",
-    titleSpan: "Advanced ERP Solutions",
-    text: "solutions are designed to transform the way businesses operate by integrating all core functions into a unified system. From finance and supply chain to human resources and inventory, our ERP platforms simplify processes and provide actionable insights to drive growth. Whether you’re a small business aiming for efficiency or a large enterprise seeking scalability, Mozack tailors ERP systems to meet your needs and deliver measurable results.",
-    images: [cmsDevelop, cmsDevelop, cmsDevelop],
+  "pvc-patches": {
+    title: "PVC ",
+    titleSpan2: "Patches",
+    text: "Custom PVC patches are a bold, modern way to showcase your brand, team, or creative identity with unmatched durability and vibrant detail. At Patch Makers, we specialize in producing premium-quality PVC patches that are weatherproof, flexible, and built to last. Perfect for outdoor gear, uniforms, tactical bags, and more—these patches deliver style with strength. Whether you need sleek 2D designs or striking 3D textures, our team brings your ideas to life with precision molding and rich color options. We offer complete customization—from shape and size to color and backing choices like Velcro, adhesive, or sew-on—to match your specific needs. No fading, no fraying—just long-lasting impact. Your concept, our craftsmanship custom PVC patches that make a statement.",
+    images: [
+      "/images/our-portfolio/pvc-patches/one.jpg",
+      "/images/our-portfolio/pvc-patches/two.jpg",
+      "/images/our-portfolio/pvc-patches/three.jpg"
+    ],
   },
   "lms-solution": {
     title: "Empower Learning with Mozack’s",

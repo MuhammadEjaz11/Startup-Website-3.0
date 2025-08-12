@@ -1,7 +1,11 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 
-const RoundCircle = () => {
+const RoundCircle = ({ currentStep = 0, totalSteps = 3 }) => {
+  // Calculate progress percentage for the circular progress
+  const progressPercentage = (currentStep / totalSteps) * 100;
+  const rotationAngle = (progressPercentage / 100) * 360;
+
   return (
     <Box
       sx={{
@@ -26,10 +30,10 @@ const RoundCircle = () => {
           height: '100%',
           borderRadius: '50%',
           border: '7px solid transparent',
-          borderTopColor: '#B6DFE3', // Yellow border for progress
+          borderTopColor: '#B6DFE3', // Light blue border for progress
           borderRightColor: '#B6DFE3',
           borderLeftColor: '#B6DFE3',
-          transform: 'rotate(130deg)', // Slight rotation to mimic partial progress
+          transform: `rotate(${rotationAngle}deg)`, // Dynamic rotation based on progress
         }}
       />
       
@@ -56,7 +60,7 @@ const RoundCircle = () => {
             fontSize: '50px',
           }}
         >
-          0/3
+          {currentStep}/{totalSteps}
         </Typography>
       </Box>
     </Box>

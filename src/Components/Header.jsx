@@ -3,7 +3,7 @@ import { Box, Button, Card, Drawer, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import layer1 from "../image/pm_logo.svg";
 import hamberg from "../assets/font/hamberg.png";
-
+import MenuIcon from '@mui/icons-material/Menu';
 import CustomButton from "./Button";
 import CustomizedMenus from "./ONHover";
 import { useDispatch, useSelector } from "react-redux";
@@ -37,7 +37,7 @@ function Header() {
         mb: "130px",
         display: "flex",
         justifyContent: "center",
-        paddingTop: "30px",
+        paddingTop: {md:"30px", xs:"15px"},
         zIndex: "100",
         position: "relative",
         
@@ -168,7 +168,7 @@ function Header() {
           </div>
           <Button onClick={() => dispatch(toggleMobileMenu())}>
             {" "}
-            <img src={hamberg} alt="" />{" "}
+            <MenuIcon sx={{color:"#70D0D9" , width:"30px" }}/>
           </Button>
           <Drawer
             anchor="left"

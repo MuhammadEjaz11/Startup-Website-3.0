@@ -119,7 +119,7 @@ const AnimationTabs = ({dataTab}) => {
             borderRadius: '10px',
             whiteSpace: 'nowrap', // Prevent tabs from breaking into multiple lines
             '&.Mui-selected': {
-              backgroundColor: '#FFC800',
+              backgroundColor: '#70D0D9',
               color: '#fff',
             },
           },

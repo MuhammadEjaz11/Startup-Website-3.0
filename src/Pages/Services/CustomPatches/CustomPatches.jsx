@@ -46,163 +46,97 @@ import {
 } from "react-scroll";
 import starRating from "../../../image/starRating.png";
 
-import digital1 from "../../../assets/font/DigitalMarketing/d1.jpg";
-import digital2 from "../../../assets/font/DigitalMarketing/d2.jpg";
-import digital3 from "../../../assets/font/DigitalMarketing/d3.jpg";
-import digital4 from "../../../assets/font/DigitalMarketing/d4.jpg";
-import digital5 from "../../../assets/font/DigitalMarketing/d5.jpg";
-import digital6 from "../../../assets/font/DigitalMarketing/d6.jpg";
-import digital7 from "../../../assets/font/DigitalMarketing/d7.jpg";
-import digital8 from "../../../assets/font/DigitalMarketing/d8.jpg";
-import digital9 from "../../../assets/font/DigitalMarketing/d9.jpg";
-import KeenSliderPortfolio from "../../../Components/KeenSliderPortfolio";
+import {
+  cutomePatchServiceIcon,
+  cutomePatchServiceIcon2,
+  ServiceIcon1,
+  ServiceIcon2,
+} from "../../../../utils";
+import ServiceIconBox from "../../../Components/ServiceIconsBox";
+import Portfolio from "../../Portfolio/Portfolio";
+import PortfolioTab from "../../../Components/PortfolioTab";
+import BackingOptionsSection from "../../../Components/BackingOptionsSection";
 
-const Stationary = [
+const customePathes = [
   {
-    imageURL: digital1,
-    title: "Stationery Design 1",
-    desc: "Stationery Design",
-    category: "Graphic Design",
+    imageURL: "/images/our-portfolio/vector/one.jpg",
+    title: "Vector Art 1",
+    desc: "Vector Art",
+    category: "Vector Design",
   },
   {
-    imageURL: digital2,
-    title: "Stationery Design 2",
-    desc: "Stationery Design",
-    category: "Graphic Design",
+    imageURL: "/images/our-portfolio/vector/two.jpg",
+    title: "Vector Art 2",
+    desc: "Vector Art",
+    category: "Vector Design",
   },
   {
-    imageURL: digital3,
-    title: "Stationery Design 3",
-    desc: "Stationery Design",
-    category: "Graphic Design",
+    imageURL: "/images/our-portfolio/vector/three.jpg",
+    title: "Vector Art 3",
+    desc: "Vector Art",
+    category: "Vector Design",
   },
   {
-    imageURL: digital4,
-    title: "Stationery Design 4",
-    desc: "Stationery Design",
-    category: "Graphic Design",
+    imageURL: "/images/our-portfolio/embroidery/one.jpg",
+    title: "Embroidery 1",
+    desc: "Embroidery",
+    category: "Embroidery",
   },
   {
-    imageURL: digital5,
-    title: "Stationery Design 5",
-    desc: "Stationery Design",
-    category: "Graphic Design",
+    imageURL: "/images/our-portfolio/embroidery/two.jpg",
+    title: "Embroidery 2",
+    desc: "Embroidery",
+    category: "Embroidery",
   },
   {
-    imageURL: digital6,
-    title: "Stationery Design 6",
-    desc: "Stationery Design",
-    category: "Graphic Design",
+    imageURL: "/images/our-portfolio/embroidery/three.jpg",
+    title: "Embroidery 3",
+    desc: "Embroidery",
+    category: "Embroidery",
   },
   {
-    imageURL: digital7,
-    title: "Stationery Design 7",
-    desc: "Stationery Design",
-    category: "Graphic Design",
+    imageURL: "/images/our-portfolio/leather/one.jpg",
+    title: "Leather Work 1",
+    desc: "Leather",
+    category: "Leather Design",
   },
   {
-    imageURL: digital8,
-    title: "Stationery Design 8",
-    desc: "Stationery Design",
-    category: "Graphic Design",
+    imageURL: "/images/our-portfolio/leather/two.jpg",
+    title: "Leather Work 2",
+    desc: "Leather",
+    category: "Leather Design",
   },
   {
-    imageURL: digital9,
-    title: "Stationery Design 9",
-    desc: "Stationery Design",
-    category: "Graphic Design",
+    imageURL: "/images/our-portfolio/leather/three.jpg",
+    title: "Leather Work 3",
+    desc: "Leather",
+    category: "Leather Design",
   },
 ];
 
 const faqData = [
   {
     id: 1,
-    question: "What is digital marketing, and how does it help?",
-    answer:
-      "Digital marketing uses strategies like SEO, PPC, and social media to boost your online presence, attract high-quality leads, and enhance brand visibility.",
+    question: "What is your turnaround time for digitizing?",
+    answer: "We typically deliver digitized files within 2–4 hours.",
   },
   {
     id: 2,
-    question: "How can PPC benefit my business?",
+    question: "How do I place an order?",
     answer:
-      "PPC campaigns deliver immediate traffic to your website, increasing visibility and conversions with measurable ROI. Our clients see up to a 40% improvement in conversion rates.",
+      "You can send us your design via email or through our website. We'll get back to you with a quote and start the process.",
   },
   {
     id: 3,
-    question: "Which social media platforms do you focus on?",
+    question: "What file formats do you provide for digitized designs?",
     answer:
-      "We focus on platforms like Facebook, Instagram, LinkedIn, Twitter, and others, depending on where your audience spends the most time.",
+      "We provide all major machine formats such as DST, EMB, PES, JEF, and more upon request.",
   },
   {
     id: 4,
-    question: "How do you track campaign performance?",
+    question: "Can I request changes after receiving the design?",
     answer:
-      "We use advanced analytics tools to monitor KPIs such as leads, clicks, impressions, and conversions, ensuring campaigns are optimized for success.",
-  },
-];
-const SecondFaq = [
-  {
-    id: 1,
-    title: "Experience & Excellence",
-    testimonialText:
-      "Mozack combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // A valid video ID
-  },
-  {
-    id: 2,
-    title: "Quality & Dedication",
-    testimonialText:
-      "Our team follows a rigorous testing process, uses industry-leading standards, and prioritizes client feedback to deliver high-quality, scalable solutions.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // Corrected video ID from the URL
-  },
-  {
-    id: 3,
-    title: "Innovation & Creativity",
-    testimonialText:
-      " Mozack provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // Same video ID as example
-  },
-];
-
-const blogData = [
-  {
-    id: 1,
-    title: "How Agecis Puts Your Audience First",
-    description:
-      "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-    image: BlogOne,
-    author: "Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 2,
-    title: "How Agecis Puts Your Audience First",
-    description:
-      "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-    image: BlogTwo,
-    author: "Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 3,
-    title: "How Agecis Puts Your Audience First",
-    description:
-      "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-    image: BlogThree,
-    author: "Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 4,
-    title: "How Agecis Puts Your Audience First",
-    description:
-      "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-    image: BlogTwo,
-    author: "Admin",
-    date: "April 20, 2024",
+      "Absolutely! We offer free minor edits to ensure you're fully satisfied with the final design.",
   },
 ];
 
@@ -275,7 +209,7 @@ const CustomPatches = () => {
         sx1={{ order: "2" }}
         styledSx={{
           display: "flex",
-          marginTop:"100px",
+          marginTop: "100px",
           justifyContent: { md: "left", sm: "center", xs: "center" },
           alignItems: "center",
         }}
@@ -320,6 +254,7 @@ const CustomPatches = () => {
       </Box>
 
 
+             <BackingOptionsSection />
 
       <Box
         sx={{
@@ -328,7 +263,6 @@ const CustomPatches = () => {
           margin: "0 auto",
         }}
       >
-        <Box sx={{}}></Box>
 
         <Box>
           <Box
@@ -476,56 +410,83 @@ const CustomPatches = () => {
           </Box>
         </Box>
       </Box>
+
       <Box
         sx={{
-          mt: { md: "130px", sm: "65px", xs: "40px" },
+          paddingTop: { md: "130px", sm: "40px", xs: "40px" },
+          padding: { sm: "40px 0px", xs: "40px 0px" },
         }}
       >
         <StyledHeading
-          title1="Our"
-          sx1={{ fontFamily: "satoshi !important" }}
-          title2="Portfolio"
-          sx2={{ fontFamily: "satoshi-light !important" }}
+          title1="Service a Multitude of"
+          title2=" Industries, Exceptionally"
           styledSx={{
-            display: "flex",
-            justifyContent: { md: "left", sm: "center", xs: "center" },
-            alignItems: "center",
-            mb: "40px",
-            // padding:{sm: "0px 20px", xs: "0px 20px"},
+            justifyContent: "start",
+            paddingBottom: { md: "60px", sm: "40px", xs: "40px" },
+          }}
+          sx={{
+            justifyContent: "center",
           }}
         />
-
-        <KeenSliderPortfolio arrayToList={Stationary} />
         <Box
           sx={{
-            mt: "30px",
-            // paddingBottom: "130px",
-            maxWidth: "1500px",
-            display: "flex",
-            justifyContent: "flex-end",
+            display: { md: "flex", sm: "block" },
           }}
         >
-          <CustomButton
-            svgColor={"black"}
-            buttonStyle={{
-              fontWeight: 600,
-              textTransform: "capitalize",
-              color: "white",
-              padding: { xs: "15px", md: "20px" },
-              marginTop: "20px",
-              fontFamily: "Outfit",
-              fontSize: { xs: "14px", md: "16px" },
-              lineHeight: "20.16px",
-              backgroundColor: "black",
-              borderRadius: "10px",
-            }}
-            title="Load More"
-          />
+          {cutomePatchServiceIcon.map((item, index) => (
+            <ServiceIconBox
+              btnText={false}
+              btnURL={false}
+              key={index}
+              style={{
+                width: "100%",
+                borderRight: {
+                  md: index < 4 && "1px solid #F1F1F1",
+                  xs: "none",
+                },
+                borderBottom: "1px solid #F1F1F1",
+              }}
+              index={index}
+              iconURL={item?.iconURL}
+              title={item?.title}
+            />
+          ))}
         </Box>
+        <Box
+          sx={{
+            display: { md: "flex", sm: "block" },
+
+            // m: "0 auto",
+            // paddingTop: {md:"60px", sm:"40px"},
+          }}
+        >
+          {cutomePatchServiceIcon2.map((item, index) => (
+            <ServiceIconBox
+              btnText={false}
+              btnURL={false}
+              key={index}
+              style={{
+                width: "100%",
+                borderRight: {
+                  md: index < 4 && "1px solid #F1F1F1",
+                  xs: "none",
+                },
+                borderBottom: "1px solid #F1F1F1",
+              }}
+              index={index}
+              iconURL={item?.iconURL}
+              title={item?.title}
+            />
+          ))}
+        </Box>
+      </Box>
+      <Box>
+        <PortfolioTab />
       </Box>
       <Box
         sx={{
-          marginTop: { md: "120px", xs: "40px", sm: "40px" },
+          marginTop: { md: "50px", xs: "20px", sm: "20px" },
+          marginBottom: { md: "100px", xs: "60px", sm: "60px" },
         }}
       >
         <LeftRightComponent
@@ -567,8 +528,6 @@ const CustomPatches = () => {
         />
         <FAQ faqData={faqData} />
       </Box>
-
-      
       <Box
         sx={{
           padding: "65px 0px",

@@ -69,6 +69,7 @@ import digital6 from '../../assets/font/DigitalMarketing/d6.jpg'
 import digital7 from '../../assets/font/DigitalMarketing/d7.jpg'
 import digital8 from '../../assets/font/DigitalMarketing/d8.jpg'
 import digital9 from '../../assets/font/DigitalMarketing/d9.jpg'
+import PortfolioTab from "../../Components/PortfolioTab";
 
 const Portfolio = () => {
   const { setYellowText, setBlackText } = useOutletContext();
@@ -227,148 +228,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          margin: "0 auto",
-          paddingTop:  {xl:"130px",md:"30px", xs:"100px"},
-          paddingBottom: "130px",
-        }}
-      >
-        {/* Buttons for tabs */}
-        <Box sx={{ display: "flex", gap: "28px", flexWrap: "wrap" }}>
-        <CustomButtonMe
-            buttonStyle={{
-              fontSize: { md: "16px", xs: "12px" },
-              width: { md: "193px", xs: "45%" },
-            }}
-            height="62px"
-            width={"193px"}
-            border="1px solid #D7D7D7"
-            borderRadius="15px"
-            background={currentTab === "webDevelopment" ? "#1E1E1E" : "transparent"}
-            color={currentTab === "webDevelopment" ? "#FFFFFF" : "#1E1E1E"}
-            ButtonText="Web Development"
-            onClick={() => setCurrentTab("webDevelopment")}
-          />
-           <CustomButtonMe
-            buttonStyle={{
-              fontSize: { md: "16px", xs: "12px" },
-              width: { md: "144px", xs: "45%" },
-            }}
-            height="62px"
-            width={"144px"}
-            border="1px solid #D7D7D7"
-            borderRadius="15px"
-            background={currentTab === "logoDesign" ? "#1E1E1E" : "transparent"}
-            color={currentTab === "logoDesign" ? "#FFFFFF" : "#1E1E1E"}
-            ButtonText="Logo Design"
-            onClick={() => setCurrentTab("logoDesign")}
-          />
-          <CustomButtonMe
-            buttonStyle={{
-              fontSize: { md: "16px", xs: "12px" },
-              width: { md: "153px", xs: "45%" },
-            }}
-            height="62px"
-            width={"153px"}
-            border="1px solid #D7D7D7"
-            borderRadius="15px"
-            background={currentTab === "videoEditing" ? "#1E1E1E" : "transparent"}
-            color={currentTab === "videoEditing" ? "#FFFFFF" : "#1E1E1E"}
-            ButtonText="Video Editing"
-            onClick={() => setCurrentTab("videoEditing")}
-          />
-          <CustomButtonMe
-            buttonStyle={{
-              fontSize: { md: "16px", xs: "12px" },
-              width: { md: "140px", xs: "45%" },
-            }}
-            height="62px"
-            width={"140px"}
-            border="1px solid #D7D7D7"
-            borderRadius="15px"
-            background={currentTab === "mobileApps" ? "#1E1E1E" : "transparent"}
-            color={currentTab === "mobileApps" ? "#FFFFFF" : "#1E1E1E"}
-            ButtonText="Stationary"
-            onClick={() => setCurrentTab("mobileApps")}
-          />
-         
-         
-          
-           <CustomButtonMe
-            buttonStyle={{
-              fontSize: { md: "16px", xs: "12px" },
-              width: { md: "193px", xs: "45%" },
-            }}
-            height="62px"
-            width={"203px"}
-            border="1px solid #D7D7D7"
-            borderRadius="15px"
-            background={currentTab === "digitalMarketing" ? "#1E1E1E" : "transparent"}
-            color={currentTab === "digitalMarketing" ? "#FFFFFF" : "#1E1E1E"}
-            ButtonText="Digital Marketing"
-            onClick={() => setCurrentTab("digitalMarketing")}
-          />
-        </Box>
-
-        {/* Portfolio card rendering */}
-        <Box
-          sx={{
-            mt: "70px",
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: { md: "space-between", xs: "center" },
-            gap: "1rem",
-          }}
-        >
-          {getCurrentContent().map((item, ind) => (
-            <Box
-              key={ind}
-              sx={{
-                flexBasis: {
-                  xs: "100%", // 1 card per row on extra small screens
-                  sm: "47%",  // 2 cards per row on small screens
-                  md: "31%",  // 3 cards per row on medium screens
-                },
-                flexShrink: "1",
-                flexGrow: "1",
-              }}
-            >
-              <PortfolioCardCustom imageURL={item.img} title={item.title} desc={item.description} more={item.readmore} />
-            </Box>
-          ))}
-        </Box>
-
-        {/* Load More button */}
-        <Box
-          sx={{
-            paddingBottom: "0px",
-            display: "flex",
-            justifyContent: "flex-end",
-            mt: "50px",
-          }}
-        >
-          <CustomButton
-            svgColor={"black"}
-            buttonStyle={{
-              fontWeight: 600,
-              textTransform: "capitalize",
-              color: "white",
-              padding: { xs: "15px", md: "20px" },
-              marginTop: "20px",
-              fontFamily: "Outfit",
-              fontSize: { xs: "14px", md: "16px" },
-              lineHeight: "20.16px",
-              backgroundColor: "black",
-              borderRadius: "10px",
-            }}
-            title="Load More"
-            onClick={handleLoadMore}  
-          />
-        </Box>
-      </Box>
+    <PortfolioTab/>
     </>
   );
 };

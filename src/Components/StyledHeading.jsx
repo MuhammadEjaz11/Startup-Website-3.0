@@ -55,7 +55,8 @@ const StyledHeading = ({
       </Typography>
       <Typography
         sx={{
-          fontFamily: "satoshi",
+          fontFamily: "'Bakbak One', sans-serif",
+
           fontWeight: 600,
           fontSize: { xs: "30px", sm: "30px", xl: "50px" }, // Responsive font size for title2
           ...sx2,

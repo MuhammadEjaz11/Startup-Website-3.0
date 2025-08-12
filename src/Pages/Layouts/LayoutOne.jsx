@@ -298,7 +298,7 @@ function LayoutOne() {
               <span
                 style={{
                   fontSize: "50px",
-                  color: "#FFC800",
+                  color: "#70D0D9",
                 }}
               >
                 {yellowText}
