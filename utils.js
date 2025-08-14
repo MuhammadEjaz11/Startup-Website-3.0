@@ -587,17 +587,17 @@ export const TestimoialCard = [
   {
     starURL: starRating,
     testimonialText:
-      "“Great work and always so helpful. Definitely my go to for everything”",
-    userAvatar: Bryan,
-    memberName: "Bryan Rodriguez ",
-    memberRoll: "Head of Product Development",
+      "“I had the pleasure of dealing with Kinsey to help me out with a design I was struggling with, she was prompt and extremely please and to deal with. I will definitely use Patch Makers again to assist in my projects. Thank you so much Kinsey for the help and I look forward to working with you again!”",
+    userAvatar: "/images/testimonial/r1.jpg",
+    memberName: "Cory Carlson ",
+    memberRoll: "Head of Product Development",  
   },
   {
     starURL: starRating,
     testimonialText:
-      "“Great workmanship , they definitely get what you want created , you think it they make it !! 5 STAR ”",
-    userAvatar: Avatar,
-    memberName: "Rentas Pablito ",
+      "“At the top, I strongly recommend. Impeccable service and in line with desired expectations and fast service.”",
+    userAvatar: "/images/testimonial/r2.jpg",
+    memberName: "Andy Ptit Bouchon  ",
     memberRoll: "Digital Marketing Manager",
   },
 
@@ -605,32 +605,32 @@ export const TestimoialCard = [
     starURL: starRating,
     testimonialText:
       "“Super friendly and helpful! She helped me with a svg file from scratch and it worked perfectly! I definitely recommend.”",
-    userAvatar: melody,
-    memberName: "Chloe Anderson",
+    userAvatar: "/images/testimonial/r3.jpg",
+    memberName: "Melody Allen ",
     memberRoll: "Founder & CEO, GreenStart",
   },
-  // {
-  //     starURL: starRating,
-  //     testimonialText: "“great quality work and fast turnaround time.”",
-  //     userAvatar: chloe,
-  //     memberName: "Chloe Anderson ,",
-  //     memberRoll: "Operations Manager, FitLife Apps",
-  // },
+  {
+      starURL: starRating,
+      testimonialText: "“great quality work and fast turnaround time.”",
+      userAvatar: chloe,
+      memberName: "Chloe Anderson ,",
+      memberRoll: "Operations Manager, FitLife Apps",
+  },
 
-  // {
-  //     starURL: starRating,
-  //     testimonialText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  //     userAvatar: Avatar,
-  //     memberName: "Daniel Joseph",
-  //     memberRoll: "Project Name",
-  // },
-  // {
-  //     starURL: starRating,
-  //     testimonialText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  //     userAvatar: Avatar,
-  //     memberName: "Daniel Joseph",
-  //     memberRoll: "Project Name",
-  // }
+  {
+      starURL: starRating,
+      testimonialText: "Great work and always so helpful. Definitely my go to for everything.",
+      userAvatar: "/images/testimonial/unknown.png",
+      memberName: "Bryan Rodriguez",
+      memberRoll: "Project Name",
+  },
+  {
+      starURL: starRating,
+      testimonialText: "I have had a great experience with this company! The custom patches they created were exactly what I needed. They were high quality, very reasonably priced and arrived sooner than I expected, which was amazing! I’ve already placed another order!",
+      userAvatar: "/images/testimonial/r4.jpg",
+      memberName: "Stephanie Padilla ",
+      memberRoll: "Project Name",
+  }
 ];
 
 export const CustomPackageDetail = [
@@ -800,7 +800,11 @@ export const bannerData = {
     titleSpan2: "Services",
 
     text: "Vector Art is the process of transforming any image, logo, or sketch into a clean, scalable digital format using vector graphic software. Unlike pixel-based images (like JPEGs or PNGs), vector files are made up of paths defined by mathematical formulas—allowing them to be resized without losing clarity or quality. This process is essential for screen printing, engraving, laser cutting, and high-resolution printing. A skilled vector artist carefully redraws the artwork using tools to define precise lines, curves, and color separations. Every shape and detail is recreated manually, ensuring the final vector file is crisp, professional, and print-ready. Vector files are typically saved in formats like AI, EPS, SVG, or PDF, depending on the intended use and production method. Whether you need a simple logo cleanup or a complex artwork conversion, vectorization ensures your design looks sharp and polished at any size.",
-    images: [Seo, Seo, Seo],
+    images: [
+      "/images/our-portfolio/vector/six.jpg",
+      "/images/our-portfolio/vector/two.jpg",
+      "/images/our-portfolio/vector/three.jpg",
+    ],
   },
   "custom-patches": {
     title: "Custom Patches",
@@ -866,7 +870,7 @@ export const bannerData = {
   "sublimation-patches": {
     title: "Sublimation ",
     titleSpan2: "Patches",
-    text: "Custom sublimation patches offer a vivid and modern way to showcase your logo, artwork, or message with photo-quality detail. At Patch Makers, we specialize in creating high-resolution sublimation patches that bring even the most intricate designs to life—ideal for vibrant graphics, gradients, and fine text. Using advanced heat transfer technology, we infuse your design directly into the fabric, ensuring long-lasting color, sharp detail, and a smooth, lightweight finish. Whether it's for uniforms, promotional items, fashion pieces, or creative branding, sublimation patches provide a sleek and polished alternative to traditional embroidery. With flexible sizing, unique shapes, and multiple backing options, we tailor each patch to your exact needs. When it comes to capturing every detail of your vision—sublimation is the perfect solution. Your design. Your color. Your patch—vividly expressed.",
+    text: "Custom sublimation patches offer a vivid and modern way to showcase your logo, artwork, or message with photo-quality detail. At Patch Makers, we specialize in creating high-resolution sublimation patches that bring even the most intricate designs to life—ideal for vibrant graphics, gradients, and fine text. Using advanced heat transfer technology, we infuse your design directly into the fabric, ensuring long-lasting color, sharp detail, and a smooth, lightweight finish. Whether it's for uniforms, promotional items, fashion pieces, or creative branding, sublimation patches provide a sleek and polished alternative to traditional embroidery. With flexible sizing, unique shapes, and multiple backing options, we tailor each patch to your exact needs. When it comes to capturing every detail of your vision—sublimation is the perfect solution.Your design. Your color. Your patch—vividly expressed.",
     images: [
 
       "/images/our-portfolio/sublimation/one.jpg",
@@ -907,3 +911,51 @@ export const bannerData = {
     images: [cmsDevelop, cmsDevelop, cmsDevelop],
   },
 };
+
+
+
+
+export const serviceApp = [
+  {
+    image: "/images/backing-option/iron on.png",
+    title: "Iron-on/Adhesive",
+    desc: "Designed for easy application with a popular choice for casual wear and DIY projects, offering a clean, no-sew finish.",
+  },
+  {
+    image: "/images/backing-option/sew on.png",
+    title: "Sew-on",
+    desc: "The most durable option, sew-on backing is ideal for items that will be washed frequently or exposed to heavy use. It ensures the patch stays securely in place for the long haul.",
+  },
+  {
+    image: "/images/backing-option/hook n loop.png",
+    title: "Hook & Loop",
+    desc: "Also known as Velcro®, this backing allows patches to be removed and reattached quickly. It's perfect for uniforms, tactical gear, and items where interchangeability is needed.",
+  },
+  {
+    image: "/images/backing-option/peel n stick.png",
+    title: "Peel & Stick",
+    desc: "A temporary solution that's ideal for events, displays, or quick fixes. Simply peel off the protective layer and stick the patch onto a surface—no heat or sewing required.",
+  },
+];
+export const borderOptions = [
+  {
+    image: "/images/borde- option/satin border.png",
+    title: "Satin/Stitch Border",
+    desc: "A clean, machine-stitched edge that gives your patch a sleek, polished look. Ideal for detailed or custom-shaped patches.",
+  },
+  {
+    image: "/images/borde- option/lazer cut.png",
+    title: "Laser Cut",
+    desc: "A sharp, heat-sealed edge created by laser cutting, great for achieving intricate or complex patch shapes with precision.",
+  },
+  {
+    image: "/images/borde- option/merrow border.png",
+    title: "Merrowed Border",
+    desc: "A thick, rounded edge that wraps around the patch, providing a classic, bold finish—perfect for traditional shapes like circles or rectangles.",
+  },
+  {
+    image: "/images/borde- option/hot cut satin border.png",
+    title: "Hot Cut Border",
+    desc: "A smooth, flat edge sealed with heat to prevent fraying—commonly used for patches with complex or irregular outlines.",
+  },
+];

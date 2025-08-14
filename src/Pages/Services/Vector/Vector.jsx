@@ -131,12 +131,7 @@ const serviceApp = [
 ];
 
 const vectorList = [
-  {
-    imageURL: "/images/our-portfolio/vector/one.jpg",
-    title: "Website Project 1",
-    desc: "Web Development",
-    category: "Website",
-  },
+
   {
     imageURL: "/images/our-portfolio/vector/two.jpg",
 

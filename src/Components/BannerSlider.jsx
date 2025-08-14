@@ -265,7 +265,7 @@ function BannerSlider() {
                   src={image}
                   alt={`banner-${index}`}
                   style={{
-                    width: "90%",
+                    width: "100%",
                     objectFit: "contain",
                     borderRadius:"50px",
                     minHeight: "300px",

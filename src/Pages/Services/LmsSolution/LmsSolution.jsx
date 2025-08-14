@@ -128,38 +128,7 @@ const blogData = [
   },
 ]
 
-const accordianData = [
-  {
-    id: 1,
-    question: "Employee Management",
-    answer: "Centralize employee data and track performance with ease. Improve decision-making with advanced reporting and analytics."
-  },
-  {
-    id: 2,
-    question: "Recruitment Solutions",
-    answer: "Simplify hiring with tools for job postings, applicant tracking, and interview scheduling. Save up to 40% of recruitment time with automated workflows."
-  },
-  {
-    id: 3,
-    question: "Payroll Management",
-    answer: "Automate payroll processing, tax calculations, and compliance reporting. Our HRM systems reduce errors by 95% and ensure timely payments."
-  },
-  {
-    id: 4,
-    question: "Attendance and Leave Tracking",
-    answer: "Monitor employee attendance and manage leave requests with real-time tracking features. Companies using automated attendance systems report a 30% improvement in efficiency."
-  },
-  {
-    id: 5,
-    question: "Training and Development",
-    answer: "Track employee training progress and schedule learning programs. Empower your team with upskilling opportunities to boost overall productivity."
-  },
-  {
-    id: 6,
-    question: "Education",
-    answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-  },
-];
+
 
 import {
   PortfoliosList,

@@ -605,7 +605,7 @@ const WebDevelopment = () => {
           styledSx={{}}
           isRow={true}
           title1={"Why Choose Our "}
-          title2={"Graphic Design Services?"}
+          title2={"Website Design Services?"}
           buttonShow={false}
           image={"/images/banner/web-port.png"}
           content={`At Patch Makers, we don’t just design—we create visual stories that spark connection and make your brand unforgettable. From sleek logos to bold banners, stunning product packaging, and scroll-stopping digital content, our graphic design team blends creativity with strategy to deliver visuals that turn heads and drive results.`}

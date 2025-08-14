@@ -134,6 +134,13 @@ export default function CustomizedMenus2({
       hasSubmenu: false,
     },
     {
+      id: "web-design",
+      label: "Website Design",
+      route: "/services/web-development",
+      icon: icon10,
+      hasSubmenu: false,
+    },
+    {
       id: "video-editing",
       label: "Video Editing",
       route: "/services/video-editing",

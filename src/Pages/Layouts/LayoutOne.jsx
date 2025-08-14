@@ -36,7 +36,7 @@ function LayoutOne() {
           backgroundColor: "#F7F7F7",
           backgroundSize: "cover",
           fontFamily: "Inter",
-          p: { md: "0px 50px", xs: "10px 30px" },
+          p: { md: "30px 50px", xs: "10px 30px" },
         }}
       >
         <ContactFormModal open={open} handleClose={handleClose} />
@@ -187,7 +187,7 @@ function LayoutOne() {
                 <Box
                   sx={{
                     display: "flex",
-                    gap: { xs: "53px", xl: "53px" },
+                    gap: "23px",
                     textAlign: { xs: "center" },
                     width: { xs: "100%", md: "70%", lg: "100%" },
                     margin: { xs: "0 auto" },
@@ -198,15 +198,15 @@ function LayoutOne() {
                 >
                   <img
                     src={BannerReview1}
-                    style={{ width: "174.48px", height: "82.45px" }}
+                    style={{ width: "130px",  }}
                   />
                   <img
                     src={BannerReview3}
-                    style={{ width: "222.23px", height: "80.08px" }}
+                    style={{ width: "170px",  }}
                   />
                   <img
                     src={BannerReview2}
-                    style={{ width: "136.88px", height: "66.7px" }}
+                    style={{ width: "130px",  }}
                   />
                 </Box>
               </Box>

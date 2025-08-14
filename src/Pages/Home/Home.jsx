@@ -1123,9 +1123,9 @@ const Home = () => {
       >
         <Testimonial
           data={TestimoialCard}
-          sx={{
-            overflow: "visible !Important",
-          }}
+          // sx={{
+          //   overflow: "visible !Important",
+          // }}
         />
       </Box>
 

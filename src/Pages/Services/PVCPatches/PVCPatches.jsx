@@ -37,7 +37,9 @@ import {
 } from "react-scroll";
 
 import {
+  borderOptions,
   PortfoliosList,
+  serviceApp,
   services1,
   services2,
   technologiesCard,
@@ -86,50 +88,7 @@ const faqData = [
 
 
 
-const serviceApp = [
-  {
-    image: "/images/chenille-backing-options/one.svg",
-    title: "Iron-on/Adhesive",
-    desc: "Designed for easy application with a popular choice for casual wear and DIY projects, offering a clean, no-sew finish.",
-  },
-  {
-    image: "/images/chenille-backing-options/two.svg",
-    title: "Sew-on",
-    desc: "The most durable option, sew-on backing is ideal for items that will be washed frequently or exposed to heavy use. It ensures the patch stays securely in place for the long haul.",
-  },
-  {
-    image: "/images/chenille-backing-options/three.svg",
-    title: "Hook & Loop",
-    desc: "Also known as Velcro®, this backing allows patches to be removed and reattached quickly. It's perfect for uniforms, tactical gear, and items where interchangeability is needed.",
-  },
-  {
-    image: "/images/chenille-backing-options/four.svg",
-    title: "Peel & Stick",
-    desc: "A temporary solution that's ideal for events, displays, or quick fixes. Simply peel off the protective layer and stick the patch onto a surface—no heat or sewing required.",
-  },
-];
-const borderOptions = [
-  {
-    image: "/images/chenille-backing-options/one.svg",
-    title: "Satin/Stitch Border",
-    desc: "A clean, machine-stitched edge that gives your patch a sleek, polished look. Ideal for detailed or custom-shaped patches.",
-  },
-  {
-    image: "/images/chenille-backing-options/two.svg",
-    title: "Laser Cut",
-    desc: "A sharp, heat-sealed edge created by laser cutting, great for achieving intricate or complex patch shapes with precision.",
-  },
-  {
-    image: "/images/chenille-backing-options/three.svg",
-    title: "Merrowed Border",
-    desc: "A thick, rounded edge that wraps around the patch, providing a classic, bold finish—perfect for traditional shapes like circles or rectangles.",
-  },
-  {
-    image: "/images/chenille-backing-options/four.svg",
-    title: "Hot Cut Border",
-    desc: "A smooth, flat edge sealed with heat to prevent fraying—commonly used for patches with complex or irregular outlines.",
-  },
-];
+
 const pvcPortfolio = [
   {
     imageURL: "/images/our-portfolio/pvc-patches/one.jpg",
@@ -222,6 +181,9 @@ const PVCPatches = () => {
                 borderRadius: "10px",
                 flexBasis: "25%",
                 flexShrink: "1",
+                img: {
+                  width: "100%",
+                },
            
               }}
               iconURL={service.image}
@@ -291,6 +253,9 @@ const PVCPatches = () => {
                 borderRadius: "10px",
                 flexBasis: "25%",
                 flexShrink: "1",
+                img: {
+                  width: "100%",
+                },
           
               }}
               iconURL={service.image}
