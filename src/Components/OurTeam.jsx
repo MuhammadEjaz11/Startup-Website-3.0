@@ -5,32 +5,35 @@ import memberTwo from "../image/chloe.png";
 import memberThree from "../image/memberThree-min.webp";
 import memberFour from "../image/david.png";
 
-import instaIcon from '../image/InstagramIcon.png';
+import instaIcon from "../image/InstagramIcon.png";
 import fbIcon from "../image/facebookIcon.png";
 import linkdinIcon from "../image/LinkedinIcon.png";
 
 const teamArra = [
   {
     image: memberOne,
-    name: 'Adam Zaid',
-    designation: 'CEO - Founder',
+    name: "Adam Zaid",
+    designation: "CEO - Founder",
+    facebook: "https://www.facebook.com/adamzaid123/",
   },
   {
     image: memberTwo,
-    name: 'Chloe Andreson',
-    designation: 'Sales Manager',
+    name: "Chloe Andreson",
+    designation: "Sales Manager",
+    facebook: "https://www.facebook.com/chloe.anderson.989861/",
   },
   {
     image: memberThree,
-    name: 'Kinsey Tyler',
-    designation: 'Designer',
+    name: "Kinsey Tyler",
+    designation: "Designer",
+    facebook: "https://www.facebook.com/share/19R6yTL9H4/",
   },
   {
     image: memberFour,
-    name: 'David Jason',
-    designation: 'Production Manager',
-  }
-]
+    name: "David Jason",
+    designation: "Production Manager",
+  },
+];
 
 const OurTeam = () => {
   return (
@@ -76,7 +79,7 @@ const OurTeam = () => {
             sx={{
               width: "100%",
               height: "100%",
-              objectFit: 'cover',
+              objectFit: "cover",
               transition: "transform 0.3s ease-in-out",
             }}
           />
@@ -126,7 +129,7 @@ const OurTeam = () => {
             className="socialIcons"
             sx={{
               position: "absolute",
-              bottom: "8%",
+              bottom: "6%",
               left: "40%",
               right: "50%",
               transform: "translateX(-0%) translateY(20px)", // Initially hidden
@@ -137,9 +140,39 @@ const OurTeam = () => {
               transition: "all 0.3s ease-in-out", // Smooth transition for showing icons
             }}
           >
-            <Box component="img" src={fbIcon} sx={{ width: "9px", objectFit: "contain", ":hover": { cursor: "pointer", } }} />
-            <Box component="img" src={instaIcon} sx={{ width: "18px", objectFit: "contain", ":hover": { cursor: "pointer" } }} />
-            <Box component="img" src={linkdinIcon} sx={{ width: "18px", objectFit: "contain", ":hover": { cursor: "pointer" } }} />
+            <a href={member?.facebook || "#"} target="_blank" >
+              <Box
+                component="img"
+                src={fbIcon}
+                sx={{
+                  width: "9px",
+                  objectFit: "contain",
+                  ":hover": { cursor: "pointer" },
+                }}
+              />
+            </a>
+            <a href={member?.instagram || "#"} >
+              <Box
+                component="img"
+                src={instaIcon}
+                sx={{
+                  width: "18px",
+                  objectFit: "contain",
+                  ":hover": { cursor: "pointer" },
+                }}
+              />
+            </a>
+            <a href={member?.linkedin || "#"}>
+              <Box
+                component="img"
+                src={linkdinIcon}
+                sx={{
+                  width: "18px",
+                  objectFit: "contain",
+                  ":hover": { cursor: "pointer" },
+                }}
+              />
+            </a>
           </Box>
         </Box>
       ))}

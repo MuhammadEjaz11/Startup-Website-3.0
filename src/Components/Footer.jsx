@@ -13,7 +13,6 @@ import iconFour from "../image/TwitterIcon.png";
 // import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
-
 function Footer() {
   const [count, setCount] = useState(0);
 
@@ -24,7 +23,6 @@ function Footer() {
           paddingBottom: "59px",
           paddingTop: "60px",
           background: "#1E1E1E",
-          
         }}
       >
         <Box
@@ -59,7 +57,7 @@ function Footer() {
                 },
               }}
             >
-             Your Brand. Your Patch.
+              Your Brand. Your Patch.
             </Typography>
 
             <Typography
@@ -76,30 +74,32 @@ function Footer() {
               Let’s Make it Happen.
             </Typography>
             <Box
-            sx={{
-              textAlign: "center",
-              maxWidth: "90%",
-              margin: "0 auto",
-              display: "none",
-              flexDirection: "column",
+              sx={{
+                textAlign: "center",
+                maxWidth: "90%",
+                margin: "0 auto",
+                display: "none",
+                flexDirection: "column",
 
-              width:"1299px",
-              
-            }}
+                width: "1299px",
+              }}
             >
-            <Typography
+              <Typography
                 sx={{
-                  fontSize: {xl:"16px", md:"16px",xs:"13px"},
+                  fontSize: { xl: "16px", md: "16px", xs: "13px" },
                   paddingTop: "43px",
-                  lineHeight: {md:"36px", xs:"27px"},
+                  lineHeight: { md: "36px", xs: "27px" },
                   color: "white",
                   fontWeight: 400,
                   marginRight: { sm: "40px", xs: "40px" },
-                  textAlign:"center",
-                  fontFamily:"Inter"
+                  textAlign: "center",
+                  fontFamily: "Inter",
                 }}
               >
-              Follow Mozack to discover more innovation in digital business, design, and development. Please enter your email in the box below to subscribe to our updates list and get information that can help you move your business forward.{" "}
+                Follow Mozack to discover more innovation in digital business,
+                design, and development. Please enter your email in the box
+                below to subscribe to our updates list and get information that
+                can help you move your business forward.{" "}
               </Typography>
             </Box>
           </Box>
@@ -113,11 +113,9 @@ function Footer() {
               display: "flex",
               flexDirection: "column",
 
-              width:"1299px"
-              
+              width: "1299px",
             }}
           >
-            
             <Box
               sx={{
                 flexBasis: {
@@ -135,8 +133,7 @@ function Footer() {
                 type="email"
                 id="inputSubscriber"
                 placeholder="Enter Your Email Address"
-                 className="input-subscriber"
-               
+                className="input-subscriber"
               />
               <CustomButton
                 textStyle={{
@@ -146,9 +143,9 @@ function Footer() {
                   color: "white",
                   fontSize: "16px",
                   minWidth: "40px",
-                  width:{sm:"100px", xs:"100px  "},
-                  fontWeight:"600",
-                  fontFamily:"Outfit"
+                  width: { sm: "100px", xs: "100px  " },
+                  fontWeight: "600",
+                  fontFamily: "Outfit",
                 }}
                 buttonStyle={{
                   borderRadius: "15px",
@@ -157,9 +154,8 @@ function Footer() {
                   color: "black",
                   textTransform: "capitalize",
                   marginLeft: "-20px",
-                  minWidth:{md:"155px", xs:"100px"},
-                  
-                  
+                  minWidth: { md: "155px", xs: "100px" },
+
                   // fontSize
                 }}
                 title="Subscribe"
@@ -181,7 +177,7 @@ function Footer() {
               maxWidth: "1526px",
               margin: "auto",
               paddingTop: "110px",
-              gap:"0.6rem"
+              gap: "0.6rem",
             }}
           >
             <Box
@@ -196,59 +192,62 @@ function Footer() {
                 title="Short Brief About Us"
                 textStyle={{
                   textAlign: { md: "left", xs: "left" },
-                   fontFamily: "Outfit",
-                   fontWeight:"600",
-                   color:"#FFFFFF",
-                   
-                   
-
+                  fontFamily: "Outfit",
+                  fontWeight: "600",
+                  color: "#FFFFFF",
                 }}
               />
               <Typography
                 sx={{
-                  fontSize: {xl:"16px", md:"16px",xs:"13px"},
+                  fontSize: { xl: "16px", md: "16px", xs: "13px" },
                   paddingTop: "43px",
-                  lineHeight: {md:"36px", xs:"27px"},
+                  lineHeight: { md: "36px", xs: "27px" },
                   color: "white",
                   fontWeight: 400,
                   marginRight: { sm: "40px", xs: "40px" },
-                  textAlign:"justify",
-                  fontFamily:"Inter"
+                  textAlign: "justify",
+                  fontFamily: "Inter",
                 }}
               >
-              We create high-quality custom patches and offer expert digitizing and vector art services. From embroidery to PVC and more — fast, precise, and made to match your vision.{" "}
+                We create high-quality custom patches and offer expert
+                digitizing and vector art services. From embroidery to PVC and
+                more — fast, precise, and made to match your vision.{" "}
               </Typography>
             </Box>
             <FooterMenu
-    style={{
-        paddingBottom: { sm: "60px", xs: "60px" },
-        paddingLeft: { sm: "40px", xs: "40px" },
-        flexBasis: "212.52px",
-        fontFamily: "Outfit"
-    }}
-    heading={"Navigate"}
-    links={["/", "#about", "#blogs", "#faqs", "/contact-us"]}
-    data={["Home", "About Us", "Blogs", "Faq’s", "Contact Us"]}
-/>
+              style={{
+                paddingBottom: { sm: "60px", xs: "60px" },
+                paddingLeft: { sm: "40px", xs: "40px" },
+                flexBasis: "212.52px",
+                fontFamily: "Outfit",
+              }}
+              heading={"Navigate"}
+              links={["/", "#about", "#blogs", "#faqs", "/contact-us"]}
+              data={["Home", "About Us", "Blogs", "Faq’s", "Contact Us"]}
+            />
 
             <FooterMenu
               style={{
                 paddingBottom: { sm: "60px", xs: "60px" },
                 paddingLeft: { sm: "40px", xs: "40px" },
                 flexBasis: "212.52px",
-                gap:"0.2rem",
-                fontFamily:"Outfit"
-
+                gap: "0.2rem",
+                fontFamily: "Outfit",
               }}
-              links={["services/graphic-design", "services/video-animation", "services/android-&-ios-app-development", "services/web-development", '#']}
+              links={[
+                "services/graphic-design",
+                "services/video-animation",
+                "services/android-&-ios-app-development",
+                "services/web-development",
+                "#",
+              ]}
               heading={"Our Services"}
               data={[
                 "Digitiizng",
                 "Vector Art",
                 "Customize Patches",
                 "Promotional Products",
-                "Graphic Designing"
-              
+                "Graphic Designing",
               ]}
               // showSeeMore={true}
               hideSeeMore={true}
@@ -261,13 +260,18 @@ function Footer() {
                 paddingLeft: { sm: "40px", xs: "40px" },
 
                 flexBasis: "304.4px",
-                fontFamily:"Outfit"
-
+                fontFamily: "Outfit",
               }}
               heading={"Contact Infomation"}
+              links={[
+                "tel:+13074008653",
+                "https://wa.me/447928062002",
+                "mailto:sales@patchmakers.us",
+                "",
+              ]}
               data={[
                 "Phone:  +1 (307) 400 8653",
-                "Phone: +44 (792) 806 2002 (Whatspp)", 
+                "Phone: +44 (792) 806 2002 (Whatspp)",
                 "Email: sales@patchmakers.us",
                 "Address:1133 WOLCOTT ST SPC 4, CASPER, WY, 82601",
               ]}
@@ -307,7 +311,7 @@ function Footer() {
               }}
               textAlign={{ md: "left", sm: "center", xs: "center" }}
             >
-              <img src={layer1} style={{width:'140px'}}></img>
+              <img src={layer1} style={{ width: "140px" }}></img>
             </Box>
             <Box
               className="FooterIcon"
@@ -324,7 +328,6 @@ function Footer() {
             >
               <Box
                 sx={{
-                  
                   width: "50px",
                   height: "50px",
                   borderRadius: "50%",
@@ -335,15 +338,17 @@ function Footer() {
                   "&:hover": {
                     backgroundColor: "rgba(255, 255, 255, 0.15)", // White with opacity 0.15 on hover
                   },
-                  cursor:"pointer",
+                  cursor: "pointer",
                 }}
               >
-                <a href="https://www.facebook.com/mozack.co/" target="_blank" > <img src={iconOne} width="11.08px" height="21.34px" /></a>
+                <a href="https://www.facebook.com/patchmakersofficial" target="_blank">
+                  {" "}
+                  <img src={iconOne} width="11.08px" height="21.34px" />
+                </a>
               </Box>
 
               <Box
                 sx={{
-                  
                   width: "50px",
                   height: "50px",
                   borderRadius: "50%",
@@ -354,16 +359,16 @@ function Footer() {
                   "&:hover": {
                     backgroundColor: "rgba(255, 255, 255, 0.15)", // White with opacity 0.15 on hover
                   },
-                  cursor:"pointer",
-
+                  cursor: "pointer",
                 }}
               >
-                <a  href="https://www.instagram.com/mozack.co/" target="_blank" ><img src={iconTwo} width="22px" height="22px" /></a>
+                <a href="https://www.instagram.com/patchmakersofficial/" target="_blank">
+                  <img src={iconTwo} width="22px" height="22px" />
+                </a>
               </Box>
 
               <Box
                 sx={{
-                  
                   width: "50px",
                   height: "50px",
                   borderRadius: "50%",
@@ -374,16 +379,20 @@ function Footer() {
                   "&:hover": {
                     backgroundColor: "rgba(255, 255, 255, 0.15)", // White with opacity 0.15 on hover
                   },
-                  cursor:"pointer",
-
+                  cursor: "pointer",
                 }}
               >
-                <a  href="https://pk.linkedin.com/company/mozack" target="_blank" > <img src={iconThree} width="22px" height="22px" /></a>
+                <a
+                  href="https://www.linkedin.com/company/patchmakersofficial"
+                  target="_blank"
+                >
+                  {" "}
+                  <img src={iconThree} width="22px" height="22px" />
+                </a>
               </Box>
 
               <Box
                 sx={{
-                  
                   width: "50px",
                   height: "50px",
                   borderRadius: "50%",
@@ -394,11 +403,13 @@ function Footer() {
                   "&:hover": {
                     backgroundColor: "rgba(255, 255, 255, 0.15)", // White with opacity 0.15 on hover
                   },
-                  cursor:"pointer",
-
+                  cursor: "pointer",
                 }}
               >
-                <a href='#' target="_blank" > <img src={iconFour} width="22px" height="22px" /></a>
+                <a href="https://www.youtube.com/@patchmakersofficial" target="_blank">
+                  {" "}
+                  <img src={iconFour} width="22px" height="22px" />
+                </a>
               </Box>
             </Box>
           </Box>
@@ -437,11 +448,11 @@ function Footer() {
                 minWidth: { md: "450px", sm: "100%", xs: "100%" },
                 display: "flex",
                 justifyContent: {
-                  sm:"flex-end",
-                  xs:"center"
+                  sm: "flex-end",
+                  xs: "center",
                 },
                 paddingTop: "none",
-                alignItems:"center",
+                alignItems: "center",
                 "&:hover": {
                   color: "#1E8CE0", // Hover effect on copyright text
                   transition: "color 0.3s ease",
