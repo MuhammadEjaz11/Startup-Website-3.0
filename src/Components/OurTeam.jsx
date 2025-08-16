@@ -124,56 +124,7 @@ const OurTeam = () => {
             </Typography>
           </Box>
 
-          {/* Social Icons Box */}
-          <Box
-            className="socialIcons"
-            sx={{
-              position: "absolute",
-              bottom: "6%",
-              left: "40%",
-              right: "50%",
-              transform: "translateX(-0%) translateY(20px)", // Initially hidden
-              display: "flex",
-              m: "auto",
-              gap: "15px",
-              opacity: 0, // Initially invisible
-              transition: "all 0.3s ease-in-out", // Smooth transition for showing icons
-            }}
-          >
-            <a href={member?.facebook || "#"} target="_blank" >
-              <Box
-                component="img"
-                src={fbIcon}
-                sx={{
-                  width: "9px",
-                  objectFit: "contain",
-                  ":hover": { cursor: "pointer" },
-                }}
-              />
-            </a>
-            <a href={member?.instagram || "#"} >
-              <Box
-                component="img"
-                src={instaIcon}
-                sx={{
-                  width: "18px",
-                  objectFit: "contain",
-                  ":hover": { cursor: "pointer" },
-                }}
-              />
-            </a>
-            <a href={member?.linkedin || "#"}>
-              <Box
-                component="img"
-                src={linkdinIcon}
-                sx={{
-                  width: "18px",
-                  objectFit: "contain",
-                  ":hover": { cursor: "pointer" },
-                }}
-              />
-            </a>
-          </Box>
+   
         </Box>
       ))}
     </Box>

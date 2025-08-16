@@ -3,6 +3,7 @@ import arrowButton from "../assets/font/arrowButton.png";
 import arrowButtonBlack from "../assets/font/arrowButtonBlack.png";
 
 import { Box, Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 function CustomButton({
   title = "",
@@ -16,8 +17,17 @@ function CustomButton({
   buttonIconBlack = false,
   onClick,
 }) {
+  const navigate = useNavigate();
   const [isMouseOver, setIsMouseOver] = useState(false);
-
+  const handleClick = () => {
+    console.log("handleClick");
+    
+    if (onClick) {
+      onClick();
+    } else {
+      navigate("/our-portfolio");
+    }
+  };
   return (
     <Button
       onMouseOver={() => setIsMouseOver(true)}
@@ -31,7 +41,7 @@ function CustomButton({
         minWidth: "155px",
         alignItems: "center",
       }}
-      onClick={onClick}
+      onClick={handleClick}
     >
       {title}
       <Box

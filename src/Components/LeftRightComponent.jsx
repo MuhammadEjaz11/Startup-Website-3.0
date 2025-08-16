@@ -44,6 +44,7 @@ const LeftRightComponent = ({
         width: "100%",
         flexDirection: { md: "row", xs: "column" },
         ...sx,
+ 
       }}
     >
       <Box

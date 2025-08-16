@@ -311,7 +311,7 @@ const Vector = () => {
 
               <ServicesCard
                 desc="Send us your artwork or logo in any format—JPG, PNG, PDF, or even a sketch!"
-                iconURL={"/images/work-process/vector/design.svg"}
+                iconURL={"/images/work-process/digitizing/design.svg"}
                 image={true}
                 title="Submit Your Design"
                 style={{
@@ -325,7 +325,7 @@ const Vector = () => {
               />
               <ServicesCard
                 desc="We'll create a vector art of your design and share a preview with you for approval. Revisions? No problem!"
-                iconURL={"/images/work-process/vector/approval.svg"}
+                iconURL={"/images/work-process/digitizing/approval.svg"}
                 image={true}
                 title="Get Approval"
                 style={{
@@ -339,7 +339,7 @@ const Vector = () => {
               />
               <ServicesCard
                 desc="Once approved, we deliver the final vector file in your preferred format—fast, ready, and print-perfect!"
-                iconURL={"/images/work-process/vector/delivery.svg"}
+                iconURL={"/images/work-process/digitizing/delivery.svg"}
                 image={true}
                 title="Delivery"
                 style={{
@@ -473,7 +473,7 @@ const Vector = () => {
               backgroundColor: "black",
               borderRadius: "10px",
             }}
-            onClick={() => navigate("/our-portfolio")}
+        
             title="Load More"
           />
         </Box>

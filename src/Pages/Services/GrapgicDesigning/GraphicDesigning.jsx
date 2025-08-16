@@ -496,7 +496,7 @@ const GraphicDesigning = () => {
 
               <ServicesCard
                 desc="We start by understanding your needs—what you're looking for, the purpose of the design, preferred style, colors, and target audience. This helps us align with your vision from the start."
-                iconURL={"/images/work-process/graphic/design.png"}
+                iconURL={"/images/work-process/digitizing/design.svg"}
                 image={true}
                 title="Client Brief & Requirement Gathering"
                 style={{
@@ -510,7 +510,7 @@ const GraphicDesigning = () => {
               />
               <ServicesCard
                 desc="Our designers brainstorm ideas and develop initial concepts based on your requirements. Mood boards, sketches, or reference samples may be shared for early feedback."
-                iconURL={"/images/work-process/graphic/approval.png"}
+                iconURL={"/images/work-process/digitizing/approval.svg"}
                 image={true}
                 title="Concept Development"
                 style={{
@@ -524,7 +524,7 @@ const GraphicDesigning = () => {
               />
               <ServicesCard
                 desc="Once the concept is approved, we move to the actual design phase. Our team creates a polished, high-quality design using professional tools (like Adobe Illustrator, Photoshop, etc.)."
-                iconURL={"/images/work-process/graphic/delivery.png"}
+                iconURL={"/images/work-process/digitizing/delivery.svg"}
                 image={true}
                 title="Design Creation"
                 style={{

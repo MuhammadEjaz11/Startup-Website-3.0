@@ -66,6 +66,7 @@ import {
 
 import DesignDevelop from "../../../Components/DesignDevelop";
 import ContactForm from "../../../Components/ContactForm";
+import { useNavigate } from "react-router-dom";
 
 const webDevQuestions = [
   {
@@ -301,6 +302,7 @@ const faqData = [
 ];
 
 const WebDevelopment = () => {
+  const navigate= useNavigate();
   // useEffect(()=>{
   //   const scrollTo = () => {
   //     scroll.scrollTo(0); // Scrolling to 100px from the top of the page.
@@ -328,7 +330,7 @@ const WebDevelopment = () => {
             justifyContent: "start",
             textAlign: "start",
           }}
-          sx={{ flexDirection: "row-reverse" }}
+          sx={{ flexDirection: {md:"row-reverse" , xs:"column"} }}
           isRow={false}
           title1={"PAffordable solutions for"}
           title2={" creativity need"}
@@ -426,6 +428,7 @@ const WebDevelopment = () => {
               backgroundColor: "black",
               borderRadius: "10px",
             }}
+            onClick={() => {navigate("/our-portfolio")}}
             title="Load More"
           />
         </Box>

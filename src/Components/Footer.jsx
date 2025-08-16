@@ -12,6 +12,8 @@ import iconThree from "../image/LinkedinIcon.png";
 import iconFour from "../image/TwitterIcon.png";
 // import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import { YouTube } from "@mui/icons-material";
+import { AiOutlineYoutube } from "react-icons/ai";
 
 function Footer() {
   const [count, setCount] = useState(0);
@@ -211,7 +213,7 @@ function Footer() {
               >
                 We create high-quality custom patches and offer expert
                 digitizing and vector art services. From embroidery to PVC and
-                more — fast, precise, and made to match your vision.{" "}
+                more fast, precise, and made to match your vision.{" "}
               </Typography>
             </Box>
             <FooterMenu
@@ -222,8 +224,8 @@ function Footer() {
                 fontFamily: "Outfit",
               }}
               heading={"Navigate"}
-              links={["/", "#about", "#blogs", "#faqs", "/contact-us"]}
-              data={["Home", "About Us", "Blogs", "Faq’s", "Contact Us"]}
+              links={["/", "#about", "#faqs", "/contact-us"]}
+              data={["Home", "About Us",  "Faq’s", "Contact Us"]}
             />
 
             <FooterMenu
@@ -235,18 +237,18 @@ function Footer() {
                 fontFamily: "Outfit",
               }}
               links={[
+                "services/digitizing",
+                "services/vector-art",
+                "services/custom-patches",
+                "services/video-editing",
                 "services/graphic-design",
-                "services/video-animation",
-                "services/android-&-ios-app-development",
-                "services/web-development",
-                "#",
               ]}
               heading={"Our Services"}
               data={[
                 "Digitiizng",
                 "Vector Art",
                 "Customize Patches",
-                "Promotional Products",
+                "Video Editing",
                 "Graphic Designing",
               ]}
               // showSeeMore={true}
@@ -267,7 +269,7 @@ function Footer() {
                 "tel:+13074008653",
                 "https://wa.me/447928062002",
                 "mailto:sales@patchmakers.us",
-                "",
+                "#",
               ]}
               data={[
                 "Phone:  +1 (307) 400 8653",
@@ -404,11 +406,16 @@ function Footer() {
                     backgroundColor: "rgba(255, 255, 255, 0.15)", // White with opacity 0.15 on hover
                   },
                   cursor: "pointer",
+                  margin:"10px 0px"
                 }}
               >
-                <a href="https://www.youtube.com/@patchmakersofficial" target="_blank">
+                <a 
+                
+                 style={{color:"#fff", }}
+                href="https://www.youtube.com/@patchmakersofficial" target="_blank">
                   {" "}
-                  <img src={iconFour} width="22px" height="22px" />
+                  {/* <img src={iconFour} width="22px" height="22px" /> */}
+                  <AiOutlineYoutube/>
                 </a>
               </Box>
             </Box>

@@ -466,7 +466,7 @@ const Digitizing = () => {
                   img: {
                     width: "100%",
                   },
-                  p: { xs: "10px", md: "30px" },
+                  p: { xs: "30px", md: "30px" },
                 }}
                 iconURL={item.image}
                 title={item.title}
@@ -479,7 +479,7 @@ const Digitizing = () => {
 
         <Box
           sx={{
-            mt: "140px",
+            mt: {md:"140px", xs:"70px"},
             display: "flex",
             justifyContent: {
               md: "space-between",
@@ -811,7 +811,7 @@ const Digitizing = () => {
 
         <Box
           sx={{
-            marginTop: "120px",
+            marginTop: {md:"120px", xs:"30px"},
             padding: {
               lg: "0px 20px 70px 20px",
               md: "0px 20px 30px 20px",
@@ -847,8 +847,9 @@ const Digitizing = () => {
           title1="Our Custom"
           title2="Packages"
           sx={{
+            mt:{md:"100px", xs:"70px"},
             gap: "20px",
-            marginBottom: "100px",
+            marginBottom: { md:"100px", xs:"40px" },
           }}
         />
         <Box

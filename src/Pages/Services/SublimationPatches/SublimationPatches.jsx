@@ -348,7 +348,6 @@ const SublimationPatches = () => {
               backgroundColor: "black",
               borderRadius: "10px",
             }}
-            onClick={() => navigate("/our-portfolio")}
             title="Load More"
           />
         </Box>

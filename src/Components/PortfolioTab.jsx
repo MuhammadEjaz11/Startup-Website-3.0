@@ -7,55 +7,291 @@ import CustomButton from "./Button";
 const PortfolioTab = () => {
   // Portfolio data arrays for each tab using public image paths
   const initialVector = [
-    { img: "/images/our-portfolio/vector/one.jpg", title: "Vector Design 1", description: "Professional vector design work.", readmore: "read more" },
-    { img: "/images/our-portfolio/vector/two.jpg", title: "Vector Design 2", description: "Creative vector illustration.", readmore: "read more" },
-    { img: "/images/our-portfolio/vector/three.jpg", title: "Vector Design 3", description: "Modern vector graphics.", readmore: "read more" },
-    { img: "/images/our-portfolio/vector/four.jpg", title: "Vector Design 4", description: "Professional vector artwork.", readmore: "read more" },
-    { img: "/images/our-portfolio/vector/five.jpg", title: "Vector Design 5", description: "Creative vector design.", readmore: "read more" },
-    { img: "/images/our-portfolio/vector/eight.jpg", title: "Vector Design 6", description: "Modern vector illustration.", readmore: "read more" },
+    {
+      img: "/images/our-portfolio/vector/two.jpg",
+      title: "Vector Design 2",
+      description: "Creative vector illustration.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/vector/three.jpg",
+      title: "Vector Design 3",
+      description: "Modern vector graphics.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/vector/four.jpg",
+      title: "Vector Design 4",
+      description: "Professional vector artwork.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/vector/five.jpg",
+      title: "Vector Design 5",
+      description: "Creative vector design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/vector/eight.jpg",
+      title: "Vector Design 6",
+      description: "Modern vector illustration.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/vector/six.jpg",
+      title: "Vector Design 6",
+      description: "Modern vector illustration.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/vector/seven.jpg",
+      title: "Vector Design 6",
+      description: "Modern vector illustration.",
+      readmore: "read more",
+    },
   ];
 
   const initialEmbroidery = [
-    { img: "/images/our-portfolio/embroidery/one.jpg", title: "Embroidery Work 1", description: "Professional embroidery design.", readmore: "read more" },
-    { img: "/images/our-portfolio/embroidery/two.jpg", title: "Embroidery Work 2", description: "Creative embroidery pattern.", readmore: "read more" },
-    { img: "/images/our-portfolio/embroidery/three.jpg", title: "Embroidery Work 3", description: "Modern embroidery artwork.", readmore: "read more" },
-    { img: "/images/our-portfolio/embroidery/four.jpg", title: "Embroidery Work 4", description: "Professional embroidery.", readmore: "read more" },
-    { img: "/images/our-portfolio/embroidery/five.jpg", title: "Embroidery Work 5", description: "Creative embroidery design.", readmore: "read more" },
-    { img: "/images/our-portfolio/embroidery/eight.jpg", title: "Embroidery Work 6", description: "Modern embroidery pattern.", readmore: "read more" },
+    {
+      img: "/images/our-portfolio/embroidery/one.jpg",
+      title: "Embroidery Work 1",
+      description: "Professional embroidery design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/embroidery/two.jpg",
+      title: "Embroidery Work 2",
+      description: "Creative embroidery pattern.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/embroidery/three.jpg",
+      title: "Embroidery Work 3",
+      description: "Modern embroidery artwork.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/embroidery/four.jpg",
+      title: "Embroidery Work 4",
+      description: "Professional embroidery.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/embroidery/five.jpg",
+      title: "Embroidery Work 5",
+      description: "Creative embroidery design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/embroidery/eight.jpg",
+      title: "Embroidery Work 6",
+      description: "Modern embroidery pattern.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/embroidery/nine.jpg",
+      title: "Embroidery Work 6",
+      description: "Modern embroidery pattern.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/embroidery/ten.jpg",
+      title: "Embroidery Work 6",
+      description: "Modern embroidery pattern.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/embroidery/eleven.jpg",
+      title: "Embroidery Work 6",
+      description: "Modern embroidery pattern.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/embroidery/twelve.jpg",
+      title: "Embroidery Work 6",
+      description: "Modern embroidery pattern.",
+      readmore: "read more",
+    },
   ];
 
   const initialSublimation = [
-    { img: "/images/our-portfolio/sublimation/one.jpg", title: "Sublimation Work 1", description: "Professional sublimation design.", readmore: "read more" },
-    { img: "/images/our-portfolio/sublimation/two.jpg", title: "Sublimation Work 2", description: "Creative sublimation pattern.", readmore: "read more" },
-    { img: "/images/our-portfolio/sublimation/three.jpg", title: "Sublimation Work 3", description: "Modern sublimation artwork.", readmore: "read more" },
-    { img: "/images/our-portfolio/sublimation/four.jpg", title: "Sublimation Work 4", description: "Professional sublimation.", readmore: "read more" },
-    { img: "/images/our-portfolio/sublimation/five.jpg", title: "Sublimation Work 5", description: "Creative sublimation design.", readmore: "read more" },
-    { img: "/images/our-portfolio/sublimation/eight.jpg", title: "Sublimation Work 6", description: "Modern sublimation pattern.", readmore: "read more" },
+    {
+      img: "/images/our-portfolio/sublimation/one.jpg",
+      title: "Sublimation Work 1",
+      description: "Professional sublimation design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/sublimation/two.jpg",
+      title: "Sublimation Work 2",
+      description: "Creative sublimation pattern.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/sublimation/three.jpg",
+      title: "Sublimation Work 3",
+      description: "Modern sublimation artwork.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/sublimation/four.jpg",
+      title: "Sublimation Work 4",
+      description: "Professional sublimation.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/sublimation/five.jpg",
+      title: "Sublimation Work 5",
+      description: "Creative sublimation design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/sublimation/six.jpg",
+      title: "Sublimation Work 5",
+      description: "Creative sublimation design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/sublimation/seven.jpg",
+      title: "Sublimation Work 5",
+      description: "Creative sublimation design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/sublimation/eight.jpg",
+      title: "Sublimation Work 6",
+      description: "Modern sublimation pattern.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/sublimation/nine.jpg",
+      title: "Sublimation Work 6",
+      description: "Modern sublimation pattern.",
+      readmore: "read more",
+    },
   ];
 
   const initialLeather = [
-    { img: "/images/our-portfolio/leather/one.jpg", title: "Leather Work 1", description: "Professional leather design.", readmore: "read more" },
-    { img: "/images/our-portfolio/leather/two.jpg", title: "Leather Work 2", description: "Creative leather pattern.", readmore: "read more" },
-    { img: "/images/our-portfolio/leather/three.jpg", title: "Leather Work 3", description: "Modern leather artwork.", readmore: "read more" },
-    { img: "/images/our-portfolio/leather/four.jpg", title: "Leather Work 4", description: "Professional leather work.", readmore: "read more" },
+    {
+      img: "/images/our-portfolio/leather/one.jpg",
+      title: "Leather Work 1",
+      description: "Professional leather design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/leather/two.jpg",
+      title: "Leather Work 2",
+      description: "Creative leather pattern.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/leather/three.jpg",
+      title: "Leather Work 3",
+      description: "Modern leather artwork.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/leather/four.jpg",
+      title: "Leather Work 4",
+      description: "Professional leather work.",
+      readmore: "read more",
+    },
   ];
 
   const initialChenille = [
-    { img: "/images/our-portfolio/chenille/one.jpg", title: "Chenille Work 1", description: "Professional chenille design.", readmore: "read more" },
-    { img: "/images/our-portfolio/chenille/two.jpg", title: "Chenille Work 2", description: "Creative chenille pattern.", readmore: "read more" },
-    { img: "/images/our-portfolio/chenille/three.jpg", title: "Chenille Work 3", description: "Modern chenille artwork.", readmore: "read more" },
-    { img: "/images/our-portfolio/chenille/four.jpg", title: "Chenille Work 4", description: "Professional chenille work.", readmore: "read more" },
-    { img: "/images/our-portfolio/chenille/five.jpg", title: "Chenille Work 5", description: "Creative chenille design.", readmore: "read more" },
-    { img: "/images/our-portfolio/chenille/eight.jpg", title: "Chenille Work 6", description: "Modern chenille pattern.", readmore: "read more" },
+    {
+      img: "/images/our-portfolio/chenille/one.jpg",
+      title: "Chenille Work 1",
+      description: "Professional chenille design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/chenille/two.jpg",
+      title: "Chenille Work 2",
+      description: "Creative chenille pattern.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/chenille/three.jpg",
+      title: "Chenille Work 3",
+      description: "Modern chenille artwork.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/chenille/four.jpg",
+      title: "Chenille Work 4",
+      description: "Professional chenille work.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/chenille/five.jpg",
+      title: "Chenille Work 5",
+      description: "Creative chenille design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/chenille/six.jpg",
+      title: "Chenille Work 5",
+      description: "Creative chenille design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/chenille/seven.jpg",
+      title: "Chenille Work 5",
+      description: "Creative chenille design.",
+      readmore: "read more",
+    },
   ];
 
   const initialDigitize = [
-    { img: "/images/our-portfolio/digitize/one.jpg", title: "Digitizing Work 1", description: "Professional digitizing design.", readmore: "read more" },
-    { img: "/images/our-portfolio/digitize/two.jpg", title: "Digitizing Work 2", description: "Creative digitizing pattern.", readmore: "read more" },
-    { img: "/images/our-portfolio/digitize/three.jpg", title: "Digitizing Work 3", description: "Modern digitizing artwork.", readmore: "read more" },
-    { img: "/images/our-portfolio/digitize/four.jpg", title: "Digitizing Work 4", description: "Professional digitizing work.", readmore: "read more" },
-    { img: "/images/our-portfolio/digitize/five.jpg", title: "Digitizing Work 5", description: "Creative digitizing design.", readmore: "read more" },
-    { img: "/images/our-portfolio/digitize/eight.jpg", title: "Digitizing Work 6", description: "Modern digitizing pattern.", readmore: "read more" },
+    {
+      img: "/images/our-portfolio/digitize/one.jpg",
+      title: "Digitizing Work 1",
+      description: "Professional digitizing design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/digitize/two.jpg",
+      title: "Digitizing Work 2",
+      description: "Creative digitizing pattern.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/digitize/three.jpg",
+      title: "Digitizing Work 3",
+      description: "Modern digitizing artwork.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/digitize/four.jpg",
+      title: "Digitizing Work 4",
+      description: "Professional digitizing work.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/digitize/five.jpg",
+      title: "Digitizing Work 5",
+      description: "Creative digitizing design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/digitize/six.jpg",
+      title: "Digitizing Work 5",
+      description: "Creative digitizing design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/digitize/seven.jpg",
+      title: "Digitizing Work 5",
+      description: "Creative digitizing design.",
+      readmore: "read more",
+    },
+    {
+      img: "/images/our-portfolio/digitize/eight.jpg",
+      title: "Digitizing Work 6",
+      description: "Modern digitizing pattern.",
+      readmore: "read more",
+    },
   ];
 
   // State to manage current tab
@@ -72,33 +308,118 @@ const PortfolioTab = () => {
   // Additional content for load more feature
   const additionalContent = {
     vector: [
-      { img: "/images/our-portfolio/vector/one.jpg", title: "Vector Design 7", description: "Additional vector design work.", readmore: "read more" },
-      { img: "/images/our-portfolio/vector/two.jpg", title: "Vector Design 8", description: "More creative vector work.", readmore: "read more" },
-      { img: "/images/our-portfolio/vector/three.jpg", title: "Vector Design 9", description: "Extended vector collection.", readmore: "read more" },
+      {
+        img: "/images/our-portfolio/vector/one.jpg",
+        title: "Vector Design 7",
+        description: "Additional vector design work.",
+        readmore: "read more",
+      },
+      {
+        img: "/images/our-portfolio/vector/two.jpg",
+        title: "Vector Design 8",
+        description: "More creative vector work.",
+        readmore: "read more",
+      },
+      {
+        img: "/images/our-portfolio/vector/three.jpg",
+        title: "Vector Design 9",
+        description: "Extended vector collection.",
+        readmore: "read more",
+      },
     ],
     embroidery: [
-      { img: "/images/our-portfolio/embroidery/one.jpg", title: "Embroidery Work 7", description: "Additional embroidery work.", readmore: "read more" },
-      { img: "/images/our-portfolio/embroidery/two.jpg", title: "Embroidery Work 8", description: "More creative embroidery.", readmore: "read more" },
-      { img: "/images/our-portfolio/embroidery/three.jpg", title: "Embroidery Work 9", description: "Extended embroidery collection.", readmore: "read more" },
+      {
+        img: "/images/our-portfolio/embroidery/one.jpg",
+        title: "Embroidery Work 7",
+        description: "Additional embroidery work.",
+        readmore: "read more",
+      },
+      {
+        img: "/images/our-portfolio/embroidery/two.jpg",
+        title: "Embroidery Work 8",
+        description: "More creative embroidery.",
+        readmore: "read more",
+      },
+      {
+        img: "/images/our-portfolio/embroidery/three.jpg",
+        title: "Embroidery Work 9",
+        description: "Extended embroidery collection.",
+        readmore: "read more",
+      },
     ],
     sublimation: [
-      { img: "/images/our-portfolio/sublimation/one.jpg", title: "Sublimation Work 7", description: "Additional sublimation work.", readmore: "read more" },
-      { img: "/images/our-portfolio/sublimation/two.jpg", title: "Sublimation Work 8", description: "More creative sublimation.", readmore: "read more" },
-      { img: "/images/our-portfolio/sublimation/three.jpg", title: "Sublimation Work 9", description: "Extended sublimation collection.", readmore: "read more" },
+      {
+        img: "/images/our-portfolio/sublimation/one.jpg",
+        title: "Sublimation Work 7",
+        description: "Additional sublimation work.",
+        readmore: "read more",
+      },
+      {
+        img: "/images/our-portfolio/sublimation/two.jpg",
+        title: "Sublimation Work 8",
+        description: "More creative sublimation.",
+        readmore: "read more",
+      },
+      {
+        img: "/images/our-portfolio/sublimation/three.jpg",
+        title: "Sublimation Work 9",
+        description: "Extended sublimation collection.",
+        readmore: "read more",
+      },
     ],
     leather: [
-      { img: "/images/our-portfolio/leather/one.jpg", title: "Leather Work 5", description: "Additional leather work.", readmore: "read more" },
-      { img: "/images/our-portfolio/leather/two.jpg", title: "Leather Work 6", description: "More creative leather work.", readmore: "read more" },
+      {
+        img: "/images/our-portfolio/leather/one.jpg",
+        title: "Leather Work 5",
+        description: "Additional leather work.",
+        readmore: "read more",
+      },
+      {
+        img: "/images/our-portfolio/leather/two.jpg",
+        title: "Leather Work 6",
+        description: "More creative leather work.",
+        readmore: "read more",
+      },
     ],
     chenille: [
-      { img: "/images/our-portfolio/chenille/one.jpg", title: "Chenille Work 7", description: "Additional chenille work.", readmore: "read more" },
-      { img: "/images/our-portfolio/chenille/two.jpg", title: "Chenille Work 8", description: "More creative chenille work.", readmore: "read more" },
-      { img: "/images/our-portfolio/chenille/three.jpg", title: "Chenille Work 9", description: "Extended chenille collection.", readmore: "read more" },
+      {
+        img: "/images/our-portfolio/chenille/one.jpg",
+        title: "Chenille Work 7",
+        description: "Additional chenille work.",
+        readmore: "read more",
+      },
+      {
+        img: "/images/our-portfolio/chenille/two.jpg",
+        title: "Chenille Work 8",
+        description: "More creative chenille work.",
+        readmore: "read more",
+      },
+      {
+        img: "/images/our-portfolio/chenille/three.jpg",
+        title: "Chenille Work 9",
+        description: "Extended chenille collection.",
+        readmore: "read more",
+      },
     ],
     digitize: [
-      { img: "/images/our-portfolio/digitize/one.jpg", title: "Digitizing Work 7", description: "Additional digitizing work.", readmore: "read more" },
-      { img: "/images/our-portfolio/digitize/two.jpg", title: "Digitizing Work 8", description: "More creative digitizing.", readmore: "read more" },
-      { img: "/images/our-portfolio/digitize/three.jpg", title: "Digitizing Work 9", description: "Extended digitizing collection.", readmore: "read more" },
+      {
+        img: "/images/our-portfolio/digitize/one.jpg",
+        title: "Digitizing Work 7",
+        description: "Additional digitizing work.",
+        readmore: "read more",
+      },
+      {
+        img: "/images/our-portfolio/digitize/two.jpg",
+        title: "Digitizing Work 8",
+        description: "More creative digitizing.",
+        readmore: "read more",
+      },
+      {
+        img: "/images/our-portfolio/digitize/three.jpg",
+        title: "Digitizing Work 9",
+        description: "Extended digitizing collection.",
+        readmore: "read more",
+      },
     ],
   };
 
@@ -126,22 +447,40 @@ const PortfolioTab = () => {
   const handleLoadMore = () => {
     switch (currentTab) {
       case "vector":
-        setVector((prevContent) => [...prevContent, ...additionalContent.vector]);
+        setVector((prevContent) => [
+          ...prevContent,
+          ...additionalContent.vector,
+        ]);
         break;
       case "embroidery":
-        setEmbroidery((prevContent) => [...prevContent, ...additionalContent.embroidery]);
+        setEmbroidery((prevContent) => [
+          ...prevContent,
+          ...additionalContent.embroidery,
+        ]);
         break;
       case "sublimation":
-        setSublimation((prevContent) => [...prevContent, ...additionalContent.sublimation]);
+        setSublimation((prevContent) => [
+          ...prevContent,
+          ...additionalContent.sublimation,
+        ]);
         break;
       case "leather":
-        setLeather((prevContent) => [...prevContent, ...additionalContent.leather]);
+        setLeather((prevContent) => [
+          ...prevContent,
+          ...additionalContent.leather,
+        ]);
         break;
       case "chenille":
-        setChenille((prevContent) => [...prevContent, ...additionalContent.chenille]);
+        setChenille((prevContent) => [
+          ...prevContent,
+          ...additionalContent.chenille,
+        ]);
         break;
       case "digitize":
-        setDigitize((prevContent) => [...prevContent, ...additionalContent.digitize]);
+        setDigitize((prevContent) => [
+          ...prevContent,
+          ...additionalContent.digitize,
+        ]);
         break;
       default:
         break;
@@ -155,12 +494,12 @@ const PortfolioTab = () => {
           display: "flex",
           flexDirection: "column",
           margin: "0 auto",
-          paddingTop:  {xl:"130px",md:"30px", xs:"100px"},
+          paddingTop: { xl: "130px", md: "30px", xs: "100px" },
           paddingBottom: "130px",
         }}
       >
         {/* Buttons for tabs */}
-        <Box sx={{ display: "flex", gap: "28px", flexWrap: "wrap" }}>
+        <Box sx={{ display: "flex", gap: {md:"28px",xs:"10px"}, flexWrap: "wrap" }}>
           <CustomButtonMe
             buttonStyle={{
               fontSize: { md: "16px", xs: "12px" },
@@ -198,7 +537,9 @@ const PortfolioTab = () => {
             width={"153px"}
             border="1px solid #D7D7D7"
             borderRadius="15px"
-            background={currentTab === "sublimation" ? "#1E1E1E" : "transparent"}
+            background={
+              currentTab === "sublimation" ? "#1E1E1E" : "transparent"
+            }
             color={currentTab === "sublimation" ? "#FFFFFF" : "#1E1E1E"}
             ButtonText="Sublimation"
             onClick={() => setCurrentTab("sublimation")}
@@ -250,11 +591,18 @@ const PortfolioTab = () => {
         {/* Portfolio card rendering */}
         <Box
           sx={{
-            mt: "70px",
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: { md: "space-between", xs: "center" },
-            gap: "1rem",
+            mt: {md:"70px", xs:"30px"},
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "1fr", // 1 column on extra small screens
+              sm: "1fr 1fr", // 2 columns on small screens
+              md: "1fr 1fr 1fr", // 3 columns on medium and up
+            },
+            gap:{md: "24px", xs:"10px"},
+            // display: "flex",
+            // flexWrap: "wrap",
+            // justifyContent: { md: "space-between", xs: "center" },
+            // gap: "1rem",
           }}
         >
           {getCurrentContent().map((item, ind) => (
@@ -263,20 +611,25 @@ const PortfolioTab = () => {
               sx={{
                 flexBasis: {
                   xs: "100%", // 1 card per row on extra small screens
-                  sm: "47%",  // 2 cards per row on small screens
-                  md: "31%",  // 3 cards per row on medium screens
+                  sm: "47%", // 2 cards per row on small screens
+                  md: "31%", // 3 cards per row on medium screens
                 },
                 flexShrink: "1",
                 flexGrow: "1",
               }}
             >
-              <PortfolioCardCustom imageURL={item.img} title={item.title} desc={item.description} more={item.readmore} />
+              <PortfolioCardCustom
+                imageURL={item.img}
+                title={item.title}
+                desc={item.description}
+                more={item.readmore}
+              />
             </Box>
           ))}
         </Box>
 
         {/* Load More button */}
-        <Box
+        {/* <Box
           sx={{
             paddingBottom: "0px",
             display: "flex",
@@ -299,9 +652,9 @@ const PortfolioTab = () => {
               borderRadius: "10px",
             }}
             title="Load More"
-            onClick={handleLoadMore}  
+            onClick={handleLoadMore}
           />
-        </Box>
+        </Box> */}
       </Box>
     </>
   );

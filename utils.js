@@ -266,7 +266,7 @@ export const services1 = [
     desc: "Digitizing is the essential process of converting any artwork, or design into a digital embroidery file that can be read and executed by an embroidery machine.",
     btnText: "Read More",
     btnURL: arrowHead,
-    link: "/services/android-&-ios-app-development",
+    link: "/services/digitizing",
   },
   {
     iconURL: "/images/home_services_icon/vector.png",
@@ -274,7 +274,7 @@ export const services1 = [
     desc: "We convert your designs into clean, scalable vector files perfect for printing, embroidery, and more—maintaining sharpness at any size.",
     btnText: "Read More",
     btnURL: arrowHead,
-    link: "/services/web-development",
+    link: "/services/vector-art",
   },
   {
     iconURL: "/images/home_services_icon/costumize-patch.png",
@@ -290,7 +290,7 @@ export const services1 = [
     desc: "Creative visuals that communicate your message clearly from logos and branding to marketing materials.",
     btnText: "Read More",
     btnURL: arrowHead,
-    link: "/services/video-animation",
+    link: "/services/graphic-design",
   },
   {
     iconURL: "/images/home_services_icon/web.png",
@@ -298,15 +298,15 @@ export const services1 = [
     desc: "Modern, responsive websites designed to reflect your brand and provide a seamless user experience.",
     btnText: "Read More",
     btnURL: arrowHead,
-    link: "/services/search-engine-optimization-(SEO)",
+    link: "/services/web-development",
   },
   {
     iconURL: "/images/home_services_icon/promotional-product.png",
-    title: "Promotional Product",
-    desc: "Custom-branded items like mugs, t-shirts, pens, and more to help you market your business in style.",
+    title: "Video Editing",
+    desc: "At Patch Makers, we turn raw footage into polished, professional videos that captivate and inspire. From smooth transitions to sound syncing and color correction, our editing team ensures every frame reflects your vision—clear, engaging, and visually stunning. ",
     btnText: "Read More",
     btnURL: arrowHead,
-    link: "/services/digital-marketing",
+    link: "/services/video-editing",
   },
 ];
 
@@ -811,8 +811,8 @@ export const bannerData = {
     titleSpan: "Designed Your Way",
     text: "Custom patches are a creative and stylish way to represent your brand, team, event, or personal style. Patch Makers specialize in crafting high-quality patches tailored exactly to your vision. Whether you need embroidered, PVC, leather, chenille, or sublimation patches, our team transforms your ideas into wearable art.  From logos to detailed artwork, every patch is designed with precision, using premium materials and expert craftsmanship. We offer endless customization options including size, shape, colors, and backing types to suit any purpose—uniforms, jackets, bags, caps, or promotional items. Your design, your style, your patch—made to stand out.",
     images: [
-      "/images/our-portfolio/vector/one.jpg",
-      "/images/our-portfolio/embroidery/two.jpg",
+      "/images/our-portfolio/vector/eight.jpg",
+      "/images/our-portfolio/digitize/two.jpg",
       "/images/our-portfolio/embroidery/three.jpg",
     ],
   },
