@@ -222,7 +222,7 @@ function BannerSlider() {
             </Typography>
           </Box>
         </Box>
-        {value === "web-development" || value === "graphic-design" ? (
+        {value === "web-development" || value === "graphic-design" || value =="video-editing" ? (
           <Box
             component="img"
             src={bannerData[value]?.images[0]}

@@ -139,69 +139,47 @@ const SecondFaq = [
 
 const videoAni = [
   {
-    imageURL: vid3,
+    imageURL: "/images/our-portfolio/video/one.mp4",
+    type:"video"  ,
     title: "Video Editing 1",
     desc: "Video Editing",
     category: "Video Editing",
   },
   {
-    imageURL: vid2,
+    imageURL: "/images/our-portfolio/video/two.mp4",
+    type:"video"  ,
+
     title: "Video Editing 2",
     desc: "Video Editing",
     category: "Video Editing",
   },
   {
-    imageURL: vid3,
+    imageURL: "/images/our-portfolio/video/three.mp4",
+    type:"video"  ,
+
     title: "Video Editing 3",
     desc: "Video Editing",
     category: "Video Editing",
   },
   {
-    imageURL: vid2,
+    imageURL: "/images/our-portfolio/video/four.mp4",
     title: "Video Editing 4",
+    type:"video"  ,
+
+    desc: "Video Editing",
+    category: "Video Editing",
+  },
+    {
+    imageURL: "/images/our-portfolio/video/five.mp4",
+    title: "Video Editing 4",
+    type:"video"  ,
+
     desc: "Video Editing",
     category: "Video Editing",
   },
 ];
 
-const blogData = [
-  {
-    id: 1,
-    title: "How Agecis Puts Your Audience First",
-    description:
-      "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-    image: BlogOne,
-    author: "Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 2,
-    title: "How Agecis Puts Your Audience First",
-    description:
-      "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-    image: BlogTwo,
-    author: "Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 3,
-    title: "How Agecis Puts Your Audience First",
-    description:
-      "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-    image: BlogThree,
-    author: "Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 4,
-    title: "How Agecis Puts Your Audience First",
-    description:
-      "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-    image: BlogTwo,
-    author: "Admin",
-    date: "April 20, 2024",
-  },
-];
+
 
 const tabs = [
   {
@@ -290,18 +268,19 @@ const VideoEditing = () => {
       <Box sx={{ mt: { md: "80px", xs: "40px" } }}>
         <AnimationTabs dataTab={tabs} />
       </Box>
+      
       {/* Portfolio Section */}
       <Box
         sx={{
           mt: { xl: "80px", md: "0px" },
           mb: "120px",
-          display: "none",
+        
         }}
       >
         <StyledHeading
           title1="Our"
           sx1={{ fontFamily: "satoshi !important" }}
-          title2="Recent Works"
+          title2="Portfolio"
           sx2={{ fontFamily: "satoshi-light !important" }}
           styledSx={{
             display: "flex",

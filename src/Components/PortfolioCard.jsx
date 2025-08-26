@@ -5,6 +5,7 @@ const PortfolioCard = ({
   imageURL = "",
   desc = "",
   title = "",
+  type,
   style = {},
 }) => {
   return (
@@ -18,6 +19,20 @@ const PortfolioCard = ({
     
       
     }}>
+      {type == "video"?
+      <>
+        <video
+    src={imageURL}
+    preload="metadata" 
+    style={{
+      width: "100%",
+      borderRadius: "20px",
+    }}
+    controls
+  />
+      </>
+
+      :
       <img src={imageURL} style={{
         width: "100%",
         // objectFit: "contain",
@@ -25,7 +40,7 @@ const PortfolioCard = ({
         norder:"2px solid red"
 
         
-      }} />
+      }} />}
       <Box sx={{
         display:"none",
         margin: '0 auto',

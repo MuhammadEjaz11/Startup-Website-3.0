@@ -46,6 +46,8 @@ export default function KeenSliderPortfolio({ filteredPortfolioList, arrayToList
               imageURL={x?.imageURL}
               title={x?.title}
               desc={x?.desc}
+              type={x?.type}
+
             />
           </div>
         ))}
