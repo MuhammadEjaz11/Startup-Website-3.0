@@ -273,7 +273,7 @@ function Footer() {
               ]}
               data={[
                 "Phone:  +1 (307) 400 8653",
-                "Phone: +44 (792) 806 2002 (Whatspp)",
+                "Whatspp: +44 (792) 806 2002",
                 "Email: sales@patchmakers.us",
                 "Address:1133 WOLCOTT ST SPC 4, CASPER, WY, 82601",
               ]}

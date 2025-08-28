@@ -68,14 +68,25 @@ const TabContent = ({ title, description, imageSrc, dataTab }) => (
         textAlign: 'center',
       }}
     >
-      <img
+             <video
+    src={imageSrc}
+    preload="metadata" 
+    style={{
+      width: "100%",
+      borderRadius: "20px",
+    }}
+    autoPlay
+    loop
+    muted
+  />
+      {/* <img
         src={imageSrc}
         alt={title}
         style={{
           width: '100%', // Ensure image is responsive
           height: 'auto',
         }}
-      />
+      /> */}
     </Box>
   </Box>
 );

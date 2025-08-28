@@ -2,13 +2,17 @@ import { Box, Typography, Link, IconButton } from "@mui/material";
 import { NavLink, useLocation } from "react-router-dom";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import React from "react";
+import React, { useEffect } from "react";
 import { bannerData } from "../../utils";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowButtom from "../image/ArrowButtom.svg";
 import ArrowTop from "../image/ArrowTop.svg";
-
+import {
+  
+  animateScroll as scroll,
+  
+} from "react-scroll";
 function BannerSlider() {
   const location = useLocation();
 
@@ -75,7 +79,12 @@ function BannerSlider() {
     },
     [WheelControls]
   );
-
+  useEffect(() => {
+    const scrollTo = () => {
+      scroll.scrollTo(0); // Scrolling to 100px from the top of the page.
+    };
+    scrollTo();
+  }, []);
   const value = location.pathname.replace("/services/", "");
 
   return (

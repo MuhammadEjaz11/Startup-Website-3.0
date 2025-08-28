@@ -110,32 +110,6 @@ const faqData = [
       "No worries—we'll guide you through it. Share your footage and ideas, and we'll create a concept and editing style that aligns with your vision and brand.",
   },
 ];
-const SecondFaq = [
-  {
-    id: 1,
-    title: "Experience & Excellence",
-    testimonialText:
-      "Mozack combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // A valid video ID
-  },
-  {
-    id: 2,
-    title: "Quality & Dedication",
-    testimonialText:
-      "Our team follows a rigorous testing process, uses industry-leading standards, and prioritizes client feedback to deliver high-quality, scalable solutions.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // Corrected video ID from the URL
-  },
-  {
-    id: 3,
-    title: "Innovation & Creativity",
-    testimonialText:
-      " Mozack provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // Same video ID as example
-  },
-];
 
 const videoAni = [
   {
@@ -186,43 +160,32 @@ const tabs = [
     label: "Cartoon",
     content:
       "Cartoon animation is the most fun, attractive yet creative video type. It engages the visitors to have a look even if they are in a rush and that minute attention from the visitor is all what you need for your business.",
-    imageSrc: "/images/banner/cartoon.png",
+    imageSrc: "/images/our-portfolio/video/one.mp4",
   },
   {
     label: " Whiteboard",
     content:
       "Grab attention with fast-paced, visually appealing videos optimized for platforms like Instagram, Facebook, and TikTok.",
-    imageSrc: "../../src/assets/font/VideoAnimation/VideoAnimation.png",
+    imageSrc:  "/images/our-portfolio/video/five.mp4",
   },
   {
     label: "3D",
     content:
       "From presentations to training content, our clean and professional edits ensure your business stays ahead with powerful visuals.",
-    imageSrc: "../../src/assets/font/VideoAnimation/VideoAnimation.png",
+    imageSrc:  "/images/our-portfolio/video/two.mp4",
   },
-  {
-    label: "Screen-Cast",
-    content:
-      "Relive your best moments with seamless event highlight videos tailored to showcase important memories and details.",
-    imageSrc: "../../src/assets/font/VideoAnimation/VideoAnimation.png",
-  },
-  {
-    label: "Typography",
-    content:
-      "Relive your best moments with seamless event highlight videos tailored to showcase important memories and details.",
-    imageSrc: "../../src/assets/font/VideoAnimation/VideoAnimation.png",
-  },
+
   {
     label: "Motion Graphics",
     content:
       "Relive your best moments with seamless event highlight videos tailored to showcase important memories and details.",
-    imageSrc: "../../src/assets/font/VideoAnimation/VideoAnimation.png",
+    imageSrc: "/images/our-portfolio/video/four.mp4",
   },
   {
     label: "Corporate",
     content:
       "Relive your best moments with seamless event highlight videos tailored to showcase important memories and details.",
-    imageSrc: "../../src/assets/font/VideoAnimation/VideoAnimation.png",
+    imageSrc:"/images/our-portfolio/video/three.mp4",
   },
 ];
 

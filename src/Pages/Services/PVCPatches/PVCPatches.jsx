@@ -14,20 +14,12 @@ import starSquare from "../../../image/star-square.png";
 import arrange from "../../../image/arrange.png";
 import supportImage from "../../../image/supportImage.png";
 import StyledHeading from "../../../Components/StyledHeading";
-import groupFrame from "../../../image/groupFrame.png";
+
 import ServicesCard from "../../../Components/ServicesCard";
 import FAQ from "../../../Components/FAQ";
-import LeftRightComponent from "../../../Components/LeftRightComponent";
-import laptopImage from "../../../assets/font/MobileApp/appDevImage.png";
-import BlogSlider from "../../../Components/OurBlog";
-import SecondFAQSlider from "../../../Components/SecondFAQ";
+
 import ContactForm from "../../../Components/ContactForm";
-import Technologies from "../../../Components/Technologies";
-import image9 from "../../../image/image9.png";
-import image10 from "../../../image/image10.png";
-import image11 from "../../../image/image11.png";
-import image12 from "../../../image/image12.png";
-import TechnologyCarousel from "../../../Components/Carousels/TechnologyCarousel/TechnologyCarousel";
+
 import {
   Button,
   Element,

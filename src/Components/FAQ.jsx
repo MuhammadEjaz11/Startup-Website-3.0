@@ -17,6 +17,7 @@ const FAQ = ({ sxFAQ = '', faqData }) => {
       sx={{
         marginTop: { md: '73px', xs: '45px' }, 
         display: 'flex', 
+        
         marginBottom: { md: '73px', xs: '30px'},
         flexWrap: 'wrap', 
         justifyContent: { xs: 'center', md: 'space-between' },
@@ -31,13 +32,15 @@ const FAQ = ({ sxFAQ = '', faqData }) => {
             marginBottom: 'px', 
             borderBottom: '1px solid #e0e0e0', 
             borderRadius: '5px', 
+            
+            height: '120px',
             ...sxFAQ
           }}
         >
           <Accordion 
             expanded={expanded === `panel${item.id}`} 
             onChange={handleChange(`panel${item.id}`)}
-            sx={{ boxShadow: 'none' }}
+            sx={{ boxShadow: 'none', position: 'relative' }} // Remove default shadow
           >
             <AccordionSummary
               expandIcon={expanded === `panel${item.id}` ? <img src={arrowDown} alt="down arrow" /> : <img src={arrowRight} alt="right arrow" />}
@@ -77,7 +80,18 @@ const FAQ = ({ sxFAQ = '', faqData }) => {
                 </Typography>
               </Box>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{
+              position: 'absolute',
+              top:   '70%',
+              left: 0,
+              zIndex: 1,
+              backgroundColor: '#fff',
+              width: '97%',
+              boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+              borderRadius: '0 0 5px 5px',
+              padding: '20px',
+              // display: expanded === `panel${item.id}` ? 'block' : 'none',
+            }}>
               <Typography 
                 sx={{ 
                   color: '#939393', 
