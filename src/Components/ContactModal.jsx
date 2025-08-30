@@ -34,6 +34,9 @@ const ContactFormModal = ({ open, handleClose }) => {
 
   return (
     <Modal
+    vertical="center"
+      aria-labelledby="parent-modal-title"
+  aria-describedby="parent-modal-description"
       open={open}
       onClose={handleClose}
       
@@ -41,7 +44,10 @@ const ContactFormModal = ({ open, handleClose }) => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        mt: "20px",
+        // mt: "20px",
+        // border:'1px solid red',
+        height: "100vh",
+        my:"70px"
       }}
     >
       <Box sx={{
