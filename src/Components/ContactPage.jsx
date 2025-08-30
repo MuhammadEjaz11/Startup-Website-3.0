@@ -1,37 +1,144 @@
 import React, { useState } from "react";
-import { Box, TextField, Typography } from "@mui/material";
+import { Alert, Box, Snackbar, TextField, Typography } from "@mui/material";
 import CustomButton from "./Button";
 import PhoneIcon from "../assets/font/contact1.png";
 import EmailIcon from "../assets/font/contact2.png";
 import LocationIcon from "../assets/font/contact3.png";
 import checkIcon from "../assets/font/tickIcon.png";
 import unCheckedIcon from "../assets/font/untickIcon.png";
+import { IoCloseCircleOutline } from "react-icons/io5";
+import { CgCross } from "react-icons/cg";
 
 const Contactpage = () => {
-  const [formData, setFormData] = useState({
+  const initialFormState = {
     firstName: "",
     lastName: "",
     email: "",
     phoneNumber: "",
     message: "",
     subject: "",
+  };
+  const [formData, setFormData] = useState(initialFormState);
+  const [loading, setIsLoading] = useState(false);
+  const [snackbar, setSnackbar] = useState({
+    open: false,
+    message: "",
+    severity: "success",
   });
-
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const showToast = (message, severity = "error") => {
+    setSnackbar({ open: true, message, severity });
+  };
   const handleSubjectChange = (subject) => {
     setFormData({ ...formData, subject });
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData); // Log form data to the console
+  const clearState = (subject) => {
+    setFormData(initialFormState);
   };
 
+  const handleSubmit = async (e) => {
+    // e.preventDefault();
+    if (e) {
+      e.preventDefault();
+    }
+
+    if (!formData.firstName.trim()) {
+      showToast("First Name is required");
+      return;
+    }
+    if (!formData.lastName.trim()) {
+      showToast("Last Name is required");
+      return;
+    }
+    if (!formData.email.trim()) {
+      showToast("Email is required");
+      return;
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email.trim())) {
+      showToast("Please enter a valid email address");
+      return;
+    }
+    if (!formData.phoneNumber.trim()) {
+      showToast("Phone is required");
+      return;
+    }
+    if (!formData.subject.trim()) {
+      showToast("Subject is required");
+      return;
+    }
+    if (!formData.message.trim()) {
+      showToast("Message is required");
+      return;
+    }
+
+    setIsLoading(true);
+    const data = {
+      name: formData.firstName + " " + formData.lastName,
+      email: formData.email,
+      number: formData.phoneNumber,
+      subject: formData.subject,
+      message: formData.message,
+    };
+    try {
+      const response = await fetch(
+        "https://mail-sender-blush.vercel.app/send",
+        {
+          // const response = await fetch("http://localhost:5000/send", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+
+      console.log("response", response);
+      if (response.ok) {
+        showToast("Message sent successfully!", "success");
+
+        clearState();
+      } else {
+        showToast("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      showToast("Error sending message. Please try again later.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleCloseSnackbar = () => {
+    setSnackbar({ ...snackbar, open: false });
+  };
   return (
     <>
+      <Snackbar
+        open={snackbar.open}
+        autoHideDuration={3000}
+        onClose={handleCloseSnackbar}
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+        sx={{
+          "& .MuiButtonBase-root": {
+            svg: {
+              fontSize: "20px",
+              color: "#161616",
+            },
+          },
+        }}
+      >
+        <Alert onClose={handleCloseSnackbar} severity={snackbar.severity}>
+          <Typography
+            sx={{ width: "100%", fontFamily: "satoshi", fontSize: "18px" }}
+          >
+            {snackbar.message}
+          </Typography>
+        </Alert>
+      </Snackbar>
       <Box
         sx={{
           maxWidth: { xs: "100%", md: "1200px", lg: "1526px" },
@@ -370,7 +477,9 @@ const Contactpage = () => {
                   <Box
                     component="img"
                     src={
-                      formData.subject === " Vector Art" ? checkIcon : unCheckedIcon
+                      formData.subject === " Vector Art"
+                        ? checkIcon
+                        : unCheckedIcon
                     }
                     sx={{ width: "19px", height: "19px", marginRight: "10px" }}
                   />
@@ -472,6 +581,9 @@ const Contactpage = () => {
               }}
             >
               <CustomButton
+                loading={loading}
+                isDisabled={loading}
+                type="submit"
                 onClick={handleSubmit}
                 svgColor="black"
                 buttonStyle={{

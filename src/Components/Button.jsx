@@ -4,12 +4,15 @@ import arrowButtonBlack from "../assets/font/arrowButtonBlack.png";
 
 import { Box, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { BiLoader } from "react-icons/bi";
 
 function CustomButton({
   title = "",
   isDisabled = false,
   link = "/",
+  loading,
   buttonStyle = {},
+  type="button",
   textStyle = {},
   svgStyle = {},
   svgColor = "white",
@@ -30,6 +33,8 @@ function CustomButton({
   };
   return (
     <Button
+    type={type}
+      disabled={isDisabled}
       onMouseOver={() => setIsMouseOver(true)}
       onMouseLeave={() => setIsMouseOver(false)}
       sx={{
@@ -40,10 +45,18 @@ function CustomButton({
         gap: "10px",
         minWidth: "155px",
         alignItems: "center",
+        ":disabled": {
+          backgroundColor: "#222121ff", // Light gray background when disabled
+          color: "#ffffff", // White text when disabled
+          cursor: "not-allowed", // Change cursor to indicate disabled state
+        }
       }}
       onClick={handleClick}
     >
       {title}
+      {loading?
+    <BiLoader className="spinner" style={{fontSize:"20px"}}/> : null  
+    }
       <Box
         sx={{
           transition: "transform 0.5s",
