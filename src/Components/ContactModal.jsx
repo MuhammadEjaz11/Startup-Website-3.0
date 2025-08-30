@@ -11,6 +11,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { CgClose } from "react-icons/cg";
 import CustomButton from "./Button";
 import StyledHeading from "./StyledHeading";
+import Contactpage from "./ContactPage";
 const ContactFormModal = ({ open, handleClose }) => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -35,6 +36,7 @@ const ContactFormModal = ({ open, handleClose }) => {
     <Modal
       open={open}
       onClose={handleClose}
+      
       sx={{
         display: "flex",
         alignItems: "center",
@@ -42,7 +44,15 @@ const ContactFormModal = ({ open, handleClose }) => {
         mt: "20px",
       }}
     >
-      <Box
+      <Box sx={{
+        // backgroundColor: "white",
+        width:{"xs":"100%", md:"auto"},
+
+      }}>
+  
+      <Contactpage hideblueBox={true}/>
+      </Box>
+      {/* <Box
         sx={{
           position: "relative",
           //   width: 400,
@@ -281,7 +291,7 @@ const ContactFormModal = ({ open, handleClose }) => {
             title="Send Message"
           />
         </Box>
-      </Box>
+      </Box> */}
     </Modal>
   );
 };

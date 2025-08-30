@@ -8,8 +8,9 @@ import checkIcon from "../assets/font/tickIcon.png";
 import unCheckedIcon from "../assets/font/untickIcon.png";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { CgCross } from "react-icons/cg";
+import StyledHeading from "./StyledHeading";
 
-const Contactpage = () => {
+const Contactpage = ({ hideblueBox }) => {
   const initialFormState = {
     firstName: "",
     lastName: "",
@@ -98,7 +99,7 @@ const Contactpage = () => {
 
       console.log("response", response);
       if (response.ok) {
-        showToast("Message sent successfully!", "success");
+        showToast("Thank you for reaching out! Your query has been submitted successfully. Our team will contact you within 24 hours.", "success");
 
         clearState();
       } else {
@@ -133,12 +134,13 @@ const Contactpage = () => {
       >
         <Alert onClose={handleCloseSnackbar} severity={snackbar.severity}>
           <Typography
-            sx={{ width: "100%", fontFamily: "satoshi", fontSize: "18px" }}
+            sx={{ width: "100%", fontFamily: "satoshi", fontSize: "18px" , maxWidth:"350px"}}
           >
             {snackbar.message}
           </Typography>
         </Alert>
       </Snackbar>
+
       <Box
         sx={{
           maxWidth: { xs: "100%", md: "1200px", lg: "1526px" },
@@ -163,6 +165,7 @@ const Contactpage = () => {
             position: "relative",
             borderRadius: "15px !important",
             overflow: "none    ",
+            ...(hideblueBox && { display: "none" }),
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
@@ -267,11 +270,30 @@ const Contactpage = () => {
         {/* Right Form Section */}
         <Box
           sx={{
-            padding: { xs: "20px", sm: "40px", md: "50px 50px" },
-            flexBasis: { xs: "100%", md: "60%" },
+            padding: hideblueBox
+              ? "20px"
+              : { xs: "20px", sm: "40px", md: "50px 50px" },
+            flexBasis: { xs: "100%", md: hideblueBox ? "100%" : "60%" },
             backgroundColor: "white",
+            // maxHeight: hideblueBox ? "500px" : "auto",
+            // overflowY: hideblueBox ? "auto" : "visible",
           }}
         >
+          {hideblueBox ? (
+            <StyledHeading
+              title1="Get"
+              title2="In Touch"
+              sx={{
+                mb: "40px",
+              }}
+              sx1={{
+                fontSize: { xs: "25px", md: "27px", xl: "40px" },
+              }}
+              sx2={{
+                fontSize: { xs: "25px", md: "27px", xl: "40px" },
+              }}
+            />
+          ) : null}
           <Box
             component="form"
             onSubmit={handleSubmit}
@@ -279,14 +301,14 @@ const Contactpage = () => {
               width: "100%",
               display: "flex",
               flexDirection: "column",
-              gap: { md: "1.1rem", xs: "0.4rem" },
+              gap: { md: "1.1rem", xs: "1.4rem" },
             }}
           >
             <Box
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
-                flexDirection: { xs: "column", md: "row" },
+                flexDirection:  hideblueBox?"row": { xs: "column", md: "row" },
               }}
             >
               <TextField
@@ -353,7 +375,7 @@ const Contactpage = () => {
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
-                flexDirection: { xs: "column", md: "row" },
+                flexDirection: hideblueBox?"row": { xs: "column", md: "row" },
               }}
             >
               <TextField
@@ -433,7 +455,12 @@ const Contactpage = () => {
                 sx={{
                   display: "flex",
                   gap: { md: "1.5rem", xs: "1rem" },
-                  flexDirection: { md: "row", xs: "column" },
+                  flexWrap: hideblueBox?"nowrap": "wrap",
+                  // border:"1px solid red",
+                  width: hideblueBox?{ md:"auto", xs:"100%"}:"auto",
+                  overflow: hideblueBox?{md:"hidden", xs:"scroll"}:"hidden",
+                  p:{whiteSpace:"nowrap"}
+                  // flexDirection: { md: "row", xs: "column" },
                 }}
               >
                 <Box
@@ -501,12 +528,14 @@ const Contactpage = () => {
                     alignItems: "center",
                     cursor: "pointer",
                   }}
-                  onClick={() => handleSubjectChange("Patches")}
+                  onClick={() => handleSubjectChange("Custom Patches")}
                 >
                   <Box
                     component="img"
                     src={
-                      formData.subject === "Patches" ? checkIcon : unCheckedIcon
+                      formData.subject === "Custom Patches"
+                        ? checkIcon
+                        : unCheckedIcon
                     }
                     sx={{ width: "19px", height: "19px", marginRight: "10px" }}
                   />
@@ -518,7 +547,7 @@ const Contactpage = () => {
                       color: "#939393",
                     }}
                   >
-                    Patches
+                    Custom Patches
                   </Typography>
                 </Box>
                 <Box
@@ -547,6 +576,34 @@ const Contactpage = () => {
                     }}
                   >
                     Web Design
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => handleSubjectChange("Video Editing")}
+                >
+                  <Box
+                    component="img"
+                    src={
+                      formData.subject === "Video Editing"
+                        ? checkIcon
+                        : unCheckedIcon
+                    }
+                    sx={{ width: "19px", height: "19px", marginRight: "10px" }}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "16px",
+                      fontWeight: "400",
+                      fontFamily: "Inter",
+                      color: "#939393",
+                    }}
+                  >
+                    Video Editing
                   </Typography>
                 </Box>
               </Box>
