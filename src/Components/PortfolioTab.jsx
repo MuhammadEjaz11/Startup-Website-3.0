@@ -8,43 +8,43 @@ const PortfolioTab = () => {
   // Portfolio data arrays for each tab using public image paths
   const initialVector = [
     {
-      img: "/images/our-portfolio/vector/two.jpg",
+      img: "/images/our-portfolio/vector/two.png",
       title: "Vector Design 2",
       description: "Creative vector illustration.",
       readmore: "read more",
     },
     {
-      img: "/images/our-portfolio/vector/three.jpg",
+      img: "/images/our-portfolio/vector/three.png",
       title: "Vector Design 3",
       description: "Modern vector graphics.",
       readmore: "read more",
     },
     {
-      img: "/images/our-portfolio/vector/four.jpg",
+      img: "/images/our-portfolio/vector/four.png",
       title: "Vector Design 4",
       description: "Professional vector artwork.",
       readmore: "read more",
     },
     {
-      img: "/images/our-portfolio/vector/five.jpg",
+      img: "/images/our-portfolio/vector/five.png",
       title: "Vector Design 5",
       description: "Creative vector design.",
       readmore: "read more",
     },
     {
-      img: "/images/our-portfolio/vector/eight.jpg",
+      img: "/images/our-portfolio/vector/eight.png",
       title: "Vector Design 6",
       description: "Modern vector illustration.",
       readmore: "read more",
     },
     {
-      img: "/images/our-portfolio/vector/six.jpg",
+      img: "/images/our-portfolio/vector/six.png",
       title: "Vector Design 6",
       description: "Modern vector illustration.",
       readmore: "read more",
     },
     {
-      img: "/images/our-portfolio/vector/seven.jpg",
+      img: "/images/our-portfolio/vector/seven.png",
       title: "Vector Design 6",
       description: "Modern vector illustration.",
       readmore: "read more",
@@ -309,19 +309,19 @@ const PortfolioTab = () => {
   const additionalContent = {
     vector: [
       {
-        img: "/images/our-portfolio/vector/one.jpg",
+        img: "/images/our-portfolio/vector/one.png",
         title: "Vector Design 7",
         description: "Additional vector design work.",
         readmore: "read more",
       },
       {
-        img: "/images/our-portfolio/vector/two.jpg",
+        img: "/images/our-portfolio/vector/two.png",
         title: "Vector Design 8",
         description: "More creative vector work.",
         readmore: "read more",
       },
       {
-        img: "/images/our-portfolio/vector/three.jpg",
+        img: "/images/our-portfolio/vector/three.png",
         title: "Vector Design 9",
         description: "Extended vector collection.",
         readmore: "read more",
@@ -500,6 +500,20 @@ const PortfolioTab = () => {
       >
         {/* Buttons for tabs */}
         <Box sx={{ display: "flex", gap: {md:"28px",xs:"10px"}, flexWrap: "wrap" }}>
+                    <CustomButtonMe
+            buttonStyle={{
+              fontSize: { md: "16px", xs: "12px" },
+              width: { md: "140px", xs: "45%" },
+            }}
+            height="62px"
+            width={"140px"}
+            border="1px solid #D7D7D7"
+            borderRadius="15px"
+            background={currentTab === "digitize" ? "#1E1E1E" : "transparent"}
+            color={currentTab === "digitize" ? "#FFFFFF" : "#1E1E1E"}
+            ButtonText="Digitize"
+            onClick={() => setCurrentTab("digitize")}
+          />
           <CustomButtonMe
             buttonStyle={{
               fontSize: { md: "16px", xs: "12px" },
@@ -572,20 +586,7 @@ const PortfolioTab = () => {
             ButtonText="Chenille"
             onClick={() => setCurrentTab("chenille")}
           />
-          <CustomButtonMe
-            buttonStyle={{
-              fontSize: { md: "16px", xs: "12px" },
-              width: { md: "140px", xs: "45%" },
-            }}
-            height="62px"
-            width={"140px"}
-            border="1px solid #D7D7D7"
-            borderRadius="15px"
-            background={currentTab === "digitize" ? "#1E1E1E" : "transparent"}
-            color={currentTab === "digitize" ? "#FFFFFF" : "#1E1E1E"}
-            ButtonText="Digitize"
-            onClick={() => setCurrentTab("digitize")}
-          />
+
         </Box>
 
         {/* Portfolio card rendering */}

@@ -22,7 +22,7 @@ export default function PortfolioSlider() {
       category: "Digitizing",
     },
     {
-      imageURL: "/images/our-portfolio/vector/nine.jpg",
+      imageURL: "/images/our-portfolio/vector/nine.png",
       title: "Vector Design 1",
       description: "Professional vector design work.",
       category: "Vector",
@@ -101,7 +101,7 @@ export default function PortfolioSlider() {
     },
 
     {
-      imageURL: "/images/our-portfolio/vector/three.jpg",
+      imageURL: "/images/our-portfolio/vector/three.png",
       title: "Vector Design 3",
       description: "Modern vector graphics.",
       category: "Vector",
@@ -119,7 +119,7 @@ export default function PortfolioSlider() {
       category: "Digitizing",
     },
         {
-      imageURL: "/images/our-portfolio/vector/two.jpg",
+      imageURL: "/images/our-portfolio/vector/two.png",
       title: "Vector Design 2",
       description: "Creative vector illustration.",
       category: "Vector",
@@ -134,19 +134,19 @@ export default function PortfolioSlider() {
     // Vector examples
 
     {
-      imageURL: "/images/our-portfolio/vector/four.jpg",
+      imageURL: "/images/our-portfolio/vector/four.png",
       title: "Vector Design 4",
       description: "Professional vector artwork.",
       category: "Vector",
     },
     {
-      imageURL: "/images/our-portfolio/vector/five.jpg",
+      imageURL: "/images/our-portfolio/vector/five.png",
       title: "Vector Design 5",
       description: "Creative vector design.",
       category: "Vector",
     },
     {
-      imageURL: "/images/our-portfolio/vector/eight.jpg",
+      imageURL: "/images/our-portfolio/vector/eight.png",
       title: "Vector Design 6",
       description: "Modern vector illustration.",
       category: "Vector",

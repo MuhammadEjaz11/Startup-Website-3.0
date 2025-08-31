@@ -229,7 +229,7 @@ const serviceApp3 = [
   },
   {
     image: "/images/our-services/animal.png",
-    title: "Pet & Animal Digitizing",
+    title: "Digitizing",
     desc: "Digitizing made for curved surfaces like caps and hats, using special stitch techniques to maintain design quality and alignment during embroidery",
   },
   {
@@ -239,7 +239,7 @@ const serviceApp3 = [
   },
   {
     image: "/images/our-services/puff.png",
-    title: "Embroidery Digitizing",
+    title: "3d Puff Digitizing",
     desc: "High-detail digitizing that captures the textures, expressions, and features of animals, perfect for custom wildlife logos, mascots, or pet portraits.",
   },
 ];
@@ -274,12 +274,12 @@ const appDevList = [
 const Digitizing = () => {
   const [visibleItems, setVisibleItems] = useState(appDevList.slice(0, 4)); // Initial items to show
 
-  // useEffect(()=>{
-  //   const scrollTo = () => {
-  //     scroll.scrollTo(0);
-  //   };
-  //   scrollTo()
-  // },[])
+  useEffect(()=>{
+    const scrollTo = () => {
+      scroll.scrollTo(0);
+    };
+    scrollTo()
+  },[])
 
   const loadMoreItems = () => {
     const newItems = [

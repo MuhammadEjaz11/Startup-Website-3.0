@@ -1134,7 +1134,8 @@ const Home = () => {
           maxWidth: "1526px",
           margin: "0 auto",
           paddingTop: { md: "130px", xs: "40px" },
-          paddingBottom: { md: "130px", sm: "60px", xs: "40px" },
+          paddingBottom: { md: "80px", sm: "60px", xs: "40px" },
+
         }}
         id="faqs"
       >
@@ -1149,68 +1150,11 @@ const Home = () => {
           faqData={faqData}
         />
       </Box>
+ 
+
+   
       <Box
-        sx={{
-          paddingLeft: { md: "0px", xs: "0px" },
-          paddingRight: { md: "0px", xs: "0px" },
-
-          margin: "0 auto",
-          paddingBottom: "73px",
-          display: "none"
-        }}
-        id="blogs"
-      >
-        <StyledHeading
-          title1="Our New Posts &"
-          sx1={{ fontFamily: "satoshi-light !important" }}
-        />
-        <StyledHeading
-          title1="Articles From The Blog"
-          sx1={{ fontFamily: "satoshi !important" }}
-        />
-
-        <BlogSlider blogData={blogData} ></BlogSlider>
-      </Box>
-
-      <Box
-        sx={{
-          margin: "0 auto",
-          paddingTop: { md: "70px", xs: "80px" },
-          paddingBottom: { md: "0px", xs: "0px" },
-          display: "none"
-
-        }}
-      >
-        <StyledHeading
-          title1="frequently"
-          sx1={{ fontFamily: "satoshi-light !important" }}
-          title2="asked questions"
-          sx2={{ fontFamily: "satoshi !important" }}
-          styledSx={{
-            display: { md: "block", sm: "flex", xs: "flex" },
-          }}
-        />
-      </Box>
-      <Box
-        sx={{
-          marginTop: "69px",
-          overflow: { xs: "hidden", xl: "visible" },
-          display: "none"
-
-        }}
-      >
-        <SecondFAQSlider
-          data={SecondFaq}
-        ></SecondFAQSlider>
-      </Box>
-      <Box
-        sx={{
-          marginTop: {
-            md: "160px !important",
-            sm: "80px !important",
-            xs: "50px !important",
-          },
-        }}
+   
       >
         <ContactForm></ContactForm>
       </Box>

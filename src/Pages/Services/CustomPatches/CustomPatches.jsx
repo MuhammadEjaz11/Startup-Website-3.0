@@ -57,62 +57,6 @@ import Portfolio from "../../Portfolio/Portfolio";
 import PortfolioTab from "../../../Components/PortfolioTab";
 import BackingOptionsSection from "../../../Components/BackingOptionsSection";
 
-const customePathes = [
-  {
-    imageURL: "/images/our-portfolio/vector/one.jpg",
-    title: "Vector Art 1",
-    desc: "Vector Art",
-    category: "Vector Design",
-  },
-  {
-    imageURL: "/images/our-portfolio/vector/two.jpg",
-    title: "Vector Art 2",
-    desc: "Vector Art",
-    category: "Vector Design",
-  },
-  {
-    imageURL: "/images/our-portfolio/vector/three.jpg",
-    title: "Vector Art 3",
-    desc: "Vector Art",
-    category: "Vector Design",
-  },
-  {
-    imageURL: "/images/our-portfolio/embroidery/one.jpg",
-    title: "Embroidery 1",
-    desc: "Embroidery",
-    category: "Embroidery",
-  },
-  {
-    imageURL: "/images/our-portfolio/embroidery/two.jpg",
-    title: "Embroidery 2",
-    desc: "Embroidery",
-    category: "Embroidery",
-  },
-  {
-    imageURL: "/images/our-portfolio/embroidery/three.jpg",
-    title: "Embroidery 3",
-    desc: "Embroidery",
-    category: "Embroidery",
-  },
-  {
-    imageURL: "/images/our-portfolio/leather/one.jpg",
-    title: "Leather Work 1",
-    desc: "Leather",
-    category: "Leather Design",
-  },
-  {
-    imageURL: "/images/our-portfolio/leather/two.jpg",
-    title: "Leather Work 2",
-    desc: "Leather",
-    category: "Leather Design",
-  },
-  {
-    imageURL: "/images/our-portfolio/leather/three.jpg",
-    title: "Leather Work 3",
-    desc: "Leather",
-    category: "Leather Design",
-  },
-];
 
 const faqData = [
   {
@@ -511,7 +455,7 @@ const CustomPatches = () => {
       </Box>
       <Box
         sx={{
-          padding: "65px 0px",
+          paddingTop: "65px",
 
           margin: "0 auto",
         }}

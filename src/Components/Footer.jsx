@@ -224,7 +224,7 @@ function Footer() {
                 fontFamily: "Outfit",
               }}
               heading={"Navigate"}
-              links={["/", "#about", "#faqs", "/contact-us"]}
+              links={["/", "#about", "#faqs", "#contact"]}
               data={["Home", "About Us",  "Faq’s", "Contact Us"]}
             />
 

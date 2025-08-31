@@ -13,24 +13,7 @@ import CustomButton from "./Button";
 import StyledHeading from "./StyledHeading";
 import Contactpage from "./ContactPage";
 const ContactFormModal = ({ open, handleClose }) => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phoneNumber: "",
-    message: "",
-  });
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
-  };
-
-  const handleSubmit = () => {
-    console.log(formData);
-    // Handle form submission logic
-    handleClose(); // Close modal after submit
-  };
 
   return (
     <Modal

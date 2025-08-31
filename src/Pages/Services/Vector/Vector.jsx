@@ -133,56 +133,56 @@ const serviceApp = [
 const vectorList = [
 
   {
-    imageURL: "/images/our-portfolio/vector/two.jpg",
+    imageURL: "/images/our-portfolio/vector/two.png",
 
     title: "Website Project 2",
     desc: "Web Development",
     category: "Website",
   },
   {
-    imageURL: "/images/our-portfolio/vector/three.jpg",
+    imageURL: "/images/our-portfolio/vector/three.png",
 
     title: "Website Project 3",
     desc: "Web Development",
     category: "Website",
   },
   {
-    imageURL: "/images/our-portfolio/vector/four.jpg",
+    imageURL: "/images/our-portfolio/vector/four.png",
 
     title: "Website Project 4",
     desc: "Web Development",
     category: "Website",
   },
   {
-    imageURL: "/images/our-portfolio/vector/five.jpg",
+    imageURL: "/images/our-portfolio/vector/five.png",
 
     title: "Website Project 5",
     desc: "Web Development",
     category: "Website",
   },
   {
-    imageURL: "/images/our-portfolio/vector/six.jpg",
+    imageURL: "/images/our-portfolio/vector/six.png",
 
     title: "Website Project 6",
     desc: "Web Development",
     category: "Website",
   },
   {
-    imageURL: "/images/our-portfolio/vector/eight.jpg",
+    imageURL: "/images/our-portfolio/vector/eight.png",
 
     title: "Website Project 7",
     desc: "Web Development",
     category: "Website",
   },
   {
-    imageURL: "/images/our-portfolio/vector/seven.jpg",
+    imageURL: "/images/our-portfolio/vector/seven.png",
 
     title: "Website Project 8",
     desc: "Web Development",
     category: "Website",
   },
   {
-    imageURL: "/images/our-portfolio/vector/nine.jpg",
+    imageURL: "/images/our-portfolio/vector/nine.png",
 
     title: "Website Project 9",
     desc: "Web Development",
@@ -194,7 +194,7 @@ const Vector = () => {
     const scrollTo = () => {
       scroll.scrollTo(0); // Scrolling to 100px from the top of the page.
     };
-    // scrollTo()
+    scrollTo()
   }, []);
   const location = useLocation();
   return (

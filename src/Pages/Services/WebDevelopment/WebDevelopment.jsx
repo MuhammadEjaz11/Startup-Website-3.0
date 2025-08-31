@@ -99,7 +99,7 @@ const serviceApp = [
   {
     title: "Website Design",
     description:
-      "CCrafting a unique and memorable visual identity that represents your brand's values and personality. A well-designed logo builds recognition and sets the tone for all your branding.",
+      "Crafting a unique and memorable visual identity that represents your brand's values and personality. A well-designed logo builds recognition and sets the tone for all your branding.",
     image: "/images/graphic-icon/website.png",
     image2: "/images/our product/embridery2.png",
   },
@@ -112,7 +112,7 @@ const serviceApp = [
   {
     title: "Mobile Apps Design",
     description:
-      "Expert graphic illustration services for all your design needs.",
+      "We create intuitive, visually appealing, and user-friendly mobile app designs that enhance user experience and reflect your brand identity. From wireframes to polished UI/UX, we ensure your app stands out and keeps users engaged.",
     image: "/images/graphic-icon/mob.png",
   },
 ];
@@ -405,33 +405,7 @@ const WebDevelopment = () => {
         />
 
         <KeenSliderPortfolio arrayToList={webDevList} />
-        <Box
-          sx={{
-            mt: "30px",
-            // paddingBottom: "130px",
-            maxWidth: "1500px",
-            display: "flex",
-            justifyContent: "flex-end",
-          }}
-        >
-          <CustomButton
-            svgColor={"black"}
-            buttonStyle={{
-              fontWeight: 600,
-              textTransform: "capitalize",
-              color: "white",
-              padding: { xs: "15px", md: "20px" },
-              marginTop: "20px",
-              fontFamily: "Outfit",
-              fontSize: { xs: "14px", md: "16px" },
-              lineHeight: "20.16px",
-              backgroundColor: "black",
-              borderRadius: "10px",
-            }}
-            onClick={() => {navigate("/our-portfolio")}}
-            title="Load More"
-          />
-        </Box>
+   
       </Box>
 
       {/* our Solution */}
@@ -611,7 +585,7 @@ const WebDevelopment = () => {
           title2={"Website Design Services?"}
           buttonShow={false}
           image={"/images/banner/web-port.png"}
-          content={`At Patch Makers, we don’t just design—we create visual stories that spark connection and make your brand unforgettable. From sleek logos to bold banners, stunning product packaging, and scroll-stopping digital content, our graphic design team blends creativity with strategy to deliver visuals that turn heads and drive results.`}
+          content={`we don’t just design—we create visual stories that spark connection and make your brand unforgettable. From sleek logos to bold banners, stunning product packaging, and scroll-stopping digital content, our graphic design team blends creativity with strategy to deliver visuals that turn heads and drive results.`}
           content2={"Every color, font, and layout is handpicked to reflect your vision—clear, impactful, and full of personality. Whether you're building a brand from scratch or refreshing your visual identity, we make sure your message looks just as powerful as it sounds."}
           content3={"✨ **Designs that don’t just look good—**they work magic."}
         />

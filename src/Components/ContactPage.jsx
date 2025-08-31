@@ -145,6 +145,7 @@ const Contactpage = ({ hideblueBox }) => {
         sx={{
           maxWidth: { xs: "100%", md: "1200px", lg: "1526px" },
           margin: "0 auto",
+          marginBottom:"50px",
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           backgroundColor: "#FFFFFF",
@@ -279,12 +280,12 @@ const Contactpage = ({ hideblueBox }) => {
             // overflowY: hideblueBox ? "auto" : "visible",
           }}
         >
-          {hideblueBox ? (
+          {true ? (
             <StyledHeading
               title1="Get"
               title2="In Touch"
               sx={{
-                mb: "40px",
+                mb: "70px",
               }}
               sx1={{
                 fontSize: { xs: "25px", md: "27px", xl: "40px" },
@@ -606,6 +607,34 @@ const Contactpage = ({ hideblueBox }) => {
                     Video Editing
                   </Typography>
                 </Box>
+                      <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => handleSubjectChange("Graphic Design")}
+                >
+                  <Box
+                    component="img"
+                    src={
+                      formData.subject === "Graphic Design"
+                        ? checkIcon
+                        : unCheckedIcon
+                    }
+                    sx={{ width: "19px", height: "19px", marginRight: "10px" }}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "16px",
+                      fontWeight: "400",
+                      fontFamily: "Inter",
+                      color: "#939393",
+                    }}
+                  >
+                    Graphic Design
+                  </Typography>
+                </Box>
               </Box>
             </Box>
 
@@ -661,11 +690,7 @@ const Contactpage = ({ hideblueBox }) => {
           </Box>
         </Box>
       </Box>
-      <Box
-        sx={{
-          mt: "130px",
-        }}
-      ></Box>
+
     </>
   );
 };

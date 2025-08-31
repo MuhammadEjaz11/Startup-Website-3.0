@@ -801,9 +801,9 @@ export const bannerData = {
 
     text: "Vector Art is the process of transforming any image, logo, or sketch into a clean, scalable digital format using vector graphic software. Unlike pixel-based images (like JPEGs or PNGs), vector files are made up of paths defined by mathematical formulas—allowing them to be resized without losing clarity or quality. This process is essential for screen printing, engraving, laser cutting, and high-resolution printing. A skilled vector artist carefully redraws the artwork using tools to define precise lines, curves, and color separations. Every shape and detail is recreated manually, ensuring the final vector file is crisp, professional, and print-ready. Vector files are typically saved in formats like AI, EPS, SVG, or PDF, depending on the intended use and production method. Whether you need a simple logo cleanup or a complex artwork conversion, vectorization ensures your design looks sharp and polished at any size.",
     images: [
-      "/images/our-portfolio/vector/six.jpg",
-      "/images/our-portfolio/vector/two.jpg",
-      "/images/our-portfolio/vector/three.jpg",
+      "/images/our-portfolio/vector/six.png",
+      "/images/our-portfolio/vector/two.png",
+      "/images/our-portfolio/vector/three.png",
     ],
   },
   "custom-patches": {
@@ -811,7 +811,7 @@ export const bannerData = {
     titleSpan: "Designed Your Way",
     text: "Custom patches are a creative and stylish way to represent your brand, team, event, or personal style. Patch Makers specialize in crafting high-quality patches tailored exactly to your vision. Whether you need embroidered, PVC, leather, chenille, or sublimation patches, our team transforms your ideas into wearable art.  From logos to detailed artwork, every patch is designed with precision, using premium materials and expert craftsmanship. We offer endless customization options including size, shape, colors, and backing types to suit any purpose—uniforms, jackets, bags, caps, or promotional items. Your design, your style, your patch—made to stand out.",
     images: [
-      "/images/our-portfolio/vector/eight.jpg",
+      "/images/our-portfolio/leather/eight.jpg",
       "/images/our-portfolio/digitize/two.jpg",
       "/images/our-portfolio/embroidery/three.jpg",
     ],

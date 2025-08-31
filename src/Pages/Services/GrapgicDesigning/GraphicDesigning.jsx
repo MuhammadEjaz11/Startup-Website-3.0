@@ -286,7 +286,7 @@ const serviceApp = [
     image: "/images/graphic-icon/Creative team-cuate.png",
   },
   {
-    title: "graphic-icon",
+    title: "Icon Design",
     description:
       "These patches offer vibrant, full-color prints with photographic quality—ideal for detailed artwork and gradient designs.",
     image: "/images/graphic-icon/ui ux.png",
@@ -369,16 +369,19 @@ const GraphicDesigning = () => {
                 boxShadow: "0px 31px 62.2px -12px rgba(0, 0, 0, 0.08)",
                 maxWidth: "100%",
                 borderRadius: "15px",
-                marginTop: {
-                  md: index < 4 ? "-50px" : "0px",
-                  xs: "0px",
-                },
+                // marginTop: {
+                //   md: index < 4 ? "-50px" : "0px",
+                //   xs: "0px",
+                // },
                 textAlign: "center",
                 img: {
                   width: "50%",
+                  height:"200px",
+                  objectFit: "contain",
+                  
                   textAlign: "center",
                 },
-                p: { xs: "15px", md: "20px" },
+                p: { xs: "15px", md: "40px 20px" },
               }}
               iconURL={item.image}
               title={item.title}
@@ -610,7 +613,7 @@ const GraphicDesigning = () => {
           styledSx={{}}
           isRow={true}
           title1={"Why Choose Our "}
-          title2={"Graphic Design Services?"}
+          title2={"Graphic Designing Services?"}
           buttonShow={false}
           image={"/images/banner/graphic-banner-2.png"}
           content={`At Patch Makers, we don’t just design—we create visual stories that spark connection and make your brand unforgettable. From sleek logos to bold banners, stunning product packaging, and scroll-stopping digital content, our graphic design team blends creativity with strategy to deliver visuals that turn heads and drive results.`}

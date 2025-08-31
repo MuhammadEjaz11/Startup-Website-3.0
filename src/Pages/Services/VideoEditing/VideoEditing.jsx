@@ -194,7 +194,7 @@ const VideoEditing = () => {
     const scrollTo = () => {
       scroll.scrollTo(0); // Scrolling to 100px from the top of the page.
     };
-    // scrollTo()
+    scrollTo()
   }, []);
   return (
     <>
@@ -232,57 +232,7 @@ const VideoEditing = () => {
         <AnimationTabs dataTab={tabs} />
       </Box>
       
-      {/* Portfolio Section */}
-      <Box
-        sx={{
-          mt: { xl: "80px", md: "0px" },
-          mb: "120px",
-        
-        }}
-      >
-        <StyledHeading
-          title1="Our"
-          sx1={{ fontFamily: "satoshi !important" }}
-          title2="Portfolio"
-          sx2={{ fontFamily: "satoshi-light !important" }}
-          styledSx={{
-            display: "flex",
-            justifyContent: { md: "left", sm: "center", xs: "center" },
-            alignItems: "center",
-            mb: "0px",
-            // padding:{sm: "0px 20px", xs: "0px 20px"},
-          }}
-        />
-
-        <KeenSliderPortfolio arrayToList={videoAni} />
-
-        <Box
-          sx={{
-            mt: "0px",
-            // paddingBottom: "130px",
-            maxWidth: "1500px",
-            display: "flex",
-            justifyContent: "flex-end",
-          }}
-        >
-          <CustomButton
-            svgColor={"black"}
-            buttonStyle={{
-              fontWeight: 600,
-              textTransform: "capitalize",
-              color: "white",
-              padding: { xs: "15px", md: "20px" },
-              marginTop: "20px",
-              fontFamily: "Outfit",
-              fontSize: { xs: "14px", md: "16px" },
-              lineHeight: "20.16px",
-              backgroundColor: "black",
-              borderRadius: "10px",
-            }}
-            title="Load More"
-          />
-        </Box>
-      </Box>
+    
 
       {/* Custom Package Section */}
       <Box mt={"100px"}>
@@ -354,7 +304,7 @@ const VideoEditing = () => {
           title2={"With Us?"}
           buttonShow={true}
           image={"/images/banner/camera.png"}
-          content={`At Patch Makers, we don’t just edit videos—we craft visual stories that move people. From brand promos and social reels to YouTube content and cinematic edits, our expert team transforms raw footage into polished, professional, and scroll-stopping masterpieces. `}
+          content={`we don’t just edit videos—we craft visual stories that move people. From brand promos and social reels to YouTube content and cinematic edits, our expert team transforms raw footage into polished, professional, and scroll-stopping masterpieces. `}
           content2={"We blend creativity with precision—seamless transitions, sharp cuts, dynamic effects, music syncing, and color grading—to make every second count. Whether you're launching a product, telling your story, or building your brand, we bring your vision to life, frame by frame."}
           content3={"Your content deserves to stand out—let's make it unforgettable."}
       
@@ -378,11 +328,7 @@ const VideoEditing = () => {
 
       {/* Contact Form Section */}
       <Box
-        sx={{
-          padding: { md: "120px 0", xs: "40px 0", sm: "50px 0px" },
-          maxWidth: "1525px",
-          margin: "0 auto",
-        }}
+ 
       >
         <ContactForm />
       </Box>
