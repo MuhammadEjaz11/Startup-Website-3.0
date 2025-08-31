@@ -198,6 +198,8 @@ const ChenillePatches = () => {
                 borderRadius: "10px",
                 flexBasis: "25%",
                 flexShrink: "1",
+                height:"410px",
+
                 img: {
                   width: "100%",
                 },
@@ -270,6 +272,8 @@ const ChenillePatches = () => {
                 borderRadius: "10px",
                 flexBasis: "25%",
                 flexShrink: "1",
+                height:"410px",
+
                 img: {
                   width: "100%",
                 },

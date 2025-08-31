@@ -79,7 +79,7 @@ const AwardsSlider = () => {
           
         }}
       >
-       At Mozack, great pride is taken among the employees on the recognition that is accomplished for the dedication following towards excellence within digital marketing and designing. The team has been held in high esteem with multiple commercial recognition, which accentuates the rearrangement , staging, and leadership in the digital realm among the team. These accolades reflect our dedication to not only meet but exceed client expectations and set new standards in our services. From 'Best in Design' to 'Top Digital Agency' awards, our achievements inspire us to continue providing exceptional digital solutions.
+       At Patch Makers, great pride is taken among the employees on the recognition that is accomplished for the dedication following towards excellence within digital marketing and designing. The team has been held in high esteem with multiple commercial recognition, which accentuates the rearrangement , staging, and leadership in the digital realm among the team. These accolades reflect our dedication to not only meet but exceed client expectations and set new standards in our services. From 'Best in Design' to 'Top Digital Agency' awards, our achievements inspire us to continue providing exceptional digital solutions.
       </Typography>
 
       <Slider ref={sliderRef} {...sliderSettings}>

@@ -14,7 +14,7 @@ const LatestArticleComponent = () => {
       id: 1,
       title: "How Agencies Put Your Audience First",
       description:
-        "Continue to read more information and updates from the Mozack blog and gain new knowledge about Mozack and its industry. This way, our team ensures you are updated with relevant information on app development, digital innovation and customer-centric strategies that will keep you on top in today’s competitive technological marketplace. As a result, let us scrutinise how Mozack is approaching AI to redefine customer experiences.",
+        "Continue to read more information and updates from the Patch Makers blog and gain new knowledge about Patch Makers and its industry. This way, our team ensures you are updated with relevant information on app development, digital innovation and customer-centric strategies that will keep you on top in today’s competitive technological marketplace. As a result, let us scrutinise how Patch Makers is approaching AI to redefine customer experiences.",
       image: laptopImage,
       author: "By Admin",
       date: "November 11, 2024",
@@ -23,7 +23,7 @@ const LatestArticleComponent = () => {
       id: 2,
       title: "How Agencies Put Your Audience First",
       description:
-        "Mozack is positioning itself as a cutting-edge organisation in the digital domain, which is currently experiencing radical changes due to the integration of Artificial Intelligence (AI). In this article, we explore how Mozack is harnessing AI to design new applications that are much more attuned to users’ requirements on the fly. Find out how particular AI integrated tools work and improve the overall customer experience and application usage. Sustainable App Development: Mozack's Green Approach.",
+        "Patch Makers is positioning itself as a cutting-edge organisation in the digital domain, which is currently experiencing radical changes due to the integration of Artificial Intelligence (AI). In this article, we explore how Patch Makers is harnessing AI to design new applications that are much more attuned to users’ requirements on the fly. Find out how particular AI integrated tools work and improve the overall customer experience and application usage. Sustainable App Development: Patch Makers's Green Approach.",
       image: laptopImage,
       author: "By  Admin",
       date: "November 11, 2024",

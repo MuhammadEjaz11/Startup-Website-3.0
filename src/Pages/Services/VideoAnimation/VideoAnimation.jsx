@@ -91,7 +91,7 @@ const SecondFaq = [
     id: 1,
     title: 'Experience & Excellence',
     testimonialText:
-      "Mozack combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
+      "Patch Makers combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
     starRating: starRating,
     videoId: 'mZ5hnNRBFsc', // A valid video ID
   },
@@ -107,7 +107,7 @@ const SecondFaq = [
     id: 3,
     title: 'Innovation & Creativity',
     testimonialText:
-      " Mozack provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
+      " Patch Makers provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
     starRating: starRating,
     videoId: 'mZ5hnNRBFsc', // Same video ID as example
   },

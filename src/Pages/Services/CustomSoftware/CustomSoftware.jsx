@@ -86,7 +86,7 @@ const SecondFaq = [
     id: 1,
     title: 'Experience & Excellence',
     testimonialText:
-      "Mozack combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
+      "Patch Makers combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
     starRating: starRating,
     videoId: 'mZ5hnNRBFsc', // A valid video ID
   },
@@ -102,7 +102,7 @@ const SecondFaq = [
     id: 3,
     title: 'Innovation & Creativity',
     testimonialText:
-      " Mozack provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
+      " Patch Makers provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
     starRating: starRating,
     videoId: 'mZ5hnNRBFsc', // Same video ID as example
   },
@@ -604,7 +604,7 @@ const CustomSoftware = () => {
             >
       <DesignDevelop
       title={`Ready to Transform Your Business?`}
-      content={`Partner with Mozack for innovative, scalable, and custom software development solutions. Let's bring your ideas to life. Contact us today!`}
+      content={`Partner with Patch Makers for innovative, scalable, and custom software development solutions. Let's bring your ideas to life. Contact us today!`}
       />
 
             </Box>
@@ -640,7 +640,7 @@ const CustomSoftware = () => {
           mt:{xs:"60px",md:"80px" ,xl:"120px"}
         }}>
           <StyledHeading
-            title1="Why Choose Mozack for"
+            title1="Why Choose Patch Makers for"
             title2="Custom Software Development?"
             sx1={{ order: "0", texttAlign: "center" }}
             sx={{ justifyContent: "center", order: "2", marginBottom: "60px" }}

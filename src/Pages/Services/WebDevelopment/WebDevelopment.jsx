@@ -252,7 +252,7 @@ const SecondFaq = [
     id: 1,
     title: "Experience & Excellence",
     testimonialText:
-      "Mozack combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
+      "Patch Makers combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
     starRating: starRating,
     videoId: "mZ5hnNRBFsc", // A valid video ID
   },
@@ -268,7 +268,7 @@ const SecondFaq = [
     id: 3,
     title: "Innovation & Creativity",
     testimonialText:
-      " Mozack provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
+      " Patch Makers provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
     starRating: starRating,
     videoId: "mZ5hnNRBFsc", // Same video ID as example
   },
@@ -277,9 +277,9 @@ const SecondFaq = [
 const faqData = [
   {
     id: 1,
-    question: "Why should I choose Mozack for web development?",
+    question: "Why should I choose Patch Makers for web development?",
     answer:
-      "Mozack combines expertise, cutting-edge technologies, and a customer-focused approach to deliver high-quality, scalable solutions.",
+      "Patch Makers combines expertise, cutting-edge technologies, and a customer-focused approach to deliver high-quality, scalable solutions.",
   },
   {
     id: 2,
@@ -303,12 +303,12 @@ const faqData = [
 
 const WebDevelopment = () => {
   const navigate= useNavigate();
-  // useEffect(()=>{
-  //   const scrollTo = () => {
-  //     scroll.scrollTo(0); // Scrolling to 100px from the top of the page.
-  //   };
-  //   scrollTo()
-  // },[])
+  useEffect(()=>{
+    const scrollTo = () => {
+      scroll.scrollTo(0); // Scrolling to 100px from the top of the page.
+    };
+    scrollTo()
+  },[])
   return (
     <Box>
       {/* LEft Right Component working */}
@@ -409,17 +409,19 @@ const WebDevelopment = () => {
       </Box>
 
       {/* our Solution */}
-
-      <Box>
+     <Box>
         <Box
           sx={{
-            mt: "120px",
+            mt: "40px",
           }}
         >
           <StyledHeading
-            title1="Our Solution "
-            title2=" Process"
-            
+            title1="Our Solution Process"
+            title2=" for Stunning Results"
+            sx={{
+              mb:"50px"
+
+            }}
           />
 
           <Box
@@ -466,7 +468,7 @@ const WebDevelopment = () => {
 
               <ServicesCard
                 desc="We start by understanding your needs—what you're looking for, the purpose of the design, preferred style, colors, and target audience. This helps us align with your vision from the start."
-                iconURL={"/images/work-process/graphic/design.png"}
+                iconURL={"/images/work-process/graphic/Client Brief & Requirement Gathering.png"}
                 image={true}
                 title="Client Brief & Requirement Gathering"
                 style={{
@@ -480,7 +482,7 @@ const WebDevelopment = () => {
               />
               <ServicesCard
                 desc="Our designers brainstorm ideas and develop initial concepts based on your requirements. Mood boards, sketches, or reference samples may be shared for early feedback."
-                iconURL={"/images/work-process/graphic/approval.png"}
+                iconURL={"/images/work-process/graphic/Concept Development.png"}
                 image={true}
                 title="Concept Development"
                 style={{
@@ -494,7 +496,7 @@ const WebDevelopment = () => {
               />
               <ServicesCard
                 desc="Once the concept is approved, we move to the actual design phase. Our team creates a polished, high-quality design using professional tools (like Adobe Illustrator, Photoshop, etc.)."
-                iconURL={"/images/work-process/graphic/delivery.png"}
+                iconURL={"/images/work-process/graphic/Design Creation.png"}
                 image={true}
                 title="Design Creation"
                 style={{
@@ -508,7 +510,7 @@ const WebDevelopment = () => {
               />
               <ServicesCard
                 desc="We present the draft design to you for review. You can request revisions or tweaks to ensure the design perfectly matches your expectations."
-                iconURL={"/images/work-process/graphic/plan.png"}
+                iconURL={"/images/work-process/graphic/Review & Feedback.png"}
                 image={true}
                 title="Review & Feedback"
                 style={{
@@ -522,7 +524,7 @@ const WebDevelopment = () => {
               />
               <ServicesCard
                 desc="After revisions (if any), we submit the final design for your approval. Once you're satisfied, we prepare all necessary files in required formats."
-                iconURL={"/images/work-process/graphic/plan.png"}
+                iconURL={"/images/work-process/graphic/Final Approval.png"}
                 image={true}
                 title="Final Approval"
                 style={{
@@ -536,7 +538,7 @@ const WebDevelopment = () => {
               />
               <ServicesCard
                 desc="We deliver the final project in multiple formats (e.g., AI, PDF, PNG, JPEG, SVG) based on your usage needs—print, digital, social media, or packaging."
-                iconURL={"/images/work-process/graphic/approval.png"}
+                iconURL={"/images/work-process/graphic/File Delivery.png"}
                 image={true}
                 title="File Delivery"
                 style={{
@@ -550,7 +552,7 @@ const WebDevelopment = () => {
               />
               <ServicesCard
                 desc="Need small changes after delivery or help with file usage? Our team is here to support you even after the project is completed."
-                iconURL={"/images/work-process/graphic/approval.png"}
+                iconURL={"/images/work-process/graphic/Post-Delivery Support.png"}
                 image={true}
                 title="Post-Delivery Support"
                 style={{
@@ -566,8 +568,6 @@ const WebDevelopment = () => {
           </Box>
         </Box>
       </Box>
-
-
 
      
 

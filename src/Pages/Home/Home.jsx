@@ -85,7 +85,7 @@ const blogData = [
   {
     id: 1,
     title: "How Agencies Puts Your Audience First",
-    description: "Continue to read more information and updates from the Mozack blog and gain new knowledge about Mozack and its industry. This way, our team ensures you are updated with relevant information on app development, digital innovation and customer-centric strategies that will keep you on top in today’s competitive technological marketplace. As a result, let us scrutinise how Mozack is approaching AI to redefine customer experiences.",
+    description: "Continue to read more information and updates from the Patch Makers blog and gain new knowledge about Patch Makers and its industry. This way, our team ensures you are updated with relevant information on app development, digital innovation and customer-centric strategies that will keep you on top in today’s competitive technological marketplace. As a result, let us scrutinise how Patch Makers is approaching AI to redefine customer experiences.",
     image: BlogOne,
     author: "By Admin",
     date: "November 11, 2024",
@@ -93,7 +93,7 @@ const blogData = [
   {
     id: 2,
     title: "How Agecis Puts Your Audience First",
-    description: "Mozack is positioning itself as a cutting-edge organisation in the digital domain, which is currently experiencing radical changes due to the integration of Artificial Intelligence (AI). In this article, we explore how Mozack is harnessing AI to design new applications that are much more attuned to users’ requirements on the fly. Find out how particular AI integrated tools work and improve the overall customer experience and application usage. Sustainable App Development: Mozack's Green Approach",
+    description: "Patch Makers is positioning itself as a cutting-edge organisation in the digital domain, which is currently experiencing radical changes due to the integration of Artificial Intelligence (AI). In this article, we explore how Patch Makers is harnessing AI to design new applications that are much more attuned to users’ requirements on the fly. Find out how particular AI integrated tools work and improve the overall customer experience and application usage. Sustainable App Development: Patch Makers's Green Approach",
     image: BlogTwo,
     author: "Admin",
     date: "November 11, 2024",
@@ -101,7 +101,7 @@ const blogData = [
   {
     id: 3,
     title: "How Agecis Puts Your Audience First",
-    description: "At Mozack, it is our mission to embrace the new world of sustainable practices and provide green digital solutions. In this article, you will learn about our best practices in creating an energy-efficient app and choosing a cloud provider with clean energy. Find out how Mozack ensures that it contributes to environmental causes while offering clients the best digital services. Cybersecurity in App Development: Safety of The Users of Mozack’s App 👥",
+    description: "At Patch Makers, it is our mission to embrace the new world of sustainable practices and provide green digital solutions. In this article, you will learn about our best practices in creating an energy-efficient app and choosing a cloud provider with clean energy. Find out how Patch Makers ensures that it contributes to environmental causes while offering clients the best digital services. Cybersecurity in App Development: Safety of The Users of Patch Makers’s App 👥",
     image: BlogThree,
     author: "Admin",
     date: "November 11, 2024",
@@ -121,20 +121,20 @@ const Home = () => {
   const [dynamicHeight, setDynamicHeight] = useState(400); // Default height
 
 
-  // useEffect(()=>{
-  //   const scrollTo = () => {
-  //     scroll.scrollTo(0);
-  //     scroll.getAnimationType({smooth:true})
-  //   };
-  //   scrollTo()
-  // },[])
+  useEffect(()=>{
+    const scrollTo = () => {
+      scroll.scrollTo(0);
+      // scroll.getAnimationType({smooth:true})
+    };
+    scrollTo()
+  },[])
 
   const SecondFaq = [
     {
       id: 1,
       title: 'Experience & Excellence',
       testimonialText:
-        "Mozack’s team ought to have a rich understanding of the subject matter and that comes through loud and clear in the materials they deliver. The delay, which was the issue of major concern, only ended as we waited a little longer, though the final output was even better than what we expected.",
+        "Patch Makers’s team ought to have a rich understanding of the subject matter and that comes through loud and clear in the materials they deliver. The delay, which was the issue of major concern, only ended as we waited a little longer, though the final output was even better than what we expected.",
       starRating: starRating,
       videoId: 'mZ5hnNRBFsc', // A valid video ID
     },
@@ -142,7 +142,7 @@ const Home = () => {
       id: 2,
       title: 'Quality & Dedication',
       testimonialText:
-        "The Mozack has been motivated our team throughout the project. They were engaged with us throughout the process to make sure that what we wanted was done. Our communication problems which arose from misunderstanding of our initial needs were promptly addressed with a solution that met our needs.",
+        "The Patch Makers has been motivated our team throughout the project. They were engaged with us throughout the process to make sure that what we wanted was done. Our communication problems which arose from misunderstanding of our initial needs were promptly addressed with a solution that met our needs.",
       starRating: starRating,
       videoId: 'mZ5hnNRBFsc', // Corrected video ID from the URL
     },
@@ -150,7 +150,7 @@ const Home = () => {
       id: 3,
       title: 'Innovation & Creativity',
       testimonialText:
-        "We were impressed with their offer and the way they came up with some of the solutions. They came up with distinct strategies that made our project stand PAGE  out in the market. There were some times that made me question the process a little but Mozack certainly rose to the occasion in terms of creativity and added a lot of value to our project.",
+        "We were impressed with their offer and the way they came up with some of the solutions. They came up with distinct strategies that made our project stand PAGE  out in the market. There were some times that made me question the process a little but Patch Makers certainly rose to the occasion in terms of creativity and added a lot of value to our project.",
       starRating: starRating,
       videoId: 'mZ5hnNRBFsc', // Same video ID as example
     },

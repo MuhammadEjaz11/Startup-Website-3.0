@@ -51,11 +51,11 @@ const faqData = [
   {
     id: 2,
     question: "Can I customize the LMS for my organization’s needs?",
-    answer: "Yes, Mozack offers fully customizable LMS platforms to meet your unique requirements, whether for corporate training or academic programs."
+    answer: "Yes, Patch Makers offers fully customizable LMS platforms to meet your unique requirements, whether for corporate training or academic programs."
   },
   {
     id: 3,
-    question: "How secure are Mozack’s LMS platforms?",
+    question: "How secure are Patch Makers’s LMS platforms?",
     answer: "Our LMS solutions include advanced security features such as encryption and secure cloud hosting to protect sensitive data."
   },
   {
@@ -70,7 +70,7 @@ const SecondFaq = [
     id: 1,
     title: 'Experience & Excellence',
     testimonialText:
-      "Mozack combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
+      "Patch Makers combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
     starRating: starRating,
     videoId: 'mZ5hnNRBFsc', // A valid video ID
   },
@@ -86,7 +86,7 @@ const SecondFaq = [
     id: 3,
     title: 'Innovation & Creativity',
     testimonialText:
-      " Mozack provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
+      " Patch Makers provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
     starRating: starRating,
     videoId: 'mZ5hnNRBFsc', // Same video ID as example
   },
@@ -187,7 +187,7 @@ const LmsSolution = () => {
           title2={"Custom LMS Platforms"}
           buttonShow={false}
           sx1={{ order: 1 }}
-          content={`With over 500 LMS deployments, Mozack has enabled organizations to streamline training processes and improve learner outcomes. Our LMS platforms centralize content management, automate administrative tasks, and provide real-time performance tracking. Businesses and educators using Mozack’s LMS solutions have experienced higher learner engagement, reduced administrative effort, and improved knowledge retention.`}
+          content={`With over 500 LMS deployments, Patch Makers has enabled organizations to streamline training processes and improve learner outcomes. Our LMS platforms centralize content management, automate administrative tasks, and provide real-time performance tracking. Businesses and educators using Patch Makers’s LMS solutions have experienced higher learner engagement, reduced administrative effort, and improved knowledge retention.`}
 
 
 
@@ -196,8 +196,8 @@ const LmsSolution = () => {
         />
       </Box>
       <DesignDevelop
-        title={`Achieve Success with Mozack’s ERP Solutions`}
-        content={`Ready to revolutionize your business operations? Mozack’s ERP solutions deliver efficiency, scalability, and growth opportunities tailored to your needs. Contact us today to learn how we can help you streamline processes and achieve your business goals..`}
+        title={`Achieve Success with Patch Makers’s ERP Solutions`}
+        content={`Ready to revolutionize your business operations? Patch Makers’s ERP solutions deliver efficiency, scalability, and growth opportunities tailored to your needs. Contact us today to learn how we can help you streamline processes and achieve your business goals..`}
       />
 
 
@@ -241,7 +241,7 @@ const LmsSolution = () => {
               }}
             >
               <ServicesCard
-                desc="Mozack follows a comprehensive approach to LMS development, ensuring every solution is optimized for your organization’s goals:"
+                desc="Patch Makers follows a comprehensive approach to LMS development, ensuring every solution is optimized for your organization’s goals:"
                 iconURL=""
                 image={false}
                 style={{
@@ -343,7 +343,7 @@ const LmsSolution = () => {
           title2={"for Every Business Need"}
           buttonShow={false}
           sx1={{ order: 1 }}
-          content={`With Mozack’s CRM systems, businesses can manage leads and track their customer journey from start to finish. The platform helps automate repetitive sales tasks such as follow-ups, reminders, and email outreach, saving valuable time and resources. Our CRM solutions also offer robust analytics tools that provide actionable insights into customer behavior, helping businesses make informed decisions to improve satisfaction and retention.`}
+          content={`With Patch Makers’s CRM systems, businesses can manage leads and track their customer journey from start to finish. The platform helps automate repetitive sales tasks such as follow-ups, reminders, and email outreach, saving valuable time and resources. Our CRM solutions also offer robust analytics tools that provide actionable insights into customer behavior, helping businesses make informed decisions to improve satisfaction and retention.`}
 
 
 
@@ -389,7 +389,7 @@ const LmsSolution = () => {
         }}
       >
 
-        <TecgnologiesComponent content={"Mozack leverages advanced technologies to build high-performance LMS platforms:"}
+        <TecgnologiesComponent content={"Patch Makers leverages advanced technologies to build high-performance LMS platforms:"}
           title={[
             "*Languages*: Python, PHP, JavaScript",
             "*Frameworks*: Laravel, React.js, Angular",
@@ -419,7 +419,7 @@ const LmsSolution = () => {
           color: '#939393',
           paddingBottom: '71px',
         }}>
-          At Mozack, we start by conducting a detailed analysis of your business requirements to design a CRM system that aligns with your specific goals. Our team of experts develops scalable and secure CRM platforms that streamline processes such as customer data management, sales tracking, and marketing automation.
+          At Patch Makers, we start by conducting a detailed analysis of your business requirements to design a CRM system that aligns with your specific goals. Our team of experts develops scalable and secure CRM platforms that streamline processes such as customer data management, sales tracking, and marketing automation.
           <br />
           During the integration phase, our CRM systems are connected with existing tools such as email marketing platforms and analytics software, ensuring seamless workflows. Rigorous testing ensures the system performs efficiently, even under high loads. Once deployed, our team provides in-depth training to help your staff make the most of the CRM platform, ensuring you can maximize its potential from day one.
         </Typography>
@@ -490,11 +490,11 @@ const LmsSolution = () => {
           styledSx={{
             flexDirection: 'row'
           }}
-          title1="Why Choose Mozack’s"
+          title1="Why Choose Patch Makers’s"
           title2={"LMS Solutions?"}
           buttonShow={false}
           sx1={{ order: 1 }}
-          content={`LMS platforms are essential for organizations looking to deliver structured and effective training. Mozack’s LMS solutions automate complex training workflows, reduce administrative burdens, and enhance the overall learning experience. With customizable options tailored to your specific requirements, our systems ensure higher learner satisfaction and better outcomes. Whether you’re scaling corporate training or running an educational program, Mozack’s LMS platforms provide the tools you need to succeed.`}
+          content={`LMS platforms are essential for organizations looking to deliver structured and effective training. Patch Makers’s LMS solutions automate complex training workflows, reduce administrative burdens, and enhance the overall learning experience. With customizable options tailored to your specific requirements, our systems ensure higher learner satisfaction and better outcomes. Whether you’re scaling corporate training or running an educational program, Patch Makers’s LMS platforms provide the tools you need to succeed.`}
 
         />
       </Box>

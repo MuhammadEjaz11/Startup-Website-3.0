@@ -208,6 +208,8 @@ const SublimationPatches = () => {
                 maxWidth: { md: "300px !important", sm: "100%" },
                 borderRadius: "10px",
                 flexBasis: "25%",
+                height:"410px",
+
                 flexShrink: "1",
                 img: {
                   width: "100%",
@@ -279,6 +281,8 @@ const SublimationPatches = () => {
                 maxWidth: { md: "300px !important", sm: "100%" },
                 borderRadius: "10px",
                 flexBasis: "25%",
+                height:"410px",
+
                 flexShrink: "1",
                 img: {
                   width: "100%",

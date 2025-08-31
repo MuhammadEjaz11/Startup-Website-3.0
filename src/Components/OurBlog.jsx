@@ -20,7 +20,7 @@ const BlogSlider = ({
     {
       id: 1,
       title: "How Agencies Put Your Audience First",
-      description: "Continue to read more information and updates from the Mozack blog and gain new knowledge about Mozack and its industry. This way, our team ensures you are updated with relevant information on app development, digital innovation and customer-centric strategies that will keep you on top in today’s competitive technological marketplace. As a result, let us scrutinise how Mozack is approaching AI to redefine customer experiences.",
+      description: "Continue to read more information and updates from the Patch Makers blog and gain new knowledge about Patch Makers and its industry. This way, our team ensures you are updated with relevant information on app development, digital innovation and customer-centric strategies that will keep you on top in today’s competitive technological marketplace. As a result, let us scrutinise how Patch Makers is approaching AI to redefine customer experiences.",
       image: BlogOne,
       author: "By Admin",
       date: "November 11, 2024",
@@ -28,7 +28,7 @@ const BlogSlider = ({
     {
       id: 2,
       title: "How Agencies Put Your Audience First",
-      description: "Mozack is positioning itself as a cutting-edge organisation in the digital domain, which is currently experiencing radical changes due to the integration of Artificial Intelligence (AI). In this article, we explore how Mozack is harnessing AI to design new applications that are much more attuned to users’ requirements on the fly. Find out how particular AI integrated tools work and improve the overall customer experience and application usage. Sustainable App Development: Mozack's Green Approach.",
+      description: "Patch Makers is positioning itself as a cutting-edge organisation in the digital domain, which is currently experiencing radical changes due to the integration of Artificial Intelligence (AI). In this article, we explore how Patch Makers is harnessing AI to design new applications that are much more attuned to users’ requirements on the fly. Find out how particular AI integrated tools work and improve the overall customer experience and application usage. Sustainable App Development: Patch Makers's Green Approach.",
       image: BlogTwo,
       author: "By  Admin",
       date: "November 11, 2024",
@@ -36,7 +36,7 @@ const BlogSlider = ({
     {
       id: 3,
       title: "How Agencies Put Your Audience First",
-      description: "At Mozack, it is our mission to embrace the new world of sustainable practices and provide green digital solutions. In this article, you will learn about our best practices in creating an energy-efficient app and choosing a cloud provider with clean energy. Find out how Mozack ensures that it contributes to environmental causes while offering clients the best digital services. Cybersecurity in App Development: Safety of The Users of Mozack’s App 👥",
+      description: "At Patch Makers, it is our mission to embrace the new world of sustainable practices and provide green digital solutions. In this article, you will learn about our best practices in creating an energy-efficient app and choosing a cloud provider with clean energy. Find out how Patch Makers ensures that it contributes to environmental causes while offering clients the best digital services. Cybersecurity in App Development: Safety of The Users of Patch Makers’s App 👥",
       image: BlogThree,
       author: "By  Admin",
       date: "November 11, 2024",
@@ -44,7 +44,7 @@ const BlogSlider = ({
     {
       id: 4,
       title: "How Agencies Puts Your Audience First",
-      description: "In the contemporary world, app development cannot afford to overlook cybersecurity due to increased attacks. Today this post is a continuation of our discussions on how Mozack has taken measures to guarantee its data and its users’ privacy within the applications that we are developing. Find out how Mozack is ensuring users are safe from early design to the final product through proper coding and risk management.",
+      description: "In the contemporary world, app development cannot afford to overlook cybersecurity due to increased attacks. Today this post is a continuation of our discussions on how Patch Makers has taken measures to guarantee its data and its users’ privacy within the applications that we are developing. Find out how Patch Makers is ensuring users are safe from early design to the final product through proper coding and risk management.",
       image: BlogTwo,
       author: "Admin",
       date: "November 11, 2024",

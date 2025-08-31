@@ -88,7 +88,7 @@ const appDevQuestions = [
     id: 1,
     title: "Q1. Mobile App Market Revenue & Growth",
     content:
-      "With global smartphone usage soaring, the mobile app market is on a rapid upward trajectory. Market revenue is expected to surpass $935 billion by 2025. Businesses leveraging mobile apps report improved customer engagement and increased ROI. At Mozack, we create scalable, high-performance mobile applications that align with your business goals.",
+      "With global smartphone usage soaring, the mobile app market is on a rapid upward trajectory. Market revenue is expected to surpass $935 billion by 2025. Businesses leveraging mobile apps report improved customer engagement and increased ROI. At Patch Makers, we create scalable, high-performance mobile applications that align with your business goals.",
   },
   {
     id: 2,
@@ -153,7 +153,7 @@ const SecondFaq = [
     id: 1,
     title: "Experience & Excellence",
     testimonialText:
-      "Mozack combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
+      "Patch Makers combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
     starRating: starRating,
     videoId: "mZ5hnNRBFsc", // A valid video ID
   },
@@ -169,7 +169,7 @@ const SecondFaq = [
     id: 3,
     title: "Innovation & Creativity",
     testimonialText:
-      " Mozack provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
+      " Patch Makers provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
     starRating: starRating,
     videoId: "mZ5hnNRBFsc", // Same video ID as example
   },
@@ -228,8 +228,8 @@ const serviceApp3 = [
     desc: "Small-sized logo digitizing optimized for the left chest area of shirts, polos, and uniforms—focused on clarity and precision in limited space.",
   },
   {
-    image: "/images/our-services/animal.png",
-    title: "Digitizing",
+    image: "/images/our-services/Patch-digitize.png",
+    title: "Patch Digitizing",
     desc: "Digitizing made for curved surfaces like caps and hats, using special stitch techniques to maintain design quality and alignment during embroidery",
   },
   {
@@ -316,7 +316,7 @@ const Digitizing = () => {
   const faqData = [
     {
       id: 1,
-      question: "  What is your turnaround time for digitizing?",
+      question: "What is your turnaround time for digitizing?",
       answer: "We typically deliver digitized files within 2–4 hours.",
     },
     {
@@ -459,12 +459,15 @@ const Digitizing = () => {
                   borderRadius: "15px",
                   flexBasis: "25%",
                   flexShrink: "1",
+                  height:"470px",
                   marginTop: {
                     md: "-50px",
                     xs: "0px",
                   },
                   img: {
                     width: "100%",
+                      height: "200px",
+                    objectFit:"contain"
                   },
                   p: { xs: "30px", md: "30px" },
                 }}
@@ -502,6 +505,8 @@ const Digitizing = () => {
                   borderRadius: "15px",
                   flexBasis: "25%",
                   flexShrink: "1",
+                  height:"400px",
+
                   marginTop: {
                     md: "-50px",
                     xs: "0px",
@@ -546,12 +551,16 @@ const Digitizing = () => {
                   borderRadius: "15px",
                   flexBasis: "25%",
                   flexShrink: "1",
+                  height:"450px",
+
                   marginTop: {
                     md: "-50px",
                     xs: "0px",
                   },
                   img: {
                     width: "100%",
+                    height: "200px",
+                    objectFit:"contain"
                   },
                   p: { xs: "10px", md: "30px" },
                 }}
@@ -570,7 +579,7 @@ const Digitizing = () => {
           }}
         >
 
-          <TecgnologiesComponent content={"At Mozack, we assure ourselves of developing outstanding and unique digital solutions by influencing the latest technologies in the industry. Be it evolution of the intuitive user interfaces, broadening back-end systems, powerful analytics-based applications or Mozack’s expertise extending across the entire development stack. With a commitment to innovation, we ensure your business achieves its digital transformation goals through anticipated  solutions."}
+          <TecgnologiesComponent content={"At Patch Makers, we assure ourselves of developing outstanding and unique digital solutions by influencing the latest technologies in the industry. Be it evolution of the intuitive user interfaces, broadening back-end systems, powerful analytics-based applications or Patch Makers’s expertise extending across the entire development stack. With a commitment to innovation, we ensure your business achieves its digital transformation goals through anticipated  solutions."}
             heading1={"Enabling The Innovation With Innovative "}
             heading2={"Development Technologies "}
           />
@@ -830,10 +839,10 @@ const Digitizing = () => {
               justifyContent: "start",
               textAlign: "start",
             }}
-            titleSpan2={""}
+            titleSpan2={"Us"}
             isRow={false}
             title1={"About"}
-            title2={""}
+      
             buttonShow={false}
             image={"/images/about-digitzing.png"}
             content={`AAt Patch Makers, we have been providing high-quality digitizing services for 10 years. Our team of skilled professionals is dedicated to transforming your artwork into the perfect design for embroidery machines. We understand the importance of precision and detail, ensuring that every stitch is flawlessly executed to bring your vision to life. `}

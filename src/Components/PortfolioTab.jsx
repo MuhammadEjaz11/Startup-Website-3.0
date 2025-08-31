@@ -295,7 +295,7 @@ const PortfolioTab = () => {
   ];
 
   // State to manage current tab
-  const [currentTab, setCurrentTab] = useState("vector");
+  const [currentTab, setCurrentTab] = useState("digitize");
 
   // State to manage content for each tab with initial data
   const [vector, setVector] = useState(initialVector);

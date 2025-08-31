@@ -842,7 +842,7 @@ export const bannerData = {
   "custom-software-development": {
     title: "Custom Software Development",
     titleSpan: "for Business Excellence",
-    text: "At Mozack, we design tailored software solutions that streamline operations, enhance performance, and drive business success.",
+    text: "At Patch Makers, we design tailored software solutions that streamline operations, enhance performance, and drive business success.",
     images: [CustomDevelop, CustomDevelop, CustomDevelop],
   },
   "our-blogs": {
@@ -899,15 +899,15 @@ export const bannerData = {
     ],
   },
   "lms-solution": {
-    title: "Empower Learning with Mozack’s",
+    title: "Empower Learning with Patch Makers’s",
     titleSpan: "Advanced LMS Solutions",
-    text: "Mozack’s Learning Management Systems (LMS) revolutionize how organizations deliver, track, and manage educational and training programs. Designed to support businesses, educational institutions, and training centers, our LMS platforms simplify content delivery, enhance learner engagement, and provide data-driven insights. Whether you’re managing corporate training or academic courses, Mozack’s customizable LMS solutions help you achieve your learning and development goals effectively.",
+    text: "Patch Makers’s Learning Management Systems (LMS) revolutionize how organizations deliver, track, and manage educational and training programs. Designed to support businesses, educational institutions, and training centers, our LMS platforms simplify content delivery, enhance learner engagement, and provide data-driven insights. Whether you’re managing corporate training or academic courses, Patch Makers’s customizable LMS solutions help you achieve your learning and development goals effectively.",
     images: [cmsDevelop, cmsDevelop, cmsDevelop],
   },
   "pos-solution": {
     title: "Transform Retail Operations with",
-    titleSpan: "Mozack’s Advanced POS Solutions",
-    text: "Mozack’s Point of Sale (POS) solutions empower businesses to streamline transactions, manage inventory, and improve customer service. Designed for retail stores, restaurants, and service providers, our POS systems are tailored to meet your specific operational needs. With advanced features and real-time analytics, Mozack’s POS platforms help businesses enhance efficiency, reduce errors, and deliver a seamless checkout experience.",
+    titleSpan: "Patch Makers’s Advanced POS Solutions",
+    text: "Patch Makers’s Point of Sale (POS) solutions empower businesses to streamline transactions, manage inventory, and improve customer service. Designed for retail stores, restaurants, and service providers, our POS systems are tailored to meet your specific operational needs. With advanced features and real-time analytics, Patch Makers’s POS platforms help businesses enhance efficiency, reduce errors, and deliver a seamless checkout experience.",
     images: [cmsDevelop, cmsDevelop, cmsDevelop],
   },
 };

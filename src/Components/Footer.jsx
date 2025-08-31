@@ -14,6 +14,7 @@ import iconFour from "../image/TwitterIcon.png";
 import { Link as ScrollLink } from "react-scroll";
 import { YouTube } from "@mui/icons-material";
 import { AiOutlineYoutube } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const [count, setCount] = useState(0);
@@ -53,6 +54,7 @@ function Footer() {
                 fontWeight: 400,
                 fontSize: { xl: "60px", sm: "35px" },
                 lineHeight: "1.2",
+                cursor:"pointer",
                 "&:hover": {
                   color: "#1E8CE0", // Hover color
                   transition: "color 0.3s ease",
@@ -67,6 +69,8 @@ function Footer() {
                 fontWeight: 700,
                 fontSize: { xl: "60px", sm: "35px" },
                 lineHeight: "1.2",
+                cursor:"pointer",
+
                 "&:hover": {
                   color: "#1E8CE0", // Hover color
                   transition: "color 0.3s ease",
@@ -98,7 +102,7 @@ function Footer() {
                   fontFamily: "Inter",
                 }}
               >
-                Follow Mozack to discover more innovation in digital business,
+                Follow Patch Makers to discover more innovation in digital business,
                 design, and development. Please enter your email in the box
                 below to subscribe to our updates list and get information that
                 can help you move your business forward.{" "}
@@ -242,6 +246,8 @@ function Footer() {
                 "services/custom-patches",
                 "services/video-editing",
                 "services/graphic-design",
+
+                "services/web-development",
               ]}
               heading={"Our Services"}
               data={[
@@ -250,6 +256,8 @@ function Footer() {
                 "Customize Patches",
                 "Video Editing",
                 "Graphic Designing",
+                "Website Designing",
+
               ]}
               // showSeeMore={true}
               hideSeeMore={true}
@@ -306,7 +314,8 @@ function Footer() {
               alignItems: "center",
             }}
           >
-            <Box
+            <Link to={"/"}>
+            <Box 
               className="FooterLogo"
               sx={{
                 paddingLeft: { sm: "0px", xs: "0px" },
@@ -315,6 +324,7 @@ function Footer() {
             >
               <img src={layer1} style={{ width: "140px" }}></img>
             </Box>
+            </Link>
             <Box
               className="FooterIcon"
               sx={{

@@ -27,9 +27,16 @@ const ServicesCard = ({
         borderBottom: { xs: "1px solid #F1F1F1" },
         p: { xs: "10px", md: "20px" },
         marginBottom: { xs: "0px", md: "0" },
+        transition: "ease-in .2s",
         textAlign: { xs: "center", md: "left" },
+        
         ...style,
         ...sx1,
+        ":hover":{
+          scale:"1.04",
+          transition:".2s ease-in",
+          cursor:"pointer"
+        }
       }}
     >
       <Box

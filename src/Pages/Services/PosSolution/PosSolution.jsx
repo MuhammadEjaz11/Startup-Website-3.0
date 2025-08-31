@@ -51,11 +51,11 @@ const faqData = [
   {
     id: 2,
     question: "Can I customize the POS system for my business?",
-    answer: "Yes, Mozack’s POS systems are fully customizable to meet the unique needs of your business, whether in retail, hospitality, or services."
+    answer: "Yes, Patch Makers’s POS systems are fully customizable to meet the unique needs of your business, whether in retail, hospitality, or services."
   },
   {
     id: 3,
-    question: "Are Mozack’s POS systems secure?",
+    question: "Are Patch Makers’s POS systems secure?",
     answer: "Absolutely! Our POS solutions include secure payment processing and data encryption to safeguard sensitive customer and business information."
   },
   {
@@ -70,7 +70,7 @@ const SecondFaq = [
     id: 1,
     title: 'Experience & Excellence',
     testimonialText:
-      "Mozack combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
+      "Patch Makers combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
     starRating: starRating,
     videoId: 'mZ5hnNRBFsc', // A valid video ID
   },
@@ -86,7 +86,7 @@ const SecondFaq = [
     id: 3,
     title: 'Innovation & Creativity',
     testimonialText:
-      " Mozack provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
+      " Patch Makers provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
     starRating: starRating,
     videoId: 'mZ5hnNRBFsc', // Same video ID as example
   },
@@ -218,7 +218,7 @@ const PosSolution = () => {
           title2={"with Custom POS Systems"}
           buttonShow={false}
           sx1={{ order: 1 }}
-          content={`Mozack has implemented over 500 POS solutions across various industries, helping businesses simplify their operations and achieve measurable growth. Our systems enable you to manage sales, inventory, and customer data from a single platform. Businesses using Mozack’s POS solutions have reported faster transaction times, better inventory control, and improved customer satisfaction, making them a cornerstone for success in retail and service industries.`}
+          content={`Patch Makers has implemented over 500 POS solutions across various industries, helping businesses simplify their operations and achieve measurable growth. Our systems enable you to manage sales, inventory, and customer data from a single platform. Businesses using Patch Makers’s POS solutions have reported faster transaction times, better inventory control, and improved customer satisfaction, making them a cornerstone for success in retail and service industries.`}
 
 
 
@@ -227,8 +227,8 @@ const PosSolution = () => {
         />
       </Box>
       <DesignDevelop
-        title={`Take Your Business to the Next Level with Mozack’s POS Solutions`}
-        content={`Ready to modernize your retail operations? Mozack’s POS solutions provide the tools you need to streamline transactions, manage inventory, and improve customer satisfaction. Contact us today to learn how our POS systems can help your business thrive.`}
+        title={`Take Your Business to the Next Level with Patch Makers’s POS Solutions`}
+        content={`Ready to modernize your retail operations? Patch Makers’s POS solutions provide the tools you need to streamline transactions, manage inventory, and improve customer satisfaction. Contact us today to learn how our POS systems can help your business thrive.`}
       />
 
 
@@ -272,7 +272,7 @@ const PosSolution = () => {
               }}
             >
               <ServicesCard
-                desc="Mozack follows a detailed process to ensure each POS solution meets your business needs and delivers optimal results:"
+                desc="Patch Makers follows a detailed process to ensure each POS solution meets your business needs and delivers optimal results:"
                 iconURL=""
                 image={false}
                 style={{
@@ -363,7 +363,7 @@ const PosSolution = () => {
         }}
       >
 
-        <TecgnologiesComponent content={"Mozack utilizes cutting-edge technologies to deliver high-performance POS systems:"}
+        <TecgnologiesComponent content={"Patch Makers utilizes cutting-edge technologies to deliver high-performance POS systems:"}
           title={[
             "*Languages*: Python, PHP, JavaScript",
             "*Frameworks*: Laravel, React.js, Angular",
@@ -393,7 +393,7 @@ const PosSolution = () => {
           color: '#939393',
           paddingBottom: '71px',
         }}>
-          Mozack has implemented over 500 POS solutions across various industries, helping businesses simplify their operations and achieve measurable growth. Our systems enable you to manage sales, inventory, and customer data from a single platform. Businesses using Mozack’s POS solutions have reported faster transaction times, better inventory control, and improved customer satisfaction, making them a cornerstone for success in retail and service industries.
+          Patch Makers has implemented over 500 POS solutions across various industries, helping businesses simplify their operations and achieve measurable growth. Our systems enable you to manage sales, inventory, and customer data from a single platform. Businesses using Patch Makers’s POS solutions have reported faster transaction times, better inventory control, and improved customer satisfaction, making them a cornerstone for success in retail and service industries.
         </Typography>
       </Box>
 
@@ -413,11 +413,11 @@ const PosSolution = () => {
           styledSx={{
             flexDirection: 'row'
           }}
-          title1="Why Choose Mozack’s"
+          title1="Why Choose Patch Makers’s"
           title2={"POS  Solutions?"}
           buttonShow={false}
           sx1={{ order: 1 }}
-          content={`POS systems are essential for businesses seeking to enhance efficiency, streamline operations, and provide superior customer service. Mozack’s customizable POS platforms are designed to handle high transaction volumes, simplify inventory management, and provide real-time insights into business performance. With advanced features and a user-friendly interface, Mozack’s POS systems are the ideal choice for businesses looking to modernize their operations and stay competitive.`}
+          content={`POS systems are essential for businesses seeking to enhance efficiency, streamline operations, and provide superior customer service. Patch Makers’s customizable POS platforms are designed to handle high transaction volumes, simplify inventory management, and provide real-time insights into business performance. With advanced features and a user-friendly interface, Patch Makers’s POS systems are the ideal choice for businesses looking to modernize their operations and stay competitive.`}
 
         />
       </Box>
