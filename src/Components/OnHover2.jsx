@@ -102,27 +102,27 @@ export default function CustomizedMenus2({
         {
           id: "embroidered",
           label: "Embroidered Patches",
-          route: "/services/embroidered-patches",
+          route: "/services/custom-patches/embroidered-patches",
         },
         {
           id: "chenille",
           label: "Chenille Patches",
-          route: "/services/chenille-patches",
+          route: "/services/custom-patches/chenille-patches",
         },
         {
           id: "wsublimationoven",
           label: "Sublimation Patches",
-          route: "/services/sublimation-patches",
+          route: "/services/custom-patches/sublimation-patches",
         },
         {
           id: "pvc",
           label: "PVC Patches",
-          route: "/services/pvc-patches",
+          route: "/services/custom-patches/pvc-patches",
         },
         {
           id: "leather",
           label: "Leather Patches",
-          route: "/services/leather-patches",
+          route: "/services/custom-patches/leather-patches",
         },
       ],
     },

@@ -376,10 +376,10 @@ const CustomPatches = () => {
                 }}
               />
               <ServicesCard
-                desc="We deliver the final project in multiple formats (e.g., AI, PDF, PNG, JPEG, SVG) based on your usage needs—print, digital, social media, or packaging."
+                desc="We deliver the final product as high-quality physical patches. your order will be shipped as the finished patch, ready for use."
                 iconURL={"/images/work-process/graphic/File Delivery.png"}
                 image={true}
-                title="File Delivery"
+                title="Product Delivery"
                 style={{
                   borderRight: "none",
                   borderTop: "1px solid #F1F1F1",
@@ -389,20 +389,7 @@ const CustomPatches = () => {
                   // borderBottom:"1px solid #F1F1F1" ,
                 }}
               />
-              <ServicesCard
-                desc="Need small changes after delivery or help with file usage? Our team is here to support you even after the project is completed."
-                iconURL={"/images/work-process/graphic/Post-Delivery Support.png"}
-                image={true}
-                title="Post-Delivery Support"
-                style={{
-                  borderRight: "none",
-                  borderTop: "1px solid #F1F1F1",
-                  m: { md: "0px 40px", xs: "0px 10px" },
-                  p: "30px 0px",
-
-                  // borderBottom:"1px solid #F1F1F1" ,
-                }}
-              />
+      
             </Box>
           </Box>
         </Box>

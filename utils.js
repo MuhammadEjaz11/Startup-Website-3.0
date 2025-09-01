@@ -816,7 +816,7 @@ export const bannerData = {
       "/images/our-portfolio/embroidery/three.jpg",
     ],
   },
-  "embroidered-patches": {
+  "custom-patches/embroidered-patches": {
     title: "Embroidered ",
     titleSpan2: "Patches",
 
@@ -827,37 +827,16 @@ export const bannerData = {
       "/images/our-portfolio/embroidery/three.jpg",
     ],
   },
-  "video-animation": {
-    title: "Engaging Video",
-    titleSpan: "Animation Services",
-    text: "Bring your ideas to life with captivating and customized video animation solutions that resonate with your audience and boost brand engagement.",
-    images: [Video, Video, Video],
-  },
+
   "video-editing": {
     title: "Video ",
     titleSpan2: "Editing",
     text: "At Patch Makers, we turn raw footage into polished, professional videos that captivate and inspire. From smooth transitions to sound syncing and color correction, our editing team ensures every frame reflects your vision—clear, engaging, and visually stunning. Whether it’s for social media, branding, or promos, we help you tell your story with impact.",
     images: ["/images/banner/video.png"],
   },
-  "custom-software-development": {
-    title: "Custom Software Development",
-    titleSpan: "for Business Excellence",
-    text: "At Patch Makers, we design tailored software solutions that streamline operations, enhance performance, and drive business success.",
-    images: [CustomDevelop, CustomDevelop, CustomDevelop],
-  },
-  "our-blogs": {
-    title: "Our Blogs",
-    titleSpan: "for Business Excellence",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text",
-    images: [CustomDevelop, CustomDevelop, CustomDevelop],
-  },
-  "our-blogs/details": {
-    title: " ",
-    titleSpan: " ",
-    text: " ",
-    // images:[CustomDevelop, CustomDevelop, CustomDevelop]
-  },
-  "chenille-patches": {
+
+
+  "custom-patches/chenille-patches": {
     title: "Chenille ",
     titleSpan2: "Patches",
     text: "Custom chenille patches are a bold and textured way to showcase your identity—whether it's for a varsity jacket, fashion brand, sports team, or a standout accessory. At Patch Makers, we craft high-quality chenille patches with a plush, fuzzy finish that delivers a vintage yet fashionable appeal. Our team combines vibrant chenille yarns with felt or twill backgrounds, offering a soft and eye-catching look that pops with personality. Whether you're going for a classic letterman style or a fully custom design, we bring your vision to life with expert stitching and premium materials. Choose from a variety of colors, sizes, fonts, and borders to create a patch that truly reflects your brand or story. Durable, detailed, and made to impress—our chenille patches make a statement you can feel.",
@@ -867,7 +846,7 @@ export const bannerData = {
       "/images/our-portfolio/chenille/three.jpg",
     ],
   },
-  "sublimation-patches": {
+  "custom-patches/sublimation-patches": {
     title: "Sublimation ",
     titleSpan2: "Patches",
     text: "Custom sublimation patches offer a vivid and modern way to showcase your logo, artwork, or message with photo-quality detail. At Patch Makers, we specialize in creating high-resolution sublimation patches that bring even the most intricate designs to life—ideal for vibrant graphics, gradients, and fine text. Using advanced heat transfer technology, we infuse your design directly into the fabric, ensuring long-lasting color, sharp detail, and a smooth, lightweight finish. Whether it's for uniforms, promotional items, fashion pieces, or creative branding, sublimation patches provide a sleek and polished alternative to traditional embroidery. With flexible sizing, unique shapes, and multiple backing options, we tailor each patch to your exact needs. When it comes to capturing every detail of your vision—sublimation is the perfect solution.Your design. Your color. Your patch—vividly expressed.",
@@ -878,7 +857,7 @@ export const bannerData = {
       "/images/our-portfolio/sublimation/three.jpg"
     ],
   },
-  "leather-patches": {
+  "custom-patches/leather-patches": {
     title: "Leather ",
     titleSpan2: "Patches",
     text: "Custom leather patches are a timeless and rugged way to showcase your brand, elevate your apparel, or add a premium touch to your products. At Patch Makers, we specialize in crafting high-quality leather patches that combine classic aesthetics with durability and detail. Whether you need embossed logos, laser-engraved designs, or full-color prints, we bring your vision to life with artisan precision. Each leather patch is made using top-grade materials and expert techniques to ensure a refined finish that's built to last. Perfect for hats, jackets, jeans, bags, and lifestyle products, leather patches offer a sophisticated and professional edge. With customizable shapes, finishes, and backings like sew-on, iron-on, or hook & loop, your patch is made to match your exact purpose and style. Bold. Durable. Distinct—your design, redefined in leather.",
@@ -888,7 +867,7 @@ export const bannerData = {
       "/images/our-portfolio/leather/three.jpg"
     ],
   },
-  "pvc-patches": {
+  "custom-patches/pvc-patches": {
     title: "PVC ",
     titleSpan2: "Patches",
     text: "Custom PVC patches are a bold, modern way to showcase your brand, team, or creative identity with unmatched durability and vibrant detail. At Patch Makers, we specialize in producing premium-quality PVC patches that are weatherproof, flexible, and built to last. Perfect for outdoor gear, uniforms, tactical bags, and more—these patches deliver style with strength. Whether you need sleek 2D designs or striking 3D textures, our team brings your ideas to life with precision molding and rich color options. We offer complete customization—from shape and size to color and backing choices like Velcro, adhesive, or sew-on—to match your specific needs. No fading, no fraying—just long-lasting impact. Your concept, our craftsmanship custom PVC patches that make a statement.",
@@ -898,18 +877,7 @@ export const bannerData = {
       "/images/our-portfolio/pvc-patches/three.jpg"
     ],
   },
-  "lms-solution": {
-    title: "Empower Learning with Patch Makers’s",
-    titleSpan: "Advanced LMS Solutions",
-    text: "Patch Makers’s Learning Management Systems (LMS) revolutionize how organizations deliver, track, and manage educational and training programs. Designed to support businesses, educational institutions, and training centers, our LMS platforms simplify content delivery, enhance learner engagement, and provide data-driven insights. Whether you’re managing corporate training or academic courses, Patch Makers’s customizable LMS solutions help you achieve your learning and development goals effectively.",
-    images: [cmsDevelop, cmsDevelop, cmsDevelop],
-  },
-  "pos-solution": {
-    title: "Transform Retail Operations with",
-    titleSpan: "Patch Makers’s Advanced POS Solutions",
-    text: "Patch Makers’s Point of Sale (POS) solutions empower businesses to streamline transactions, manage inventory, and improve customer service. Designed for retail stores, restaurants, and service providers, our POS systems are tailored to meet your specific operational needs. With advanced features and real-time analytics, Patch Makers’s POS platforms help businesses enhance efficiency, reduce errors, and deliver a seamless checkout experience.",
-    images: [cmsDevelop, cmsDevelop, cmsDevelop],
-  },
+
 };
 
 

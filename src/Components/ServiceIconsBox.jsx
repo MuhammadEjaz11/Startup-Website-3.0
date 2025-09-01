@@ -19,7 +19,14 @@ const ServiceIconBox = ({
           borderRight: { md: index < 4 && "1px solid #F1F1F1 !Important" },
           borderBottom: { md:'none', xs: "1px solid #F1F1F1"},
           p:{md:"30px 30px", xs:"20px 20px"},
+          cursor: "pointer",
           marginBottom: { xs: '20px', md: '0' },
+          ":hover": {
+            
+            transition: "all 0.3s ease-in-out",
+            scale: "1.09",
+          
+          },
           textAlign: { xs: 'center', md: 'center' },
           ...style,
           

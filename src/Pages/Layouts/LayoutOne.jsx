@@ -44,6 +44,7 @@ function LayoutOne() {
         <Header />
         {location.pathname == "/" ? (
           <Box
+          id="home"
             className="MainBanner"
             sx={{
               display: "flex",
