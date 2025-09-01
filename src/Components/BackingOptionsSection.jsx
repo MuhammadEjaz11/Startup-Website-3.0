@@ -1,6 +1,8 @@
 import { Box } from "@mui/material";
 import StyledHeading from "./StyledHeading";
 import BackingOptionsCard from "./BackingOptionsCard";
+import { serviceApp } from "../../utils";
+import ServicesCard from "./ServicesCard";
 
 const BackingOptionsSection = () => {
   const backingOptions = [
@@ -39,7 +41,47 @@ const BackingOptionsSection = () => {
         }}
       />
 
-      <Box
+ <Box
+          sx={{
+            mt: "60px",
+            display: "flex",
+            justifyContent: {
+              md: "center",
+              xs: "center",
+            },
+            gap: { md: "30px", xs: "15px" },
+            flexDirection: {
+              md: "row",
+              xs: "column",
+            },
+            alignItems: "start",
+          }}
+        >
+          {serviceApp.map((service, index) => (
+            <ServicesCard
+              key={index}
+              image={true}
+              style={{
+                border: "1px solid #E9E9E9",
+                maxWidth: { md: "300px !important", sm: "100%" },
+                borderRadius: "10px",
+                flexBasis: "25%",
+                flexShrink: "1",
+                height:"410px",
+                img: {
+                  width: "100%",
+                },
+              }}
+              iconURL={service.image}
+              title={service.title}
+              desc={service.desc}
+              descsx={{
+                fontSize: { xs: "13px", xl: "15px" },
+              }}
+            />
+          ))}
+        </Box>
+      {/* <Box
         sx={{
           mt: "40px",
           display: "grid",
@@ -70,7 +112,7 @@ const BackingOptionsSection = () => {
             }}
           />
         ))}
-      </Box>
+      </Box> */}
     </Box>
   );
 };

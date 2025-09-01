@@ -404,37 +404,37 @@ export const ServiceIcon3 = [
 
 export const cutomePatchServiceIcon = [
   {
-    iconURL: "/images/custom-patches-service-icon/six.svg",
+    iconURL: "/images/all-services/no-min.png",
     title: "No Minim Order",
   },
   {
-    iconURL: "/images/custom-patches-service-icon/seven.svg",
+    iconURL: "/images/all-services/Quick Turnaround.png",
     title: "Quick Turnaround",
   },
   {
-    iconURL: "/images/custom-patches-service-icon/five.svg",
+    iconURL: "/images/all-services/Personalized Attention.png",
     title: "Personalized Attention",
   },
   {
-    iconURL: "/images/custom-patches-service-icon/eight.svg",
+    iconURL: "/images/all-services/Customizable Options.png",
     title: "Customizable Options",
   },
   {
-    iconURL: "/images/custom-patches-service-icon/three.svg",
+    iconURL: "/images/all-services/Discount on Bulk Orders.png",
     title: "Discount on Bulk Orders",
   },
 ];
 export const cutomePatchServiceIcon2 = [
   {
-    iconURL: "/images/custom-patches-service-icon/two.svg",
+    iconURL: "/images/all-services/Affordable Pricing.png",
     title: "Affordable Pricing",
   },
   {
-    iconURL: "/images/custom-patches-service-icon/nine.svg",
+    iconURL: "/images/all-services/Free Mockups.png",
     title: "Free Samples",
   },
   {
-    iconURL: "/images/custom-patches-service-icon/one.svg",
+    iconURL: "/images/all-services/247 Customer Support.png",
     title: "24/7 Customer Support",
   },
 ];
@@ -811,7 +811,7 @@ export const bannerData = {
     titleSpan: "Designed Your Way",
     text: "Custom patches are a creative and stylish way to represent your brand, team, event, or personal style. Patch Makers specialize in crafting high-quality patches tailored exactly to your vision. Whether you need embroidered, PVC, leather, chenille, or sublimation patches, our team transforms your ideas into wearable art.  From logos to detailed artwork, every patch is designed with precision, using premium materials and expert craftsmanship. We offer endless customization options including size, shape, colors, and backing types to suit any purpose—uniforms, jackets, bags, caps, or promotional items. Your design, your style, your patch—made to stand out.",
     images: [
-      "/images/our-portfolio/leather/eight.jpg",
+      "/images/our-portfolio/leather/three.jpg",
       "/images/our-portfolio/digitize/two.jpg",
       "/images/our-portfolio/embroidery/three.jpg",
     ],

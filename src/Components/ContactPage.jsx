@@ -9,6 +9,7 @@ import unCheckedIcon from "../assets/font/untickIcon.png";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { CgCross } from "react-icons/cg";
 import StyledHeading from "./StyledHeading";
+import { Link } from "react-router-dom";
 
 const Contactpage = ({ hideblueBox }) => {
   const initialFormState = {
@@ -208,11 +209,15 @@ const Contactpage = ({ hideblueBox }) => {
                 src={PhoneIcon}
                 sx={{ width: "24px", height: "24px", marginRight: "25px" }}
               />
+               <Link 
+               style={{textDecoration:"none"}}
+               to={"tel:+13074008653"}> 
               <Typography
                 sx={{ color: "white", fontSize: "16px", fontWeight: 400 }}
               >
                 +1 (307) 400 8653
               </Typography>
+               </Link>
             </Box>
 
             <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -221,11 +226,13 @@ const Contactpage = ({ hideblueBox }) => {
                 src={EmailIcon}
                 sx={{ width: "24px", height: "24px", marginRight: "25px" }}
               />
+              <Link  style={{textDecoration:"none"}} to={"mailto:sales@patchmakers.us"}>
               <Typography
                 sx={{ color: "white", fontSize: "16px", fontWeight: 400 }}
               >
                 sales@patchmakers.us
               </Typography>
+              </Link>
             </Box>
 
             <Box sx={{ display: "flex", alignItems: "start" }}>

@@ -58,32 +58,70 @@ import PortfolioTab from "../../../Components/PortfolioTab";
 import BackingOptionsSection from "../../../Components/BackingOptionsSection";
 
 
+// ...existing code...
 const faqData = [
   {
     id: 1,
-    question: "What is your turnaround time for digitizing?",
-    answer: "We typically deliver digitized files within 2–4 hours.",
+    question: "What types of patches do you offer?",
+    answer:
+      "We offer a wide variety of patches including Embroidered, Chenille, Sublimation, Woven, Leather, PVC, and DTF Transfers.",
   },
   {
     id: 2,
-    question: "How do I place an order?",
+    question: "What is the minimum order quantity (MOQ)?",
     answer:
-      "You can send us your design via email or through our website. We'll get back to you with a quote and start the process.",
+      "Our minimum order quantity typically starts from 25 pieces, but it may vary depending on the patch type. Contact us for more details.",
   },
   {
     id: 3,
-    question: "What file formats do you provide for digitized designs?",
+    question: "Can I get a sample before placing a bulk order?",
     answer:
-      "We provide all major machine formats such as DST, EMB, PES, JEF, and more upon request.",
+      "Yes! We can provide a sample patch so you can approve the quality and design before bulk production.",
   },
   {
     id: 4,
-    question: "Can I request changes after receiving the design?",
+    question: "How long does it take to receive my patches?",
     answer:
-      "Absolutely! We offer free minor edits to ensure you're fully satisfied with the final design.",
+      "Turnaround time depends on the patch type and quantity, but generally, orders are completed within 7–10 business days after design approval.",
+  },
+  {
+    id: 5,
+    question: "Can I customize the shape and size of my patch?",
+    answer:
+      "Absolutely! We create patches in any shape, size, and color combination you need to match your vision.",
+  },
+  {
+    id: 6,
+    question: "Do you help with the design process?",
+    answer:
+      "Yes! We offer free design assistance and can work with any artwork or concept you have – even a rough sketch.",
+  },
+  {
+    id: 7,
+    question: "What backing options are available?",
+    answer:
+      "We provide several backing options such as iron-on, sew-on, Velcro, and adhesive backing.",
+  },
+  {
+    id: 8,
+    question: "What file formats do you accept for designs?",
+    answer:
+      "We accept most formats including JPG, PNG, PDF, AI, EPS, and PSD files.",
+  },
+  {
+    id: 9,
+    question: "Do you ship internationally?",
+    answer:
+      "Yes, we ship worldwide with trusted courier partners to ensure safe and timely delivery.",
+  },
+  {
+    id: 10,
+    question: "What if I need a rush order?",
+    answer:
+      "We do offer express services for urgent orders. Please contact us to discuss your timeline.",
   },
 ];
-
+// ...existing
 const serviceApp = [
   {
     title: "Embroidered Patches",
@@ -185,6 +223,8 @@ const CustomPatches = () => {
                 },
                 img: {
                   width: "100%",
+                  height:"150px",
+                  objectFit:"contain"
                 },
                 p: { xs: "15px", md: "20px" },
               }}
@@ -207,152 +247,167 @@ const CustomPatches = () => {
           margin: "0 auto",
         }}
       >
+      {/* our Solution */}
 
-        <Box>
+      <Box>
+        <Box
+          sx={{
+            mt: "40px",
+            
+          }}
+        >
+          <StyledHeading
+         title1="Our Manufacturing" title2="Process"
+            sx={{
+              mb:"50px"
+            }}
+          />
+
           <Box
             sx={{
-              paddingX: {
-                lg: "20px",
-                md: "20px !important",
-                sm: "0px !important",
-                xs: "0px !important",
+              display: "flex",
+              flexDirection: {
+                md: "row",
+                xs: "column",
               },
-              mt: "90px",
-              padding: { md: "0px 0px", xs: "0px 20px" },
+              gap: "3rem",
             }}
           >
-            <StyledHeading title1="Our Manufacturing" title2="Process" />
-
             <Box
               sx={{
-                display: "flex",
-                flexDirection: {
-                  md: "row",
-                  xs: "column",
+                flexBasis: {
+                  md: "40%",
+                  xs: "100%",
                 },
-                gap: "3rem",
-                mt: "10px",
+                mt: "100px",
+                display: "flex",
+                // alignItems:"center",
+                justifyContent: "center",
               }}
             >
-              <Box
-                sx={{
-                  flexBasis: {
-                    md: "40%",
-                    xs: "100%",
-                  },
-                  mt: "100px",
-                  display: "flex",
-                  // alignItems:"center",
-                  justifyContent: "center",
+              <RoundCircle currentStep={0} totalSteps={7} />
+            </Box>
+            <Box
+              sx={{
+                borderLeft: "3px solid #F1F1F1",
+              }}
+            >
+              <ServicesCard
+                desc="We follow a streamlined graphic design process to ensure each project meets your vision and goals. It all starts with understanding your brand, audience, and message. From there, we move into concept development, where our designers craft creative ideas tailored to your needs. Once a concept is approved, we fine-tune every detail—colors, typography, layout—to ensure it's pixel-perfect. After final revisions and your full satisfaction, we deliver high-quality design files ready for print, web, or marketing use. Simple, collaborative, and effective—that's how we bring your ideas to life."
+                iconURL=""
+                image={false}
+                style={{
+                  borderRight: "none",
+                  borderTop: "1px solid #F1F1F1",
+                  m: { md: "0px 40px", xs: "0px 0px" },
+                  p: "10px 0px 30px",
+                  // borderBottom:"1px solid #F1F1F1" ,
                 }}
-              >
-                <RoundCircle />
-              </Box>
-              <Box
-                sx={{
-                  borderLeft: "3px solid #F1F1F1",
-                  pl: { sm: "40px", xs: "0px" },
+              />
+
+              <ServicesCard
+                desc="We start by understanding your needs—what you're looking for, the purpose of the design, preferred style, colors, and target audience. This helps us align with your vision from the start."
+                iconURL={"/images/work-process/graphic/Client Brief & Requirement Gathering.png"}
+                image={true}
+                title="Client Brief & Requirement Gathering"
+                style={{
+                  borderRight: "none",
+                  borderTop: "1px solid #F1F1F1",
+                  m: { md: "0px 40px", xs: "0px 10px" },
+                  p: "30px 0px",
+
+                  // borderBottom:"1px solid #F1F1F1" ,
                 }}
-              >
-                <ServicesCard
-                  desc="From Concept to Creation, At Patch Makers, every patch starts with your vision and ends with a high-quality, custom-made product. Here's how we bring your idea to life:"
-                  iconURL=""
-                  image={false}
-                  style={{
-                    borderRight: "none",
-                    borderTop: "1px solid #F1F1F1",
-                    m: "0px 10px",
-                    p: "10px 0px 30px",
-                    // borderBottom:"1px solid #F1F1F1" ,
-                  }}
-                />
+              />
+              <ServicesCard
+                desc="Our designers brainstorm ideas and develop initial concepts based on your requirements. Mood boards, sketches, or reference samples may be shared for early feedback."
+                iconURL={"/images/work-process/graphic/Concept Development.png"}
+                image={true}
+                title="Concept Development"
+                style={{
+                  borderRight: "none",
+                  borderTop: "1px solid #F1F1F1",
+                  m: { md: "0px 40px", xs: "0px 10px" },
+                  p: "30px 0px",
 
-                <ServicesCard
-                  desc="We analyze your business goals, target audience, and competitors to build a strong foundation. 75% of digital success depends on understanding your audience, and that’s where we begin."
-                  iconURL={"/images/work-process/vector/design.svg"}
-                  image={true}
-                  title="Concept & Design"
-                  style={{
-                    borderRight: "none",
-                    borderTop: "1px solid #F1F1F1",
-                    m: "0px 10px",
-                    p: "30px 0px",
+                  // borderBottom:"1px solid #F1F1F1" ,
+                }}
+              />
+              <ServicesCard
+                desc="Once the concept is approved, we move to the actual design phase. Our team creates a polished, high-quality design using professional tools (like Adobe Illustrator, Photoshop, etc.)."
+                iconURL={"/images/work-process/graphic/Design Creation.png"}
+                image={true}
+                title="Design Creation"
+                style={{
+                  borderRight: "none",
+                  borderTop: "1px solid #F1F1F1",
+                  m: { md: "0px 40px", xs: "0px 10px" },
+                  p: "30px 0px",
 
-                    // borderBottom:"1px solid #F1F1F1" ,
-                  }}
-                />
-                <ServicesCard
-                  desc="Once the design is ready, we send you a digital mockup for approval. We make any necessary changes until you're fully satisfied before moving forward."
-                  iconURL={"/images/work-process/vector/approval.svg"}
-                  image={true}
-                  title="Digital Proof & Approval"
-                  style={{
-                    borderRight: "none",
-                    borderTop: "1px solid #F1F1F1",
-                    m: "0px 10px",
-                    p: "30px 0px",
+                  // borderBottom:"1px solid #F1F1F1" ,
+                }}
+              />
+              <ServicesCard
+                desc="We present the draft design to you for review. You can request revisions or tweaks to ensure the design perfectly matches your expectations."
+                iconURL={"/images/work-process/graphic/Review & Feedback.png"}
+                image={true}
+                title="Review & Feedback"
+                style={{
+                  borderRight: "none",
+                  borderTop: "1px solid #F1F1F1",
+                  m: { md: "0px 40px", xs: "0px 10px" },
+                  p: "30px 0px",
 
-                    // borderBottom:"1px solid #F1F1F1" ,
-                  }}
-                />
-                <ServicesCard
-                  desc="Based on the patch type (embroidered, PVC, sublimation, leather, chenille), we carefully select the best materials to ensure durability, texture, and vibrant color."
-                  iconURL={"/images/work-process/vector/delivery.svg"}
-                  image={true}
-                  title="Material Selection"
-                  style={{
-                    borderRight: "none",
-                    borderTop: "1px solid #F1F1F1",
-                    m: "0px 10px",
-                    p: "30px 0px",
+                  // borderBottom:"1px solid #F1F1F1" ,
+                }}
+              />
+              <ServicesCard
+                desc="After revisions (if any), we submit the final design for your approval. Once you're satisfied, we prepare all necessary files in required formats."
+                iconURL={"/images/work-process/graphic/Final Approval.png"}
+                image={true}
+                title="Final Approval"
+                style={{
+                  borderRight: "none",
+                  borderTop: "1px solid #F1F1F1",
+                  m: { md: "0px 40px", xs: "0px 10px" },
+                  p: "30px 0px",
 
-                    // borderBottom:"1px solid #F1F1F1" ,
-                  }}
-                />
-                <ServicesCard
-                  desc="Our advanced machines and expert technicians begin the production process, stitching or molding your design with high attention to detail and quality control."
-                  iconURL={"/images/work-process/vector/delivery.svg"}
-                  image={true}
-                  title="Precision Production"
-                  style={{
-                    borderRight: "none",
-                    borderTop: "1px solid #F1F1F1",
-                    m: "0px 10px",
-                    p: "30px 0px",
+                  // borderBottom:"1px solid #F1F1F1" ,
+                }}
+              />
+              <ServicesCard
+                desc="We deliver the final project in multiple formats (e.g., AI, PDF, PNG, JPEG, SVG) based on your usage needs—print, digital, social media, or packaging."
+                iconURL={"/images/work-process/graphic/File Delivery.png"}
+                image={true}
+                title="File Delivery"
+                style={{
+                  borderRight: "none",
+                  borderTop: "1px solid #F1F1F1",
+                  m: { md: "0px 40px", xs: "0px 10px" },
+                  p: "30px 0px",
 
-                    // borderBottom:"1px solid #F1F1F1" ,
-                  }}
-                />
+                  // borderBottom:"1px solid #F1F1F1" ,
+                }}
+              />
+              <ServicesCard
+                desc="Need small changes after delivery or help with file usage? Our team is here to support you even after the project is completed."
+                iconURL={"/images/work-process/graphic/Post-Delivery Support.png"}
+                image={true}
+                title="Post-Delivery Support"
+                style={{
+                  borderRight: "none",
+                  borderTop: "1px solid #F1F1F1",
+                  m: { md: "0px 40px", xs: "0px 10px" },
+                  p: "30px 0px",
 
-                <ServicesCard
-                  desc="Each patch undergoes a thorough inspection to ensure color accuracy, stitching quality, and correct dimensions before being packaged."
-                  iconURL={"/images/work-process/vector/delivery.svg"}
-                  image={true}
-                  title="Quality Check"
-                  style={{
-                    borderRight: "none",
-                    borderTop: "1px solid #F1F1F1",
-                    m: "0px 10px",
-                    p: "30px 0px",
-                  }}
-                />
-
-                <ServicesCard
-                  desc="We pack your patches securely and ship them promptly to your doorstep—worldwide—ensuring you get them on time and in perfect condition."
-                  iconURL={"/images/work-process/vector/delivery.svg"}
-                  image={true}
-                  title="Fast & Safe Delivery"
-                  style={{
-                    borderRight: "none",
-                    borderTop: "1px solid #F1F1F1",
-                    m: "0px 10px",
-                    p: "30px 0px",
-                  }}
-                />
-              </Box>
+                  // borderBottom:"1px solid #F1F1F1" ,
+                }}
+              />
             </Box>
           </Box>
         </Box>
+      </Box>
+
       </Box>
 
       <Box

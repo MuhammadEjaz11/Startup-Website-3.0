@@ -201,8 +201,10 @@ export default function CustomizedMenus2({
                 {item.hasSubmenu ? (
                   <Box sx={{ position: "relative" }}>
                     <MenuItem
+                            onMouseEnter={() => setIsSubmenuOpen(true)}
+
                       onClick={handleSubmenuToggle}
-                      onMouseEnter={() => setIsSubmenuOpen(true)}
+                      // onMouseEnter={() => setIsSubmenuOpen(true)}
                       sx={{
                         fontSize: "14px",
                         fontFamily: "Inter",
@@ -222,6 +224,7 @@ export default function CustomizedMenus2({
                         />
                         &nbsp;{" "}
                         <Box
+              
                           sx={{
                             fontSize: "14px",
                             
@@ -274,6 +277,8 @@ export default function CustomizedMenus2({
                   </Box>
                 ) : (
                   <MenuItem
+                        onMouseLeave={() => setIsSubmenuOpen(false)}
+
                     onClick={() => handleMenuItemClick(item.route)}
                     sx={{
                       fontSize: "14px",
