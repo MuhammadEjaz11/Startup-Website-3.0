@@ -1,32 +1,20 @@
 import React, { useEffect } from "react";
 import { Box, Button, Typography, Card, colors } from "@mui/material";
-import { Carousel } from "@trendyol-js/react-carousel";
+
 import SectionHeading from "../../Components/SectionHeading";
 import DesignDevelop from "../../Components/DesignDevelop";
 import SectionBox from "../../Components/SectionBox";
 import ideaImage from "../../image/idea-01.svg";
-import aboutImage from "../../image/aboutImage.webp";
+
 import groupOne from "../../assets/about/cotton.svg";
-import groupTwo from "../../image/groupTwo.png";
-import awardOne from "../../image/award_one.png";
-import awardTwo from "../../image/award_two.png";
-import awardThree from "../../image/award_three.png";
-import awardFour from "../../image/award_four.png";
-import awardFive from "../../image/award_five.png";
-import SectionImage from "../../image/SectionImage.png";
-import ImageWeb from "../../image/ImageWeb.png";
-import Frame1 from "../../image/Frame1.png";
-import Vector from "../../image/Vector.png";
-import CustomButton from "../../Components/Button";
 import OurTeam from "../../Components/OurTeam";
-import BlogSlider from "../../Components/OurBlog";
+
 import NewPortfolioCard from "../../Components/NewPortfolioCard";
 import PortfolioSlider from "../../Components/NewPortfolio";
-import Technologies from "../../Components/Technologies";
 import {
   PortfoliosList,
   services1,
-  services2,
+
   TestimoialCard,
 } from "../../../utils";
 import ServiceCard from "../../Components/ServiceCard";
@@ -36,86 +24,36 @@ import gridView from "../../image/grid-view.png";
 import userGroup from "../../image/user-group.png";
 import starSquare from "../../image/star-square.png";
 import arrange from "../../image/arrange.png";
-import workingOne from "../../image/workingOne.png";
-import workingTwo from "../../image/workingTwo.png";
-import workingThree from "../../image/workingThree.png";
-import workingFour from "../../image/workingFour.png";
+
 import workingArrow from "../../image/workingArrow.png";
 import bestChoice from "../../image/best-choice.svg";
 import { Tabs } from "@mui/material";
 import { Tab } from "@mui/material";
 import "keen-slider/keen-slider.min.css";
-import KeenSlider from "keen-slider";
-import { Js } from "../../Components/svg";
-import myReact from "./../../image/react.svg.png";
 
 import { useState } from "react";
-import TechnologiesCard from "../../Components/TechnologiesCard";
+
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import TechnologyCarousel from "../../Components/Carousels/TechnologyCarousel/TechnologyCarousel";
+
 import Testimonial from "../../Components/Testimonial";
 import FAQ from "../../Components/FAQ";
-import SecondFAQSlider from "../../Components/SecondFAQ";
+
 import ContactForm from "../../Components/ContactForm";
 import StyledHeading from "../../Components/StyledHeading";
-import KeenSliderPortfolio from "../../Components/KeenSliderPortfolio";
-import AwardsSlider from "../../Components/AwardSlider";
 
-import work1 from "../../image/work1.webp";
-import work2 from "../../image/work2.webp";
-import work3 from "../../image/work3.webp";
-import work4 from "../../image/work4.webp";
 
 import TecgnologiesComponent from "../../Components/TecgnologiesComponent";
 
 import starRating from '../../image/starRating.png';
 
 
-
-
-
-import BlogOne from '../../image/blog1.webp';
-import BlogTwo from '../../image/blog2.webp';
-import BlogThree from '../../image/blog3.webp';
 import { Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 
-const blogData = [
-  {
-    id: 1,
-    title: "How Agencies Puts Your Audience First",
-    description: "Continue to read more information and updates from the Patch Makers blog and gain new knowledge about Patch Makers and its industry. This way, our team ensures you are updated with relevant information on app development, digital innovation and customer-centric strategies that will keep you on top in today’s competitive technological marketplace. As a result, let us scrutinise how Patch Makers is approaching AI to redefine customer experiences.",
-    image: BlogOne,
-    author: "By Admin",
-    date: "November 11, 2024",
-  },
-  {
-    id: 2,
-    title: "How Agecis Puts Your Audience First",
-    description: "Patch Makers is positioning itself as a cutting-edge organisation in the digital domain, which is currently experiencing radical changes due to the integration of Artificial Intelligence (AI). In this article, we explore how Patch Makers is harnessing AI to design new applications that are much more attuned to users’ requirements on the fly. Find out how particular AI integrated tools work and improve the overall customer experience and application usage. Sustainable App Development: Patch Makers's Green Approach",
-    image: BlogTwo,
-    author: "Admin",
-    date: "November 11, 2024",
-  },
-  {
-    id: 3,
-    title: "How Agecis Puts Your Audience First",
-    description: "At Patch Makers, it is our mission to embrace the new world of sustainable practices and provide green digital solutions. In this article, you will learn about our best practices in creating an energy-efficient app and choosing a cloud provider with clean energy. Find out how Patch Makers ensures that it contributes to environmental causes while offering clients the best digital services. Cybersecurity in App Development: Safety of The Users of Patch Makers’s App 👥",
-    image: BlogThree,
-    author: "Admin",
-    date: "November 11, 2024",
-  },
-]
 const services = [1, 2, 3];
 const Home = () => {
-  const [tab, setTab] = useState("All");
-  const [filteredPortfolioList, setFilteredPortfolioList] =
-    useState(PortfoliosList);
 
-  useEffect(() => {
-    setFilteredPortfolioList(PortfoliosList.filter((e) => e == tab));
-  }, [tab]);
 
   const [dynamicWidth, setDynamicWidth] = useState("100%");
   const [dynamicHeight, setDynamicHeight] = useState(400); // Default height
@@ -911,160 +849,7 @@ const Home = () => {
         />
       </Box>
 
-      <Box
-        sx={{
-          marginTop: { md: "-75px", sm: "40px", xs: "40px" },
-          display: "none",
-          justifyContent: "flex-end",
-          maxWidth: "1532.68px",
-          paddingBottom: "70px",
-          textTransform: "capitalize",
-        }}
-      >
-        <Tabs
-          value={tab}
-          onChange={(e, v) => setTab(v)}
-          aria-label="basic tabs example"
-          indicatorColor="rgba(0,0,0,0)"
-          sx={{
-            textTransform: "capitalize",
-            backgroundColor: "#F7F7F7",
-            padding: "12px 11px",
-            fontFamily: "Inter",
-            fontSize: { xs: "14px", md: "16px" },
-            lineHeight: "1.5",
-            borderRadius: "20px",
-          }}
-        >
-          <Tab
-            value="All"
-            label="All"
-            sx={{
-              color: "#939393",
-              fontSize: { xs: "14px", md: "16px" },
-              textTransform: "capitalize",
-              lineHeight: "1.5",
-              "&::selection": {
-                backgroundColor: "#ffcc00", // Change to your preferred color
-                color: "#ffffff", // Change to your preferred color
-              },
-              "&.Mui-selected": {
-                borderRadius: "15px",
-                backgroundColor: "black",
-                borderBottom: "none",
-                color: "white", // Change text color when selected
-                fontWeight: "bold", // Apply bold font weight when selected
-              },
-            }}
-          />
-          <Tab
-            value="Vector"
-            label="Vector"
-            sx={{
-              textTransform: "capitalize",
-              color: "#939393",
-              fontSize: { xs: "14px", md: "16px" },
-              lineHeight: "1.5",
-              "&::selection": {
-                backgroundColor: "#ffcc00", // Change to your preferred color
-                color: "#ffffff", // Change to your preferred color
-              },
-              "&.Mui-selected": {
-                borderRadius: "15px",
-                backgroundColor: "black",
-                borderBottom: "none",
-                color: "white", // Change text color when selected
-                fontWeight: "bold", // Apply bold font weight when selected
-              },
-            }}
-          />
-          <Tab
-            value="Logo"
-            label="Logo"
-            sx={{
-              textTransform: "capitalize",
-              color: "#939393",
-              fontSize: { xs: "14px", md: "16px" },
-              lineHeight: "1.5",
-              "&::selection": {
-                backgroundColor: "#ffcc00", // Change to your preferred color
-                color: "#ffffff", // Change to your preferred color
-              },
-              "&.Mui-selected": {
-                borderRadius: "15px",
-                backgroundColor: "black",
-                borderBottom: "none",
-                color: "white", // Change text color when selected
-                fontWeight: "bold", // Apply bold font weight when selected
-              },
-            }}
-          />
-          <Tab
-            value="Video"
-            label="Video"
-            sx={{
-              textTransform: "capitalize",
-              color: "#939393",
-              fontSize: { xs: "14px", md: "16px" },
-              lineHeight: "1.5",
-              "&::selection": {
-                backgroundColor: "#ffcc00", // Change to your preferred color
-                color: "#ffffff", // Change to your preferred color
-              },
-              "&.Mui-selected": {
-                borderRadius: "15px",
-                backgroundColor: "black",
-                borderBottom: "none",
-                color: "white", // Change text color when selected
-                fontWeight: "bold", // Apply bold font weight when selected
-              },
-            }}
-          />
-          <Tab
-            value="Stationery"
-            label="Stationery"
-            sx={{
-              textTransform: "capitalize",
-              color: "#939393",
-              fontSize: { xs: "14px", md: "16px" },
-              lineHeight: "1.5",
-              "&::selection": {
-                backgroundColor: "#ffcc00", // Change to your preferred color
-                color: "#ffffff", // Change to your preferred color
-              },
-              "&.Mui-selected": {
-                borderRadius: "15px",
-                backgroundColor: "black",
-                borderBottom: "none",
-                color: "white", // Change text color when selected
-                fontWeight: "bold", // Apply bold font weight when selected
-              },
-            }}
-          />
-          <Tab
-            value="Social Media"
-            label="Social Media"
-            sx={{
-              textTransform: "capitalize",
-              color: "#939393",
-              fontSize: { xs: "14px", md: "16px" },
-              lineHeight: "1.5",
-              "&::selection": {
-                backgroundColor: "#ffcc00", // Change to your preferred color
-                color: "#ffffff", // Change to your preferred color
-              },
-              "&.Mui-selected": {
-                borderRadius: "15px",
-                backgroundColor: "black",
-                borderBottom: "none",
-                color: "white", // Change text color when selected
-                fontWeight: "bold", // Apply bold font weight when selected
-              },
-            }}
-          />
-        </Tabs>
-      </Box>
-
+  
       {/* our portfolio section  */}
 
       <NewPortfolioCard />

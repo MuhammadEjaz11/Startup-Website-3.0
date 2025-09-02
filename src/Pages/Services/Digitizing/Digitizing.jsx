@@ -2,72 +2,27 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 import StyledHeading from "../../../Components/StyledHeading";
-import UpperMainPage from "../../../Components/UpperMainPage";
-import PortfolioCard from "../../../Components/PortfolioCard";
-import ContactForm from "../../../Components/ContactForm";
-// import Carousel from "react-material-ui-carousel";
-// import { Carousel } from '@trendyol-js/react-carousel
-import { Carousel } from "@trendyol-js/react-carousel";
 
-import SecondFAQSlider from "../../../Components/SecondFAQ";
+
 import FAQ from "../../../Components/FAQ";
 
 import ServicesCard from "../../../Components/ServicesCard";
-import image1 from "../../../assets/font/MobileApp/image1.png";
-import image2 from "../../../assets/font/MobileApp/image2.png";
-import image4 from "../../../assets/font/MobileApp/image4.png";
-import image3 from "../../../assets/font/MobileApp/image3.png";
-import Technologies from "../../../Components/Technologies";
-import TechnologyCarousel from "../../../Components/Carousels/TechnologyCarousel/TechnologyCarousel";
 
-import DigitalGroup1 from "../../../assets/font/DigitalMarketing/DigitalGroup1.png";
-import DigitalGroup2 from "../../../assets/font/DigitalMarketing/DigitalGroup2.png";
-import DigitalGroup3 from "../../../assets/font/DigitalMarketing/DigitalGroup3.png";
-import DigitalGroup4 from "../../../assets/font/DigitalMarketing/DigitalGroup4.png";
-
-import sol1 from "../../../assets/font/MobileApp/sol1.png";
-import sol2 from "../../../assets/font/MobileApp/sol2.png";
-import sol3 from "../../../assets/font/MobileApp/sol3.png";
-import sol4 from "../../../assets/font/MobileApp/sol4.png";
 
 import {
-  CustomPackageDetail,
+
   CustomPackageDigitizing,
-  MobileAppCard,
+
   ServiceIcon1,
   ServiceIcon2,
-  ServiceIcon3,
 } from "../../../../utils";
 import ServiceIconBox from "../../../Components/ServiceIconsBox";
 
-// ------------
-import ImageWeb from "../../../image/ImageWeb.png";
-import SectionImage from "../../../image/SectionImage.png";
-import laptopImage from "../../../assets/font/MobileApp/appDevImage.png";
-import Questions from "../../../Components/Questions";
-
-import {
-  PortfoliosList,
-  services1,
-  services2,
-  technologiesCard,
-  TestimoialCard,
-} from "../../../../utils";
 import RoundCircle from "../../../Components/RoundCircle";
 import CustomButton from "../../../Components/Button";
 import LeftRightComponent from "../../../Components/LeftRightComponent";
-import BlogSlider from "../../../Components/OurBlog";
-import MobileAppDevelopmentCost from "../../../Components/MobileAppDevelopment";
+
 import KeenSliderPortfolio from "../../../Components/KeenSliderPortfolio";
-import TecgnologiesComponent from "../../../Components/TecgnologiesComponent";
-
-import app2 from "../../../assets/font/MobileApp/app2.webp";
-import app3 from "../../../assets/font/MobileApp/app3.webp";
-
-import BlogOne from "../../../image/appB1.webp";
-import BlogTwo from "../../../image/appB2.webp";
-import BlogThree from "../../../image/appB3.webp";
-import starRating from "../../../image/starRating.png";
 
 // importing images for solution section
 
@@ -79,9 +34,9 @@ import {
   animateScroll as scroll,
   scrollSpy,
 } from "react-scroll";
-import DesignDevelop from "../../../Components/DesignDevelop";
-import zIndex from "@mui/material/styles/zIndex";
+
 import CustomPackage from "../../../Components/CustomPackage";
+import ContactForm from "../../../Components/ContactForm";
 
 const appDevQuestions = [
   {
@@ -110,70 +65,6 @@ const appDevQuestions = [
   },
 ];
 
-const blogData = [
-  {
-    id: 1,
-    title: "How Apps Put Your Audience First",
-    description:
-      "Learn how modern apps enhance user experience and meet audience expectations with innovative features and seamless functionality.",
-    image: BlogOne,
-    author: "By Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 2,
-    title: "How Apps Put Your Audience First",
-    description:
-      "Discover how investing in mobile applications can drive engagement, boost retention, and accelerate your business growth.",
-    image: BlogTwo,
-    author: "By  Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 3,
-    title: "How Apps Put Your Audience First",
-    description:
-      "Explore the importance of user-focused design and how apps ensure that your customers stay connected and satisfied .",
-    image: BlogThree,
-    author: "By  Admin",
-    date: "April 20, 2024",
-  },
-  // {
-  //   id: 4,
-  //   title: "How Agecis Puts Your Audience First",
-  //   description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-  //   image: BlogTwo,
-  //   author: "Admin",
-  //   date: "April 20, 2024",
-  // },
-];
-
-const SecondFaq = [
-  {
-    id: 1,
-    title: "Experience & Excellence",
-    testimonialText:
-      "Patch Makers combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // A valid video ID
-  },
-  {
-    id: 2,
-    title: "Quality & Dedication",
-    testimonialText:
-      "Our team follows a rigorous testing process, uses industry-leading standards, and prioritizes client feedback to deliver high-quality, scalable solutions.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // Corrected video ID from the URL
-  },
-  {
-    id: 3,
-    title: "Innovation & Creativity",
-    testimonialText:
-      " Patch Makers provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // Same video ID as example
-  },
-];
 
 const serviceApp = [
   {
@@ -244,35 +135,8 @@ const serviceApp3 = [
   },
 ];
 
-const appDevList = [
-  {
-    imageURL: app3,
-    title: "App Development 1",
-    desc: "Mobile App Development",
-    category: "App Development",
-  },
-  {
-    imageURL: app2,
-    title: "App Development 2",
-    desc: "Mobile App Development",
-    category: "App Development",
-  },
-  {
-    imageURL: app3,
-    title: "App Development 3",
-    desc: "Mobile App Development",
-    category: "App Development",
-  },
-  {
-    imageURL: app2,
-    title: "App Development 4",
-    desc: "Mobile App Development",
-    category: "App Development",
-  },
-];
 
 const Digitizing = () => {
-  const [visibleItems, setVisibleItems] = useState(appDevList.slice(0, 4)); // Initial items to show
 
   useEffect(()=>{
     const scrollTo = () => {
@@ -281,37 +145,7 @@ const Digitizing = () => {
     scrollTo()
   },[])
 
-  const loadMoreItems = () => {
-    const newItems = [
-      {
-        imageURL: app3,
-        title: "App Development 5",
-        desc: "Mobile App Development",
-        category: "App Development",
-      },
-      {
-        imageURL: app2,
-        title: "App Development 6",
-        desc: "Mobile App Development",
-        category: "App Development",
-      },
-      {
-        imageURL: app3,
-        title: "App Development 7",
-        desc: "Mobile App Development",
-        category: "App Development",
-      },
-      {
-        imageURL: app2,
-        title: "App Development 8",
-        desc: "Mobile App Development",
-        category: "App Development",
-      },
-    ];
 
-    // Append new items to the existing list
-    setVisibleItems((prevItems) => [...prevItems, ...newItems]);
-  };
 
   const faqData = [
     {
@@ -404,10 +238,6 @@ const Digitizing = () => {
     },
   ];
 
-  const handleClick = () => {
-    loadMoreItems();
-    console.log("button clicked");
-  };
   const navigate = useNavigate();
   return (
     <>

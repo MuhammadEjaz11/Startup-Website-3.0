@@ -4,8 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import { Outlet } from "react-router-dom";
-import VideoIcon from "../../image/Group_1.png";
-import bannerImage from "../../image/bannerImage.webp";
+
 import HeroImage from '../../assets/bannerIcons/banner_img2.svg'
 import BannerReview1 from "../../assets/bannerIcons/facebook_icon.svg";
 import BannerReview2 from "../../assets/bannerIcons/google_icon.svg";

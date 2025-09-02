@@ -1,8 +1,7 @@
 import React from "react";
 import StyledHeading from "./StyledHeading";
 import { Box, Typography } from "@mui/material";
-import AppDevImage from "../assets/font/MobileApp/appDevImage.png";
-// import HeadingImage from '../assets/font/WebDevelopment/HeadingImage.p'
+
 import CustomButton from "./Button";
 import CustomButtonMe from "./CustomButtomMe";
 const LeftRightComponent = ({

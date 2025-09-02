@@ -1,9 +1,7 @@
 
 import React, { useState } from 'react';
 import { Box, Button, TextField, Typography } from '@mui/material';
-import StyledHeading from './StyledHeading';
-import mapImage from '../image/map.png';
-import CustomButton from './Button';
+
 import Contactpage from './ContactPage';
 
 const ContactForm = () => {

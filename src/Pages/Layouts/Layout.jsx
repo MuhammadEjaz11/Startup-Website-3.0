@@ -4,12 +4,9 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import banner from "../../image/banner.png";
+
 import BannerSlider from "../../Components/BannerSlider";
 
-import bannerUpper from "../../image/bannerupper.webp";
-import bannerLower from "../../image/bannerlower.webp";
-import bannerWebP from "../../assets/font/service-banner.png";
 
 function Layout() {
   const [location, setLocation] = useState(null);

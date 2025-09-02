@@ -3,7 +3,6 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { Box } from "@mui/material"; // assuming you're using MUI
 import PortfolioCard from "./PortfolioCard"; // adjust based on your actual file structure
-import { PortfoliosList } from "../../utils";
 
 export default function KeenSliderPortfolio({ filteredPortfolioList, arrayToList }) {
   const [sliderRef, instanceRef] = useKeenSlider({

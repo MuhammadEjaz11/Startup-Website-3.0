@@ -1,42 +1,20 @@
 import React from "react";
-import { useState } from "react";
+
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { Typography } from "@mui/material";
-import Layout from "../../Layouts/Layout";
+
 // import Box from '@mui/material'
 import { Box } from "@mui/material";
-import SectionPeragraph from "../../../Components/SectionPeragraph";
-// import Carousel from 'react-material-ui-carousel'
+
 import StyledHeading from "../../../Components/StyledHeading";
-import groupFrame from "../../../image/groupFrame.png";
+
 import ServicesCard from "../../../Components/ServicesCard";
 import FAQ from "../../../Components/FAQ";
 import LeftRightComponent from "../../../Components/LeftRightComponent";
-import BlogSlider from "../../../Components/OurBlog";
+
 import RoundCircle from "../../../Components/RoundCircle";
-import SecondFAQSlider from "../../../Components/SecondFAQ";
+
 import ContactForm from "../../../Components/ContactForm";
-import Technologies from "../../../Components/Technologies";
-import { OurDigital } from "../../../Components/OurDigital";
-import CustomButton from "../../../Components/Button";
-import DigitalGroup1 from "../../../assets/font/DigitalMarketing/DigitalGroup1.png";
-import DigitalGroup2 from "../../../assets/font/DigitalMarketing/DigitalGroup2.png";
-import DigitalGroup3 from "../../../assets/font/DigitalMarketing/DigitalGroup3.png";
-import DigitalGroup4 from "../../../assets/font/DigitalMarketing/DigitalGroup4.png";
-import sol1 from "../../../assets/font/MobileApp/sol1.png";
-import sol2 from "../../../assets/font/MobileApp/sol2.png";
-import sol3 from "../../../assets/font/MobileApp/sol3.png";
-import sol4 from "../../../assets/font/MobileApp/sol4.png";
 
-import image17 from "../../../assets/font/DigitalMarketing/image17.png";
-import image18 from "../../../assets/font/DigitalMarketing/Rectangle187.png";
-import { WidthFull } from "@mui/icons-material";
-
-import BlogOne from "../../../image/blog1.webp";
-import BlogTwo from "../../../image/blog2.webp";
-import BlogThree from "../../../image/blog3.webp";
 import {
   Button,
   Element,
@@ -49,8 +27,7 @@ import starRating from "../../../image/starRating.png";
 import {
   cutomePatchServiceIcon,
   cutomePatchServiceIcon2,
-  ServiceIcon1,
-  ServiceIcon2,
+
 } from "../../../../utils";
 import ServiceIconBox from "../../../Components/ServiceIconsBox";
 import Portfolio from "../../Portfolio/Portfolio";

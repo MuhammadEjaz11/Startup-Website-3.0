@@ -1,33 +1,17 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { Typography } from "@mui/material";
-import Layout from "../../Layouts/Layout";
-// import Box from '@mui/material'
+
 import { Box } from "@mui/material";
-import SectionPeragraph from "../../../Components/SectionPeragraph";
+
 import CustomButton from "../../../Components/Button";
-import homeSection from "../../../image/homeSection.png";
-import gridView from "../../../image/grid-view.png";
-import userGroup from "../../../image/user-group.png";
-import starSquare from "../../../image/star-square.png";
-import arrange from "../../../image/arrange.png";
-import supportImage from "../../../image/supportImage.png";
+
 import StyledHeading from "../../../Components/StyledHeading";
-import groupFrame from "../../../image/groupFrame.png";
+
 import ServicesCard from "../../../Components/ServicesCard";
 import FAQ from "../../../Components/FAQ";
-import LeftRightComponent from "../../../Components/LeftRightComponent";
-import laptopImage from "../../../assets/font/MobileApp/appDevImage.png";
-import BlogSlider from "../../../Components/OurBlog";
-import SecondFAQSlider from "../../../Components/SecondFAQ";
+
 import ContactForm from "../../../Components/ContactForm";
-import Technologies from "../../../Components/Technologies";
-import image9 from "../../../image/image9.png";
-import image10 from "../../../image/image10.png";
-import image11 from "../../../image/image11.png";
-import image12 from "../../../image/image12.png";
-import TechnologyCarousel from "../../../Components/Carousels/TechnologyCarousel/TechnologyCarousel";
+
 import {
   Button,
   Element,
@@ -36,19 +20,7 @@ import {
   scrollSpy,
 } from "react-scroll";
 
-import {
-  PortfoliosList,
-  services1,
-  services2,
-  technologiesCard,
-  TestimoialCard,
-} from "../../../../utils";
-import TecgnologiesComponent from "../../../Components/TecgnologiesComponent";
 
-import BlogOne from "../../../image/videoB3.webp";
-import BlogThree from "../../../image/blog33.webp";
-import BlogTwo from "../../../image/appB2.webp";
-import starRating from "../../../image/starRating.png";
 import KeenSliderPortfolio from "../../../Components/KeenSliderPortfolio";
 
 const faqData = [

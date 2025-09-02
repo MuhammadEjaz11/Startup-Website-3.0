@@ -1,62 +1,29 @@
 import React from "react";
-import { useState } from "react";
+
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
-import Layout from "../../Layouts/Layout";
+
 // import Box from '@mui/material'
 import {
   Box,
-  Typography,
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
+
 } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+
 import AnimationTabs from "../../../Components/AnimatioonTabs";
-import SolutionFAQ from "../../../Components/SolutionFAQ";
-import SectionPeragraph from "../../../Components/SectionPeragraph";
-import DesignDevelop from "../../../Components/DesignDevelop";
-import CustomButton from "../../../Components/Button";
-import CmsImage from "../../../image/CmsImage.png";
+
 import StyledHeading from "../../../Components/StyledHeading";
-import { Carousel } from "@trendyol-js/react-carousel";
-import PortfolioCard from "../../../Components/PortfolioCard";
+
 import CustomPackage from "../../../Components/CustomPackage";
 import FAQ from "../../../Components/FAQ";
 import LeftRightComponent from "../../../Components/LeftRightComponent";
-import laptopImage from "../../../assets/font/MobileApp/appDevImage.png";
-import BlogSlider from "../../../Components/OurBlog";
-import RoundCircle from "../../../Components/RoundCircle";
-import SecondFAQSlider from "../../../Components/SecondFAQ";
-import ContactForm from "../../../Components/ContactForm";
-import Technologies from "../../../Components/Technologies";
-import TechnologyCarousel from "../../../Components/Carousels/TechnologyCarousel/TechnologyCarousel";
-import Questions from "../../../Components/Questions";
 
-import vid2 from "../../../assets/font/VideoEditing/vid2.webp";
-import vid3 from "../../../assets/font/VideoEditing/vid3.webp";
+import ContactForm from "../../../Components/ContactForm";
 
 import {
-  CustomPackageDetail,
-  CustomPackageDigitizing,
-  CustomPackageVideo,
-  PortfoliosList,
-  services1,
-  services2,
-  technologiesCard,
-  TestimoialCard,
-  webDevQuestions,
-} from "../../../../utils";
-import SectionHeading from "../../../Components/SectionHeading";
-import SectionBox from "../../../Components/SectionBox";
-import KeenSliderPortfolio from "../../../Components/KeenSliderPortfolio";
 
-import BlogOne from "../../../image/videoB1.webp";
-import BlogTwo from "../../../image/videoB2.webp";
-import BlogThree from "../../../image/videoB3.webp";
-import starRating from "../../../image/starRating.png";
+  CustomPackageVideo,
+
+} from "../../../../utils";
+
 
 import {
   Button,

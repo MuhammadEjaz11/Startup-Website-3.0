@@ -1,19 +1,9 @@
 import arrowHead from "./src/image/Vector.png";
-import Frame1 from "./src/image/Frame1.webp";
-import Frame2 from "./src/image/Frame2.webp";
-import Frame3 from "./src/image/Frame3.webp";
-import Frame4 from "./src/image/Frame4.webp";
-import Frame5 from "./src/image/Frame5.webp";
-import Frame6 from "./src/image/Frame6.webp";
+
 import portfolioOne from "./src/image/portfolioOne.png";
 import portfolioTwo from "./src/image/portfolioTwo.png";
-import portfolioThree from "./src/image/portfolioThree.png";
-import portfolioFour from "./src/image/portfolioFour.png";
 
-import MobilePortfolio1 from "./src/assets/font/MobileApp/PortfolioMobile/MobilePortfolio1.png";
-import MobilePortfolio2 from "./src/assets/font/MobileApp/PortfolioMobile/MobilePortfolio2.png";
-import MobilePortfolio3 from "./src/assets/font/MobileApp/PortfolioMobile/MobilePortfolio3.png";
-import MobilePortfolio4 from "./src/assets/font/MobileApp/PortfolioMobile/MobilePortfolio4.png";
+import portfolioFour from "./src/image/portfolioFour.png";
 
 import tech1 from "./src/image/css.svg.png";
 import tech2 from "./src/image/javascript.svg.png";
@@ -24,45 +14,10 @@ import tech6 from "./src/image/typescript.svg.png";
 import tech7 from "./src/image/angular.svg.png";
 import tech8 from "./src/image/jquery.svg.png";
 import starRating from "./src/image/ratingstar.png";
-import Avatar from "./src/image/clientavatar.png";
-import melody from "./src/image/melody-allen.jpg";
-import Bryan from "./src/image/Bryan.jpg";
+
 import chloe from "./src/image/chloe-anderson.jpg";
-import Svg1 from "./src/assets/font/WebDevelopment/SVG1.png";
-import Svg2 from "./src/assets/font/WebDevelopment/SVG2.png";
-import Svg3 from "./src/assets/font/WebDevelopment/SVG3.png";
-import Svg4 from "./src/assets/font/WebDevelopment/SVG4.png";
-import Svg5 from "./src/assets/font/WebDevelopment/SVG5.png";
-import Svg6 from "./src/assets/font/WebDevelopment/SVG6.png";
-import Svg7 from "./src/assets/font/WebDevelopment/SVG7.png";
-import Svg8 from "./src/assets/font/WebDevelopment/SVG8.png";
-import Svg9 from "./src/assets/font/WebDevelopment/SVG9.png";
-import Svg10 from "./src/assets/font/WebDevelopment/SVG10.png";
-import Svg11 from "./src/assets/font/WebDevelopment/SVG11.png";
-import Svg12 from "./src/assets/font/WebDevelopment/SVG12.png";
-import Svg13 from "./src/assets/font/WebDevelopment/SVG13.png";
-import Svg14 from "./src/assets/font/WebDevelopment/SVG14.png";
-import Svg15 from "./src/assets/font/WebDevelopment/SVG15.png";
 
-import { text } from "@fortawesome/fontawesome-svg-core";
 
-import smartPhone from "./src/image/smartPhone.webp";
-
-import cmsDevelop from "./src/image/cmsDevelop.webp";
-
-import webDevelop from "./src/image/webDevelop.webp";
-
-import CustomDevelop from "./src/image/CustomDevelop.webp";
-
-import Digital from "./src/image/Digital.webp";
-
-import Video from "./src/image/Video.webp";
-
-import Graphic from "./src/image/Graphic.webp";
-
-import Support from "./src/image/Support.webp";
-
-import Seo from "./src/image/Seo.webp";
 
 export const webDevQuestions = [
   {
@@ -310,30 +265,6 @@ export const services1 = [
   },
 ];
 
-export const services2 = [
-  {
-    iconURL: Frame4,
-    title: "Video Animation",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    btnText: "Read More",
-    btnURL: arrowHead,
-  },
-  {
-    iconURL: Frame5,
-    title: "Web Design",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    btnText: "Read More",
-    btnURL: arrowHead,
-  },
-  {
-    iconURL: Frame6,
-    title: "Logo Design",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    btnText: "Read More",
-    btnURL: arrowHead,
-  },
-];
-
 export const ServiceIcon1 = [
   {
     iconURL: "/images/all-services/EditRevision Free.png",
@@ -379,28 +310,7 @@ export const ServiceIcon2 = [
   },
 ];
 
-export const ServiceIcon3 = [
-  {
-    iconURL: Svg11,
-    title: "Logistics",
-  },
-  {
-    iconURL: Svg12,
-    title: "Tech & IT",
-  },
-  {
-    iconURL: Svg13,
-    title: "Non-Profit",
-  },
-  {
-    iconURL: Svg14,
-    title: "Automotive",
-  },
-  {
-    iconURL: Svg15,
-    title: "Travel & Tourism",
-  },
-];
+
 
 export const cutomePatchServiceIcon = [
   {
@@ -439,91 +349,8 @@ export const cutomePatchServiceIcon2 = [
   },
 ];
 
-export const ServiceIcon = [
-  {
-    iconURL: Svg1,
-    title: "eCommerce",
-  },
-  {
-    iconURL: Svg2,
-    title: "Fintech",
-  },
-  {
-    iconURL: Svg3,
-    title: "Healthcare",
-  },
-  {
-    iconURL: Svg4,
-    title: "Education",
-  },
-  {
-    iconURL: Svg5,
-    title: "Social Networking",
-  },
-  {
-    iconURL: Svg6,
-    title: "Hospitality",
-  },
-  {
-    iconURL: Svg7,
-    title: "Entertainment",
-  },
-  {
-    iconURL: Svg8,
-    title: "Government",
-  },
-  {
-    iconURL: Svg9,
-    title: "Real Estate",
-  },
-  {
-    iconURL: Svg10,
-    title: "Business",
-  },
-  {
-    iconURL: Svg11,
-    title: "Logistics",
-  },
-  {
-    iconURL: Svg12,
-    title: "Tech & IT",
-  },
-  {
-    iconURL: Svg13,
-    title: "Non-Profit",
-  },
-  {
-    iconURL: Svg14,
-    title: "Automotive",
-  },
-  {
-    iconURL: Svg15,
-    title: "Travel & Tourism",
-  },
-];
 
-export const OurServiceBox = [
-  {
-    iconURL: Svg1,
-    title: "Video Animation",
-  },
-  {
-    iconURL: Svg2,
-    title: "Fintech",
-  },
-  {
-    iconURL: Svg3,
-    title: "Healthcare",
-  },
-  {
-    iconURL: Svg4,
-    title: "Education",
-  },
-  {
-    iconURL: Svg5,
-    title: "Social Networking",
-  },
-];
+
 export const PortfoliosList = [
   {
     imageURL: portfolioOne,
@@ -551,32 +378,6 @@ export const PortfoliosList = [
   },
   {
     imageURL: portfolioFour,
-    title: "UI UX Design",
-    desc: "SaaS Dashboard E Commerce",
-    category: "Social Media",
-  },
-];
-export const MobileAppCard = [
-  {
-    imageURL: MobilePortfolio1,
-    title: "UI UX Design",
-    desc: "SaaS Dashboard E Commerce",
-    category: "Social Media",
-  },
-  {
-    imageURL: MobilePortfolio2,
-    title: "UI UX Design",
-    desc: "SaaS Dashboard E Commerce",
-    category: "Social Media",
-  },
-  {
-    imageURL: MobilePortfolio3,
-    title: "UI UX Design",
-    desc: "SaaS Dashboard E Commerce",
-    category: "Social Media",
-  },
-  {
-    imageURL: MobilePortfolio4,
     title: "UI UX Design",
     desc: "SaaS Dashboard E Commerce",
     category: "Social Media",

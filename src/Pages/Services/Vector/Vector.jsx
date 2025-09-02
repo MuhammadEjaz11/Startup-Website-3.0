@@ -1,35 +1,18 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { Typography } from "@mui/material";
-import Layout from "../../Layouts/Layout";
+
 // import Box from '@mui/material'
 import { Box } from "@mui/material";
-import SectionPeragraph from "../../../Components/SectionPeragraph";
-import CustomButton from "../../../Components/Button";
-import image5 from "../../../image/image5.png";
-import image6 from "../../../image/image6.png";
-import image7 from "../../../image/image7.png";
-import image8 from "../../../image/image8.png";
-import GroupImage from "../../../image/GroupImage.png";
-import SectionHeading from "../../../Components/SectionHeading";
-import StyledHeading from "../../../Components/StyledHeading";
-import frames from "../../../image/Frame.png";
-import ServicesCard from "../../../Components/ServicesCard";
-import { BorderBottom } from "@mui/icons-material";
-import DesignDevelop from "../../../Components/DesignDevelop";
-import FAQ from "../../../Components/FAQ";
-import LeftRightComponent from "../../../Components/LeftRightComponent";
-import Drive from "../../../image/Drive.png";
-import laptopImage from "../../../assets/font/MobileApp/appDevImage.png";
-import BlogSlider from "../../../Components/OurBlog";
-import SecondFAQSlider from "../../../Components/SecondFAQ";
-import ContactForm from "../../../Components/ContactForm";
 
-import BlogOne from "../../../image/videoB3.webp";
-import BlogThree from "../../../image/blog33.webp";
-import BlogTwo from "../../../image/appB2.webp";
-import starRating from "../../../image/starRating.png";
+import CustomButton from "../../../Components/Button";
+
+import StyledHeading from "../../../Components/StyledHeading";
+
+import ServicesCard from "../../../Components/ServicesCard";
+
+import FAQ from "../../../Components/FAQ";
+
+import ContactForm from "../../../Components/ContactForm";
 
 // Vector service images
 import logoVectorization from "../../../../public/images/vector-service/Logo Vectorization.png";

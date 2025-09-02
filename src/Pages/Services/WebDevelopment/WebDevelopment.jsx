@@ -1,50 +1,16 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React, { useEffect } from "react";
 import LeftRightComponent from "../../../Components/LeftRightComponent";
-import personsImage from "../../../assets/font/WebDevelopment/personImage.webp";
-import personsImage1 from "../../../assets/font/WebDevelopment/headingImage.webp";
 
 import ServicesCard from "../../../Components/ServicesCard";
-import service1 from "../../../assets/font/WebDevelopment/service1.png";
-import service2 from "../../../assets/font/WebDevelopment/service2.png";
-import service3 from "../../../assets/font/WebDevelopment/service3.png";
-import service4 from "../../../assets/font/WebDevelopment/service4.png";
-import { Carousel } from "@trendyol-js/react-carousel";
-import PortfolioCard from "../../../Components/PortfolioCard";
-import { technologiesCard } from "../../../../utils";
+
 import StyledHeading from "../../../Components/StyledHeading";
-import Technologies from "../../../Components/Technologies";
-import TechnologyCarousel from "../../../Components/Carousels/TechnologyCarousel/TechnologyCarousel";
+
 import RoundCircle from "../../../Components/RoundCircle";
-import SectionImage from "../../../image/SectionImage.png";
-import laptopImage from "../../../assets/font/MobileApp/appDevImage.png";
-import ImageWeb from "../../../image/ImageWeb.png";
+
+
 import FAQ from "../../../Components/FAQ";
 
-import sol1 from "../../../assets/font/MobileApp/sol1.png";
-import sol2 from "../../../assets/font/MobileApp/sol2.png";
-import sol3 from "../../../assets/font/MobileApp/sol3.png";
-import sol4 from "../../../assets/font/MobileApp/sol4.png";
-import CustomButton from "../../../Components/Button";
-import Questions from "../../../Components/Questions";
-import SecondFAQSlider from "../../../Components/SecondFAQ";
-import BlogSlider from "../../../Components/OurBlog";
-import { PortfoliosList } from "../../../../utils";
-import {
-  ServiceIcon1,
-  ServiceIcon2,
-  ServiceIcon3,
-  ServiceIcon,
-} from "../../../../utils";
-import ServiceCard from "../../../Components/ServiceCard";
-import ServiceIconBox from "../../../Components/ServiceIconsBox";
-import KeenSliderPortfolio from "../../../Components/KeenSliderPortfolio";
-import TecgnologiesComponent from "../../../Components/TecgnologiesComponent";
-
-import BlogOne from "../../../image/blog12.webp";
-import BlogTwo from "../../../image/blog22.webp";
-import BlogThree from "../../../image/blog33.webp";
-import starRating from "../../../image/starRating.png";
 
 import web1 from "../../../assets/font/WebDevelopment/1.jpg";
 import web2 from "../../../assets/font/WebDevelopment/2.jpg";
@@ -64,36 +30,10 @@ import {
   scrollSpy,
 } from "react-scroll";
 
-import DesignDevelop from "../../../Components/DesignDevelop";
 import ContactForm from "../../../Components/ContactForm";
 import { useNavigate } from "react-router-dom";
+import KeenSliderPortfolio from "../../../Components/KeenSliderPortfolio";
 
-const webDevQuestions = [
-  {
-    id: 1,
-    title: "Q1. Frontend Web Development",
-    content:
-      "We craft visually stunning, responsive designs that engage users and offer seamless navigation experiences.",
-  },
-  {
-    id: 2,
-    title: "Q2. Backend Development",
-    content:
-      "Our backend solutions ensure robust, secure, and scalable systems to support high-performing websites.",
-  },
-  {
-    id: 3,
-    title: "Q3. Full-Stack Development",
-    content:
-      "From design to deployment, our full-stack development services cover both frontend and backend, ensuring a cohesive solution.",
-  },
-  {
-    id: 4,
-    title: "Q4. CMS Solutions",
-    content:
-      "Simplify your content management with our custom CMS platforms that allow for easy updates, modifications, and scaling without technical expertise.",
-  },
-];
 
 const serviceApp = [
   {
@@ -174,105 +114,7 @@ const webDevList = [
   },
 ];
 
-// const blogData = [
-//   {
-//     id: 1,
-//     title: "How Agecis Puts Your Audience First",
-//     description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-//     image: BlogOne,
-//     author: "Admin",
-//     date: "April 20, 2024",
-//   },
-//   {
-//     id: 2,
-//     title: "How Agecis Puts Your Audience First",
-//     description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-//     image: BlogTwo,
-//     author: "Admin",
-//     date: "April 20, 2024",
-//   },
-//   {
-//     id: 3,
-//     title: "How Agecis Puts Your Audience First",
-//     description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-//     image: BlogOne,
-//     author: "Admin",
-//     date: "April 20, 2024",
-//   },
-//   {
-//     id: 4,
-//     title: "How Agecis Puts Your Audience First",
-//     description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-//     image: BlogTwo,
-//     author: "Admin",
-//     date: "April 20, 2024",
-//   },
-// ]
 
-const blogData = [
-  {
-    id: 1,
-    title: "How Apps Put Your Audience First",
-    description:
-      "Learn how modern apps enhance user experience and meet audience expectations with innovative features and seamless functionality.",
-    image: BlogOne,
-    author: "By Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 2,
-    title: "How Apps Put Your Audience First",
-    description:
-      "Discover how investing in mobile applications can drive engagement, boost retention, and accelerate your business growth.",
-    image: BlogTwo,
-    author: "By  Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 3,
-    title: "How Apps Put Your Audience First",
-    description:
-      "Explore the importance of user-focused design and how apps ensure that your customers stay connected and satisfied .",
-    image: BlogThree,
-    author: "By  Admin",
-    date: "April 20, 2024",
-  },
-  // {
-  //   id: 4,
-  //   title: "How Agecis Puts Your Audience First",
-  //   description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-  //   image: BlogTwo,
-  //   author: "Admin",
-  //   date: "April 20, 2024",
-  // },
-];
-
-const SecondFaq = [
-  {
-    id: 1,
-    title: "Experience & Excellence",
-    testimonialText:
-      "Patch Makers combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // A valid video ID
-  },
-  {
-    id: 2,
-    title: "Quality & Dedication",
-    testimonialText:
-      "Our team follows a rigorous testing process, uses industry-leading standards, and prioritizes client feedback to deliver high-quality, scalable solutions.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // Corrected video ID from the URL
-  },
-  {
-    id: 3,
-    title: "Innovation & Creativity",
-    testimonialText:
-      " Patch Makers provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // Same video ID as example
-  },
-];
 
 const faqData = [
   {

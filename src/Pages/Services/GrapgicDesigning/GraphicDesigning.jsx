@@ -2,42 +2,18 @@ import React, { useEffect } from "react";
 
 import { Box } from "@mui/material";
 import LeftRightComponent from "../../../Components/LeftRightComponent";
-import GraphicCard from "../../../Components/GraphicCard";
-import Graphic from "../../../assets/font/GraphicDesigning/bannerImage.png";
 import FAQ from "../../../Components/FAQ";
 
-// Images for mapping
-import image1 from "../../../assets/font/GraphicDesigning/image1.png";
-import image2 from "../../../assets/font/GraphicDesigning/image2.png";
-import image3 from "../../../assets/font/GraphicDesigning/image3.png";
-import image4 from "../../../assets/font/GraphicDesigning/image4.png";
-import image5 from "../../../assets/font/GraphicDesigning/image5.png";
-import image6 from "../../../assets/font/GraphicDesigning/image6.png";
-import heading from "../../../assets/font/GraphicDesigning/headingImage.png";
 
-import { Carousel } from "@trendyol-js/react-carousel";
-import PortfolioCard from "../../../Components/PortfolioCard";
-import { PortfoliosList } from "../../../../utils";
+
 import StyledHeading from "../../../Components/StyledHeading";
 import RoundCircle from "../../../Components/RoundCircle";
 import ServicesCard from "../../../Components/ServicesCard";
 
-import laptopImage from "../../../assets/font/MobileApp/appDevImage.png";
-
-import sol1 from "../../../assets/font/MobileApp/sol1.png";
-import sol2 from "../../../assets/font/MobileApp/sol2.png";
-import sol3 from "../../../assets/font/MobileApp/sol3.png";
-import sol4 from "../../../assets/font/MobileApp/sol4.png";
-import BlogSlider from "../../../Components/OurBlog";
-import SecondFAQSlider from "../../../Components/SecondFAQ";
 import KeenSliderPortfolio from "../../../Components/KeenSliderPortfolio";
 import CustomButton from "../../../Components/Button";
 
-import grap2 from "../../../assets/font/GraphicDesigning/grap2.webp";
 
-import BlogOne from "../../../image/videoB1.webp";
-import BlogThree from "../../../image/blog33.webp";
-import BlogTwo from "../../../image/appB2.webp";
 import starRating from "../../../image/starRating.png";
 
 import logo1 from "../../../assets/font/Logo/l1.jpg";
@@ -142,44 +118,6 @@ const SecondFaq = [
   },
 ];
 
-const blogData = [
-  {
-    id: 1,
-    title: "How Agecis Puts Your Audience First",
-    description:
-      "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-    image: BlogOne,
-    author: "Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 2,
-    title: "How Agecis Puts Your Audience First",
-    description:
-      "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-    image: BlogTwo,
-    author: "Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 3,
-    title: "How Agecis Puts Your Audience First",
-    description:
-      "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-    image: BlogThree,
-    author: "Admin",
-    date: "April 20, 2024",
-  },
-  {
-    id: 4,
-    title: "How Agecis Puts Your Audience First",
-    description:
-      "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
-    image: BlogTwo,
-    author: "Admin",
-    date: "April 20, 2024",
-  },
-];
 
 const graphicListDetail = [
   {
@@ -238,38 +176,6 @@ const graphicListDetail = [
   },
 ];
 
-const graphicData = [
-  {
-    iconURL: image1,
-    title: "Logo Design",
-    desc: "Your logo is the face of your brand. We specialize in designing logos that increase brand recognition by 80% and communicate your business identity effectively.",
-  },
-  {
-    iconURL: image2,
-    title: "Social Media Graphics",
-    desc: "Stand out on platforms like Instagram, Facebook, and LinkedIn with engaging social media visuals. Our designs are optimized to grab attention, drive engagement, and increase conversions.",
-  },
-  {
-    iconURL: image3,
-    title: "Marketing Materials",
-    desc: "From eye-catching brochures to impactful flyers, our marketing designs ensure your message is delivered effectively. Professionally designed materials can boost campaign success by up to 65%.",
-  },
-  {
-    iconURL: image4,
-    title: "Website Graphics",
-    desc: "Enhance your website’s look and feel with responsive, high-quality visuals. We ensure your graphics align with your brand identity and provide an excellent user experience.",
-  },
-  // {
-  //   iconURL: image5,
-  //   title: "Creative Solutions",
-  //   desc: "Offering innovative solutions for all your creative needs.",
-  // },
-  // {
-  //   iconURL: image6,
-  //   title: "Affordable Packages",
-  //   desc: "Get affordable packages that suit your business requirements.",
-  // },
-];
 
 const serviceApp = [
   {

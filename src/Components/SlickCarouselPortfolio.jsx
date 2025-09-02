@@ -13,11 +13,6 @@ import portfolioTwo from "../image/portfolioTwo.png";
 import portfolioThree from "../image/portfolioThree.png";
 import portfolioFour from "../image/portfolioFour.png";
 
-import socialMediaOne from "../image/portfolioOne.png";
-import socialMediaTwo from "../image/portfolioTwo.png";
-import socialMediaThree from "../image/portfolioThree.png";
-import socialMediaFour from "../image/portfolioFour.png";
-
 export default function PortfolioSlider() {
   const allPortfolios = [
     {

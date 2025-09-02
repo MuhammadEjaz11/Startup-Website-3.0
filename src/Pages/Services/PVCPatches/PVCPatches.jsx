@@ -1,18 +1,9 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { Typography } from "@mui/material";
-import Layout from "../../Layouts/Layout";
-// import Box from '@mui/material'
+
 import { Box } from "@mui/material";
-import SectionPeragraph from "../../../Components/SectionPeragraph";
 import CustomButton from "../../../Components/Button";
-import homeSection from "../../../image/homeSection.png";
-import gridView from "../../../image/grid-view.png";
-import userGroup from "../../../image/user-group.png";
-import starSquare from "../../../image/star-square.png";
-import arrange from "../../../image/arrange.png";
-import supportImage from "../../../image/supportImage.png";
+
 import StyledHeading from "../../../Components/StyledHeading";
 
 import ServicesCard from "../../../Components/ServicesCard";
@@ -30,19 +21,13 @@ import {
 
 import {
   borderOptions,
-  PortfoliosList,
+
   serviceApp,
-  services1,
-  services2,
-  technologiesCard,
-  TestimoialCard,
+
 } from "../../../../utils";
 import TecgnologiesComponent from "../../../Components/TecgnologiesComponent";
 
-import BlogOne from "../../../image/videoB3.webp";
-import BlogThree from "../../../image/blog33.webp";
-import BlogTwo from "../../../image/appB2.webp";
-import starRating from "../../../image/starRating.png";
+
 import KeenSliderPortfolio from "../../../Components/KeenSliderPortfolio";
 
 const faqData = [
