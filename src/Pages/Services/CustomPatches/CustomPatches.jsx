@@ -22,7 +22,6 @@ import {
   animateScroll as scroll,
   scrollSpy,
 } from "react-scroll";
-import starRating from "../../../image/starRating.png";
 
 import {
   cutomePatchServiceIcon,

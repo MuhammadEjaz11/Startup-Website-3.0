@@ -3,60 +3,26 @@ import { Box, Typography, Tabs, Tab } from "@mui/material";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
-import tech1 from "../image/AI.svg"
-import tech2 from "../image/Corel.svg"
-import tech3 from "../image/dg pulse.svg"
-import tech4 from "../image/figma.svg"
-import tech5 from "../image/Pr.svg"
-import tech6 from "../image/Ps.svg"
-import tech7 from "../image/tajima.svg"
-import tech8 from "../image/wilcone.svg"
 import StyledHeading from "./StyledHeading";
 
 // Arrays for skills within the same component
 const frontend = [
-  { image: tech1, type: "Ai" },
-  { image: tech2, type: "Corel" },
-  { image: tech3, type: "DG Pulse" },
-  { image: tech4, type: "Figma" },
-  { image: tech5, type: "Pr" },
-  { image: tech6, type: "Ps" },
-  { image: tech7, type: "Tajima" },
-  { image: tech8, type: "Wilcone" },
+  { image: "/images/software-logo/AI.svg", type: "Ai" },
+  { image: "/images/software-logo/Corel.svg", type: "Corel" },
+  { image: "/images/software-logo/dg pulse.svg", type: "DG Pulse" },
+  { image: "/images/software-logo/figma.svg", type: "Figma" },
+  { image:  "/images/software-logo/Pr.svg", type: "Pr" },
+  { image:  "/images/software-logo/Ps.svg", type: "Ps" },
+  { image:  "/images/software-logo/tajima.svg", type: "Tajima" },
+  { image: "/images/software-logo/wilcone.svg", type: "Wilcone" },
 ];
 
-const backend = [
-  { image: tech4, type: "React Js" },
-  { image: tech6, type: "D3 Js" },
-  { image: tech3, type: "Vue Js" },
-  { image: tech7, type: "JQuery" },
-  { image: tech2, type: "JavaScript" },
-  { image: tech8, type: "TypeScript" },
-  { image: tech5, type: "Angular Js" },
-  { image: tech1, type: "CSS" },
-];
-
-const database = [
-  { image: tech8, type: "TypeScript" },
-  { image: tech5, type: "Angular Js" },
-  { image: tech7, type: "JQuery" },
-  { image: tech6, type: "D3 Js" },
-  { image: tech4, type: "React Js" },
-  { image: tech2, type: "JavaScript" },
-  { image: tech1, type: "CSS" },
-  { image: tech3, type: "Vue Js" },
-];
 
 const TecgnologiesComponent = ({ title, heading1, heading2, content, content2 }) => {
   const [tab, setTab] = useState("Front-end");
   const [data, setData] = useState(frontend);
 
-  // Dynamic data update based on tab selection
-  useEffect(() => {
-    if (tab === "Front-end") setData(frontend);
-    else if (tab === "Back-end") setData(backend);
-    else if (tab === "Database") setData(database);
-  }, [tab]);
+
 
   const renderBoldText = (text) => {
     const parts = text.split(/(\*.*?\*)/g); // Split the text on `*...*`
@@ -185,42 +151,7 @@ const TecgnologiesComponent = ({ title, heading1, heading2, content, content2 })
         }
       </Box>
 
-      {/* Tabs for selecting different skill categories */}
-      {/* <Box
-        sx={{
-          margin: "0 auto",
-          paddingX: { lg: "20px", md: "20px", xs: "20px" },
-          marginTop: "25px",
-          display: "flex",
-          justifyContent: { xs: "center", lg: "flex-end" },
-          maxWidth: "1532.68px",
-          paddingBottom: "70px",
-        }}
-      >
-        <Tabs
-          value={tab}
-          onChange={(e, v) => setTab(v)}
-          aria-label="basic tabs example"
-          indicatorColor="rgba(0,0,0,0)"
-        >
-          <Tab
-            value="Front-end"
-            label="Front-end"
-            sx={tabStyles(tab === "Front-end")}
-          />
-          <Tab
-            value="Back-end"
-            label="Back-end"
-            sx={tabStyles(tab === "Back-end")}
-          />
-          <Tab
-            value="Database"
-            label="Database"
-            sx={tabStyles(tab === "Database")}
-          />
-        </Tabs>
-      </Box> */}
-
+      
       {/* Carousel for the selected tab */}
       <Box sx={{mt:'40px'}} ref={sliderRef} className="keen-slider" swiping={false}>
         {data.map((item, index) => (

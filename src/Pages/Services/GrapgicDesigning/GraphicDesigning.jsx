@@ -13,9 +13,6 @@ import ServicesCard from "../../../Components/ServicesCard";
 import KeenSliderPortfolio from "../../../Components/KeenSliderPortfolio";
 import CustomButton from "../../../Components/Button";
 
-
-import starRating from "../../../image/starRating.png";
-
 import logo1 from "../../../assets/font/Logo/l1.jpg";
 import logo2 from "../../../assets/font/Logo/l2.jpg";
 import logo3 from "../../../assets/font/Logo/l3.jpg";
@@ -89,32 +86,6 @@ const faqData = [
     question: "How can I get started?",
     answer:
       "Simply reach out to us with your project details, and we'll guide you through the next steps. You can contact us via email, social media, or through our website.",
-  },
-];
-const SecondFaq = [
-  {
-    id: 1,
-    title: "Experience & Excellence",
-    testimonialText:
-      "Patch Makers combines years of experience, cutting-edge technology, and a client-centric approach to deliver exceptional solutions tailored to your needs.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // A valid video ID
-  },
-  {
-    id: 2,
-    title: "Quality & Dedication",
-    testimonialText:
-      "Our team follows a rigorous testing process, uses industry-leading standards, and prioritizes client feedback to deliver high-quality, scalable solutions.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // Corrected video ID from the URL
-  },
-  {
-    id: 3,
-    title: "Innovation & Creativity",
-    testimonialText:
-      " Patch Makers provides a range of services, including Mobile App Development, Custom Software Development, Web Design, and Digital Marketing—all designed to drive innovation and results.",
-    starRating: starRating,
-    videoId: "mZ5hnNRBFsc", // Same video ID as example
   },
 ];
 

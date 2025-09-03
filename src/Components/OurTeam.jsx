@@ -5,10 +5,6 @@ import memberTwo from "../image/chloe.png";
 import memberThree from "../image/memberThree-min.webp";
 import memberFour from "../image/david.png";
 
-import instaIcon from "../image/InstagramIcon.png";
-import fbIcon from "../image/facebookIcon.png";
-import linkdinIcon from "../image/LinkedinIcon.png";
-
 const teamArra = [
   {
     image: memberOne,

@@ -1,20 +1,6 @@
 import arrowHead from "./src/image/Vector.png";
 
-import portfolioOne from "./src/image/portfolioOne.png";
-import portfolioTwo from "./src/image/portfolioTwo.png";
-
-import portfolioFour from "./src/image/portfolioFour.png";
-
-import tech1 from "./src/image/css.svg.png";
-import tech2 from "./src/image/javascript.svg.png";
-import tech3 from "./src/image/vue.svg.png";
-import tech4 from "./src/image/react.svg.png";
-import tech5 from "./src/image/d3.svg.png";
-import tech6 from "./src/image/typescript.svg.png";
-import tech7 from "./src/image/angular.svg.png";
-import tech8 from "./src/image/jquery.svg.png";
 import starRating from "./src/image/ratingstar.png";
-
 import chloe from "./src/image/chloe-anderson.jpg";
 
 
@@ -73,147 +59,7 @@ export const cmsDevQuestions = [
   },
 ];
 
-export const frontend = [
-  {
-    image: tech1,
-    type: "CSS",
-  },
-  {
-    image: tech2,
-    type: "JavaScript",
-  },
-  {
-    image: tech3,
-    type: "Vue Js",
-  },
-  {
-    image: tech4,
-    type: "React Js",
-  },
-  {
-    image: tech5,
-    type: "Angular Js",
-  },
-  {
-    image: tech6,
-    type: "D3 Js",
-  },
-  {
-    image: tech7,
-    type: "JQuery",
-  },
-  {
-    image: tech8,
-    type: "TypeScript",
-  },
-];
 
-export const backend = [
-  {
-    image: tech3,
-    type: "Vue Js",
-  },
-  {
-    image: tech6,
-    type: "D3 Js",
-  },
-  {
-    image: tech5,
-    type: "Angular Js",
-  },
-
-  {
-    image: tech8,
-    type: "TypeScript",
-  },
-  {
-    image: tech7,
-    type: "JQuery",
-  },
-  {
-    image: tech1,
-    type: "CSS",
-  },
-  {
-    image: tech2,
-    type: "JavaScript",
-  },
-  {
-    image: tech4,
-    type: "React Js",
-  },
-];
-
-export const database = [
-  {
-    image: tech3,
-    type: "Vue Js",
-  },
-  {
-    image: tech1,
-    type: "CSS",
-  },
-
-  {
-    image: tech6,
-    type: "D3 Js",
-  },
-  {
-    image: tech2,
-    type: "JavaScript",
-  },
-  {
-    image: tech8,
-    type: "TypeScript",
-  },
-  {
-    image: tech7,
-    type: "JQuery",
-  },
-  {
-    image: tech4,
-    type: "React Js",
-  },
-  {
-    image: tech5,
-    type: "Angular Js",
-  },
-];
-
-export const technologiesCard = [
-  {
-    image: tech1,
-    type: "CSS",
-  },
-  {
-    image: tech2,
-    type: "JavaScript",
-  },
-  {
-    image: tech3,
-    type: "Vue Js",
-  },
-  {
-    image: tech4,
-    type: "React Js",
-  },
-  {
-    image: tech5,
-    type: "Angular Js",
-  },
-  {
-    image: tech6,
-    type: "D3 Js",
-  },
-  {
-    image: tech7,
-    type: "JQuery",
-  },
-  {
-    image: tech8,
-    type: "TypeScript",
-  },
-];
 export const services1 = [
   {
     iconURL: "/images/home_services_icon/digitizing.png",
@@ -351,38 +197,6 @@ export const cutomePatchServiceIcon2 = [
 
 
 
-export const PortfoliosList = [
-  {
-    imageURL: portfolioOne,
-    title: "UI UX Design",
-    desc: "SaaS Dashboard E Commerce",
-    category: "Website",
-  },
-  {
-    imageURL: portfolioTwo,
-    title: "UI UX Design",
-    desc: "SaaS Dashboard E Commerce",
-    category: "Logo",
-  },
-  {
-    imageURL: portfolioOne,
-    title: "UI UX Design",
-    desc: "SaaS Dashboard E Commerce",
-    category: "Video",
-  },
-  {
-    imageURL: portfolioTwo,
-    title: "UI UX Design",
-    desc: "SaaS Dashboard E Commerce",
-    category: "Stationary",
-  },
-  {
-    imageURL: portfolioFour,
-    title: "UI UX Design",
-    desc: "SaaS Dashboard E Commerce",
-    category: "Social Media",
-  },
-];
 
 export const TestimoialCard = [
   {

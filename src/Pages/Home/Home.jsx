@@ -12,7 +12,7 @@ import OurTeam from "../../Components/OurTeam";
 import NewPortfolioCard from "../../Components/NewPortfolioCard";
 import PortfolioSlider from "../../Components/NewPortfolio";
 import {
-  PortfoliosList,
+
   services1,
 
   TestimoialCard,
@@ -45,8 +45,6 @@ import StyledHeading from "../../Components/StyledHeading";
 
 import TecgnologiesComponent from "../../Components/TecgnologiesComponent";
 
-import starRating from '../../image/starRating.png';
-
 
 import { Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
@@ -67,32 +65,6 @@ const Home = () => {
     scrollTo()
   },[])
 
-  const SecondFaq = [
-    {
-      id: 1,
-      title: 'Experience & Excellence',
-      testimonialText:
-        "Patch Makers’s team ought to have a rich understanding of the subject matter and that comes through loud and clear in the materials they deliver. The delay, which was the issue of major concern, only ended as we waited a little longer, though the final output was even better than what we expected.",
-      starRating: starRating,
-      videoId: 'mZ5hnNRBFsc', // A valid video ID
-    },
-    {
-      id: 2,
-      title: 'Quality & Dedication',
-      testimonialText:
-        "The Patch Makers has been motivated our team throughout the project. They were engaged with us throughout the process to make sure that what we wanted was done. Our communication problems which arose from misunderstanding of our initial needs were promptly addressed with a solution that met our needs.",
-      starRating: starRating,
-      videoId: 'mZ5hnNRBFsc', // Corrected video ID from the URL
-    },
-    {
-      id: 3,
-      title: 'Innovation & Creativity',
-      testimonialText:
-        "We were impressed with their offer and the way they came up with some of the solutions. They came up with distinct strategies that made our project stand PAGE  out in the market. There were some times that made me question the process a little but Patch Makers certainly rose to the occasion in terms of creativity and added a lot of value to our project.",
-      starRating: starRating,
-      videoId: 'mZ5hnNRBFsc', // Same video ID as example
-    },
-  ]
 
   const faqData = [
     { 
