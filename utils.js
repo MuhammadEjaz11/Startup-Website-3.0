@@ -392,7 +392,7 @@ export const bannerData = {
 
     text: "Digitizing is the essential process of converting any artwork, logo, or design into a digital embroidery file that can be read and executed by an embroidery machine. Unlike simply uploading a graphic file, digitizing requires a skilled technician called a digitizer to recreate the design using a specialized embroidery software. The process involves assigning stitch types, directions, lengths, and densities to different parts of the design. Each element whether it's a small detail in a logo or the background fill—must be manually programmed to ensure the machine sews it correctly. This process transforms your flat image into a stitch-ready file, typically in formats like DST, PES, EXP, or JEF depending on the machine being used.",
     images: [
-      "/images/our-portfolio/digitize/one.jpg",
+      "/images/our-portfolio/digitize/eight.jpg",
       "/images/our-portfolio/digitize/two.jpg",
       "/images/our-portfolio/digitize/three.jpg",
     ],

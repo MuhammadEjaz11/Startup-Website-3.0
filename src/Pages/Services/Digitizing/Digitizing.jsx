@@ -175,7 +175,7 @@ const Digitizing = () => {
 
   const digitizingList = [
     {
-      imageURL: "/images/our-portfolio/digitize/one.jpg",
+      imageURL: "/images/our-portfolio/digitize/eight.jpg",
       title: "Website Project 1",
       desc: "Web Development",
       category: "Website",

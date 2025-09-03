@@ -245,7 +245,7 @@ const PortfolioTab = () => {
 
   const initialDigitize = [
     {
-      img: "/images/our-portfolio/digitize/one.jpg",
+      img: "/images/our-portfolio/digitize/eight.jpg",
       title: "Digitizing Work 1",
       description: "Professional digitizing design.",
       readmore: "read more",
@@ -403,7 +403,7 @@ const PortfolioTab = () => {
     ],
     digitize: [
       {
-        img: "/images/our-portfolio/digitize/one.jpg",
+        img: "/images/our-portfolio/digitize/eight.jpg",
         title: "Digitizing Work 7",
         description: "Additional digitizing work.",
         readmore: "read more",

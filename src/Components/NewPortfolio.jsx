@@ -16,7 +16,7 @@ export default function PortfolioSlider() {
   const allPortfolios = [
     // Digitizing examples
     {
-      imageURL: "/images/our-portfolio/digitize/one.jpg",
+      imageURL: "/images/our-portfolio/digitize/eight.jpg",
       title: "Digitizing Project 1",
       desc: "Digitizing",
       category: "Digitizing",
