@@ -93,7 +93,7 @@ function Header() {
                 fontFamily: "Inter",
                 cursor: "pointer",
                 ":hover": {
-                  color: "green",
+                  color: "#33757bff",
                 },
               }}
             >
@@ -113,7 +113,7 @@ function Header() {
                 fontFamily: "Inter",
                 cursor: "pointer",
                 ":hover": {
-                  color: "green",
+                  color: "#33757bff",
                 },
               }}
             >
@@ -130,7 +130,7 @@ function Header() {
                 fontFamily: "Inter",
                 cursor: "pointer",
                 ":hover": {
-                  color: "green",
+                  color: "#33757bff",
                 },
               }}
             >
