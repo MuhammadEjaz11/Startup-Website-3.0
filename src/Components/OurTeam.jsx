@@ -1,31 +1,26 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
-import memberOne from "../image/adam.png";
-import memberTwo from "../image/chloe.png";
-import memberThree from "../image/memberThree-min.webp";
-import memberFour from "../image/david.png";
 
 const teamArra = [
   {
-    image: memberOne,
+    image: "/images/team/adam.png",
     name: "Adam Zaid",
     designation: "CEO - Founder",
     facebook: "https://www.facebook.com/adamzaid123/",
   },
   {
-    image: memberTwo,
+    image: "/images/team/chloe.png",
     name: "Chloe Andreson",
     designation: "Sales Manager",
     facebook: "https://www.facebook.com/chloe.anderson.989861/",
   },
   {
-    image: memberThree,
+    image: "/images/team/kinsey.png",
     name: "Kinsey Tyler",
     designation: "Designer",
     facebook: "https://www.facebook.com/share/19R6yTL9H4/",
   },
   {
-    image: memberFour,
+    image: "/images/team/david.png",
     name: "David Jason",
     designation: "Production Manager",
   },
@@ -38,7 +33,7 @@ const OurTeam = () => {
         marginTop: { md: "73px", xs: "40px" },
         display: "flex",
         flexDirection: { md: "row", xs: "column" },
-        justifyContent: "space-between",
+        justifyContent: "center",
         gap: "1rem",
       }}
     >
@@ -47,7 +42,7 @@ const OurTeam = () => {
           key={index}
           sx={{
             position: "relative",
-            padding: "0px 20px",
+            padding: "20px 40px 10px 40px",
             borderRadius: "15px",
             maxWidth: "320px",
             marginBottom: { md: "0px", xs: "30px" },
@@ -65,7 +60,7 @@ const OurTeam = () => {
               transform: "translate(-50%, -45%)", // Moves the name box upward on hover
             },
             "&:hover img": {
-              transform: "scale(1.05)", // Slight image zoom on hover
+              transform: "scale(1.09)", // Slight image zoom on hover
             },
           }}
         >
@@ -75,7 +70,7 @@ const OurTeam = () => {
             sx={{
               width: "100%",
               height: "100%",
-              objectFit: "contain",
+              // objectFit: "contain",
               transition: "transform 0.3s ease-in-out",
             }}
           />
