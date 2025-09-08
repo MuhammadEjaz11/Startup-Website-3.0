@@ -42,7 +42,7 @@ const OurTeam = () => {
           key={index}
           sx={{
             position: "relative",
-            padding: "20px 40px 10px 40px",
+            padding: "20px 40px 0px 40px",
             borderRadius: "15px",
             maxWidth: "320px",
             marginBottom: { md: "0px", xs: "30px" },
