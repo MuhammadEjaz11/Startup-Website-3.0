@@ -18,6 +18,8 @@ import CustomPatches from "./Pages/Services/CustomPatches/CustomPatches.jsx";
 import EmbroideredPatches from "./Pages/Services/EmbroideredPatches/EmbroideredPatches.jsx";
 import ChenillePatches from "./Pages/Services/ChenillePatches/ChenillePatches.jsx";
 import PVCPatches from "./Pages/Services/PVCPatches/PVCPatches.jsx";
+import MockupBuilder from "./Pages/MockupBuilder/MockupBuilder.jsx";
+import TestUpload from "./Pages/TestUpload/TestUpload.jsx";
 function App() {
   return (
     <Provider store={store}>
@@ -27,6 +29,8 @@ function App() {
             <Route index element={<Home />}></Route>
             <Route path="contact-us" element={<Contact />}></Route>
             <Route path="our-portfolio" element={<Portfolio />}></Route>
+            <Route path="mockup-builder" element={<MockupBuilder />}></Route>
+            <Route path="test-upload" element={<TestUpload />}></Route>
           </Route>
           <Route path="/" element={<Layout />}>
             

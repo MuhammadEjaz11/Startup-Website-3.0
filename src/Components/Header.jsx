@@ -119,6 +119,22 @@ function Header() {
             >
               Our Portfolio
             </Typography>
+            <Typography
+              onClick={() => handleNavigate("/mockup-builder")}
+              sx={{
+                textDecoration: "none",
+                color: "#1E1E1E",
+                fontSize: { md: "14px", xl: "16px" },
+                fontWeight: "400",
+                fontFamily: "Inter",
+                cursor: "pointer",
+                ":hover": {
+                  color: "#33757bff",
+                },
+              }}
+            >
+              Mockup Builder
+            </Typography>
 
             <Typography
               onClick={() => handleNavigate("/contact-us")}
@@ -242,6 +258,18 @@ function Header() {
                 }}
               >
                 Our Portfolio
+              </Link>
+              <Link
+                to="/mockup-builder"
+                onClick={() => dispatch(toggleMobileMenu())}
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  fontSize: "16px",
+                  margin: "11px 0px",
+                }}
+              >
+                Mockup Builder
               </Link>
 
               <Link
