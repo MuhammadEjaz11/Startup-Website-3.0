@@ -19,10 +19,6 @@ import {
   THEME_ACCENT,
   THEME_DARK,
 } from '../../Components/MockupBuilder/constants';
-import TruckerHat from '../../Components/ObjectSvg/TruckerHat';
-import Beanie from '../../Components/ObjectSvg/Beanie';
-import UniformShirt from '../../Components/ObjectSvg/UniformShirt';
-
 export default function MockupBuilder() {
   const { setYellowText, setBlackText } = useOutletContext() ?? {};
   const [garmentType, setGarmentType] = useState(GARMENTS[0].id);
@@ -43,8 +39,8 @@ export default function MockupBuilder() {
 
   useEffect(() => {
     if (setYellowText && setBlackText) {
-      setBlackText('Patch Mockup ');
-      setYellowText('Builder');
+      setBlackText('Design. Preview. ');
+      setYellowText('Ship.');
     }
   }, [setYellowText, setBlackText]);
 
@@ -101,7 +97,7 @@ export default function MockupBuilder() {
           mb: 2,
         }}
       >
-        Patch Mockup Builder
+        Design. Preview. Ship.
       </Typography>
       <Typography
         sx={{
@@ -111,7 +107,7 @@ export default function MockupBuilder() {
           mb: { xs: 3, md: 5 },
         }}
       >
-        Upload or select a logo, choose a garment, customize colors, and download your mockup.
+        Drop your logo, pick your canvas, and tweak every detail. Export photorealistic mockups in seconds—no design skills required.
       </Typography>
 
       <Grid2
@@ -128,6 +124,8 @@ export default function MockupBuilder() {
             position: { lg: 'sticky' },
             top: { lg: 24 },
             alignSelf: { lg: 'flex-start' },
+            minHeight: { lg: 'calc(100vh - 48px)' },
+            height: { lg: '100%' },
           }}
         >
           <GarmentPreview

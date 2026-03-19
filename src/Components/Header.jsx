@@ -120,7 +120,7 @@ function Header() {
               Our Portfolio
             </Typography>
             <Typography
-              onClick={() => handleNavigate("/mockup-builder")}
+              onClick={() => handleNavigate("/mockup-studio")}
               sx={{
                 textDecoration: "none",
                 color: "#1E1E1E",
@@ -133,7 +133,7 @@ function Header() {
                 },
               }}
             >
-              Mockup Builder
+              Mockup Studio
             </Typography>
 
             <Typography
@@ -260,7 +260,7 @@ function Header() {
                 Our Portfolio
               </Link>
               <Link
-                to="/mockup-builder"
+                to="/mockup-studio"
                 onClick={() => dispatch(toggleMobileMenu())}
                 style={{
                   textDecoration: "none",
@@ -269,7 +269,7 @@ function Header() {
                   margin: "11px 0px",
                 }}
               >
-                Mockup Builder
+                Mockup Studio
               </Link>
 
               <Link

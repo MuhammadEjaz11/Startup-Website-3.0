@@ -160,8 +160,10 @@ const GarmentPreview = forwardRef(function GarmentPreview(
     <Box
       sx={{
         width: '100%',
-        aspectRatio: '5/6',
-        maxHeight: 560,
+        height: { xs: 'auto', lg: '100%' },
+        minHeight: { xs: 'auto', lg: 'calc(100vh - 48px)' },
+        aspectRatio: { xs: '5/6', lg: 'unset' },
+        maxHeight: { xs: 560, lg: 'none' },
         backgroundColor: boxColor,
         borderRadius: '8px',
         position: 'relative',

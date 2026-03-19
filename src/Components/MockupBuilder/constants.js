@@ -53,7 +53,7 @@ const UNIFORM_SHIRT_PRESETS = {
 
 export const PRODUCT_CONFIG = {
   [GARMENT_IDS.TSHIRT]: {
-    placements: ['left-chest', 'right-chest', 'center-chest', 'bottom', 'manual'],
+    placements: ['left-chest', 'right-chest', 'center-chest', 'manual'],
     presetPositions: TSHIRT_PRESETS,
     defaultPlacement: 'center-chest',
   },
@@ -168,18 +168,18 @@ export const BOX_COLORS = [
 ];
 
 export const PREDEFINED_LOGOS = [
-  '/images/our-portfolio/embroidery/one.jpg',
-  '/images/our-portfolio/embroidery/two.jpg',
-  '/images/our-portfolio/embroidery/three.jpg',
-  '/images/our-portfolio/embroidery/four.jpg',
-  '/images/our-portfolio/embroidery/five.jpg',
-  '/images/our-portfolio/embroidery/six.jpg',
-  '/images/our-portfolio/embroidery/seven.jpg',
-  '/images/our-portfolio/embroidery/eight.jpg',
-  '/images/our-portfolio/embroidery/nine.jpg',
-  '/images/our-portfolio/embroidery/ten.jpg',
-  '/images/our-portfolio/embroidery/eleven.jpg',
-  '/images/our-portfolio/embroidery/twelve.jpg',
+  '/images/mockup/one.png',
+  '/images/mockup/two.png',
+  '/images/mockup/three.png',
+  '/images/mockup/four.png',
+  '/images/mockup/five.png',
+  '/images/mockup/six.png',
+  '/images/mockup/seven.png',
+  '/images/mockup/eight.png',
+  '/images/mockup/nine.png',
+  '/images/mockup/ten.png',
+  '/images/mockup/eleven.png',
+  '/images/mockup/twelve.png',
 ];
 
 export const LOGO_SCALE_MIN = 0.3;

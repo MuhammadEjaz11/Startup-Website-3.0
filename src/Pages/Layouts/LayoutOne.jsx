@@ -278,10 +278,11 @@ function LayoutOne() {
                   color: "#1E1E1E",
                   fontSize: "19px",
                 }}
-              >{`/ ${location.pathname
-                .split("-")
-                .join(" ")
-                .slice(1)}`}</Typography>
+              >{`/ ${
+                location.pathname.includes("mockup-builder")
+                  ? "Mockup Studio"
+                  : location.pathname.split("-").join(" ").slice(1)
+              }`}</Typography>
             </Typography>
 
             <Typography
