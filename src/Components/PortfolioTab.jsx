@@ -59,13 +59,13 @@ const PortfolioTab = () => {
       readmore: "read more",
     },
     {
-      img: "/images/our-portfolio/embroidery/two.jpg",
+      img: "/images/our-portfolio/embroidery/two.jpeg",
       title: "Embroidery Work 2",
       description: "Creative embroidery pattern.",
       readmore: "read more",
     },
     {
-      img: "/images/our-portfolio/embroidery/three.jpg",
+      img: "/images/our-portfolio/embroidery/three.jpeg",
       title: "Embroidery Work 3",
       description: "Modern embroidery artwork.",
       readmore: "read more",
