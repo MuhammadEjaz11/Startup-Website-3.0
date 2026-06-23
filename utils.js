@@ -438,8 +438,8 @@ export const bannerData = {
     text: "ECustom embroidered patches offer a classic and professional way to showcase your logo, message, or design. At Patch Makers, we specialize in creating premium embroidered patches that combine durability with rich, textured stitching. Whether for uniforms, apparel branding, clubs, or events, our patches are designed to leave a lasting impression. Each patch is carefully digitized and stitched using high-quality threads and fabrics, ensuring crisp detail and vibrant colors. We offer full customization—from shape and size to border styles and backing options—giving you total creative freedom. Your vision, expertly stitched—Patch Makers brings it to life with craftsmanship that stands the test of time.",
     images: [
       "/images/our-portfolio/embroidery/one.jpg",
-      "/images/our-portfolio/embroidery/two.jpg",
-      "/images/our-portfolio/embroidery/three.jpg",
+      "/images/our-portfolio/embroidery/two.jpeg",
+      "/images/our-portfolio/embroidery/three.jpeg",
     ],
   },
 

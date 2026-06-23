@@ -155,13 +155,13 @@ export default function PortfolioSlider() {
     // Embroidery examples
 
     {
-      imageURL: "/images/our-portfolio/embroidery/two.jpg",
+      imageURL: "/images/our-portfolio/embroidery/two.jpeg",
       title: "Embroidery Project 2",
       desc: "Embroidery",
       category: "Embroidery",
     },
     {
-      imageURL: "/images/our-portfolio/embroidery/three.jpg",
+      imageURL: "/images/our-portfolio/embroidery/three.jpeg",
       title: "Embroidery Project 3",
       desc: "Embroidery",
       category: "Embroidery",

@@ -110,13 +110,13 @@ const embroideryPortfolio = [
     category: "Embroidered Patches",
   },
   {
-    imageURL: "/images/our-portfolio/embroidery/two.jpg",
+    imageURL: "/images/our-portfolio/embroidery/two.jpeg",
     title: "Custom Logo Patch",
     desc: "Professional logo embroidery on premium fabric",
     category: "Embroidered Patches",
   },
   {
-    imageURL: "/images/our-portfolio/embroidery/three.jpg",
+    imageURL: "/images/our-portfolio/embroidery/three.jpeg",
     title: "Military Style Patch",
     desc: "Durable embroidery with merrow border",
     category: "Embroidered Patches",
